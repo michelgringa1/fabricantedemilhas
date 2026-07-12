@@ -10,13 +10,13 @@ export const TERMOS: Termo[] = [
     id: 'milhas-aereas',
     termo: 'Milhas aéreas',
     definicao:
-      'Moeda dos programas de fidelidade das companhias aéreas, acumulada em voos ou por transferência de pontos de cartão de crédito. Servem para emitir passagens e outros resgates — e têm mercado de compra e venda no Brasil.',
+      'Moeda dos programas de fidelidade das companhias aéreas, acumulada em voos ou por transferência de pontos de cartão de crédito. Servem para emitir passagens e outros resgates, e ainda têm mercado de compra e venda no Brasil.',
   },
   {
     id: 'pontos',
     termo: 'Pontos (de cartão)',
     definicao:
-      'Unidade acumulada nos programas dos bancos e emissores a cada gasto no cartão de crédito. Pontos viram milhas quando transferidos para um programa aéreo — de preferência em campanha bonificada.',
+      'Unidade acumulada nos programas dos bancos e emissores a cada gasto no cartão de crédito. Pontos viram milhas quando transferidos para um programa aéreo, de preferência em campanha bonificada.',
   },
   {
     id: 'programa-de-fidelidade',
@@ -28,7 +28,7 @@ export const TERMOS: Termo[] = [
     id: 'milheiro',
     termo: 'Milheiro',
     definicao:
-      'Bloco de mil milhas — a unidade padrão de negociação do mercado. Preços de venda e custos de acúmulo são sempre expressos por milheiro (ex.: "milheiro a R$ 20").',
+      'Bloco de mil milhas, a unidade padrão de negociação do mercado. Preços de venda e custos de acúmulo são sempre expressos por milheiro (ex.: "milheiro a R$ 20").',
   },
   {
     id: 'cotacao-do-milheiro',
@@ -64,7 +64,7 @@ export const TERMOS: Termo[] = [
     id: 'cpm',
     termo: 'CPM (custo por milheiro)',
     definicao:
-      'Quanto custa, em reais, "fabricar" mil milhas — somando gastos de cartão, assinaturas e compras de pontos. Lucra quem mantém o CPM abaixo da cotação de venda ou do valor de uso.',
+      'Quanto custa, em reais, "fabricar" mil milhas (somando gastos de cartão, assinaturas e compras de pontos). Lucra quem mantém o CPM abaixo da cotação de venda ou do valor de uso.',
   },
   {
     id: 'smiles',
@@ -106,12 +106,12 @@ export const TERMOS: Termo[] = [
     id: 'bloqueio-de-conta',
     termo: 'Bloqueio de conta',
     definicao:
-      'Sanção aplicada por programas de fidelidade a contas que violam o regulamento — tipicamente por comercialização de milhas —, podendo incluir perda total do saldo.',
+      'Sanção aplicada por programas de fidelidade a contas que violam o regulamento (tipicamente por comercialização de milhas), podendo incluir perda total do saldo.',
   },
   {
     id: 'sweet-spot',
     termo: 'Sweet spot',
     definicao:
-      'Emissão em que as milhas entregam valor muito acima da média — tipicamente voos internacionais ou de classe executiva em tabelas promocionais. É o uso que maximiza o valor por milha do saldo.',
+      'Emissão em que as milhas entregam valor muito acima da média, tipicamente voos internacionais ou de classe executiva em tabelas promocionais. É o uso que maximiza o valor por milha do saldo.',
   },
 ]

@@ -12,7 +12,7 @@ export function PlaneMark({ className = 'w-5 h-5' }: { className?: string }) {
 
 export function Logo({ light = true }: { light?: boolean }) {
   return (
-    <a href="#/" className="flex items-center gap-2.5 shrink-0 group" aria-label="Fabricante de Milhas — início">
+    <a href="#/" className="flex items-center gap-2.5 shrink-0 group" aria-label="Fabricante de Milhas, ir para o início">
       <span className="grid place-items-center w-9 h-9 rounded-xl border border-white/20 bg-white/[0.06] group-hover:border-sun-500/60 transition-colors">
         <PlaneMark />
       </span>
@@ -130,7 +130,7 @@ export function Footer() {
             <p className="mono text-[11px] tracking-[0.18em] uppercase text-brand-100/40">GRU → MUNDO · desde 2026</p>
           </div>
           <p className="text-[11.5px] text-brand-100/40">
-            Alguns links deste site são de afiliado — podemos receber comissão, sem custo extra para você.{' '}
+            Alguns links deste site são de afiliado. Podemos receber comissão, sem custo extra para você.{' '}
             <a href="#/divulgacao-de-afiliados/" className="u-link text-brand-100/60">Saiba mais</a>.
           </p>
         </div>

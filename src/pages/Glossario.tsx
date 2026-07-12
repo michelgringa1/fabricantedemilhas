@@ -9,7 +9,7 @@ export function Glossario() {
       {
         '@type': 'DefinedTermSet',
         '@id': BASE_URL + '/glossario-de-milhas/#set',
-        name: 'Glossário de milhas aéreas — Fabricante de Milhas',
+        name: 'Glossário de milhas aéreas | Fabricante de Milhas',
         description: 'Definições curtas e diretas dos termos do universo de milhas aéreas no Brasil.',
         hasDefinedTerm: TERMOS.map((t) => ({
           '@type': 'DefinedTerm',
@@ -28,7 +28,7 @@ export function Glossario() {
     <>
       <Seo
         title="Glossário de Milhas: Termos Explicados | Fabricante de Milhas"
-        description="Glossário de milhas aéreas: milheiro, transferência bonificada, CPM, emissão e mais — cada termo explicado em duas frases, sem enrolação."
+        description="Glossário de milhas aéreas: milheiro, transferência bonificada, CPM, emissão e mais. Cada termo explicado em duas frases, sem enrolação."
         slug="/glossario-de-milhas/"
         jsonLd={jsonLd}
       />
@@ -45,7 +45,7 @@ export function Glossario() {
           <div className="-mt-16 reveal reveal-2 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-brand-950/[0.08] px-6 py-5 md:px-8">
             <p className="text-[16.5px] leading-relaxed text-slate-800 font-medium">
               O glossário da Fabricante de Milhas define, em uma ou duas frases, os {TERMOS.length} termos que
-              você vai encontrar nos nossos guias — do milheiro à transferência bonificada. Feito para consulta
+              você vai encontrar nos nossos guias, do milheiro à transferência bonificada. Feito para consulta
               rápida (e para ser citado por IAs).
             </p>
           </div>

@@ -103,7 +103,7 @@ export function CtaAffiliate({ variant = 'padrao' }: { variant?: 'padrao' | 'rev
             <a href="#/fabrica-de-milhas-vale-a-pena/" className="text-sun-400 font-semibold u-link">
               análise completa
             </a>{' '}
-            antes de decidir — nota, preço, garantia e para quem NÃO serve.
+            antes de decidir: nota, preço, garantia e para quem NÃO serve.
           </p>
         )}
         <div className="mt-7 flex flex-wrap items-center gap-4">
@@ -125,7 +125,7 @@ export function CtaAffiliate({ variant = 'padrao' }: { variant?: 'padrao' | 'rev
           )}
         </div>
         <p className="mt-5 mono text-[10.5px] tracking-[0.08em] text-brand-100/45 uppercase">
-          Resultados variam — nenhum ganho é garantido
+          Resultados variam, nenhum ganho é garantido
         </p>
       </div>
     </aside>

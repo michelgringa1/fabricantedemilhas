@@ -13,7 +13,7 @@ const CLUSTERS = [
     slug: '/como-ganhar-dinheiro-com-milhas/',
     n: '02',
     title: 'Ganhar dinheiro',
-    desc: 'Os 3 caminhos realistas — com os riscos na mesa.',
+    desc: 'Os 3 caminhos realistas, com os riscos na mesa.',
   },
   {
     slug: '/vender-milhas-aereas/',
@@ -140,8 +140,8 @@ export function Home() {
   return (
     <>
       <Seo
-        title="Fabricante de Milhas — Milhas aéreas explicadas com honestidade"
-        description="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas — sem promessa milagrosa."
+        title="Fabricante de Milhas: milhas aéreas explicadas com honestidade"
+        description="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas, sem promessa milagrosa."
         slug="/"
         jsonLd={[breadcrumbLd([])]}
       />
@@ -168,7 +168,7 @@ export function Home() {
               honestidade<span className="text-sun-500">.</span>
             </h1>
             <p className="reveal reveal-2 mt-7 text-[17px] md:text-lg text-brand-100/80 leading-relaxed max-w-lg">
-              Guias práticos para acumular, vender e viajar com milhas — e análises completas
+              Guias práticos para acumular, vender e viajar com milhas, além de análises completas
               dos cursos que prometem te ensinar. Sem hype, sem renda garantida.
             </p>
             <div className="reveal reveal-3 mt-9 flex flex-wrap gap-3.5">
@@ -256,7 +256,7 @@ export function Home() {
               <div className="eyebrow text-sun-500">Fundo de funil, sem fantasia</div>
               <h2 className="display text-[2rem] md:text-[2.5rem] mt-3">Análises de cursos</h2>
               <p className="mt-3 text-brand-100/75 max-w-lg">
-                Reviews completos com prós, contras e reputação verificada — inclusive do curso que recomendamos.
+                Reviews completos com prós, contras e reputação verificada, inclusive do curso que recomendamos.
               </p>
             </div>
             <a href="#/metodologia/" className="text-sun-500 font-semibold text-[14.5px] u-link">
@@ -295,7 +295,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* DADO PRÓPRIO — painel */}
+      {/* DADO PRÓPRIO: painel */}
       <section className="bg-paper">
         <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -354,14 +354,14 @@ export function Home() {
               {
                 n: '01',
                 title: 'Análise em terceira pessoa',
-                desc: 'Avaliamos cursos e produtores com fontes públicas e verificáveis — CNPJ, Reclame Aqui, imprensa.',
+                desc: 'Avaliamos cursos e produtores com fontes públicas e verificáveis: CNPJ, Reclame Aqui, imprensa.',
                 slug: '/sobre/',
                 link: 'Quem somos',
               },
               {
                 n: '02',
                 title: 'Metodologia pública',
-                desc: 'Seis critérios com pesos declarados definem cada nota. Os contras ficam no texto — inclusive dos cursos que recomendamos.',
+                desc: 'Seis critérios com pesos declarados definem cada nota. Os contras ficam no texto, inclusive dos cursos que recomendamos.',
                 slug: '/metodologia/',
                 link: 'Como avaliamos',
               },

@@ -31,7 +31,7 @@ export function Sobre() {
       <Shell title="Sobre a Fabricante de Milhas" slug="/sobre/">
         <p>
           A <strong>Fabricante de Milhas</strong> é uma publicação sobre milhas aéreas no
-          Brasil. Produzimos guias práticos, análises de cursos e dados de referência — escritos pela{' '}
+          Brasil. Produzimos guias práticos, análises de cursos e dados de referência, escritos pela{' '}
           <strong>Equipe Fabricante de Milhas</strong>, nossa redação editorial, e revisados por humanos antes de
           qualquer publicação.
         </p>
@@ -43,15 +43,15 @@ export function Sobre() {
         </ul>
         <h2 id="o-que-nao-fazemos">O que NÃO fazemos</h2>
         <ul>
-          <li><strong>Não vendemos curso próprio</strong> — avaliamos cursos de terceiros, em terceira pessoa;</li>
-          <li><strong>Não prometemos ganho garantido</strong> — resultados com milhas variam conforme dedicação, capital e mercado;</li>
+          <li><strong>Não vendemos curso próprio</strong>: avaliamos cursos de terceiros, em terceira pessoa;</li>
+          <li><strong>Não prometemos ganho garantido</strong>: resultados com milhas variam conforme dedicação, capital e mercado;</li>
           <li><strong>Não gerenciamos milhas de leitores</strong> nem pedimos senhas ou dados de programas de fidelidade;</li>
           <li><strong>Não temos parceria com bancos</strong>, companhias aéreas ou programas de fidelidade.</li>
         </ul>
         <h2 id="como-ganhamos">Como ganhamos dinheiro</h2>
         <p>
           Por afiliação: quando você compra um curso pelos nossos links, recebemos comissão sem custo extra para
-          você. O aviso geral fica no rodapé do site, e a comissão não altera a nota — os contras
+          você. O aviso geral fica no rodapé do site, e a comissão não altera a nota: os contras
           ficam no texto, inclusive dos produtos que recomendamos. Detalhes na{' '}
           <a href="#/divulgacao-de-afiliados/">divulgação de afiliados</a>.
         </p>
@@ -77,23 +77,23 @@ export function Metodologia() {
       <Shell title="Nossa metodologia de avaliação" slug="/metodologia/">
         <p>
           Toda nota publicada pela Fabricante de Milhas sai do mesmo processo, com critérios e pesos públicos.
-          Esta página existe para você conferir a régua — e nos cobrar por ela.
+          Esta página existe para você conferir a régua e nos cobrar por ela.
         </p>
         <h2 id="criterios">Os 6 critérios e seus pesos</h2>
         <ul>
-          <li><strong>Conteúdo e didática (25%)</strong> — cobertura do básico ao avançado, organização, clareza e profundidade das aulas.</li>
-          <li><strong>Custo-benefício (20%)</strong> — preço em relação à entrega, formas de pagamento, comparação com o mercado.</li>
-          <li><strong>Suporte e comunidade (15%)</strong> — canais de dúvida, monitorias, ritmo do grupo de promoções ao longo do tempo.</li>
-          <li><strong>Reputação e confiança (20%)</strong> — Reclame Aqui, empresa registrada, histórico público do produtor, consistência entre promessa e entrega.</li>
-          <li><strong>Garantia e transparência (10%)</strong> — política de reembolso, clareza das condições, ausência de letra miúda enganosa.</li>
-          <li><strong>Atualização (10%)</strong> — frequência de novas aulas e adaptação a mudanças de regras do mercado.</li>
+          <li><strong>Conteúdo e didática (25%)</strong>: cobertura do básico ao avançado, organização, clareza e profundidade das aulas.</li>
+          <li><strong>Custo-benefício (20%)</strong>: preço em relação à entrega, formas de pagamento, comparação com o mercado.</li>
+          <li><strong>Suporte e comunidade (15%)</strong>: canais de dúvida, monitorias, ritmo do grupo de promoções ao longo do tempo.</li>
+          <li><strong>Reputação e confiança (20%)</strong>: Reclame Aqui, empresa registrada, histórico público do produtor, consistência entre promessa e entrega.</li>
+          <li><strong>Garantia e transparência (10%)</strong>: política de reembolso, clareza das condições, ausência de letra miúda enganosa.</li>
+          <li><strong>Atualização (10%)</strong>: frequência de novas aulas e adaptação a mudanças de regras do mercado.</li>
         </ul>
         <h2 id="processo">O processo, passo a passo</h2>
         <ol>
           <li>Levantamento de dados públicos: página oficial, preços, garantia, empresa (CNPJ), Reclame Aqui e imprensa;</li>
           <li>Análise do conteúdo e da estrutura do curso;</li>
           <li>Leitura de padrões de elogio e reclamação de alunos (sem expor nomes);</li>
-          <li>Redação da análise com prós e contras reais — contras genéricos não contam;</li>
+          <li>Redação da análise com prós e contras reais (contras genéricos não contam);</li>
           <li><strong>Validação humana de todos os fatos</strong> (preço, garantia, números) antes de publicar;</li>
           <li>Revisão da página a cada 3–6 meses, com data de atualização visível.</li>
         </ol>
@@ -106,7 +106,7 @@ export function Metodologia() {
         <h2 id="erros">Achou um erro?</h2>
         <p>
           Dados de mercado mudam rápido. Se encontrar informação desatualizada, escreva para{' '}
-          <a href={'mailto:' + CONTACT_EMAIL}>{CONTACT_EMAIL}</a> — corrigimos e registramos a atualização.
+          <a href={'mailto:' + CONTACT_EMAIL}>{CONTACT_EMAIL}</a>. Corrigimos e registramos a atualização.
         </p>
       </Shell>
     </>
@@ -125,7 +125,7 @@ export function Divulgacao() {
       <Shell title="Divulgação de afiliados" slug="/divulgacao-de-afiliados/">
         <p>
           A Fabricante de Milhas participa de programas de afiliados. Em termos simples:{' '}
-          <strong>alguns links deste site são links de afiliado</strong> — se você clicar e comprar, recebemos
+          <strong>alguns links deste site são links de afiliado</strong>: se você clicar e comprar, recebemos
           uma comissão paga pelo produtor, <strong>sem custo extra para você</strong>.
         </p>
         <h2 id="onde">Onde há links de afiliado</h2>
@@ -138,7 +138,7 @@ export function Divulgacao() {
           Todo link de afiliado é marcado tecnicamente com <code>rel="sponsored nofollow"</code>, e o aviso
           geral fica no rodapé de todas as páginas do site.
         </p>
-        <h2 id="o-que-muda">O que isso muda nas análises — e o que não muda</h2>
+        <h2 id="o-que-muda">O que isso muda nas análises, e o que não muda</h2>
         <p>
           A comissão financia o site; ela <strong>não define nota nem esconde contras</strong>. Nossa{' '}
           <a href="#/metodologia/">metodologia é pública</a>, os contras dos produtos recomendados ficam no
@@ -147,7 +147,7 @@ export function Divulgacao() {
         </p>
         <h2 id="promessas">Sobre promessas de ganho</h2>
         <p>
-          Não prometemos — e não permitimos que nossas páginas prometam — renda garantida com milhas.
+          Não prometemos, e não permitimos que nossas páginas prometam, renda garantida com milhas.
           Resultados variam conforme dedicação, capital disponível e condições de mercado. Qualquer promessa
           citada de páginas de vendas de terceiros é reportada como promessa deles, não como fato nosso.
         </p>
@@ -167,13 +167,13 @@ export function Contato() {
         description="Fale com a Equipe Fabricante de Milhas: dúvidas sobre guias, correções de dados, sugestões de pauta e parcerias editoriais."
         slug="/contato/"
         jsonLd={[
-          { '@type': 'ContactPage', name: 'Contato — Fabricante de Milhas', url: BASE_URL + '/contato/', mainEntity: { '@id': ORG_ID } },
+          { '@type': 'ContactPage', name: 'Contato: Fabricante de Milhas', url: BASE_URL + '/contato/', mainEntity: { '@id': ORG_ID } },
           breadcrumbLd([['Contato', '/contato/']]),
         ]}
       />
       <Shell title="Contato" slug="/contato/">
         <p>
-          Fale com a Equipe Fabricante de Milhas — respondemos dúvidas sobre os guias, corrigimos dados
+          Fale com a Equipe Fabricante de Milhas. Respondemos dúvidas sobre os guias, corrigimos dados
           desatualizados e recebemos sugestões de pauta.
         </p>
         <ul>
@@ -182,7 +182,7 @@ export function Contato() {
           </li>
           <li>
             <strong>Correções:</strong> encontrou preço, regra ou cotação desatualizada? Aponte a página e a
-            informação — atualizamos e registramos a data.
+            informação, e atualizamos e registramos a data.
           </li>
           <li>
             <strong>Parcerias:</strong> avaliamos apenas parcerias compatíveis com nossa{' '}

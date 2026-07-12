@@ -3,7 +3,7 @@ import { Seo, BASE_URL, breadcrumbLd, faqLd } from '@/lib/seo'
 import { PageHero, FaqSection, AuthorBlock, ChecksNote } from '@/components/blocks'
 import { PlaneMark } from '@/components/layout'
 
-/* cotações de referência editorial (R$/milheiro) — editáveis pelo usuário */
+/* cotações de referência editorial (R$/milheiro), editáveis pelo usuário */
 const PROGRAMAS: { nome: string; ref: number }[] = [
   { nome: 'Smiles', ref: 16 },
   { nome: 'LATAM Pass', ref: 22 },
@@ -16,11 +16,11 @@ const PROGRAMAS: { nome: string; ref: number }[] = [
 const FAQ = [
   {
     q: 'Como calcular quanto valem minhas milhas?',
-    a: 'Multiplique o saldo pela cotação do milheiro e divida por mil: 50.000 milhas a R$ 20/milheiro valem cerca de R$ 1.000. A cotação varia por programa, prazo de recebimento e demanda — use a calculadora com a cotação do dia para um retrato fiel.',
+    a: 'Multiplique o saldo pela cotação do milheiro e divida por mil: 50.000 milhas a R$ 20/milheiro valem cerca de R$ 1.000. A cotação varia por programa, prazo de recebimento e demanda. Use a calculadora com a cotação do dia para um retrato fiel.',
   },
   {
     q: 'Quanto vale o milheiro hoje?',
-    a: 'Depende do programa e do momento: cada milheiro tem uma faixa própria que oscila diariamente. Os valores pré-preenchidos na calculadora são referência editorial da Fabricante de Milhas — edite pelo valor atual do seu canal de venda antes de decidir.',
+    a: 'Depende do programa e do momento: cada milheiro tem uma faixa própria que oscila diariamente. Os valores pré-preenchidos na calculadora são referência editorial da Fabricante de Milhas. Edite pelo valor atual do seu canal de venda antes de decidir.',
   },
   {
     q: 'É melhor usar as milhas ou vender?',
@@ -28,7 +28,7 @@ const FAQ = [
   },
   {
     q: 'Quantas milhas meu cartão gera por mês?',
-    a: 'Converta o gasto mensal para dólar, multiplique pelos pontos por dólar do cartão e aplique o bônus médio de transferência. Um gasto de R$ 5.000 num cartão de 2 pontos/dólar, com bônus de 80%, gera em torno de 3 mil milhas ao mês — a calculadora faz essa conta com os seus números.',
+    a: 'Converta o gasto mensal para dólar, multiplique pelos pontos por dólar do cartão e aplique o bônus médio de transferência. Um gasto de R$ 5.000 num cartão de 2 pontos/dólar, com bônus de 80%, gera em torno de 3 mil milhas ao mês. A calculadora faz essa conta com os seus números.',
   },
   {
     q: 'Os resultados da calculadora são exatos?',
@@ -154,7 +154,7 @@ function ModoSaldo() {
           + Adicionar outro programa
         </button>
         <p className="text-[12px] text-slate-400">
-          Cotações pré-preenchidas são referência editorial <mark className="verificar">[VERIFICAR: atualizar mensalmente]</mark> — edite pelo valor atual do seu canal.
+          Cotações pré-preenchidas são referência editorial <mark className="verificar">[VERIFICAR: atualizar mensalmente]</mark>. Edite pelo valor atual do seu canal.
         </p>
       </div>
       <ResultPanel title="Painel · Seu saldo">
@@ -271,7 +271,7 @@ function ModoCartao() {
         </div>
         <div className="mt-5 rounded-xl bg-brand-50 px-4 py-3 text-[13.5px] text-slate-600 leading-relaxed">
           Fluxo da conta: gasto ÷ dólar × pontos/dólar = pontos no banco → transferidos com bônus viram milhas.
-          Transferir <strong className="text-slate-800">sem bônus</strong> é onde a maioria perde — veja o{' '}
+          Transferir <strong className="text-slate-800">sem bônus</strong> é onde a maioria perde. Veja o{' '}
           <a href="#/como-acumular-milhas/" className="text-brand-600 underline underline-offset-2">guia de acúmulo</a>.
         </div>
       </div>
@@ -292,7 +292,7 @@ function ModoCartao() {
           </div>
         </div>
         <p className="pt-4 mono text-[10px] tracking-[0.1em] text-brand-100/40 uppercase leading-relaxed">
-          Estimativa · só pontue o que pode pagar integral — juros comem qualquer margem
+          Estimativa · só pontue o que pode pagar integral: juros comem qualquer margem
         </p>
       </ResultPanel>
     </div>
@@ -314,7 +314,7 @@ export function Calculadora() {
     () => [
       {
         '@type': 'WebApplication',
-        name: 'Calculadora de Milhas — Fabricante de Milhas',
+        name: 'Calculadora de Milhas: Fabricante de Milhas',
         url: BASE_URL + '/calculadora-de-milhas/',
         applicationCategory: 'FinanceApplication',
         operatingSystem: 'Web',
@@ -352,7 +352,7 @@ export function Calculadora() {
             <p className="text-[16.5px] leading-relaxed text-slate-800 font-medium">
               A calculadora da Fabricante de Milhas responde as três contas que todo milheiro faz: quanto vale o
               seu saldo hoje, se compensa usar ou vender numa emissão específica, e quantas milhas o seu cartão
-              produz por mês. Todos os valores são editáveis — use a cotação do dia.
+              produz por mês. Todos os valores são editáveis. Use a cotação do dia.
             </p>
           </div>
 
@@ -395,7 +395,7 @@ export function Calculadora() {
             </p>
             <p>
               As cotações pré-preenchidas são referência editorial da nossa tabela mensal{' '}
-              <mark className="verificar">[VERIFICAR: sincronizar com a tabela do mês]</mark> — o mercado muda
+              <mark className="verificar">[VERIFICAR: sincronizar com a tabela do mês]</mark>. O mercado muda
               diariamente, então edite os campos com o valor real do seu canal antes de decidir qualquer operação.
             </p>
           </div>
@@ -423,7 +423,7 @@ export function Calculadora() {
             <AuthorBlock published="2026-07-12" updated="2026-07-12" />
             <ChecksNote
               checks={[
-                'Cotações de referência dos programas (Smiles, LATAM Pass, Azul Fidelidade, Livelo, Esfera) — sincronizar com a tabela mensal',
+                'Cotações de referência dos programas (Smiles, LATAM Pass, Azul Fidelidade, Livelo, Esfera): sincronizar com a tabela mensal',
                 'Cotação padrão do dólar no modo cartão (R$ 5,50)',
                 'Faixa padrão de bônus de transferência (80%)',
               ]}

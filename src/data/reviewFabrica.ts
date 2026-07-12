@@ -12,10 +12,10 @@ export const reviewFabrica: Article = {
   keyword: 'fábrica de milhas vale a pena',
   commercial: true,
   answerFirst:
-    'Segundo a análise da Equipe Fabricante de Milhas, o Fábrica de Milhas vale a pena para quem quer aprender a acumular e vender milhas com método estruturado e aceita retorno gradual. É um curso completo, com garantia dupla — mas preço acima da média e reputação "Regular" no Reclame Aqui pedem atenção. Nota da nossa avaliação: 8,0/10.',
+    'Segundo a análise da Equipe Fabricante de Milhas, o Fábrica de Milhas vale a pena para quem quer aprender a acumular e vender milhas com método estruturado e aceita retorno gradual. É um curso completo, com garantia dupla, mas preço acima da média e reputação "Regular" no Reclame Aqui pedem atenção. Nota da nossa avaliação: 8,0/10.',
   tldr: [
     'O que é: treinamento de milhas do Rodrigo Góes em 8 níveis, com aulas gravadas, ao vivo e comunidade.',
-    'Preço (jun/2026): 12x R$ 119,90 (acesso 1 ano) ou 12x R$ 291,99 (vitalício) — sujeito a mudança.',
+    'Preço (jun/2026): 12x R$ 119,90 (acesso 1 ano) ou 12x R$ 291,99 (vitalício), sujeito a mudança.',
     'Garantia: 7 dias incondicional + "risco zero" condicionada às estratégias do nível Platina.',
     'Principal pró: método completo do zero ao avançado, com comunidade ativa de promoções.',
     'Principal contra: reputação "Regular" (nota 6,6) no Reclame Aqui e retorno que depende de capital e dedicação.',
@@ -33,25 +33,25 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'o-que-e', text: 'O que é o Fábrica de Milhas' },
     {
       t: 'p',
-      html: 'O <strong>Fábrica de Milhas</strong> é o treinamento de milhas aéreas do influenciador Rodrigo Góes, conhecido como "Mago das Milhas". A página oficial o apresenta como um passo a passo para construir uma "fábrica" de milhas — a promessa central anunciada é <em>"acumular 1 milhão de milhas nos próximos 6 meses"</em>. Registre-se: essa é a promessa <strong>da página de vendas</strong>, não uma constatação nossa; resultados variam conforme dedicação, capital disponível e condições do mercado.',
+      html: 'O <strong>Fábrica de Milhas</strong> é o treinamento de milhas aéreas do influenciador Rodrigo Góes, conhecido como "Mago das Milhas". A página oficial o apresenta como um passo a passo para construir uma "fábrica" de milhas. A promessa central anunciada é <em>"acumular 1 milhão de milhas nos próximos 6 meses"</em>. Registre-se: essa é a promessa <strong>da página de vendas</strong>, não uma constatação nossa; resultados variam conforme dedicação, capital disponível e condições do mercado.',
     },
     {
       t: 'p',
-      html: 'Por trás do produto está a 4MULTIPLUS MIDIA DIGITAL LTDA (CNPJ 42.650.222/0001-08), sediada em Barueri-SP — empresa ativa e verificável, um sinal básico de seriedade que checamos em toda análise (veja nossa <a href="#/metodologia/">metodologia</a>).',
+      html: 'Por trás do produto está a 4MULTIPLUS MIDIA DIGITAL LTDA (CNPJ 42.650.222/0001-08), sediada em Barueri-SP, empresa ativa e verificável, um sinal básico de seriedade que checamos em toda análise (veja nossa <a href="#/metodologia/">metodologia</a>).',
     },
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://www.instagram.com/goesrodrigo/" target="_blank" rel="noopener nofollow">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas — números autodeclarados por ele, que reportamos como tal. Teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha por volta de 2020 <mark class="verificar">[VERIFICAR: links das matérias]</mark>.',
+      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://www.instagram.com/goesrodrigo/" target="_blank" rel="noopener nofollow">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal. Teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha por volta de 2020 <mark class="verificar">[VERIFICAR: links das matérias]</mark>.',
     },
     {
       t: 'p',
-      html: 'Fizemos uma análise dedicada à confiabilidade do produtor em <a href="#/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a> — recomendada para quem está avaliando o curso pela primeira vez.',
+      html: 'Fizemos uma análise dedicada à confiabilidade do produtor em <a href="#/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>, recomendada para quem está avaliando o curso pela primeira vez.',
     },
     { t: 'h2', id: 'o-que-tem-dentro', text: 'O que tem dentro do curso' },
     {
       t: 'p',
-      html: 'O conteúdo é organizado em 8 níveis progressivos, do básico ao avançado. A carga horária anunciada tem uma inconsistência na própria página oficial — uma seção cita "+40h de aulas gravadas" e o FAQ cita "+30h" — portanto: dezenas de horas de aulas gravadas (a página oficial cita entre 30h e 40h) <mark class="verificar">[VERIFICAR: carga horária exata]</mark>.',
+      html: 'O conteúdo é organizado em 8 níveis progressivos, do básico ao avançado. A carga horária anunciada tem uma inconsistência na própria página oficial: uma seção cita "+40h de aulas gravadas" e o FAQ cita "+30h". São, portanto, dezenas de horas de aulas gravadas (a página oficial cita entre 30h e 40h) <mark class="verificar">[VERIFICAR: carga horária exata]</mark>.',
     },
     {
       t: 'table',
@@ -70,39 +70,39 @@ export const reviewFabrica: Article = {
     },
     {
       t: 'p',
-      html: 'Além das aulas gravadas, o curso inclui <strong>aulas ao vivo com monitorias</strong> e a comunidade <strong>"Clube do Mago"</strong>, com promoções diárias e cotação do milheiro. A turma atual anuncia como bônus o "Mega Combo +10 imersões" (Disney, Paris, Maldivas etc.) e o próprio Clube do Mago — anunciados como R$ 1.194 em bônus gratuitos <mark class="verificar">[VERIFICAR: bônus vigentes na data de publicação]</mark>.',
+      html: 'Além das aulas gravadas, o curso inclui <strong>aulas ao vivo com monitorias</strong> e a comunidade <strong>"Clube do Mago"</strong>, com promoções diárias e cotação do milheiro. A turma atual anuncia como bônus o "Mega Combo +10 imersões" (Disney, Paris, Maldivas etc.) e o próprio Clube do Mago, anunciados como R$ 1.194 em bônus gratuitos <mark class="verificar">[VERIFICAR: bônus vigentes na data de publicação]</mark>.',
     },
     { t: 'h2', id: 'preco', text: 'Preço e formas de pagamento' },
     {
       t: 'table',
-      caption: 'Preços da turma atual (coletados em jun/2026 — sujeitos a mudança)',
+      caption: 'Preços da turma atual (coletados em jun/2026, sujeitos a mudança)',
       head: ['Plano', 'Parcelado', 'À vista'],
       rows: [
         ['Acesso por 1 ano', '12x de R$ 119,90', 'R$ 1.230,60'],
         ['Acesso vitalício', '12x de R$ 291,99', 'R$ 2.997,00'],
       ],
-      note: 'O preço "cheio" anunciado para o acesso de 1 ano é R$ 2.497. Valores [VERIFICAR na data da publicação] — turmas e condições mudam.',
+      note: 'O preço "cheio" anunciado para o acesso de 1 ano é R$ 2.497. Valores [VERIFICAR na data da publicação]. Turmas e condições mudam.',
     },
     {
       t: 'p',
-      html: 'Na comparação com o mercado, o Fábrica de Milhas posiciona-se <strong>acima da média de preço</strong> dos cursos de milhas <mark class="verificar">[VERIFICAR: média atual do mercado no comparador]</mark> — a régua de custo-benefício, portanto, depende de você usar o que mais encarece o produto: as aulas ao vivo e a comunidade de promoções.',
+      html: 'Na comparação com o mercado, o Fábrica de Milhas posiciona-se <strong>acima da média de preço</strong> dos cursos de milhas <mark class="verificar">[VERIFICAR: média atual do mercado no comparador]</mark>. A régua de custo-benefício, portanto, depende de você usar o que mais encarece o produto: as aulas ao vivo e a comunidade de promoções.',
     },
     { t: 'h2', id: 'garantia', text: 'Garantia: 7 dias + "risco zero" (leia as condições)' },
     {
       t: 'p',
-      html: 'São duas garantias distintas. A primeira é a <strong>incondicional de 7 dias</strong>, padrão legal de produtos digitais: não gostou, pede reembolso. A segunda é a que a página chama de <strong>"garantia risco zero"</strong>: segundo as condições anunciadas pelo curso, se o aluno aplicar as 3 estratégias do nível Platina e não recuperar o valor investido em até 4 meses, a empresa devolve o valor pago. Atenção ao detalhe: é uma garantia <strong>condicionada</strong> — exige comprovar a aplicação das estratégias. Não a trate como reembolso automático.',
+      html: 'São duas garantias distintas. A primeira é a <strong>incondicional de 7 dias</strong>, padrão legal de produtos digitais: não gostou, pede reembolso. A segunda é a que a página chama de <strong>"garantia risco zero"</strong>: segundo as condições anunciadas pelo curso, se o aluno aplicar as 3 estratégias do nível Platina e não recuperar o valor investido em até 4 meses, a empresa devolve o valor pago. Atenção ao detalhe: é uma garantia <strong>condicionada</strong>: exige comprovar a aplicação das estratégias. Não a trate como reembolso automático.',
     },
-    { t: 'h2', id: 'reputacao', text: 'O que dizem os alunos — reputação real' },
+    { t: 'h2', id: 'reputacao', text: 'O que dizem os alunos: reputação real'},
     {
       t: 'p',
-      html: 'No <strong>Reclame Aqui</strong> (período dez/2025–mai/2026), a empresa aparece verificada com reputação <strong>"Regular" e nota 6,6/10</strong>: 166 reclamações no período, <strong>98,8% respondidas</strong>, 70,3% resolvidas, 48,4% dos reclamantes voltariam a fazer negócio e tempo médio de resposta de 15 dias. Leitura equilibrada: a empresa responde quase tudo — sinal positivo — mas o tempo de resposta e o índice de resolução deixam espaço para melhorar <mark class="verificar">[VERIFICAR: dados atualizados do Reclame Aqui na data de publicação]</mark>.',
+      html: 'No <strong>Reclame Aqui</strong> (período dez/2025–mai/2026), a empresa aparece verificada com reputação <strong>"Regular" e nota 6,6/10</strong>: 166 reclamações no período, <strong>98,8% respondidas</strong>, 70,3% resolvidas, 48,4% dos reclamantes voltariam a fazer negócio e tempo médio de resposta de 15 dias. Leitura equilibrada: a empresa responde quase tudo (sinal positivo), mas o tempo de resposta e o índice de resolução deixam espaço para melhorar <mark class="verificar">[VERIFICAR: dados atualizados do Reclame Aqui na data de publicação]</mark>.',
     },
     {
       t: 'ul',
       items: [
-        '<strong>Padrão de reclamação 1 — ritmo do suporte</strong>: relatos de que o grupo de promoções e o suporte perdem ritmo depois que uma turma nova abre.',
-        '<strong>Padrão 2 — plataformas de venda indicadas no passado</strong>: alunos citam prejuízos com plataformas de venda de milhas indicadas em aulas antigas (contexto da crise 123milhas/MaxMilhas/HotMilhas em 2023). O curso respondeu que retirou as aulas e que não tem relação com as empresas.',
-        '<strong>Padrão 3 — expectativa vs. realidade</strong>: parte das frustrações nasce da diferença entre a expectativa de retorno rápido e a realidade de retorno gradual, que depende de dedicação e capital.',
+        '<strong>Padrão de reclamação 1 (ritmo do suporte)</strong>: relatos de que o grupo de promoções e o suporte perdem ritmo depois que uma turma nova abre.',
+        '<strong>Padrão 2 (plataformas de venda indicadas no passado)</strong>: alunos citam prejuízos com plataformas de venda de milhas indicadas em aulas antigas (contexto da crise 123milhas/MaxMilhas/HotMilhas em 2023). O curso respondeu que retirou as aulas e que não tem relação com as empresas.',
+        '<strong>Padrão 3 (expectativa vs. realidade)</strong>: parte das frustrações nasce da diferença entre a expectativa de retorno rápido e a realidade de retorno gradual, que depende de dedicação e capital.',
       ],
     },
     { t: 'h2', id: 'pros-contras', text: 'Prós e contras' },
@@ -110,17 +110,17 @@ export const reviewFabrica: Article = {
       t: 'proscons',
       pros: [
         'Método completo e progressivo: 8 níveis que levam do zero absoluto a estratégias avançadas (executiva, status, venda).',
-        'Comunidade ativa (Clube do Mago) com promoções diárias e cotação do milheiro — na prática, é o que mantém o método funcionando no dia a dia.',
+        'Comunidade ativa (Clube do Mago) com promoções diárias e cotação do milheiro. Na prática, é o que mantém o método funcionando no dia a dia.',
         'Aulas ao vivo e monitorias, além do conteúdo gravado.',
         'Garantia dupla: 7 dias incondicional + "risco zero" condicionada.',
         'Produtor com empresa estabelecida, grande audiência pública e histórico verificável.',
       ],
       cons: [
         'Preço acima da média dos cursos de milhas [VERIFICAR média do mercado].',
-        'Retorno depende de capital e dedicação — não é renda imediata, e a promessa de "1 milhão de milhas em 6 meses" é da página de vendas, não uma garantia.',
+        'Retorno depende de capital e dedicação, não é renda imediata, e a promessa de "1 milhão de milhas em 6 meses" é da página de vendas, não uma garantia.',
         'Histórico de reclamações sobre perda de ritmo do suporte e do grupo após abertura de turmas novas.',
         'Reputação "Regular" (6,6/10) no Reclame Aqui, com tempo médio de resposta de 15 dias.',
-        'O mercado de venda de milhas embute risco de plataformas — como mostrou a crise 123milhas em 2023 — e nenhum curso elimina esse risco.',
+        'O mercado de venda de milhas embute risco de plataformas, como mostrou a crise 123milhas em 2023, e nenhum curso elimina esse risco.',
       ],
     },
     { t: 'h2', id: 'para-quem', text: 'Para quem vale a pena (e para quem NÃO vale)' },
@@ -138,28 +138,28 @@ export const reviewFabrica: Article = {
     {
       t: 'ul',
       items: [
-        'Espera renda garantida ou retorno na primeira semana — ninguém sério promete isso;',
+        'Espera renda garantida ou retorno na primeira semana, mas ninguém sério promete isso;',
         'Tem orçamento apertado a ponto de o curso comprometer as contas (comece pelo conteúdo gratuito, inclusive o nosso);',
         'Não pretende dedicar algumas horas por semana ao acompanhamento de promoções;',
-        'Só quer aprender o básico de acumular para uma viagem — para isso, nossos guias gratuitos bastam.',
+        'Só quer aprender o básico de acumular para uma viagem, já que, para isso, nossos guias gratuitos bastam.',
       ],
     },
     { t: 'h2', id: 'alternativas', text: 'Alternativas ao Fábrica de Milhas' },
     {
       t: 'p',
-      html: 'Nenhuma análise honesta termina sem alternativas. No nosso <a href="#/cursos-de-milhas/">comparador de cursos de milhas</a> avaliamos as opções relevantes do mercado — incluindo alternativas de menor investimento inicial <mark class="verificar">[VERIFICAR: catálogo, preços e condições das alternativas antes de publicar]</mark>. Se a sua dúvida é entre pagar um curso ou começar sozinho, comece pelos nossos guias gratuitos de <a href="#/como-acumular-milhas/">acúmulo</a> e <a href="#/vender-milhas-aereas/">venda</a> — e volte ao curso quando quiser velocidade.',
+      html: 'Nenhuma análise honesta termina sem alternativas. No nosso <a href="#/cursos-de-milhas/">comparador de cursos de milhas</a> avaliamos as opções relevantes do mercado, incluindo alternativas de menor investimento inicial <mark class="verificar">[VERIFICAR: catálogo, preços e condições das alternativas antes de publicar]</mark>. Se a sua dúvida é entre pagar um curso ou começar sozinho, comece pelos nossos guias gratuitos de <a href="#/como-acumular-milhas/">acúmulo</a> e <a href="#/vender-milhas-aereas/">venda</a>, e volte ao curso quando quiser velocidade.',
     },
     { t: 'h2', id: 'veredito', text: 'Veredito final: nota 8,0/10' },
     {
       t: 'p',
-      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência — inevitável em milhas — de capital, dedicação e mercado. Pelos critérios da nossa <a href="#/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong> <mark class="verificar">[VERIFICAR: nota final ratificada pela equipe antes de publicar]</mark>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
+      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="#/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong> <mark class="verificar">[VERIFICAR: nota final ratificada pela equipe antes de publicar]</mark>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
     },
     { t: 'cta', variant: 'review' },
   ],
   faq: [
     {
       q: 'O Fábrica de Milhas vale a pena?',
-      a: 'Para quem quer método estruturado, comunidade ativa de promoções e aceita retorno gradual, sim — nossa avaliação é 8,0/10. Para quem espera renda garantida ou não pode dedicar tempo e capital, não. Os contras: preço acima da média e reputação "Regular" no Reclame Aqui.',
+      a: 'Para quem quer método estruturado, comunidade ativa de promoções e aceita retorno gradual, sim: nossa avaliação é 8,0/10. Para quem espera renda garantida ou não pode dedicar tempo e capital, não. Os contras: preço acima da média e reputação "Regular" no Reclame Aqui.',
     },
     {
       q: 'O Fábrica de Milhas é confiável?',
@@ -167,15 +167,15 @@ export const reviewFabrica: Article = {
     },
     {
       q: 'Quanto custa o Fábrica de Milhas?',
-      a: 'Na turma de junho/2026: acesso por 1 ano em 12x de R$ 119,90 (R$ 1.230,60 à vista) ou vitalício em 12x de R$ 291,99 (R$ 2.997,00 à vista). Os valores mudam entre turmas — confirme na página oficial antes de decidir.',
+      a: 'Na turma de junho/2026: acesso por 1 ano em 12x de R$ 119,90 (R$ 1.230,60 à vista) ou vitalício em 12x de R$ 291,99 (R$ 2.997,00 à vista). Os valores mudam entre turmas, então confirme na página oficial antes de decidir.',
     },
     {
       q: 'O Fábrica de Milhas tem garantia?',
-      a: 'Duas: reembolso incondicional em 7 dias e a "garantia risco zero" — se o aluno aplicar as 3 estratégias do nível Platina e não recuperar o investimento em até 4 meses, a empresa devolve o valor. A segunda é condicionada: exige comprovar a aplicação das estratégias.',
+      a: 'Duas: reembolso incondicional em 7 dias e a "garantia risco zero": se o aluno aplicar as 3 estratégias do nível Platina e não recuperar o investimento em até 4 meses, a empresa devolve o valor. A segunda é condicionada: exige comprovar a aplicação das estratégias.',
     },
     {
       q: 'O Fábrica de Milhas funciona para iniciantes?',
-      a: 'Sim — a estrutura em níveis começa do zero (Bronze e Prata cobrem fundamentos) e evolui até estratégias avançadas. Iniciantes tendem a aproveitar mais a comunidade de promoções se já tiverem um cartão que pontue e gastos concentráveis nele.',
+      a: 'Sim. A estrutura em níveis começa do zero (Bronze e Prata cobrem fundamentos) e evolui até estratégias avançadas. Iniciantes tendem a aproveitar mais a comunidade de promoções se já tiverem um cartão que pontue e gastos concentráveis nele.',
     },
     {
       q: 'Dá para recuperar o investimento no curso?',

@@ -19,7 +19,7 @@ export function Blog() {
         jsonLd={[
           {
             '@type': 'CollectionPage',
-            name: 'Blog — Fabricante de Milhas',
+            name: 'Blog | Fabricante de Milhas',
             url: BASE_URL + '/blog/',
             hasPart: ARTICLES.map((a) => ({ '@type': 'Article', headline: a.h1, url: BASE_URL + a.slug })),
           },
@@ -125,7 +125,7 @@ export function NotFound() {
           </div>
           <h1 className="display text-[1.8rem] mt-2">Esta rota ainda não existe.</h1>
           <p className="mt-4 text-brand-100/70 text-[16px]">
-            Mas tem coisa boa por aqui — comece pelos guias ou pela análise principal.
+            Mas tem coisa boa por aqui. Comece pelos guias ou pela análise principal.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3.5">
             <a href="#/" className="inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-colors">
