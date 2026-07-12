@@ -6,8 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:deploy": "parcel build index.html --dist-dir dist --no-source-maps",
     "lint": "oxlint",
     "preview": "vite preview"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "lmdb",
+      "msgpackr-extract"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
