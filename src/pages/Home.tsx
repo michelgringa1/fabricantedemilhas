@@ -148,7 +148,7 @@ export function Home() {
 
       {/* HERO */}
       <section className="bg-night grain text-white relative overflow-hidden">
-        <svg className="absolute inset-0 w-full h-full" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 640" fill="none">
+        <svg className="!absolute inset-0 w-full h-full !z-0" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 640" fill="none">
           <path className="flight-path" d="M-40 500 C 260 380, 520 560, 780 340 S 1150 160, 1280 220" stroke="rgba(255,179,0,0.35)" strokeWidth="1.5" />
           <path className="flight-path" d="M-60 260 C 220 180, 640 300, 900 140 S 1180 40, 1300 90" stroke="rgba(110,168,255,0.28)" strokeWidth="1.5" style={{ animationDelay: '-1.2s' }} />
           <circle cx="780" cy="340" r="3" fill="#FFB300" opacity="0.8" />
