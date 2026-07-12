@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 221 90% 42%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 218 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 218 40% 96%;
+    --muted-foreground: 220 15% 42%;
+    --accent: 218 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 219 30% 90%;
+    --input: 219 30% 90%;
+    --ring: 221 90% 42%;
+    --radius: 0.75rem;
+
+    /* premium palette */
+    --night: #050d26;
+    --navy: #071b49;
+    --royal: #0a2c7a;
+    --blue: #1256e0;
+    --sky: #2e7ff6;
+    --ice: #6ea8ff;
+    --amber: #ffb300;
+    --amber-2: #ffc733;
+    --paper: #f6f8fd;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: var(--amber);
+    color: var(--night);
+  }
+}
+
+/* ---------- surfaces ---------- */
+
+.bg-night {
+  background-color: var(--night);
+  background-image:
+    radial-gradient(900px 480px at 82% -10%, rgba(46, 127, 246, 0.34), transparent 62%),
+    radial-gradient(700px 420px at -8% 108%, rgba(18, 86, 224, 0.28), transparent 60%),
+    radial-gradient(420px 260px at 68% 88%, rgba(255, 179, 0, 0.07), transparent 65%);
+}
+.bg-band {
+  background-color: var(--night);
+  background-image:
+    radial-gradient(720px 380px at 90% 0%, rgba(46, 127, 246, 0.28), transparent 60%),
+    radial-gradient(560px 340px at 4% 100%, rgba(10, 44, 122, 0.55), transparent 62%);
+}
+.bg-hero {
+  background: linear-gradient(126deg, #062a9e 0%, #0743ce 42%, #2e7ff6 100%);
+}
+.bg-paper {
+  background-color: var(--paper);
+}
+
+/* film grain */
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.grain > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* hairlines on dark */
+.hairline {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ---------- typography helpers ---------- */
+
+.display {
+  font-family: 'Segoe UI Variable Display', 'Segoe UI', -apple-system, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+.eyebrow {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.mono {
+  font-family: 'Cascadia Mono', Consolas, 'SF Mono', ui-monospace, monospace;
+}
+.text-gradient-sky {
+  background: linear-gradient(92deg, #6ea8ff 0%, #2e7ff6 55%, #9cc2ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* animated link underline */
+.u-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  padding-bottom: 2px;
+}
+.u-link:hover {
+  background-size: 100% 1.5px;
+}
+
+/* ---------- motion ---------- */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal {
+  animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.reveal-1 { animation-delay: 0.08s; }
+.reveal-2 { animation-delay: 0.18s; }
+.reveal-3 { animation-delay: 0.28s; }
+.reveal-4 { animation-delay: 0.4s; }
+.reveal-5 { animation-delay: 0.55s; }
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(2.5deg); }
+  50% { transform: translateY(-12px) rotate(2.5deg); }
+}
+.float-card {
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes dashmove {
+  to { stroke-dashoffset: -22; }
+}
+.flight-path {
+  stroke-dasharray: 3 8;
+  animation: dashmove 2.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-1, .reveal-2, .reveal-3, .reveal-4, .reveal-5 { animation: none; }
+  .marquee-track { animation: none; }
+  .float-card { animation: none; }
+  .flight-path { animation: none; }
+}
+
+/* card lift */
+.lift {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s, border-color 0.35s, background-color 0.35s;
+}
+.lift:hover {
+  transform: translateY(-5px);
+}
+
+/* boarding pass perforation */
+.perf {
+  background-image: linear-gradient(90deg, rgba(7, 27, 73, 0.25) 45%, transparent 45%);
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 1px;
+}
+.barcode {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--night) 0 2px, transparent 2px 4px,
+    var(--night) 4px 5px, transparent 5px 9px,
+    var(--night) 9px 12px, transparent 12px 14px,
+    var(--night) 14px 15px, transparent 15px 19px
+  );
+}
+
+/* rating ring */
+.ring-dial {
+  background: conic-gradient(var(--amber) calc(var(--val) * 1%), rgba(255, 255, 255, 0.14) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 7px), #000 calc(100% - 6px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 7px), #000 calc(100% - 6px));
+}
+
+/* ---------- Article prose ---------- */
+
+.article-body {
+  @apply text-[17px] leading-[1.8] text-slate-700;
+}
+.article-body h2 {
+  @apply text-[1.55rem] leading-snug text-slate-900 mt-14 mb-4 scroll-mt-28;
+  font-family: 'Segoe UI Variable Display', 'Segoe UI', -apple-system, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+.article-body h2::before {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--amber), var(--sky));
+  margin-bottom: 14px;
+}
+.article-body h3 {
+  @apply text-lg font-bold text-slate-900 mt-9 mb-3 tracking-tight;
+}
+.article-body p {
+  @apply mb-5;
+}
+.article-body a {
+  @apply text-brand-600 underline decoration-brand-200 underline-offset-4 font-medium hover:text-brand-700 hover:decoration-sun-500;
+}
+.article-body ul {
+  @apply list-none pl-0 mb-6 space-y-2.5;
+}
+.article-body ul > li {
+  @apply pl-6 relative;
+}
+.article-body ul > li::before {
+  content: '▸';
+  position: absolute;
+  left: 0.25rem;
+  color: var(--amber);
+  font-size: 0.85em;
+  top: 0.15em;
+}
+.article-body ol {
+  @apply list-none pl-0 mb-6 space-y-3;
+  counter-reset: fm;
+}
+.article-body ol > li {
+  @apply pl-10 relative;
+  counter-increment: fm;
+}
+.article-body ol > li::before {
+  content: counter(fm, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.18em;
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 0.78em;
+  font-weight: 700;
+  color: var(--blue);
+}
+.article-body strong {
+  @apply text-slate-900;
+}
+.article-body mark.verificar,
+mark.verificar {
+  @apply bg-sun-300/30 text-amber-950 border border-sun-500/50 rounded px-1.5 py-0.5 whitespace-nowrap;
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+/* tables */
+.fm-table {
+  @apply w-full text-[15px] border-collapse;
+}
+.fm-table th {
+  @apply text-left px-4 py-3 text-white;
+  background: var(--navy);
+  font-weight: 600;
+}
+.fm-table td {
+  @apply px-4 py-3 border-b border-slate-200 align-top;
+}
+.fm-table tr:last-child td {
+  border-bottom: 0;
+}
+.fm-table tr:nth-child(even) td {
+  background: rgba(46, 127, 246, 0.045);
+}
