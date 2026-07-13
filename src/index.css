@@ -185,6 +185,7 @@
   .marquee-track { animation: none; }
   .float-card { animation: none; }
   .flight-path { animation: none; }
+  .flight-plane { display: none; }
 }
 
 /* card lift */

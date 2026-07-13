@@ -1,5 +1,7 @@
 import { Seo, breadcrumbLd } from '@/lib/seo'
 import { PlaneMark } from '@/components/layout'
+import { acumuloMilhasArt } from '@/assets/acumulo-milhas'
+import { aviaoAzul, aviaoAmarelo } from '@/assets/aviao'
 
 const CLUSTERS = [
   {
@@ -70,43 +72,47 @@ function Ticker() {
 function BoardingPass() {
   return (
     <a
-      href="#/fabrica-de-milhas-vale-a-pena/"
+      href="#/calculadora-de-milhas/"
       className="float-card block w-[340px] max-w-full rounded-2xl bg-white text-slate-900 shadow-2xl shadow-black/50 rotate-[2.5deg] hover:rotate-0 transition-transform duration-500 overflow-hidden"
-      aria-label="Abrir análise: Fábrica de Milhas vale a pena?"
+      aria-label="Abrir a calculadora de milhas e simular sua economia"
     >
       <div className="px-6 pt-5 pb-4 flex items-center justify-between">
         <div>
-          <div className="eyebrow text-slate-400">Análise nº 1</div>
-          <div className="display text-[19px] mt-1">Fábrica de Milhas</div>
+          <div className="eyebrow text-slate-400">Cartão de embarque</div>
+          <div className="display text-[19px] mt-1 flex items-center gap-2">
+            Iniciante
+            <PlaneMark className="w-4 h-4 text-brand-700 shrink-0" />
+            Viajante
+          </div>
         </div>
         <span className="relative grid place-items-center w-14 h-14">
-          <span className="ring-dial absolute inset-0 rounded-full" style={{ ['--val' as string]: 80 }} />
-          <span className="display text-[17px]">8,0</span>
+          <span className="ring-dial absolute inset-0 rounded-full" style={{ ['--val' as string]: 70 }} />
+          <span className="display text-[15px]">−70%</span>
         </span>
       </div>
       <div className="px-6 pb-4 grid grid-cols-3 gap-2 text-center">
         <div>
-          <div className="mono text-[10px] tracking-[0.14em] text-slate-400">PREÇO</div>
-          <div className="text-[13px] font-bold mt-0.5">premium</div>
+          <div className="mono text-[10px] tracking-[0.14em] text-slate-400">PASSAGEIRO</div>
+          <div className="text-[13px] font-bold mt-0.5">Você</div>
         </div>
         <div>
-          <div className="mono text-[10px] tracking-[0.14em] text-slate-400">GARANTIA</div>
-          <div className="text-[13px] font-bold mt-0.5">7d + extra</div>
+          <div className="mono text-[10px] tracking-[0.14em] text-slate-400">MILHAS/ANO</div>
+          <div className="text-[13px] font-bold mt-0.5">até 100 mil</div>
         </div>
         <div>
-          <div className="mono text-[10px] tracking-[0.14em] text-slate-400">REP. RA</div>
-          <div className="text-[13px] font-bold mt-0.5">6,6 · regular</div>
+          <div className="mono text-[10px] tracking-[0.14em] text-slate-400">DESTINO</div>
+          <div className="text-[13px] font-bold mt-0.5">qualquer</div>
         </div>
       </div>
       <div className="perf mx-4" />
       <div className="px-6 py-4 flex items-center justify-between gap-4">
         <div className="mono text-[11px] tracking-[0.14em] text-slate-500">
-          FM-2026 · REVIEW<br />PRÓS + CONTRAS REAIS
+          FM-2026 · SEM HYPE<br />ECONOMIA SIMULADA
         </div>
         <div className="barcode h-9 w-24 opacity-80" aria-hidden="true" />
       </div>
       <div className="bg-sun-500 text-slate-950 text-center font-bold text-[13.5px] py-2.5">
-        Ler a análise completa →
+        Calcular sua economia →
       </div>
     </a>
   )
@@ -150,9 +156,25 @@ export function Home() {
       <section className="bg-night grain text-white relative overflow-hidden">
         <svg className="!absolute inset-0 w-full h-full !z-0" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 640" fill="none">
           <path className="flight-path" d="M-40 500 C 260 380, 520 560, 780 340 S 1150 160, 1280 220" stroke="rgba(255,179,0,0.35)" strokeWidth="1.5" />
-          <path className="flight-path" d="M-60 260 C 220 180, 640 300, 900 140 S 1180 40, 1300 90" stroke="rgba(110,168,255,0.28)" strokeWidth="1.5" style={{ animationDelay: '-1.2s' }} />
+          <path id="fp-blue" className="flight-path" d="M-60 260 C 220 180, 640 300, 900 140 S 1180 40, 1300 90" stroke="rgba(110,168,255,0.28)" strokeWidth="1.5" style={{ animationDelay: '-1.2s' }} />
+          {/* rota âmbar invertida (invisível) — trajeto de volta do avião amarelo */}
+          <path id="fp-amber-rev" d="M1280 220 C 1150 160, 1040 120, 780 340 C 520 560, 260 380, -40 500" stroke="none" />
           <circle cx="780" cy="340" r="3" fill="#FFB300" opacity="0.8" />
           <circle cx="900" cy="140" r="3" fill="#6EA8FF" opacity="0.7" />
+          {/* avião azul: esquerda → direita pela rota azul */}
+          <g className="flight-plane" opacity="0.9">
+            <image href={aviaoAzul} x="-10" y="-10" width="20" height="20" />
+            <animateMotion dur="16s" begin="-5s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#fp-blue" />
+            </animateMotion>
+          </g>
+          {/* avião amarelo: direita → esquerda pela rota âmbar */}
+          <g className="flight-plane" opacity="0.9">
+            <image href={aviaoAmarelo} x="-10" y="-10" width="20" height="20" />
+            <animateMotion dur="19s" begin="-11s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#fp-amber-rev" />
+            </animateMotion>
+          </g>
         </svg>
         <div className="max-w-6xl mx-auto px-4 pt-20 pb-24 md:pt-28 md:pb-32 relative grid lg:grid-cols-[1.15fr_0.85fr] gap-14 items-center">
           <div>
@@ -236,6 +258,17 @@ export function Home() {
                     {c.desc}
                   </p>
                 </div>
+                {c.featured && (
+                  <div className="relative flex-1 -mx-7 mt-4 min-h-[210px] lg:min-h-[260px]">
+                    <img
+                      src={acumuloMilhasArt}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover object-center opacity-95 [mask-image:linear-gradient(to_bottom,transparent,black_14%,black_86%,transparent)]"
+                    />
+                  </div>
+                )}
                 <span className={`mt-6 inline-flex items-center gap-2 text-[13.5px] font-bold ${c.featured ? 'text-sun-500' : 'text-brand-600'}`}>
                   Ler o guia
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
