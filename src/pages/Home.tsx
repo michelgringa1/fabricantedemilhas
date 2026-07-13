@@ -183,11 +183,13 @@ export function Home() {
               Milhas aéreas do zero ao avançado
             </div>
             <h1 className="reveal reveal-1 display text-[2.7rem] md:text-[4rem] leading-[1.02] mt-6">
-              Milhas aéreas,
+              Sua próxima viagem
               <br />
-              <span className="text-gradient-sky">explicadas com</span>
+              <span className="text-gradient-sky">começa nas milhas</span>
               <br />
-              honestidade<span className="text-sun-500">.</span>
+              que você já tem
+              <br />
+              (e não sabe)<span className="text-sun-500">.</span>
             </h1>
             <p className="reveal reveal-2 mt-7 text-[17px] md:text-lg text-brand-100/80 leading-relaxed max-w-lg">
               Guias práticos para acumular, vender e viajar com milhas, além de análises completas

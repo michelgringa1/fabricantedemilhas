@@ -1,4 +1,6 @@
+import { useEffect, useRef } from 'react'
 import { useRoute } from '@/lib/router'
+import { trackPageview } from '@/lib/analytics'
 import { bySlug } from '@/data/articles'
 import { Header, Footer } from '@/components/layout'
 import { Home } from '@/pages/Home'
@@ -24,6 +26,18 @@ function Page({ path }: { path: string }) {
 
 export default function App() {
   const { path } = useRoute()
+
+  // O snippet do <head> já registra o page_view inicial; aqui cobrimos
+  // as navegações internas (troca de hash) pulando o primeiro render.
+  const firstRender = useRef(true)
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false
+      return
+    }
+    trackPageview(path)
+  }, [path])
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
