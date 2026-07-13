@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import { Seo, breadcrumbLd } from '@/lib/seo'
 import { PlaneMark } from '@/components/layout'
 import { acumuloMilhasArt } from '@/assets/acumulo-milhas'
 import { aviaoAzul, aviaoAmarelo } from '@/assets/aviao'
+import { carimboSelo } from '@/assets/carimbo'
 
 const CLUSTERS = [
   {
@@ -69,7 +71,13 @@ function Ticker() {
   )
 }
 
+const DESTINOS = [
+  'Nova York/US', 'Madri/ES', 'Lisboa/PT', 'Milão/IT',
+  'Paris/FR', 'Atenas/GR', 'Londres/UK', 'Bangkok/TH',
+]
+
 function BoardingPass() {
+  const [destino] = useState(() => DESTINOS[Math.floor(Math.random() * DESTINOS.length)])
   return (
     <a
       href="#/calculadora-de-milhas/"
@@ -85,10 +93,12 @@ function BoardingPass() {
             Viajante
           </div>
         </div>
-        <span className="relative grid place-items-center w-14 h-14">
-          <span className="ring-dial absolute inset-0 rounded-full" style={{ ['--val' as string]: 70 }} />
-          <span className="display text-[15px]">−70%</span>
-        </span>
+        <img
+          src={carimboSelo}
+          alt=""
+          aria-hidden="true"
+          className="w-16 h-16 shrink-0 -rotate-12 opacity-90 select-none"
+        />
       </div>
       <div className="px-6 pb-4 grid grid-cols-3 gap-2 text-center">
         <div>
@@ -97,17 +107,17 @@ function BoardingPass() {
         </div>
         <div>
           <div className="mono text-[10px] tracking-[0.14em] text-slate-400">MILHAS/ANO</div>
-          <div className="text-[13px] font-bold mt-0.5">até 100 mil</div>
+          <div className="text-[13px] font-bold mt-0.5">500.000</div>
         </div>
         <div>
           <div className="mono text-[10px] tracking-[0.14em] text-slate-400">DESTINO</div>
-          <div className="text-[13px] font-bold mt-0.5">qualquer</div>
+          <div className="text-[13px] font-bold mt-0.5 whitespace-nowrap">{destino}</div>
         </div>
       </div>
       <div className="perf mx-4" />
       <div className="px-6 py-4 flex items-center justify-between gap-4">
         <div className="mono text-[11px] tracking-[0.14em] text-slate-500">
-          FM-2026 · SEM HYPE<br />ECONOMIA SIMULADA
+          FM-2026<br />ECONOMIA SIMULADA
         </div>
         <div className="barcode h-9 w-24 opacity-80" aria-hidden="true" />
       </div>
@@ -192,8 +202,8 @@ export function Home() {
               (e não sabe)<span className="text-sun-500">.</span>
             </h1>
             <p className="reveal reveal-2 mt-7 text-[17px] md:text-lg text-brand-100/80 leading-relaxed max-w-lg">
-              Guias práticos para acumular, vender e viajar com milhas, além de análises completas
-              dos cursos que prometem te ensinar. Sem hype, sem renda garantida.
+              Descubra quantas milhas você já tem espalhadas, como multiplicá-las
+              e usá-las antes que expirem. Guias práticos, calculadora e comparativos, de graça.
             </p>
             <div className="reveal reveal-3 mt-9 flex flex-wrap gap-3.5">
               <a
