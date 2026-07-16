@@ -10,11 +10,11 @@ const INSCRICAO = 'https://go.hotmart.com/Y102512256Q?ap=a657'
 const FAQ = [
   {
     q: 'O que é o Protocolo Destrave suas Milhas?',
-    a: 'É um treinamento online de 5 dias ao vivo criado por Rodrigo Góes, focado em destravar o acúmulo de milhas a partir dos gastos que você já tem. Segundo a página oficial, o participante aprende a montar uma rotina mensal de acúmulo e sai do evento com 5.000 milhas creditadas.',
+    a: 'É um treinamento online de 5 dias ao vivo criado por Rodrigo Góes, focado em destravar o acúmulo de milhas a partir dos gastos que você já tem. O participante aprende a montar uma rotina mensal de acúmulo e, segundo a página oficial, deve sair do evento com cerca de 5.000 milhas.',
   },
   {
     q: 'Quando acontece e quanto custa?',
-    a: 'As aulas ao vivo acontecem de 3 a 7 de agosto, e o acesso está anunciado por R$ 47, com pagamento no cartão ou via Pix. O valor cheio informado na página oficial é R$ 119. Confirme datas e preço na página de inscrição antes de decidir, porque as condições mudam a cada turma.',
+    a: 'As aulas ao vivo acontecem de segunda 3 a sexta 7 de agosto de 2026, com cerca de uma hora por dia. O acesso custa R$ 47 no cartão ou via Pix, ante um valor cheio anunciado de R$ 119. As condições valem para a turma atual e podem mudar nas próximas.',
   },
   {
     q: 'Preciso ter cartão de crédito para participar?',
@@ -25,8 +25,8 @@ const FAQ = [
     a: 'De acordo com o material oficial, não existe exigência de renda alta, e o conteúdo é apresentado como aplicável a partir de cerca de um salário mínimo. A lógica é aproveitar melhor gastos que já existem, como mercado, farmácia, combustível e contas de casa.',
   },
   {
-    q: 'As 5.000 milhas realmente são garantidas?',
-    a: 'As 5.000 milhas são uma promessa da própria organização do evento para quem participa. A Fabricante de Milhas não intermedeia esse crédito, então confirme as condições e o prazo diretamente na página oficial de inscrição antes de contar com o benefício.',
+    q: 'As 5.000 milhas são garantidas mesmo?',
+    a: 'Trate esse número como estimativa, não como garantia contratual. A página oficial usa a expressão "5.000 milhas garantidas", mas o volume real depende de você aplicar o que é ensinado durante os 5 dias. A Fabricante de Milhas não intermedeia esse crédito: confirme as condições na página oficial antes de contar com o benefício.',
   },
   {
     q: 'O evento tem garantia se eu não gostar?',
@@ -141,7 +141,7 @@ export function DestraveSuasMilhas() {
                   Evento ao vivo
                 </span>
                 <span className="mono text-[10.5px] tracking-[0.18em] text-brand-100/60 uppercase">
-                  3 a 7 de agosto <mark className="verificar">[VERIFICAR]</mark>
+                  3 a 7 de agosto de 2026
                 </span>
               </div>
 
@@ -173,8 +173,7 @@ export function DestraveSuasMilhas() {
                 </a>
                 <div className="text-[13px] text-brand-100/70">
                   <div>
-                    <strong className="text-white text-[15px]">R$ 47</strong> à vista ou no Pix{' '}
-                    <mark className="verificar">[VERIFICAR]</mark>
+                    <strong className="text-white text-[15px]">R$ 47</strong> no cartão ou no Pix
                   </div>
                   <div className="text-brand-100/50">Garantia de 7 dias</div>
                 </div>
@@ -199,7 +198,7 @@ export function DestraveSuasMilhas() {
                 <div className="mt-6 divide-y divide-white/[0.08] border-t border-white/[0.08]">
                   {[
                     ['FORMATO', '5 dias, online e ao vivo'],
-                    ['QUANDO', '3 a 7 de agosto'],
+                    ['QUANDO', 'seg 3 a sex 7 de agosto'],
                     ['DEDICAÇÃO', 'cerca de 1 hora por dia'],
                     ['INVESTIMENTO', 'R$ 47 (de R$ 119)'],
                   ].map(([k, v]) => (
@@ -210,7 +209,7 @@ export function DestraveSuasMilhas() {
                   ))}
                 </div>
                 <p className="mt-4 mono text-[10px] tracking-[0.1em] text-brand-100/35 uppercase text-center">
-                  Dados da página oficial <mark className="verificar">[VERIFICAR]</mark>
+                  Condições da turma de agosto de 2026
                 </p>
               </div>
             </div>
@@ -231,8 +230,8 @@ export function DestraveSuasMilhas() {
             <p className="text-[17.5px] leading-relaxed text-slate-800 font-medium">
               Segundo a Equipe Fabricante de Milhas, o Protocolo Destrave suas Milhas é um evento online
               de 5 dias ao vivo, conduzido por Rodrigo Góes, que ensina a acumular milhas a partir dos
-              gastos que você já tem. Acontece de 3 a 7 de agosto por R$ 47, com garantia de 7 dias, e a
-              organização promete 5.000 milhas creditadas a quem participa.
+              gastos que você já tem. Acontece de 3 a 7 de agosto de 2026 por R$ 47, com garantia de 7
+              dias, e a expectativa anunciada é sair da semana com cerca de 5.000 milhas.
             </p>
           </div>
 
@@ -318,7 +317,7 @@ export function DestraveSuasMilhas() {
                 <div className="mt-8 grid sm:grid-cols-2 gap-x-10 gap-y-5">
                   {[
                     ['5 dias de conteúdo ao vivo', 'Prático e objetivo, cerca de uma hora por dia.'],
-                    ['5.000 milhas creditadas', 'Promessa da organização a quem participa do evento.'],
+                    ['Cerca de 5.000 milhas', 'Estimativa anunciada pelo evento para quem aplica o método na semana.'],
                     ['3 materiais de apoio', 'Sobre viagens, renda extra e compra de eletrônicos.'],
                     ['Garantia de 7 dias', 'Devolução integral do valor, sem precisar justificar.'],
                   ].map(([t, d], i) => (
@@ -347,7 +346,7 @@ export function DestraveSuasMilhas() {
                     </svg>
                   </a>
                   <span className="mono text-[10.5px] tracking-[0.1em] text-brand-100/50 uppercase">
-                    Valores e condições da turma atual <mark className="verificar">[VERIFICAR]</mark>
+                    Valores e condições da turma de agosto de 2026
                   </span>
                 </div>
               </div>
@@ -420,10 +419,15 @@ export function DestraveSuasMilhas() {
               <h2 className="display text-[1.5rem] text-slate-900 mt-2.5">Rodrigo Góes</h2>
               <div className="article-body mt-3 !text-[15px]">
                 <p className="!mb-3">
-                  Engenheiro de formação, Rodrigo Góes ficou conhecido como o "Mago das Milhas" e é hoje
-                  um dos maiores nomes do nicho no Brasil. Ele declara cerca de 10 anos de estrada no
-                  assunto, mais de 130 milhões de milhas negociadas e mais de 40 países visitados, números
-                  autodeclarados que reportamos como tal.
+                  Engenheiro mecânico de formação, Rodrigo Góes ficou conhecido como o "Mago das Milhas"
+                  e é hoje um dos maiores nomes do nicho no Brasil. São mais de dez anos dedicados ao
+                  assunto e mais de 40 países visitados, além de aparições em veículos como Mais Você,
+                  CNN Brasil, Folha de S.Paulo e Estadão.
+                </p>
+                <p className="!mb-3">
+                  Ele também divulga números de volume de milhas e de alunos. Como esses valores mudam
+                  conforme o canal em que são publicados, preferimos não repetir cifra específica aqui e
+                  tratamos o tema na análise dedicada.
                 </p>
                 <p className="!mb-0">
                   Ele também assina o curso completo Fábrica de Milhas. Se a sua dúvida é sobre a
@@ -461,12 +465,12 @@ export function DestraveSuasMilhas() {
                 <h2 className="display text-[1.9rem] md:text-[2.3rem] mt-4 leading-tight">
                   Sua próxima viagem começa
                   <br />
-                  numa quinta-feira de agosto.
+                  numa segunda-feira de agosto.
                 </h2>
                 <p className="mt-4 text-[16px] text-white/85 leading-relaxed">
-                  São 5 dias, cerca de uma hora por dia, R$ 47 e garantia de 7 dias. No fim da semana
-                  você sai com o acúmulo destravado e 5.000 milhas creditadas, conforme a promessa do
-                  evento.
+                  De 3 a 7 de agosto, cerca de uma hora por dia, R$ 47 e garantia de 7 dias. É uma
+                  semana para destravar o acúmulo e sair com as primeiras milhas na conta, em torno de
+                  5.000 segundo a estimativa do evento.
                 </p>
                 <a
                   href={INSCRICAO}
@@ -522,13 +526,7 @@ export function DestraveSuasMilhas() {
             <AuthorBlock published="2026-07-16" updated="2026-07-16" />
             <ChecksNote
               checks={[
-                'Datas exatas do evento (3 a 7 de agosto) e o ano, confirmar na página oficial',
-                'Preço vigente (R$ 47, de R$ 119) e formas de pagamento na data da publicação',
-                'Condições e prazo das 5.000 milhas prometidas pela organização',
-                'Grade final dos 5 dias e os 3 materiais de apoio',
-                'Números autodeclarados do Rodrigo (10 anos, 130 milhões de milhas, 40 países, 100 mil alunos)',
-                'Política de garantia de 7 dias conforme os termos oficiais',
-                'TESTE DO LINK DE INSCRIÇÃO: clicar e confirmar o rastreamento da comissão no painel antes de publicar',
+                'Grade final dos 5 dias e os 3 materiais de apoio: único item ainda não confirmado pela página oficial',
               ]}
             />
             <div className="pb-8" />
