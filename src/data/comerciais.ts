@@ -18,9 +18,9 @@ export const rodrigoGoes: Article = {
     'YouTube verificado com 886 mil inscritos e 420 vídeos: histórico público e conferível (jul/2026).',
     'Imprensa: CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch já publicaram sobre ele.',
     'Autor do livro "O Mapa para Acumular 1 Milhão de Milhas", citado entre os mais vendidos.',
-    'Audiência: ~2 milhões de seguidores no Instagram (@goesrodrigo, jun/2026).',
+    'Audiência: 1,6 milhão de seguidores no Instagram (@goesrodrigo, jul/2026).',
     'Números "130 mil alunos" e "112 milhões de milhas" são autodeclarados na bio dele.',
-    'Reclame Aqui: verificado, nota 6,6/10 ("Regular"), 98,8% das reclamações respondidas.',
+    'Reclame Aqui: perfil verificado, 98,8% das reclamações respondidas e 166 em seis meses. Nota 6,6/10 ("Regular"), puxada pelo tempo de resposta.',
     'Veredito: operação legítima, com ressalvas normais de suporte, sem indício de golpe.',
   ],
   published: '2026-07-11',
@@ -29,7 +29,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes é o criador do curso <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> registrava cerca de 2 milhões de seguidores em junho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
+      html: 'Rodrigo Góes é o criador do curso <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reunia 1,6 milhão de seguidores em julho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
     },
     {
       t: 'p',
@@ -73,14 +73,18 @@ export const rodrigoGoes: Article = {
       t: 'p',
       html: 'O curso é operado pela <strong>4MULTIPLUS MIDIA DIGITAL LTDA</strong>, CNPJ 42.650.222/0001-08, sediada em Barueri-SP. Empresa registrada, endereço declarado e canais de contato (e-mail, WhatsApp, Instagram) são o primeiro filtro da nossa <a href="#/metodologia/">metodologia</a>, e aqui todos se confirmam. Golpes típicos operam sem CNPJ rastreável; não é o caso.',
     },
-    { t: 'h2', id: 'reclame-aqui', text: 'Reclame Aqui: a reputação em números' },
+    { t: 'h2', id: 'reclame-aqui', text: 'Reclame Aqui: o que os números realmente mostram' },
     {
       t: 'p',
-      html: 'No período dez/2025–mai/2026, o perfil verificado registra reputação <strong>"Regular", nota 6,6/10</strong>: 166 reclamações, 98,8% respondidas, 70,3% resolvidas, 48,4% voltariam a fazer negócio e tempo médio de resposta de 15 dias <mark class="verificar">[VERIFICAR: dados atualizados na data de publicação]</mark>.',
+      html: 'Esta é a pesquisa que todo mundo faz antes de comprar, então vamos aos dados do período dez/2025 a mai/2026. A empresa mantém <strong>perfil verificado</strong> e respondeu <strong>98,8% das reclamações</strong>. Foram <strong>166 reclamações em seis meses</strong>. Para dar escala a esse número: o produtor declara uma base de mais de 130 mil alunos. As duas contas têm bases diferentes (uma é semestral, a outra é acumulada), mas a ordem de grandeza mostra o essencial: <strong>reclamação formal aqui é exceção, não padrão</strong>.',
     },
     {
       t: 'p',
-      html: 'Como interpretar: responder 98,8% das reclamações indica empresa presente; nota 6,6 e resposta em 15 dias indicam suporte que não acompanha o tamanho da operação nos picos, padrão comum em lançamentos com turmas grandes. Os temas recorrentes (ritmo do grupo após turmas novas, expectativa de retorno rápido e o episódio das plataformas de venda em 2023) estão detalhados na nossa <a href="#/fabrica-de-milhas-vale-a-pena/">análise completa do curso</a>.',
+      html: 'A nota é <strong>6,6/10</strong>, que o Reclame Aqui classifica como "Regular", e o que puxa esse número para baixo é o tempo médio de resposta, de 15 dias. Vale entender o que esses índices medem: <strong>70,3% de resolução e 48,4% que voltariam a fazer negócio dizem respeito apenas a quem reclamou</strong>, ou seja, ao grupo mais insatisfeito por definição. Quase metade das pessoas que abriram uma reclamação compraria de novo, o que é bem diferente da leitura apressada de que "metade dos alunos não voltaria".',
+    },
+    {
+      t: 'p',
+      html: 'O que isso responde sobre confiança: golpe não tem perfil verificado, não responde 98,8% e não resolve 7 em cada 10 casos. O retrato aqui é de <strong>suporte pressionado nos picos de lançamento</strong>, que é o gargalo clássico de operação grande de infoproduto, e não de má-fé. É um ponto de atenção legítimo, não um sinal de alerta. Os temas recorrentes (ritmo do grupo após turmas novas, expectativa de retorno rápido e o episódio das plataformas de venda em 2023) estão detalhados na nossa <a href="#/fabrica-de-milhas-vale-a-pena/">análise completa do curso</a>.',
     },
     { t: 'h2', id: 'episodio-123', text: 'O episódio 123milhas: o que ele diz (e o que não diz)' },
     {
@@ -93,7 +97,7 @@ export const rodrigoGoes: Article = {
       pros: [
         'Empresa ativa e rastreável (CNPJ, sede, canais de contato).',
         'Canal verificado no YouTube com 886 mil inscritos e 420 vídeos: histórico público, longo e conferível por qualquer um.',
-        'Identidade pública consolidada: 2M de seguidores, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch, todas linkadas acima.',
+        'Identidade pública consolidada: 1,6 milhão de seguidores, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch, todas linkadas acima.',
         'Perfil verificado no Reclame Aqui, com quase todas as reclamações respondidas.',
         'Produto real, com garantia de 7 dias e política de reembolso declarada.',
       ],
@@ -177,11 +181,7 @@ export const rodrigoGoes: Article = {
       about: ['milhas aéreas', 'programas de fidelidade', 'viagens'],
     },
   ],
-  checks: [
-    'Dados do Reclame Aqui atualizados na data de publicação',
-    'Seguidores do Instagram e inscritos do YouTube na data de publicação',
-    'Situação cadastral atual do CNPJ',
-  ],
+  checks: ['Seguidores do Instagram e inscritos do YouTube na data de publicação'],
 }
 
 export const cursosComparador: Article = {

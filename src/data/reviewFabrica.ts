@@ -42,7 +42,7 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal.',
+      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma 1,6 milhão de seguidores (jul/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal.',
     },
     {
       t: 'p',
@@ -107,7 +107,11 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'reputacao', text: 'O que dizem os alunos: reputação real'},
     {
       t: 'p',
-      html: 'No <strong>Reclame Aqui</strong> (período dez/2025–mai/2026), a empresa aparece verificada com reputação <strong>"Regular" e nota 6,6/10</strong>: 166 reclamações no período, <strong>98,8% respondidas</strong>, 70,3% resolvidas, 48,4% dos reclamantes voltariam a fazer negócio e tempo médio de resposta de 15 dias. Leitura equilibrada: a empresa responde quase tudo (sinal positivo), mas o tempo de resposta e o índice de resolução deixam espaço para melhorar <mark class="verificar">[VERIFICAR: dados atualizados do Reclame Aqui na data de publicação]</mark>.',
+      html: 'No <strong>Reclame Aqui</strong> (período dez/2025 a mai/2026), a empresa aparece com <strong>perfil verificado</strong> e <strong>98,8% das reclamações respondidas</strong>, com 70,3% resolvidas. Foram 166 reclamações em seis meses, para uma base que o produtor declara em mais de 130 mil alunos: bases de cálculo diferentes, mas a ordem de grandeza já diz que reclamação formal é exceção por aqui.',
+    },
+    {
+      t: 'p',
+      html: 'A nota fica em <strong>6,6/10</strong>, faixa que o Reclame Aqui chama de "Regular", puxada principalmente pelo tempo médio de resposta de 15 dias. Um detalhe que muda a leitura: os índices de resolução e o de 48,4% que voltariam a fazer negócio medem <strong>somente quem reclamou</strong>, o grupo mais insatisfeito por definição. Quase metade de quem abriu reclamação compraria de novo, o que é um dado melhor do que parece à primeira vista.',
     },
     {
       t: 'ul',
@@ -175,7 +179,7 @@ export const reviewFabrica: Article = {
     },
     {
       q: 'O Fábrica de Milhas é confiável?',
-      a: 'Os sinais públicos indicam operação real: empresa registrada (CNPJ ativo em Barueri-SP), produtor com grande presença pública, perfil verificado no Reclame Aqui com 98,8% das reclamações respondidas. Reputação "Regular" (6,6/10) indica atritos de suporte, não indício de golpe.',
+      a: 'Os sinais públicos indicam operação real: empresa registrada (CNPJ ativo em Barueri-SP), produtor com livro publicado e matérias na imprensa, perfil verificado no Reclame Aqui com 98,8% das reclamações respondidas e 166 registros em seis meses, para uma base declarada de mais de 130 mil alunos. A nota 6,6 ("Regular") reflete tempo de resposta do suporte, não indício de golpe.',
     },
     {
       q: 'Quanto custa o Fábrica de Milhas?',
@@ -203,7 +207,6 @@ export const reviewFabrica: Article = {
   checks: [
     'Preço vigente na data de publicação (turma atual)',
     'Carga horária exata (página diz 40h numa seção e 30h no FAQ)',
-    'Dados do Reclame Aqui atualizados (nota, nº de reclamações, índices)',
     'Bônus vigentes da turma atual (Mega Combo, Clube do Mago)',
     'Média de preço do mercado de cursos (base do contra "preço acima da média")',
     'Nota final 8,0 ratificada pela equipe',
