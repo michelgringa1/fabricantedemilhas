@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { Seo, BASE_URL, ORG_ID, breadcrumbLd, faqLd } from '@/lib/seo'
-import { FaqSection, AuthorBlock, ChecksNote, Breadcrumbs } from '@/components/blocks'
+import { FaqSection, AuthorBlock, Breadcrumbs } from '@/components/blocks'
 import { PlaneMark } from '@/components/layout'
 import { logoEvento, iconCarrinho, iconCartao, seloGarantia, texturaMapa } from '@/assets/destrave'
 
@@ -37,35 +37,46 @@ const FAQ = [
     a: 'O evento é anunciado como 5 encontros ao vivo que pedem cerca de uma hora por dia. É pouco tempo diário, mas exige presença durante a semana. Quem não consegue reservar essa hora tende a aproveitar pouco, já que o formato é prático e sequencial.',
   },
   {
+    q: 'O que é ensinado em cada um dos 5 dias?',
+    a: 'A grade anunciada é sequencial: dia 1, organizar os gastos para ver onde a milha escapa; dia 2, resgatar milhas paradas em programas antigos; dia 3, o caminho das 5.000 milhas; dia 4, ligar a máquina de acúmulo com os gastos do dia a dia; e dia 5, transformar o saldo em passagem, viagem ou dinheiro.',
+  },
+  {
     q: 'Isso é a mesma coisa que o curso Fábrica de Milhas?',
     a: 'Não. O Protocolo Destrave suas Milhas é um evento curto e de baixo investimento, com foco em destravar o acúmulo em 5 dias. O Fábrica de Milhas é o treinamento completo do mesmo produtor, com 8 níveis de conteúdo. Analisamos o curso completo em uma página dedicada.',
   },
 ]
 
-const APRENDIZADOS = [
+/** Grade oficial anunciada pelo evento, dia a dia */
+const GRADE = [
   {
+    dia: 'Dia 1',
     icon: iconCartao,
-    kicker: 'Dia após dia',
-    title: 'A máquina mensal de acúmulo',
-    desc: 'Como transformar mercado, farmácia, combustível e contas de casa em milhas todo mês, sem gastar um real a mais do que você já gasta.',
+    title: 'Organize seus gastos',
+    desc: 'O ponto de partida é enxergar onde a sua milha já está sendo gerada e, principalmente, por onde ela está escapando todo mês.',
   },
   {
+    dia: 'Dia 2',
     icon: null,
-    kicker: 'Sua próxima viagem',
-    title: 'De 20% a 90% mais barata',
-    desc: 'As estratégias que o evento apresenta para derrubar o custo da passagem, segundo a promessa da página oficial. O quanto cai depende da rota, da data e da sua flexibilidade.',
+    title: 'Resgate o que já é seu',
+    desc: 'Você vai atrás das milhas paradas em programas antigos e traz esse saldo esquecido de volta para a sua conta.',
   },
   {
+    dia: 'Dia 3',
     icon: null,
-    kicker: 'Além da viagem',
-    title: 'Milhas viram renda extra',
-    desc: 'O caminho para transformar saldo parado em dinheiro no fim do mês. Os resultados variam conforme dedicação, capital e mercado, e o evento não promete valor fixo.',
+    title: 'Suas 5.000 milhas',
+    desc: 'O evento chama este dia de "suas 5.000 milhas garantidas" e descreve um caminho com condições: se inscrever, acessar o material preparatório, participar dos encontros e destravar o acúmulo. Cumprindo os passos, o crédito é liberado.',
   },
   {
+    dia: 'Dia 4',
     icon: iconCarrinho,
-    kicker: 'O uso que ninguém conta',
-    title: 'Eletrônicos com até 40% de desconto',
-    desc: 'A página oficial cita o uso de pontos e milhas para comprar eletrônicos bem abaixo do preço de vitrine. É um dos ângulos menos óbvios do universo de milhas.',
+    title: 'Ligue sua máquina',
+    desc: 'A parte central: como fazer os gastos do dia a dia renderem milha sem você gastar nada a mais do que já gastaria.',
+  },
+  {
+    dia: 'Dia 5',
+    icon: null,
+    title: 'Milha vira dinheiro',
+    desc: 'O fechamento mostra como transformar o saldo em passagem, viagem ou dinheiro, e qual é o próximo passo depois da semana.',
   },
 ]
 
@@ -89,6 +100,18 @@ export function DestraveSuasMilhas() {
         },
         performer: { '@type': 'Person', name: 'Rodrigo Góes' },
         organizer: { '@type': 'Organization', name: '4MULTIPLUS MIDIA DIGITAL LTDA' },
+        subEvent: GRADE.map((d, i) => ({
+          '@type': 'Event',
+          name: `${d.dia}: ${d.title}`,
+          description: d.desc,
+          startDate: `2026-08-0${i + 3}`,
+          eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+          eventStatus: 'https://schema.org/EventScheduled',
+          location: {
+            '@type': 'VirtualLocation',
+            url: 'https://www.lp.fabricademilha.com/fbm/protocolo-destrave-suas-milhas-lp1/',
+          },
+        })),
         offers: {
           '@type': 'Offer',
           price: 47,
@@ -262,42 +285,53 @@ export function DestraveSuasMilhas() {
             </div>
           </section>
 
-          {/* O QUE VOCÊ VAI APRENDER */}
+          {/* A GRADE DOS 5 DIAS */}
           <section className="mt-16">
-            <div className="eyebrow text-brand-600">Os 5 dias</div>
+            <div className="eyebrow text-brand-600">A grade oficial</div>
             <h2 className="display text-[1.8rem] md:text-[2.1rem] text-slate-900 mt-3">
-              O que você vai aprender
+              O que acontece em cada um dos 5 dias
             </h2>
             <p className="mt-3 text-slate-600 max-w-2xl">
-              Os temas anunciados pela página oficial do evento{' '}
-              <mark className="verificar">[VERIFICAR: grade final]</mark>.
+              A sequência anunciada pelo evento, de segunda a sexta. Cada dia destrava uma etapa e
+              prepara a seguinte.
             </p>
 
-            <div className="mt-8 grid md:grid-cols-2 gap-4">
-              {APRENDIZADOS.map((a, i) => (
-                <div
-                  key={a.title}
-                  className="lift rounded-2xl border border-slate-200 bg-white p-6 hover:border-brand-400 hover:shadow-lg hover:shadow-brand-900/[0.06] flex gap-5"
-                >
-                  <div className="shrink-0">
-                    {a.icon ? (
-                      <img src={a.icon} alt="" aria-hidden="true" className="w-14 h-14 object-contain" width={56} height={56} loading="lazy" />
+            {/* linha do tempo */}
+            <ol className="mt-9 relative">
+              <span
+                className="absolute left-[27px] top-3 bottom-3 w-px border-l-2 border-dashed border-brand-200 hidden sm:block"
+                aria-hidden="true"
+              />
+              {GRADE.map((d) => (
+                <li key={d.dia} className="relative flex gap-5 sm:gap-7 pb-5 last:pb-0">
+                  {/* marcador */}
+                  <div className="shrink-0 relative z-10">
+                    {d.icon ? (
+                      <img
+                        src={d.icon}
+                        alt=""
+                        aria-hidden="true"
+                        className="w-14 h-14 object-contain bg-paper rounded-full p-1"
+                        width={56}
+                        height={56}
+                        loading="lazy"
+                      />
                     ) : (
-                      <span className="grid place-items-center w-14 h-14 rounded-2xl bg-brand-50 text-brand-700">
-                        <PlaneMark className="w-6 h-6" />
+                      <span className="grid place-items-center w-14 h-14 rounded-full bg-brand-700 text-white border-4 border-paper">
+                        <PlaneMark className="w-5 h-5" />
                       </span>
                     )}
                   </div>
-                  <div>
-                    <div className="mono text-[10.5px] tracking-[0.14em] uppercase text-sun-600">
-                      {String(i + 1).padStart(2, '0')} · {a.kicker}
-                    </div>
-                    <h3 className="display text-[1.15rem] text-slate-900 mt-1.5">{a.title}</h3>
-                    <p className="mt-2 text-[14.5px] leading-relaxed text-slate-600">{a.desc}</p>
+                  <div className="lift flex-1 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-brand-400 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                    <span className="mono text-[10px] tracking-[0.16em] uppercase font-bold text-slate-950 bg-sun-500 rounded-full px-2.5 py-1">
+                      {d.dia}
+                    </span>
+                    <h3 className="display text-[1.2rem] text-slate-900 mt-3">{d.title}</h3>
+                    <p className="mt-2 text-[14.5px] leading-relaxed text-slate-600">{d.desc}</p>
                   </div>
-                </div>
+                </li>
               ))}
-            </div>
+            </ol>
           </section>
 
           {/* O QUE ESTÁ INCLUÍDO */}
@@ -318,7 +352,7 @@ export function DestraveSuasMilhas() {
                   {[
                     ['5 dias de conteúdo ao vivo', 'Prático e objetivo, cerca de uma hora por dia.'],
                     ['Cerca de 5.000 milhas', 'Estimativa anunciada pelo evento para quem aplica o método na semana.'],
-                    ['3 materiais de apoio', 'Sobre viagens, renda extra e compra de eletrônicos.'],
+                    ['3 materiais de apoio', 'A organização não detalhou o conteúdo até a publicação desta página.'],
                     ['Garantia de 7 dias', 'Devolução integral do valor, sem precisar justificar.'],
                   ].map(([t, d], i) => (
                     <div key={t} className="flex gap-4">
@@ -524,11 +558,6 @@ export function DestraveSuasMilhas() {
             </section>
 
             <AuthorBlock published="2026-07-16" updated="2026-07-16" />
-            <ChecksNote
-              checks={[
-                'Grade final dos 5 dias e os 3 materiais de apoio: único item ainda não confirmado pela página oficial',
-              ]}
-            />
             <div className="pb-8" />
           </div>
         </div>
