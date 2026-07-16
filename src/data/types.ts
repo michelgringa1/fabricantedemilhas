@@ -38,4 +38,6 @@ export interface Article {
   checks?: string[]
   /** presença gera schema Review (nunca AggregateRating) */
   rating?: { value: number; itemName: string; itemDesc: string; itemUrl?: string }
+  /** nós JSON-LD extras da página (ex.: entidade Person), somados ao @graph */
+  extraLd?: object[]
 }

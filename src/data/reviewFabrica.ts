@@ -21,7 +21,7 @@ export const reviewFabrica: Article = {
     'Principal contra: reputação "Regular" (nota 6,6) no Reclame Aqui e retorno que depende de capital e dedicação.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-07-16',
   rating: {
     value: 8.0,
     itemName: 'Fábrica de Milhas',
@@ -43,6 +43,14 @@ export const reviewFabrica: Article = {
     {
       t: 'p',
       html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal. Teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha por volta de 2020 <mark class="verificar">[VERIFICAR: links das matérias]</mark>.',
+    },
+    {
+      t: 'p',
+      html: 'Há um dado que vale mais que qualquer número autodeclarado, porque você confere sozinho em cinco segundos: o canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes no YouTube</a> é verificado e tinha <strong>886 mil inscritos e 420 vídeos publicados</strong> em julho de 2026. Quase 900 mil pessoas acompanhando e mais de 400 aulas gratuitas no ar não se constroem num lançamento: é um arquivo público de anos, exposto à crítica nos comentários.',
+    },
+    {
+      t: 'p',
+      html: 'Para você isso tem um uso prático e imediato: <strong>teste a didática dele de graça antes de pagar</strong>. Assista a alguns vídeos do canal e veja se o jeito de explicar encaixa com o seu. Se o conteúdo gratuito já te faz avançar, o curso tende a fazer sentido; se o estilo te incomoda, você economizou R$ 1.230 descobrindo isso agora. O vídeo de destaque é a participação dele no <strong>Mais Você</strong>, com Ana Maria Braga, com mais de 322 mil visualizações.',
     },
     {
       t: 'p',
@@ -113,7 +121,7 @@ export const reviewFabrica: Article = {
         'Comunidade ativa (Clube do Mago) com promoções diárias e cotação do milheiro. Na prática, é o que mantém o método funcionando no dia a dia.',
         'Aulas ao vivo e monitorias, além do conteúdo gravado.',
         'Garantia dupla: 7 dias incondicional + "risco zero" condicionada.',
-        'Produtor com empresa estabelecida, grande audiência pública e histórico verificável.',
+        'Produtor com empresa estabelecida e autoridade conferível: canal verificado no YouTube com 886 mil inscritos e 420 vídeos gratuitos, que permitem testar a didática antes de comprar.',
       ],
       cons: [
         'Preço acima da média dos cursos de milhas [VERIFICAR média do mercado].',

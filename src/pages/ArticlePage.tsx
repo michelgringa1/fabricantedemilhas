@@ -45,6 +45,7 @@ export function ArticlePage({ article }: { article: Article }) {
     }
     if (article.faq.length) graph.push(faqLd(article.faq))
     graph.push(breadcrumbLd([[article.h1, article.slug]]))
+    if (article.extraLd) graph.push(...article.extraLd)
     return graph
   }, [article])
 

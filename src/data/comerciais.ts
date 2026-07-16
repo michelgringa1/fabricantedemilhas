@@ -12,16 +12,17 @@ export const rodrigoGoes: Article = {
   keyword: 'Rodrigo Góes milhas é confiável',
   commercial: true,
   answerFirst:
-    'Segundo a análise da Equipe Fabricante de Milhas, os sinais públicos indicam que Rodrigo Góes é um produtor real e estabelecido: empresa ativa com CNPJ, cerca de 2 milhões de seguidores e perfil verificado no Reclame Aqui com 98,8% das reclamações respondidas. Confiável não significa perfeito: a reputação "Regular" (6,6/10) mostra atritos reais de suporte.',
+    'Segundo a análise da Equipe Fabricante de Milhas, os sinais públicos indicam que Rodrigo Góes é um produtor real e estabelecido: empresa ativa com CNPJ, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, e perfil verificado no Reclame Aqui com 98,8% das reclamações respondidas. Confiável não significa perfeito: a reputação "Regular" (6,6/10) mostra atritos reais de suporte.',
   tldr: [
     'Empresa real: 4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, Barueri-SP.',
-    'Audiência pública: ~2 milhões de seguidores no Instagram (@goesrodrigo, jun/2026).',
+    'YouTube verificado com 886 mil inscritos e 420 vídeos: histórico público e conferível (jul/2026).',
+    'Audiência: ~2 milhões de seguidores no Instagram (@goesrodrigo, jun/2026).',
     'Números "130 mil alunos" e "112 milhões de milhas" são autodeclarados na bio dele.',
     'Reclame Aqui: verificado, nota 6,6/10 ("Regular"), 98,8% das reclamações respondidas.',
     'Veredito: operação legítima, com ressalvas normais de suporte, sem indício de golpe.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-07-16',
   blocks: [
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes' },
     {
@@ -31,6 +32,19 @@ export const rodrigoGoes: Article = {
     {
       t: 'p',
       html: 'Por volta de 2020, teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha de S.Paulo <mark class="verificar">[VERIFICAR: links das matérias]</mark>. A presença de imprensa é um sinal de existência pública verificável, ainda que não seja atestado de qualidade do curso.',
+    },
+    { t: 'h2', id: 'youtube', text: 'O canal no YouTube: a autoridade que dá para conferir' },
+    {
+      t: 'p',
+      html: 'Aqui está o dado mais útil desta análise, porque é o único que não depende da palavra dele. O canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reunia, em julho de 2026, <strong>886 mil inscritos e 420 vídeos publicados</strong>. Diferente dos números de milhas e de alunos, essas métricas são contadores públicos da plataforma: qualquer pessoa abre o canal e confere em cinco segundos.',
+    },
+    {
+      t: 'p',
+      html: 'O que isso diz sobre confiabilidade: 420 vídeos não se produzem em um lançamento. É um histórico longo de conteúdo gratuito, exposto à crítica pública nos comentários, que sustenta a audiência de quase 900 mil pessoas. Golpista não constrói arquivo público desse tamanho, porque arquivo público é justamente o que prende o autor às próprias afirmações.',
+    },
+    {
+      t: 'p',
+      html: 'O canal também é a melhor forma de avaliar a didática dele <strong>sem gastar nada</strong>. Antes de comprar qualquer curso, veja alguns vídeos e sinta se o jeito de ensinar combina com você. O vídeo de destaque, por exemplo, é a participação dele no <strong>Mais Você</strong>, com Ana Maria Braga, com mais de 322 mil visualizações, publicado há cerca de cinco anos. É a evidência mais concreta das aparições na mídia que ele cita.',
     },
     { t: 'h2', id: 'empresa', text: 'A empresa por trás: dados verificáveis' },
     {
@@ -56,6 +70,7 @@ export const rodrigoGoes: Article = {
       t: 'proscons',
       pros: [
         'Empresa ativa e rastreável (CNPJ, sede, canais de contato).',
+        'Canal verificado no YouTube com 886 mil inscritos e 420 vídeos: histórico público, longo e conferível por qualquer um.',
         'Identidade pública consolidada: 2M de seguidores e presença em imprensa nacional.',
         'Perfil verificado no Reclame Aqui, com quase todas as reclamações respondidas.',
         'Produto real, com garantia de 7 dias e política de reembolso declarada.',
@@ -77,7 +92,11 @@ export const rodrigoGoes: Article = {
   faq: [
     {
       q: 'Rodrigo Góes é confiável?',
-      a: 'Os sinais públicos indicam que sim: empresa registrada e ativa, audiência de 2 milhões de seguidores, aparições na imprensa e perfil verificado no Reclame Aqui com 98,8% de resposta. A reputação "Regular" (6,6/10) aponta atritos de suporte, não indício de fraude.',
+      a: 'Os sinais públicos indicam que sim: empresa registrada e ativa, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, aparições na imprensa e perfil verificado no Reclame Aqui com 98,8% de resposta. A reputação "Regular" (6,6/10) aponta atritos de suporte, não indício de fraude.',
+    },
+    {
+      q: 'Rodrigo Góes tem canal no YouTube?',
+      a: 'Sim. O canal Rodrigo Goes (@RodrigoGoesfabricademilhas) é verificado e reunia 886 mil inscritos e 420 vídeos publicados em julho de 2026. É o melhor lugar para avaliar a didática dele de graça antes de considerar qualquer curso, e o vídeo de destaque é a participação no Mais Você, com Ana Maria Braga.',
     },
     {
       q: 'O curso do Rodrigo Góes é golpe?',
@@ -100,6 +119,26 @@ export const rodrigoGoes: Article = {
     { slug: '/fabrica-de-milhas-vale-a-pena/', anchor: 'Fábrica de Milhas vale a pena? Análise completa' },
     { slug: '/cursos-de-milhas/', anchor: 'Comparador de cursos de milhas' },
     { slug: '/como-ganhar-dinheiro-com-milhas/', anchor: 'Como ganhar dinheiro com milhas (guia gratuito)' },
+  ],
+  // Entidade Person: conecta a página à entidade "Rodrigo Góes" para o Google e as IAs.
+  // sameAs aponta para os perfis canônicos reais, não para os redirects de afiliado.
+  extraLd: [
+    {
+      '@type': 'Person',
+      '@id': 'https://fabricantedemilhas.com.br/rodrigo-goes-e-confiavel/#rodrigo-goes',
+      name: 'Rodrigo Góes',
+      alternateName: 'Mago das Milhas',
+      description:
+        'Engenheiro mecânico e educador brasileiro especializado em milhas aéreas, criador do curso Fábrica de Milhas.',
+      jobTitle: 'Educador e produtor de conteúdo sobre milhas aéreas',
+      nationality: 'BR',
+      knowsAbout: ['milhas aéreas', 'programas de fidelidade', 'cartões de crédito', 'viagens'],
+      worksFor: { '@type': 'Organization', name: '4MULTIPLUS MIDIA DIGITAL LTDA' },
+      sameAs: [
+        'https://www.instagram.com/goesrodrigo/',
+        'https://www.youtube.com/@RodrigoGoesfabricademilhas',
+      ],
+    },
   ],
   checks: [
     'Links das matérias de imprensa (~2020)',
