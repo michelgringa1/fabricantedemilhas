@@ -80,6 +80,7 @@ export function Blog() {
             </div>
             <div className="grid gap-3.5">
               {[
+                { slug: '/destrave-suas-milhas/', tag: 'Evento', title: 'Protocolo Destrave suas Milhas: datas, preço e o que você aprende' },
                 { slug: '/calculadora-de-milhas/', tag: 'Ferramenta', title: 'Calculadora de milhas' },
                 { slug: '/glossario-de-milhas/', tag: 'Recurso', title: 'Glossário de milhas aéreas' },
               ].map((r) => (

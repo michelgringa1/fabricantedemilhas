@@ -9,12 +9,14 @@ import { Glossario } from '@/pages/Glossario'
 import { Blog, NotFound } from '@/pages/Blog'
 import { Sobre, Metodologia, Divulgacao, Contato } from '@/pages/Institucional'
 import { Calculadora } from '@/pages/Calculadora'
+import { DestraveSuasMilhas } from '@/pages/DestraveSuasMilhas'
 
 function Page({ path }: { path: string }) {
   if (path === '/') return <Home />
   if (path === '/blog/') return <Blog />
   if (path === '/glossario-de-milhas/') return <Glossario />
   if (path === '/calculadora-de-milhas/') return <Calculadora />
+  if (path === '/destrave-suas-milhas/') return <DestraveSuasMilhas />
   if (path === '/sobre/') return <Sobre />
   if (path === '/metodologia/') return <Metodologia />
   if (path === '/divulgacao-de-afiliados/') return <Divulgacao />

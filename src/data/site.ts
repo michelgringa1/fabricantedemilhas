@@ -26,6 +26,7 @@ export const NAV = [
   {
     label: 'Análises',
     items: [
+      { label: 'Evento: Destrave suas Milhas', slug: '/destrave-suas-milhas/' },
       { label: 'Fábrica de Milhas vale a pena?', slug: '/fabrica-de-milhas-vale-a-pena/' },
       { label: 'Rodrigo Góes é confiável?', slug: '/rodrigo-goes-e-confiavel/' },
       { label: 'Cursos de milhas (comparador)', slug: '/cursos-de-milhas/' },
@@ -68,6 +69,7 @@ export const FOOTER_COLS = [
   {
     title: 'Análises',
     links: [
+      { label: 'Evento: Destrave suas Milhas', slug: '/destrave-suas-milhas/' },
       { label: 'Fábrica de Milhas vale a pena?', slug: '/fabrica-de-milhas-vale-a-pena/' },
       { label: 'Rodrigo Góes é confiável?', slug: '/rodrigo-goes-e-confiavel/' },
       { label: 'Comparador de cursos', slug: '/cursos-de-milhas/' },

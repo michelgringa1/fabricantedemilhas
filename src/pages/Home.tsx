@@ -236,6 +236,34 @@ export function Home() {
 
       <Ticker />
 
+      {/* EVENTO EM DESTAQUE */}
+      <section className="bg-paper border-b border-slate-200">
+        <div className="max-w-6xl mx-auto px-4 py-6">
+          <a
+            href="#/destrave-suas-milhas/"
+            className="lift group flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 rounded-2xl border border-sun-500/40 bg-white px-6 py-5 hover:border-sun-500 hover:shadow-lg hover:shadow-sun-500/10"
+          >
+            <span className="mono text-[10px] tracking-[0.18em] uppercase font-bold text-slate-950 bg-sun-500 rounded-full px-3 py-1 shrink-0 self-start">
+              Evento ao vivo
+            </span>
+            <span className="flex-1">
+              <span className="display block text-[1.05rem] text-slate-900 group-hover:text-brand-700 transition-colors">
+                Protocolo Destrave suas Milhas, de Rodrigo Góes
+              </span>
+              <span className="block text-[13.5px] text-slate-600 mt-0.5">
+                5 dias ao vivo em agosto para destravar seu acúmulo. Veja datas, preço e o que é ensinado.
+              </span>
+            </span>
+            <span className="shrink-0 inline-flex items-center gap-2 text-[13.5px] font-bold text-brand-700">
+              Ver o evento
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
       {/* TRILHAS */}
       <section className="bg-paper">
         <div className="max-w-6xl mx-auto px-4 py-20">
