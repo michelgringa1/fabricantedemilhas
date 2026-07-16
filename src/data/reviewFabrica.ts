@@ -42,7 +42,7 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://www.instagram.com/goesrodrigo/" target="_blank" rel="noopener nofollow">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal. Teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha por volta de 2020 <mark class="verificar">[VERIFICAR: links das matérias]</mark>.',
+      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal. Teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha por volta de 2020 <mark class="verificar">[VERIFICAR: links das matérias]</mark>.',
     },
     {
       t: 'p',

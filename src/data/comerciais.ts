@@ -26,7 +26,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes é o criador do curso <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://www.instagram.com/goesrodrigo/" target="_blank" rel="noopener nofollow">@goesrodrigo</a> registrava cerca de 2 milhões de seguidores em junho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
+      html: 'Rodrigo Góes é o criador do curso <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> registrava cerca de 2 milhões de seguidores em junho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
     },
     {
       t: 'p',
