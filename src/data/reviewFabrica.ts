@@ -42,7 +42,11 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal. Teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha por volta de 2020 <mark class="verificar">[VERIFICAR: links das matérias]</mark>.',
+      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma cerca de 2 milhões de seguidores (jun/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal.',
+    },
+    {
+      t: 'p',
+      html: 'A parte que dá para conferir sozinho: engenheiro mecânico natural de Salvador, ele largou a carreira embarcada numa empresa de petróleo em outubro de 2020 para viver de milhas, fundou a Fábrica de Milhas em 2019 e escreveu <em>O Mapa para Acumular 1 Milhão de Milhas</em>, livro que a imprensa registrou entre os mais vendidos da categoria. A <a href="https://www.cnnbrasil.com.br/viagemegastronomia/viagem/o-que-fazer-com-as-milhas-enquanto-nao-podemos-viajar-experts-respondem/" target="_blank" rel="noopener">CNN Brasil</a> o ouviu como especialista em 2021, e ele também aparece em <a href="https://extra.globo.com/tv-e-lazer/livro-mapa-para-acumular-1-milhao-de-milhas-de-rodrigo-goes-esta-entre-os-mais-vendidos-25398340.html" target="_blank" rel="noopener">Extra</a>, <a href="https://www.terra.com.br/vida-e-estilo/como-rodrigo-goes-viajou-mais-de-40-paises-com-milhas,28ed2a40010a04c2b0587dd9b4df1ae509649tos.html" target="_blank" rel="noopener">Terra</a>, <a href="https://www.redetv.uol.com.br/tvfama/blog/celebridades/conquistas-atraves-das-milhas-como-o-engenheiro-baiano-rodrigo-goes-transfo" target="_blank" rel="noopener">RedeTV!</a> e <a href="https://revistamensch.com.br/carreira-rodrigo-goes-o-incrivel-mago-das-milhas/" target="_blank" rel="noopener">Revista Mensch</a>. Quem assina o curso, portanto, tem nome, rosto e histórico público.',
     },
     {
       t: 'p',
@@ -121,7 +125,7 @@ export const reviewFabrica: Article = {
         'Comunidade ativa (Clube do Mago) com promoções diárias e cotação do milheiro. Na prática, é o que mantém o método funcionando no dia a dia.',
         'Aulas ao vivo e monitorias, além do conteúdo gravado.',
         'Garantia dupla: 7 dias incondicional + "risco zero" condicionada.',
-        'Produtor com empresa estabelecida e autoridade conferível: canal verificado no YouTube com 886 mil inscritos e 420 vídeos gratuitos, que permitem testar a didática antes de comprar.',
+        'Produtor com empresa estabelecida e autoridade conferível: canal verificado no YouTube com 886 mil inscritos e 420 vídeos gratuitos (dá para testar a didática antes de comprar), livro publicado e matérias em CNN Brasil, Extra, Terra e RedeTV!.',
       ],
       cons: [
         'Preço acima da média dos cursos de milhas [VERIFICAR média do mercado].',
@@ -199,7 +203,6 @@ export const reviewFabrica: Article = {
   checks: [
     'Preço vigente na data de publicação (turma atual)',
     'Carga horária exata (página diz 40h numa seção e 30h no FAQ)',
-    'Links das matérias de imprensa (Estadão, CNN Brasil, Folha ~2020)',
     'Dados do Reclame Aqui atualizados (nota, nº de reclamações, índices)',
     'Bônus vigentes da turma atual (Mega Combo, Clube do Mago)',
     'Média de preço do mercado de cursos (base do contra "preço acima da média")',

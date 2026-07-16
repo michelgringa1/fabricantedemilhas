@@ -16,6 +16,8 @@ export const rodrigoGoes: Article = {
   tldr: [
     'Empresa real: 4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, Barueri-SP.',
     'YouTube verificado com 886 mil inscritos e 420 vídeos: histórico público e conferível (jul/2026).',
+    'Imprensa: CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch já publicaram sobre ele.',
+    'Autor do livro "O Mapa para Acumular 1 Milhão de Milhas", citado entre os mais vendidos.',
     'Audiência: ~2 milhões de seguidores no Instagram (@goesrodrigo, jun/2026).',
     'Números "130 mil alunos" e "112 milhões de milhas" são autodeclarados na bio dele.',
     'Reclame Aqui: verificado, nota 6,6/10 ("Regular"), 98,8% das reclamações respondidas.',
@@ -31,7 +33,27 @@ export const rodrigoGoes: Article = {
     },
     {
       t: 'p',
-      html: 'Por volta de 2020, teve aparições em veículos nacionais como Estadão, CNN Brasil e Folha de S.Paulo <mark class="verificar">[VERIFICAR: links das matérias]</mark>. A presença de imprensa é um sinal de existência pública verificável, ainda que não seja atestado de qualidade do curso.',
+      html: 'A trajetória tem datas verificáveis: engenheiro mecânico natural de Salvador, ele trabalhou embarcado numa empresa de petróleo até outubro de 2020, quando largou a profissão para viver de milhas. Fundou a Fábrica de Milhas em 2019 e publicou o livro <em>O Mapa para Acumular 1 Milhão de Milhas</em>, que a imprensa registrou entre os mais vendidos da categoria.',
+    },
+    { t: 'h2', id: 'imprensa', text: 'O que a imprensa já publicou sobre ele' },
+    {
+      t: 'p',
+      html: 'Cobertura de imprensa não é atestado de qualidade de curso: veículo publica perfil de gente interessante, não de gente honesta. Mas serve para uma coisa específica nesta análise: <strong>confirma que a pessoa existe, tem histórico e assume publicamente o que faz</strong>. Golpe não dá entrevista com nome e rosto. Estas são as matérias que localizamos:',
+    },
+    {
+      t: 'ul',
+      items: [
+        '<strong><a href="https://www.cnnbrasil.com.br/viagemegastronomia/viagem/o-que-fazer-com-as-milhas-enquanto-nao-podemos-viajar-experts-respondem/" target="_blank" rel="noopener">CNN Brasil</a></strong> (abril de 2021): é ouvido como especialista em milhas e autor do livro, respondendo dúvidas de leitores sobre o que fazer com o saldo durante a pandemia.',
+        '<strong><a href="https://extra.globo.com/tv-e-lazer/livro-mapa-para-acumular-1-milhao-de-milhas-de-rodrigo-goes-esta-entre-os-mais-vendidos-25398340.html" target="_blank" rel="noopener">Extra</a></strong>, do Grupo Globo: registra o livro dele entre os mais vendidos.',
+        '<strong><a href="https://www.terra.com.br/vida-e-estilo/como-rodrigo-goes-viajou-mais-de-40-paises-com-milhas,28ed2a40010a04c2b0587dd9b4df1ae509649tos.html" target="_blank" rel="noopener">Terra</a></strong>: conta como ele viajou a mais de 40 países usando milhas.',
+        '<strong><a href="https://revistamensch.com.br/carreira-rodrigo-goes-o-incrivel-mago-das-milhas/" target="_blank" rel="noopener">Revista Mensch</a></strong> (dezembro de 2024): perfil de carreira, com a saída da engenharia e os números da operação.',
+        '<strong><a href="https://www.redetv.uol.com.br/tvfama/blog/celebridades/conquistas-atraves-das-milhas-como-o-engenheiro-baiano-rodrigo-goes-transfo" target="_blank" rel="noopener">RedeTV!</a></strong>, no TV Fama: a história do engenheiro baiano que mudou de vida com milhas.',
+        '<strong><a href="https://globoplay.globo.com/v/13165946/" target="_blank" rel="noopener">Globoplay</a></strong>: participação em TV disponível na plataforma da Globo.',
+      ],
+    },
+    {
+      t: 'p',
+      html: 'Um detalhe que vale para você calibrar expectativa: a matéria da CNN é de 2021 e a da Mensch é de 2024. Nela, os números citados são de mais de 100 mil alunos, contra os mais de 130 mil que a bio dele declara hoje. As cifras crescem com o tempo, e essa diferença é coerente, não contradição.',
     },
     { t: 'h2', id: 'youtube', text: 'O canal no YouTube: a autoridade que dá para conferir' },
     {
@@ -71,7 +93,7 @@ export const rodrigoGoes: Article = {
       pros: [
         'Empresa ativa e rastreável (CNPJ, sede, canais de contato).',
         'Canal verificado no YouTube com 886 mil inscritos e 420 vídeos: histórico público, longo e conferível por qualquer um.',
-        'Identidade pública consolidada: 2M de seguidores e presença em imprensa nacional.',
+        'Identidade pública consolidada: 2M de seguidores, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch, todas linkadas acima.',
         'Perfil verificado no Reclame Aqui, com quase todas as reclamações respondidas.',
         'Produto real, com garantia de 7 dias e política de reembolso declarada.',
       ],
@@ -92,7 +114,7 @@ export const rodrigoGoes: Article = {
   faq: [
     {
       q: 'Rodrigo Góes é confiável?',
-      a: 'Os sinais públicos indicam que sim: empresa registrada e ativa, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, aparições na imprensa e perfil verificado no Reclame Aqui com 98,8% de resposta. A reputação "Regular" (6,6/10) aponta atritos de suporte, não indício de fraude.',
+      a: 'Os sinais públicos indicam que sim: empresa registrada e ativa, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, matérias em CNN Brasil, Extra, Terra e RedeTV!, livro publicado e perfil verificado no Reclame Aqui com 98,8% de resposta. A reputação "Regular" (6,6/10) aponta atritos de suporte, não indício de fraude.',
     },
     {
       q: 'Rodrigo Góes tem canal no YouTube?',
@@ -100,7 +122,7 @@ export const rodrigoGoes: Article = {
     },
     {
       q: 'O curso do Rodrigo Góes é golpe?',
-      a: 'Não há indício disso. Golpes operam sem CNPJ, sem canal de contato e sem responder reclamações, o oposto do padrão verificado aqui. Existe, porém, distância entre a promessa de marketing e o resultado típico: retorno com milhas é gradual e depende de dedicação e capital.',
+      a: 'Não há indício disso. Golpes operam sem CNPJ, sem canal de contato, sem responder reclamações e sem dar entrevista de nome e rosto para CNN Brasil ou RedeTV!, o oposto do padrão verificado aqui. Existe, porém, distância entre a promessa de marketing e o resultado típico: retorno com milhas é gradual e depende de dedicação e capital.',
     },
     {
       q: 'Quantos alunos o Rodrigo Góes tem?',
@@ -129,21 +151,35 @@ export const rodrigoGoes: Article = {
       name: 'Rodrigo Góes',
       alternateName: 'Mago das Milhas',
       description:
-        'Engenheiro mecânico e educador brasileiro especializado em milhas aéreas, criador do curso Fábrica de Milhas.',
+        'Engenheiro mecânico natural de Salvador, educador especializado em milhas aéreas, fundador da Fábrica de Milhas (2019) e autor do livro O Mapa para Acumular 1 Milhão de Milhas.',
       jobTitle: 'Educador e produtor de conteúdo sobre milhas aéreas',
       nationality: 'BR',
+      birthPlace: { '@type': 'Place', name: 'Salvador, Bahia, Brasil' },
       knowsAbout: ['milhas aéreas', 'programas de fidelidade', 'cartões de crédito', 'viagens'],
       worksFor: { '@type': 'Organization', name: '4MULTIPLUS MIDIA DIGITAL LTDA' },
       sameAs: [
         'https://www.instagram.com/goesrodrigo/',
         'https://www.youtube.com/@RodrigoGoesfabricademilhas',
       ],
+      subjectOf: [
+        'https://www.cnnbrasil.com.br/viagemegastronomia/viagem/o-que-fazer-com-as-milhas-enquanto-nao-podemos-viajar-experts-respondem/',
+        'https://extra.globo.com/tv-e-lazer/livro-mapa-para-acumular-1-milhao-de-milhas-de-rodrigo-goes-esta-entre-os-mais-vendidos-25398340.html',
+        'https://www.terra.com.br/vida-e-estilo/como-rodrigo-goes-viajou-mais-de-40-paises-com-milhas,28ed2a40010a04c2b0587dd9b4df1ae509649tos.html',
+        'https://revistamensch.com.br/carreira-rodrigo-goes-o-incrivel-mago-das-milhas/',
+        'https://www.redetv.uol.com.br/tvfama/blog/celebridades/conquistas-atraves-das-milhas-como-o-engenheiro-baiano-rodrigo-goes-transfo',
+      ],
+    },
+    {
+      '@type': 'Book',
+      name: 'O Mapa para Acumular 1 Milhão de Milhas',
+      author: { '@id': 'https://fabricantedemilhas.com.br/rodrigo-goes-e-confiavel/#rodrigo-goes' },
+      inLanguage: 'pt-BR',
+      about: ['milhas aéreas', 'programas de fidelidade', 'viagens'],
     },
   ],
   checks: [
-    'Links das matérias de imprensa (~2020)',
     'Dados do Reclame Aqui atualizados na data de publicação',
-    'Seguidores do Instagram na data de publicação',
+    'Seguidores do Instagram e inscritos do YouTube na data de publicação',
     'Situação cadastral atual do CNPJ',
   ],
 }
