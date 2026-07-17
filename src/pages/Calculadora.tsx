@@ -2,16 +2,11 @@ import { useMemo, useState } from 'react'
 import { Seo, BASE_URL, breadcrumbLd, faqLd } from '@/lib/seo'
 import { PageHero, FaqSection, AuthorBlock, ChecksNote } from '@/components/blocks'
 import { PlaneMark } from '@/components/layout'
+import { TABELA_DO_MES, mesCurto, mesDaApuracao } from '@/data/cotacoes'
 
-/* cotações de referência editorial (R$/milheiro), editáveis pelo usuário */
-const PROGRAMAS: { nome: string; ref: number }[] = [
-  { nome: 'Smiles', ref: 16 },
-  { nome: 'LATAM Pass', ref: 22 },
-  { nome: 'Azul Fidelidade', ref: 19 },
-  { nome: 'Livelo', ref: 18 },
-  { nome: 'Esfera', ref: 16 },
-  { nome: 'Outro programa', ref: 20 },
-]
+/* Cotações vêm da tabela do mês (src/data/cotacoes.ts), fonte única do site.
+   O usuário pode editar cada valor na tela; estes são só os padrões. */
+const PROGRAMAS = TABELA_DO_MES.programas
 
 const FAQ = [
   {
@@ -97,7 +92,9 @@ interface Linha {
 }
 
 function ModoSaldo() {
-  const [linhas, setLinhas] = useState<Linha[]>([{ programa: 'Smiles', saldo: 50000, cotacao: 16 }])
+  const [linhas, setLinhas] = useState<Linha[]>([
+    { programa: PROGRAMAS[0].nome, saldo: 50000, cotacao: PROGRAMAS[0].ref },
+  ])
 
   const set = (i: number, patch: Partial<Linha>) =>
     setLinhas((ls) => ls.map((l, j) => (j === i ? { ...l, ...patch } : l)))
@@ -154,7 +151,14 @@ function ModoSaldo() {
           + Adicionar outro programa
         </button>
         <p className="text-[12px] text-slate-400">
-          Cotações pré-preenchidas são referência editorial <mark className="verificar">[VERIFICAR: atualizar mensalmente]</mark>. Edite pelo valor atual do seu canal.
+          Cotações pré-preenchidas são a nossa referência de {mesCurto()}
+          {!TABELA_DO_MES.validado && (
+            <>
+              {' '}
+              <mark className="verificar">[VERIFICAR: apuração pendente]</mark>
+            </>
+          )}
+          . Edite pelo valor atual do seu canal.
         </p>
       </div>
       <ResultPanel title="Painel · Seu saldo">
@@ -394,9 +398,16 @@ export function Calculadora() {
               <a href="/como-viajar-de-graca-com-milhas/">emissão</a>.
             </p>
             <p>
-              As cotações pré-preenchidas são referência editorial da nossa tabela mensal{' '}
-              <mark className="verificar">[VERIFICAR: sincronizar com a tabela do mês]</mark>. O mercado muda
-              diariamente, então edite os campos com o valor real do seu canal antes de decidir qualquer operação.
+              As cotações pré-preenchidas vêm da nossa tabela de referência, apurada em{' '}
+              <strong>{mesDaApuracao()}</strong>
+              {!TABELA_DO_MES.validado && (
+                <>
+                  {' '}
+                  <mark className="verificar">[VERIFICAR: apuração pendente]</mark>
+                </>
+              )}
+              . O mercado muda diariamente e a cotação varia por programa, por prazo de recebimento e por
+              canal, então edite os campos com o valor real do seu antes de decidir qualquer operação.
             </p>
           </div>
 

@@ -1,0 +1,70 @@
+name: Lembrete mensal da cotação do milheiro
+
+# A coleta da cotação é manual de propósito (não existe API pública, e raspar
+# marketplace faria o dado deixar de ser nosso). O que dá para automatizar é
+# não esquecer: todo dia 1º, este workflow abre uma issue com o passo a passo.
+on:
+  schedule:
+    - cron: '0 11 1 * *' # dia 1º de cada mês, 8h no horário de Brasília
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  lembrete:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ler a data da última apuração
+        id: tabela
+        run: |
+          APURADO=$(grep -o "apuradoEm: '[0-9-]*'" src/data/cotacoes.ts | grep -o "[0-9-]\{10\}")
+          VALIDADO=$(grep -o "validado: [a-z]*" src/data/cotacoes.ts | head -1 | awk '{print $2}')
+          DIAS=$(( ( $(date +%s) - $(date -d "$APURADO" +%s) ) / 86400 ))
+          echo "apurado=$APURADO" >> $GITHUB_OUTPUT
+          echo "validado=$VALIDADO" >> $GITHUB_OUTPUT
+          echo "dias=$DIAS" >> $GITHUB_OUTPUT
+
+      - name: Abrir a issue do mês
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const apurado = '${{ steps.tabela.outputs.apurado }}'
+            const validado = '${{ steps.tabela.outputs.validado }}' === 'true'
+            const dias = '${{ steps.tabela.outputs.dias }}'
+            const mes = new Date().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })
+
+            const corpo = [
+              `A cotação do milheiro do site está apurada em **${apurado}** (há **${dias} dias**).`,
+              validado
+                ? ''
+                : `\n> ⚠️ **A tabela ainda está marcada como \`validado: false\`**, então todas as páginas estão exibindo o selo [VERIFICAR]. Isso some sozinho quando a apuração for real.\n`,
+              `\n## O que fazer (~5 minutos)`,
+              ``,
+              `1. Levante a faixa de **venda** do milheiro por programa nos canais (MaxMilhas, HotMilhas, BankMilhas e emissores diretos). Anote mínimo e máximo, sempre no **mesmo prazo de recebimento**, senão a comparação não vale.`,
+              `2. Edite **um arquivo só**: \`site/src/data/cotacoes.ts\`.`,
+              `   - atualize \`venda: { min, max }\` e \`ref\` de cada programa`,
+              `   - atualize \`apuradoEm\` para a data de hoje`,
+              `   - marque \`validado: true\``,
+              `3. Commit e push na \`main\`.`,
+              ``,
+              `## O que acontece sozinho depois do push`,
+              ``,
+              `- A calculadora passa a abrir com a cotação nova`,
+              `- O painel da home mostra a faixa nova e o mês novo`,
+              `- O selo [VERIFICAR] some de todas as páginas de uma vez`,
+              `- Build, pré-render e deploy na Hostinger, sem clique nenhum`,
+              ``,
+              `---`,
+              `<sub>Issue aberta automaticamente por \`.github/workflows/lembrete-cotacao.yml\`. A coleta é manual de propósito: não existe API pública de cotação de milheiro no Brasil, e espelhar o número de um marketplace faria o dado deixar de ser uma apuração nossa.</sub>`,
+            ].join('\n')
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Atualizar a cotação do milheiro · ${mes}`,
+              body: corpo,
+            })

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Seo, breadcrumbLd } from '@/lib/seo'
 import { PlaneMark } from '@/components/layout'
+import { TABELA_DO_MES, cotacaoDe, mesCurto } from '@/data/cotacoes'
 import { acumuloMilhasArt } from '@/assets/acumulo-milhas'
 import { aviaoAzul, aviaoAmarelo } from '@/assets/aviao'
 import { carimboSelo } from '@/assets/carimbo'
@@ -391,25 +392,36 @@ export function Home() {
           <div className="rounded-2xl bg-night grain border border-white/10 p-7 text-white shadow-2xl shadow-brand-900/20">
             <div className="flex items-center justify-between pb-4 border-b border-white/10">
               <span className="mono text-[11px] tracking-[0.2em] text-sun-500">PAINEL · MILHEIRO</span>
-              <span className="mono text-[11px] tracking-[0.14em] text-brand-100/50">JUL/2026 <mark className="verificar">[VERIFICAR]</mark></span>
+              <span className="mono text-[11px] tracking-[0.14em] text-brand-100/50 uppercase">
+                {mesCurto()}
+                {!TABELA_DO_MES.validado && <> <mark className="verificar">[VERIFICAR]</mark></>}
+              </span>
             </div>
             <div className="divide-y divide-white/[0.07]">
               {[
-                ['SMILES', 'GOL'],
-                ['LATAM PASS', 'LATAM'],
-                ['AZUL FIDELIDADE', 'AZUL'],
-              ].map(([p, cia]) => (
-                <div key={p} className="flex items-center justify-between py-4">
-                  <div className="flex items-center gap-3">
-                    <PlaneMark className="w-3.5 h-3.5" />
-                    <div>
-                      <div className="mono text-[13px] font-bold tracking-[0.1em]">{p}</div>
-                      <div className="mono text-[10px] tracking-[0.16em] text-brand-100/40">{cia}</div>
+                ['Smiles', 'GOL'],
+                ['LATAM Pass', 'LATAM'],
+                ['Azul Fidelidade', 'AZUL'],
+              ].map(([nome, cia]) => {
+                const c = cotacaoDe(nome)
+                return (
+                  <div key={nome} className="flex items-center justify-between py-4">
+                    <div className="flex items-center gap-3">
+                      <PlaneMark className="w-3.5 h-3.5" />
+                      <div>
+                        <div className="mono text-[13px] font-bold tracking-[0.1em] uppercase">{nome}</div>
+                        <div className="mono text-[10px] tracking-[0.16em] text-brand-100/40">{cia}</div>
+                      </div>
+                    </div>
+                    <div className="mono text-[13px] tabular-nums text-right">
+                      <span className="text-sun-400 font-bold">R$ {c?.venda.min.toFixed(0)}</span>
+                      <span className="text-brand-100/40"> a </span>
+                      <span className="text-sun-400 font-bold">R$ {c?.venda.max.toFixed(0)}</span>
+                      <span className="text-brand-100/35"> /milheiro</span>
                     </div>
                   </div>
-                  <div className="mono text-[13px] text-brand-100/60 tabular-nums">R$ --,-- <span className="text-brand-100/35">/milheiro</span></div>
-                </div>
-              ))}
+                )
+              })}
             </div>
             <div className="pt-4 mono text-[10.5px] tracking-[0.12em] text-brand-100/40">
               VALORES DE REFERÊNCIA · SUJEITOS A MUDANÇA · FONTE: EQUIPE FABRICANTE DE MILHAS
