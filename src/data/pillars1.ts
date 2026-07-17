@@ -25,11 +25,11 @@ export const acumular: Article = {
     { t: 'h2', id: 'o-que-sao', text: 'O que são milhas e como o acúmulo funciona' },
     {
       t: 'p',
-      html: 'Milhas aéreas são a moeda dos <a href="#/programas-de-milhas/">programas de fidelidade</a> das companhias aéreas. Você acumula essa moeda de duas formas: voando ou, o que rende muito mais para a maioria das pessoas, <strong>convertendo pontos do cartão de crédito</strong> em milhas. Depois, troca por passagens ou vende o saldo (veja o guia de <a href="#/vender-milhas-aereas/">venda de milhas</a>).',
+      html: 'Milhas aéreas são a moeda dos <a href="/programas-de-milhas/">programas de fidelidade</a> das companhias aéreas. Você acumula essa moeda de duas formas: voando ou, o que rende muito mais para a maioria das pessoas, <strong>convertendo pontos do cartão de crédito</strong> em milhas. Depois, troca por passagens ou vende o saldo (veja o guia de <a href="/vender-milhas-aereas/">venda de milhas</a>).',
     },
     {
       t: 'p',
-      html: 'O fluxo clássico no Brasil tem três etapas: gasto no cartão gera pontos no programa do banco (Livelo, Esfera, Átomos etc.); os pontos são transferidos para um programa aéreo (Smiles, LATAM Pass, Azul Fidelidade); e a transferência, feita no momento certo, recebe <a href="#/glossario-de-milhas/#transferencia-bonificada">bônus</a> que multiplica o saldo.',
+      html: 'O fluxo clássico no Brasil tem três etapas: gasto no cartão gera pontos no programa do banco (Livelo, Esfera, Átomos etc.); os pontos são transferidos para um programa aéreo (Smiles, LATAM Pass, Azul Fidelidade); e a transferência, feita no momento certo, recebe <a href="/glossario-de-milhas/#transferencia-bonificada">bônus</a> que multiplica o saldo.',
     },
     { t: 'h2', id: 'cartao', text: 'Cartão de crédito: o motor principal do acúmulo' },
     {
@@ -38,7 +38,7 @@ export const acumular: Article = {
     },
     {
       t: 'p',
-      html: 'A escolha depende do seu perfil de renda e gasto. Montamos um guia dedicado com os critérios e as faixas: <a href="#/cartao-de-credito-para-milhas/">cartão de crédito para acumular milhas</a>. A regra de ouro: <strong>concentre todos os gastos possíveis em um único cartão bom</strong> (mercado, farmácia, assinaturas, contas de casa) em vez de pulverizar em vários.',
+      html: 'A escolha depende do seu perfil de renda e gasto. Montamos um guia dedicado com os critérios e as faixas: <a href="/cartao-de-credito-para-milhas/">cartão de crédito para acumular milhas</a>. A regra de ouro: <strong>concentre todos os gastos possíveis em um único cartão bom</strong> (mercado, farmácia, assinaturas, contas de casa) em vez de pulverizar em vários.',
     },
     { t: 'h2', id: 'transferencia-bonificada', text: 'Transferências bonificadas: onde o saldo multiplica' },
     {
@@ -63,7 +63,7 @@ export const acumular: Article = {
         '<strong>Portais de compras</strong> dos programas (ex.: shopping Smiles, Livelo): a mesma compra online rende pontos extras se iniciada pelo portal.',
         '<strong>Parceiros físicos</strong>: postos de combustível, farmácias e supermercados parceiros creditam pontos com CPF na nota.',
         '<strong>Contas e boletos</strong>: pagar contas via apps que pontuam (ou no cartão, quando possível) transforma despesa fixa em milhas.',
-        '<strong>Compra direta de pontos em promoção</strong>: às vezes vale a pena, mas só quando o custo do ponto fica abaixo do valor de uso. Entenda o conceito de <a href="#/glossario-de-milhas/#milheiro">milheiro</a> antes.',
+        '<strong>Compra direta de pontos em promoção</strong>: às vezes vale a pena, mas só quando o custo do ponto fica abaixo do valor de uso. Entenda o conceito de <a href="/glossario-de-milhas/#milheiro">milheiro</a> antes.',
       ],
     },
     { t: 'h2', id: 'sem-cartao', text: 'Dá para acumular milhas sem cartão de crédito?' },
@@ -144,7 +144,7 @@ export const ganharDinheiro: Article = {
     { t: 'h2', id: 'da-pra-ganhar', text: 'Dá para ganhar dinheiro com milhas de verdade?' },
     {
       t: 'p',
-      html: 'Dá, mas não do jeito que boa parte da internet vende. Milhas não são renda passiva nem salário garantido: são um <strong>mercado com margem</strong>, que existe porque é possível acumular o <a href="#/glossario-de-milhas/#milheiro">milheiro</a> (bloco de mil milhas) por um custo menor do que ele vale na venda ou no uso. Quem domina campanhas de bônus compra barato; quem vende no momento certo, realiza o lucro.',
+      html: 'Dá, mas não do jeito que boa parte da internet vende. Milhas não são renda passiva nem salário garantido: são um <strong>mercado com margem</strong>, que existe porque é possível acumular o <a href="/glossario-de-milhas/#milheiro">milheiro</a> (bloco de mil milhas) por um custo menor do que ele vale na venda ou no uso. Quem domina campanhas de bônus compra barato; quem vende no momento certo, realiza o lucro.',
     },
     {
       t: 'p',
@@ -154,12 +154,12 @@ export const ganharDinheiro: Article = {
     { t: 'h3', text: '1. Vender o milheiro' },
     {
       t: 'p',
-      html: 'O caminho mais direto: acumular com bônus e vender o saldo em plataformas especializadas ou para emissores de confiança. A margem nasce da diferença entre custo de aquisição e cotação de venda. O passo a passo completo, com riscos e cuidados, está no guia de <a href="#/vender-milhas-aereas/">venda de milhas aéreas</a>.',
+      html: 'O caminho mais direto: acumular com bônus e vender o saldo em plataformas especializadas ou para emissores de confiança. A margem nasce da diferença entre custo de aquisição e cotação de venda. O passo a passo completo, com riscos e cuidados, está no guia de <a href="/vender-milhas-aereas/">venda de milhas aéreas</a>.',
     },
     { t: 'h3', text: '2. Economizar nas próprias viagens' },
     {
       t: 'p',
-      html: 'Dinheiro economizado é dinheiro ganho. Emitir uma passagem de R$ 3.000 com milhas que custaram o equivalente a R$ 900 é um "lucro" de R$ 2.100 em valor não gasto, e é o caminho com menor risco, porque não depende de terceiros. Veja <a href="#/como-viajar-de-graca-com-milhas/">como viajar de graça com milhas</a>.',
+      html: 'Dinheiro economizado é dinheiro ganho. Emitir uma passagem de R$ 3.000 com milhas que custaram o equivalente a R$ 900 é um "lucro" de R$ 2.100 em valor não gasto, e é o caminho com menor risco, porque não depende de terceiros. Veja <a href="/como-viajar-de-graca-com-milhas/">como viajar de graça com milhas</a>.',
     },
     { t: 'h3', text: '3. Emitir para terceiros, com muito cuidado' },
     {
@@ -259,11 +259,11 @@ export const vender: Article = {
     { t: 'h2', id: 'como-funciona', text: 'Como funciona a venda de milhas' },
     {
       t: 'p',
-      html: 'Quem compra suas milhas usa o saldo para emitir passagens, em geral agências e emissores que revendem bilhetes com desconto. A unidade de negociação é o <a href="#/glossario-de-milhas/#milheiro">milheiro</a>, e a <a href="#/glossario-de-milhas/#cotacao-do-milheiro">cotação</a> varia por programa, por prazo de recebimento e pela demanda do momento. Milhas de programas com mais assentos e rotas tendem a valer mais.',
+      html: 'Quem compra suas milhas usa o saldo para emitir passagens, em geral agências e emissores que revendem bilhetes com desconto. A unidade de negociação é o <a href="/glossario-de-milhas/#milheiro">milheiro</a>, e a <a href="/glossario-de-milhas/#cotacao-do-milheiro">cotação</a> varia por programa, por prazo de recebimento e pela demanda do momento. Milhas de programas com mais assentos e rotas tendem a valer mais.',
     },
     {
       t: 'p',
-      html: 'O vendedor lucra quando o custo de "fabricar" o milheiro (cartão + bônus de transferência) fica abaixo da cotação de venda. Essa conta está detalhada no guia <a href="#/como-ganhar-dinheiro-com-milhas/">como ganhar dinheiro com milhas</a>.',
+      html: 'O vendedor lucra quando o custo de "fabricar" o milheiro (cartão + bônus de transferência) fica abaixo da cotação de venda. Essa conta está detalhada no guia <a href="/como-ganhar-dinheiro-com-milhas/">como ganhar dinheiro com milhas</a>.',
     },
     { t: 'h2', id: 'onde-vender', text: 'Onde vender milhas' },
     {

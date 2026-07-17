@@ -44,7 +44,7 @@ export function Blog() {
                 {g.items.map((a) => (
                   <a
                     key={a.slug}
-                    href={'#' + a.slug}
+                    href={a.slug}
                     className="lift group flex items-start justify-between gap-5 rounded-2xl border border-slate-200 bg-white px-6 py-5 hover:border-brand-400 hover:shadow-lg hover:shadow-brand-900/[0.06]"
                   >
                     <div>
@@ -86,7 +86,7 @@ export function Blog() {
               ].map((r) => (
                 <a
                   key={r.slug}
-                  href={'#' + r.slug}
+                  href={r.slug}
                   className="lift group flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-white px-6 py-5 hover:border-brand-400 hover:shadow-lg"
                 >
                   <div>
@@ -129,10 +129,10 @@ export function NotFound() {
             Mas tem coisa boa por aqui. Comece pelos guias ou pela análise principal.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3.5">
-            <a href="#/" className="inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-colors">
+            <a href="/" className="inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-colors">
               Voltar ao início
             </a>
-            <a href="#/blog/" className="inline-flex items-center gap-2 border border-white/25 hover:border-white/60 text-white font-semibold px-7 py-3.5 rounded-full transition-colors">
+            <a href="/blog/" className="inline-flex items-center gap-2 border border-white/25 hover:border-white/60 text-white font-semibold px-7 py-3.5 rounded-full transition-colors">
               Ver todos os artigos
             </a>
           </div>

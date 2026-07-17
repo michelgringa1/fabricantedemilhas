@@ -29,8 +29,18 @@ jobs:
       - name: Instalar dependências
         run: pnpm install --frozen-lockfile
 
-      - name: Build estático
+      # O pré-render abre cada rota num Chrome headless para salvar o HTML já
+      # renderizado. Sem Chrome no runner, o build falha.
+      - name: Chrome (para o pré-render)
+        uses: browser-actions/setup-chrome@v1
+        id: chrome
+        with:
+          chrome-version: stable
+
+      - name: Build + pré-render das 20 rotas + sitemap/robots/llms
         run: pnpm run build:deploy
+        env:
+          CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
 
       - name: Publicar dist/ na branch deploy
         uses: peaceiris/actions-gh-pages@v4

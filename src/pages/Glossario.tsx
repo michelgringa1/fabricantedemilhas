@@ -68,7 +68,7 @@ export function Glossario() {
 
           <p className="mt-10 text-[15px] text-slate-600">
             Quer ver os termos em ação? Comece pelo guia{' '}
-            <a href="#/como-acumular-milhas/" className="text-brand-600 underline underline-offset-4 font-medium">
+            <a href="/como-acumular-milhas/" className="text-brand-600 underline underline-offset-4 font-medium">
               como acumular milhas
             </a>
             .

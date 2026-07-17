@@ -12,7 +12,7 @@ export function PlaneMark({ className = 'w-5 h-5' }: { className?: string }) {
 
 export function Logo({ light = true }: { light?: boolean }) {
   return (
-    <a href="#/" className="flex items-center gap-2.5 shrink-0 group" aria-label="Fabricante de Milhas, ir para o início">
+    <a href="/" className="flex items-center gap-2.5 shrink-0 group" aria-label="Fabricante de Milhas, ir para o início">
       <span className="grid place-items-center w-9 h-9 rounded-xl border border-white/20 bg-white/[0.06] group-hover:border-sun-500/60 transition-colors">
         <PlaneMark />
       </span>
@@ -44,7 +44,7 @@ export function Header() {
                     {group.items.map((it) => (
                       <a
                         key={it.slug}
-                        href={'#' + it.slug}
+                        href={it.slug}
                         className="block px-5 py-2.5 text-[14px] text-brand-100/85 hover:bg-white/[0.06] hover:text-white transition-colors"
                       >
                         {it.label}
@@ -57,7 +57,7 @@ export function Header() {
           </nav>
           <div className="flex items-center gap-2">
             <a
-              href="#/fabrica-de-milhas-vale-a-pena/"
+              href="/fabrica-de-milhas-vale-a-pena/"
               className="hidden sm:inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold text-[13.5px] px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-sun-500/25"
             >
               A análise nº 1
@@ -83,7 +83,7 @@ export function Header() {
               <div key={group.label} className="px-5 py-4 border-b border-white/[0.07]">
                 <div className="eyebrow text-sun-500 mb-2">{group.label}</div>
                 {group.items.map((it) => (
-                  <a key={it.slug} href={'#' + it.slug} onClick={() => setOpen(false)} className="block py-2 text-[15px] text-brand-100/90">
+                  <a key={it.slug} href={it.slug} onClick={() => setOpen(false)} className="block py-2 text-[15px] text-brand-100/90">
                     {it.label}
                   </a>
                 ))}
@@ -115,7 +115,7 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {col.links.map((l) => (
                   <li key={l.slug}>
-                    <a href={'#' + l.slug} className="text-[13.5px] text-brand-100/75 hover:text-white u-link">
+                    <a href={l.slug} className="text-[13.5px] text-brand-100/75 hover:text-white u-link">
                       {l.label}
                     </a>
                   </li>
@@ -131,7 +131,7 @@ export function Footer() {
           </div>
           <p className="text-[11.5px] text-brand-100/40">
             Alguns links deste site são de afiliado. Podemos receber comissão, sem custo extra para você.{' '}
-            <a href="#/divulgacao-de-afiliados/" className="u-link text-brand-100/60">Saiba mais</a>.
+            <a href="/divulgacao-de-afiliados/" className="u-link text-brand-100/60">Saiba mais</a>.
           </p>
         </div>
       </div>

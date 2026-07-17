@@ -100,7 +100,7 @@ export function CtaAffiliate({ variant = 'padrao' }: { variant?: 'padrao' | 'rev
         {variant !== 'review' && (
           <p className="mt-3 text-[15px] text-brand-100/75">
             Veja nossa{' '}
-            <a href="#/fabrica-de-milhas-vale-a-pena/" className="text-sun-400 font-semibold u-link">
+            <a href="/fabrica-de-milhas-vale-a-pena/" className="text-sun-400 font-semibold u-link">
               análise completa
             </a>{' '}
             antes de decidir: nota, preço, garantia e para quem NÃO serve.
@@ -119,7 +119,7 @@ export function CtaAffiliate({ variant = 'padrao' }: { variant?: 'padrao' | 'rev
             </svg>
           </a>
           {variant === 'review' && (
-            <a href="#/cursos-de-milhas/" className="text-brand-100/80 u-link text-[14.5px] font-medium">
+            <a href="/cursos-de-milhas/" className="text-brand-100/80 u-link text-[14.5px] font-medium">
               Comparar com alternativas
             </a>
           )}
@@ -314,7 +314,7 @@ export function AuthorBlock({ published, updated }: { published: string; updated
         <div className="display text-[15.5px]">Equipe Fabricante de Milhas</div>
         <p className="text-brand-100/70 mt-1">
           Conteúdo produzido seguindo{' '}
-          <a href="#/metodologia/" className="text-sun-400 u-link">
+          <a href="/metodologia/" className="text-sun-400 u-link">
             metodologia pública
           </a>
           . Publicado em {fmt(published)} · Atualizado em {fmt(updated)}.
@@ -345,7 +345,7 @@ export function Breadcrumbs({ trail, dark = false }: { trail: [string, string][]
     <nav aria-label="Breadcrumb" className={`text-[12.5px] ${dark ? 'text-brand-100/50' : 'text-slate-500'}`}>
       <ol className="flex flex-wrap items-center gap-1.5">
         <li>
-          <a href="#/" className={dark ? 'hover:text-white u-link' : 'hover:text-brand-600 hover:underline'}>
+          <a href="/" className={dark ? 'hover:text-white u-link' : 'hover:text-brand-600 hover:underline'}>
             Início
           </a>
         </li>
@@ -355,7 +355,7 @@ export function Breadcrumbs({ trail, dark = false }: { trail: [string, string][]
             {i === trail.length - 1 ? (
               <span className={dark ? 'text-brand-100/80' : 'text-slate-700 font-medium'}>{name}</span>
             ) : (
-              <a href={'#' + slug} className={dark ? 'hover:text-white u-link' : 'hover:text-brand-600 hover:underline'}>
+              <a href={slug} className={dark ? 'hover:text-white u-link' : 'hover:text-brand-600 hover:underline'}>
                 {name}
               </a>
             )}
@@ -376,7 +376,7 @@ export function RelatedLinks({ related }: { related: { slug: string; anchor: str
         {related.map((r, i) => (
           <a
             key={r.slug}
-            href={'#' + r.slug}
+            href={r.slug}
             className="lift group rounded-2xl border border-slate-200 bg-white px-5 py-4 text-[14.5px] font-semibold text-slate-800 hover:border-brand-400 hover:shadow-lg hover:shadow-brand-900/[0.06] flex items-center justify-between gap-4"
           >
             <span className="flex gap-3.5 items-baseline">

@@ -38,7 +38,7 @@ export function Sobre() {
         <h2 id="o-que-fazemos">O que fazemos</h2>
         <ul>
           <li>Guias gratuitos de acúmulo, venda e uso de milhas, atualizados periodicamente;</li>
-          <li>Análises completas de cursos de milhas, com prós e contras reais e <a href="#/metodologia/">metodologia pública</a>;</li>
+          <li>Análises completas de cursos de milhas, com prós e contras reais e <a href="/metodologia/">metodologia pública</a>;</li>
           <li>Dados próprios, como a tabela mensal de referência da cotação do milheiro.</li>
         </ul>
         <h2 id="o-que-nao-fazemos">O que NÃO fazemos</h2>
@@ -53,12 +53,12 @@ export function Sobre() {
           Por afiliação: quando você compra um curso pelos nossos links, recebemos comissão sem custo extra para
           você. O aviso geral fica no rodapé do site, e a comissão não altera a nota: os contras
           ficam no texto, inclusive dos produtos que recomendamos. Detalhes na{' '}
-          <a href="#/divulgacao-de-afiliados/">divulgação de afiliados</a>.
+          <a href="/divulgacao-de-afiliados/">divulgação de afiliados</a>.
         </p>
         <h2 id="contato">Contato</h2>
         <p>
           Fale com a equipe: <a href={'mailto:' + CONTACT_EMAIL}>{CONTACT_EMAIL}</a> ou pela página de{' '}
-          <a href="#/contato/">contato</a>.
+          <a href="/contato/">contato</a>.
         </p>
       </Shell>
     </>
@@ -99,7 +99,7 @@ export function Metodologia() {
         </ol>
         <h2 id="independencia">Comissão não compra nota</h2>
         <p>
-          Somos remunerados por afiliação, como detalhado na <a href="#/divulgacao-de-afiliados/">página de divulgação</a> (link no rodapé). A comissão não compra
+          Somos remunerados por afiliação, como detalhado na <a href="/divulgacao-de-afiliados/">página de divulgação</a> (link no rodapé). A comissão não compra
           nota: avaliamos com a mesma régua produtos com e sem programa de afiliados, e publicamos os contras
           dos cursos que recomendamos. Se um produto piora, a nota desce na revisão seguinte.
         </p>
@@ -141,7 +141,7 @@ export function Divulgacao() {
         <h2 id="o-que-muda">O que isso muda nas análises, e o que não muda</h2>
         <p>
           A comissão financia o site; ela <strong>não define nota nem esconde contras</strong>. Nossa{' '}
-          <a href="#/metodologia/">metodologia é pública</a>, os contras dos produtos recomendados ficam no
+          <a href="/metodologia/">metodologia é pública</a>, os contras dos produtos recomendados ficam no
           texto, e reportamos dados desfavoráveis (como reputação no Reclame Aqui) mesmo quando somos afiliados
           do produto analisado.
         </p>
@@ -186,7 +186,7 @@ export function Contato() {
           </li>
           <li>
             <strong>Parcerias:</strong> avaliamos apenas parcerias compatíveis com nossa{' '}
-            <a href="#/metodologia/">metodologia</a> e com a <a href="#/divulgacao-de-afiliados/">política de divulgação</a>.
+            <a href="/metodologia/">metodologia</a> e com a <a href="/divulgacao-de-afiliados/">política de divulgação</a>.
           </li>
         </ul>
         <p>

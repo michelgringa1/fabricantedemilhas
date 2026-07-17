@@ -37,7 +37,7 @@ export const reviewFabrica: Article = {
     },
     {
       t: 'p',
-      html: 'Por trás do produto está a 4MULTIPLUS MIDIA DIGITAL LTDA (CNPJ 42.650.222/0001-08), sediada em Barueri-SP, empresa ativa e verificável, um sinal básico de seriedade que checamos em toda análise (veja nossa <a href="#/metodologia/">metodologia</a>).',
+      html: 'Por trás do produto está a 4MULTIPLUS MIDIA DIGITAL LTDA (CNPJ 42.650.222/0001-08), sediada em Barueri-SP, empresa ativa e verificável, um sinal básico de seriedade que checamos em toda análise (veja nossa <a href="/metodologia/">metodologia</a>).',
     },
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes' },
     {
@@ -58,7 +58,7 @@ export const reviewFabrica: Article = {
     },
     {
       t: 'p',
-      html: 'Fizemos uma análise dedicada à confiabilidade do produtor em <a href="#/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>, recomendada para quem está avaliando o curso pela primeira vez.',
+      html: 'Fizemos uma análise dedicada à confiabilidade do produtor em <a href="/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>, recomendada para quem está avaliando o curso pela primeira vez.',
     },
     { t: 'h2', id: 'o-que-tem-dentro', text: 'O que tem dentro do curso' },
     {
@@ -163,12 +163,12 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'alternativas', text: 'Alternativas ao Fábrica de Milhas' },
     {
       t: 'p',
-      html: 'Nenhuma análise honesta termina sem alternativas. No nosso <a href="#/cursos-de-milhas/">comparador de cursos de milhas</a> avaliamos as opções relevantes do mercado, incluindo alternativas de menor investimento inicial <mark class="verificar">[VERIFICAR: catálogo, preços e condições das alternativas antes de publicar]</mark>. Se a sua dúvida é entre pagar um curso ou começar sozinho, comece pelos nossos guias gratuitos de <a href="#/como-acumular-milhas/">acúmulo</a> e <a href="#/vender-milhas-aereas/">venda</a>, e volte ao curso quando quiser velocidade.',
+      html: 'Nenhuma análise honesta termina sem alternativas. No nosso <a href="/cursos-de-milhas/">comparador de cursos de milhas</a> avaliamos as opções relevantes do mercado, incluindo alternativas de menor investimento inicial <mark class="verificar">[VERIFICAR: catálogo, preços e condições das alternativas antes de publicar]</mark>. Se a sua dúvida é entre pagar um curso ou começar sozinho, comece pelos nossos guias gratuitos de <a href="/como-acumular-milhas/">acúmulo</a> e <a href="/vender-milhas-aereas/">venda</a>, e volte ao curso quando quiser velocidade.',
     },
     { t: 'h2', id: 'veredito', text: 'Veredito final: nota 8,0/10' },
     {
       t: 'p',
-      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="#/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong> <mark class="verificar">[VERIFICAR: nota final ratificada pela equipe antes de publicar]</mark>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
+      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong> <mark class="verificar">[VERIFICAR: nota final ratificada pela equipe antes de publicar]</mark>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
     },
     { t: 'cta', variant: 'review' },
   ],

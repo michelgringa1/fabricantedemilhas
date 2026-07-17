@@ -466,7 +466,7 @@ export function DestraveSuasMilhas() {
                 <p className="!mb-0">
                   Ele também assina o curso completo Fábrica de Milhas. Se a sua dúvida é sobre a
                   reputação dele, analisamos os dados públicos em{' '}
-                  <a href="#/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>.
+                  <a href="/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>.
                 </p>
               </div>
             </div>
@@ -540,7 +540,7 @@ export function DestraveSuasMilhas() {
                 ].map((r, i) => (
                   <a
                     key={r.slug}
-                    href={'#' + r.slug}
+                    href={r.slug}
                     className="lift group rounded-2xl border border-slate-200 bg-white px-5 py-4 text-[14.5px] font-semibold text-slate-800 hover:border-brand-400 hover:shadow-lg hover:shadow-brand-900/[0.06] flex items-center justify-between gap-4"
                   >
                     <span className="flex gap-3.5 items-baseline">

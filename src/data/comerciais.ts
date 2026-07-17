@@ -29,7 +29,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes é o criador do curso <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reunia 1,6 milhão de seguidores em julho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
+      html: 'Rodrigo Góes é o criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reunia 1,6 milhão de seguidores em julho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
     },
     {
       t: 'p',
@@ -71,7 +71,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'empresa', text: 'A empresa por trás: dados verificáveis' },
     {
       t: 'p',
-      html: 'O curso é operado pela <strong>4MULTIPLUS MIDIA DIGITAL LTDA</strong>, CNPJ 42.650.222/0001-08, sediada em Barueri-SP. Empresa registrada, endereço declarado e canais de contato (e-mail, WhatsApp, Instagram) são o primeiro filtro da nossa <a href="#/metodologia/">metodologia</a>, e aqui todos se confirmam. Golpes típicos operam sem CNPJ rastreável; não é o caso.',
+      html: 'O curso é operado pela <strong>4MULTIPLUS MIDIA DIGITAL LTDA</strong>, CNPJ 42.650.222/0001-08, sediada em Barueri-SP. Empresa registrada, endereço declarado e canais de contato (e-mail, WhatsApp, Instagram) são o primeiro filtro da nossa <a href="/metodologia/">metodologia</a>, e aqui todos se confirmam. Golpes típicos operam sem CNPJ rastreável; não é o caso.',
     },
     { t: 'h2', id: 'reclame-aqui', text: 'Reclame Aqui: o que os números realmente mostram' },
     {
@@ -84,7 +84,7 @@ export const rodrigoGoes: Article = {
     },
     {
       t: 'p',
-      html: 'O que isso responde sobre confiança: golpe não tem perfil verificado, não responde 98,8% e não resolve 7 em cada 10 casos. O retrato aqui é de <strong>suporte pressionado nos picos de lançamento</strong>, que é o gargalo clássico de operação grande de infoproduto, e não de má-fé. É um ponto de atenção legítimo, não um sinal de alerta. Os temas recorrentes (ritmo do grupo após turmas novas, expectativa de retorno rápido e o episódio das plataformas de venda em 2023) estão detalhados na nossa <a href="#/fabrica-de-milhas-vale-a-pena/">análise completa do curso</a>.',
+      html: 'O que isso responde sobre confiança: golpe não tem perfil verificado, não responde 98,8% e não resolve 7 em cada 10 casos. O retrato aqui é de <strong>suporte pressionado nos picos de lançamento</strong>, que é o gargalo clássico de operação grande de infoproduto, e não de má-fé. É um ponto de atenção legítimo, não um sinal de alerta. Os temas recorrentes (ritmo do grupo após turmas novas, expectativa de retorno rápido e o episódio das plataformas de venda em 2023) estão detalhados na nossa <a href="/fabrica-de-milhas-vale-a-pena/">análise completa do curso</a>.',
     },
     { t: 'h2', id: 'episodio-123', text: 'O episódio 123milhas: o que ele diz (e o que não diz)' },
     {
@@ -111,7 +111,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'veredito', text: 'Veredito: confiável, com ressalvas de suporte' },
     {
       t: 'p',
-      html: 'Rodrigo Góes passa nos filtros objetivos de legitimidade: empresa real, produto real, reputação pública administrada. Não encontramos indício de golpe. As ressalvas são as de uma operação grande de infoproduto: suporte pressionado em picos e promessa de marketing que precisa ser lida como marketing. Se a dúvida é sobre o curso em si (conteúdo, preço, garantia e para quem faz sentido), a resposta completa está em <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas vale a pena?</a>.',
+      html: 'Rodrigo Góes passa nos filtros objetivos de legitimidade: empresa real, produto real, reputação pública administrada. Não encontramos indício de golpe. As ressalvas são as de uma operação grande de infoproduto: suporte pressionado em picos e promessa de marketing que precisa ser lida como marketing. Se a dúvida é sobre o curso em si (conteúdo, preço, garantia e para quem faz sentido), a resposta completa está em <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas vale a pena?</a>.',
     },
     { t: 'cta', variant: 'review' },
   ],
@@ -247,12 +247,12 @@ export const cursosComparador: Article = {
     { t: 'h2', id: 'recomendacao', text: 'Nossa recomendação e por quê' },
     {
       t: 'p',
-      html: 'O <a href="#/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> é a recomendação principal por um motivo prático: é o único que combina, num pacote só, método progressivo completo e comunidade diária de promoções, o componente que mantém o conhecimento rendendo depois das aulas. As ressalvas (preço premium, reputação "Regular" no Reclame Aqui) estão detalhadas na análise completa, junto com o perfil de quem NÃO deve comprar.',
+      html: 'O <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> é a recomendação principal por um motivo prático: é o único que combina, num pacote só, método progressivo completo e comunidade diária de promoções, o componente que mantém o conhecimento rendendo depois das aulas. As ressalvas (preço premium, reputação "Regular" no Reclame Aqui) estão detalhadas na análise completa, junto com o perfil de quem NÃO deve comprar.',
     },
     { t: 'h2', id: 'sem-curso', text: 'Dá para aprender milhas sem pagar curso?' },
     {
       t: 'p',
-      html: 'Dá, e este site existe para isso: os guias de <a href="#/como-acumular-milhas/">acúmulo</a>, <a href="#/vender-milhas-aereas/">venda</a> e <a href="#/como-viajar-de-graca-com-milhas/">emissão</a> são gratuitos e cobrem os fundamentos. O que um curso pago acrescenta é velocidade, profundidade nas estratégias avançadas e (no caso das boas comunidades) o fluxo diário de promoções. Comece pelo gratuito; pague quando souber exatamente o que está comprando.',
+      html: 'Dá, e este site existe para isso: os guias de <a href="/como-acumular-milhas/">acúmulo</a>, <a href="/vender-milhas-aereas/">venda</a> e <a href="/como-viajar-de-graca-com-milhas/">emissão</a> são gratuitos e cobrem os fundamentos. O que um curso pago acrescenta é velocidade, profundidade nas estratégias avançadas e (no caso das boas comunidades) o fluxo diário de promoções. Comece pelo gratuito; pague quando souber exatamente o que está comprando.',
     },
     { t: 'cta', variant: 'review' },
   ],
@@ -322,7 +322,7 @@ export const melhorCurso: Article = {
     { t: 'h2', id: 'por-que-lidera', text: 'Por que o Fábrica de Milhas lidera' },
     {
       t: 'p',
-      html: 'Três razões objetivas: cobertura (8 níveis, do zero à executiva e à venda de milhas), suporte vivo (aulas ao vivo + Clube do Mago com promoções diárias) e garantia dupla. E duas ressalvas igualmente objetivas: preço premium e reputação "Regular" no Reclame Aqui. A conta completa (com números, prós, contras e para quem NÃO serve) está na <a href="#/fabrica-de-milhas-vale-a-pena/">análise completa</a>.',
+      html: 'Três razões objetivas: cobertura (8 níveis, do zero à executiva e à venda de milhas), suporte vivo (aulas ao vivo + Clube do Mago com promoções diárias) e garantia dupla. E duas ressalvas igualmente objetivas: preço premium e reputação "Regular" no Reclame Aqui. A conta completa (com números, prós, contras e para quem NÃO serve) está na <a href="/fabrica-de-milhas-vale-a-pena/">análise completa</a>.',
     },
     { t: 'h2', id: 'criterios', text: 'Como ranqueamos (critérios públicos)' },
     {
@@ -393,9 +393,9 @@ export const rendaExtra: Article = {
     {
       t: 'ol',
       items: [
-        'Seus gastos mensais viram pontos no cartão (<a href="#/cartao-de-credito-para-milhas/">o cartão certo</a> importa).',
-        'Os pontos são transferidos com bônus para um programa aéreo (<a href="#/como-acumular-milhas/">o guia de acúmulo</a> detalha).',
-        'O milheiro é vendido pela cotação do momento (<a href="#/vender-milhas-aereas/">o guia de venda</a> mostra os canais e riscos).',
+        'Seus gastos mensais viram pontos no cartão (<a href="/cartao-de-credito-para-milhas/">o cartão certo</a> importa).',
+        'Os pontos são transferidos com bônus para um programa aéreo (<a href="/como-acumular-milhas/">o guia de acúmulo</a> detalha).',
+        'O milheiro é vendido pela cotação do momento (<a href="/vender-milhas-aereas/">o guia de venda</a> mostra os canais e riscos).',
         'A diferença entre custo e venda é a sua margem, que se repete a cada ciclo de 30–60 dias.',
       ],
     },

@@ -143,7 +143,7 @@ export const programas: Article = {
     { t: 'h2', id: 'estrategia', text: 'A estratégia que recomendamos' },
     {
       t: 'p',
-      html: 'Mantenha a pontuação do cartão em um programa de pontos flexível e <strong>só transfira em campanha bonificada</strong>, para o programa aéreo onde o saldo tem mais valor no seu caso, seja para <a href="#/como-viajar-de-graca-com-milhas/">emitir passagens</a>, seja para <a href="#/vender-milhas-aereas/">vender o milheiro</a>. Pontos parados no banco são valor dormindo; milhas transferidas sem bônus são valor queimado.',
+      html: 'Mantenha a pontuação do cartão em um programa de pontos flexível e <strong>só transfira em campanha bonificada</strong>, para o programa aéreo onde o saldo tem mais valor no seu caso, seja para <a href="/como-viajar-de-graca-com-milhas/">emitir passagens</a>, seja para <a href="/vender-milhas-aereas/">vender o milheiro</a>. Pontos parados no banco são valor dormindo; milhas transferidas sem bônus são valor queimado.',
     },
     { t: 'cta' },
   ],
@@ -207,7 +207,7 @@ export const viajar: Article = {
     {
       t: 'ol',
       items: [
-        'Acumule no programa certo para a rota que você quer voar (veja o <a href="#/programas-de-milhas/">comparativo de programas</a>).',
+        'Acumule no programa certo para a rota que você quer voar (veja o <a href="/programas-de-milhas/">comparativo de programas</a>).',
         'Pesquise a emissão em milhas E o preço em dinheiro: a razão entre os dois diz se a emissão vale a pena.',
         'Calcule o valor do milheiro embutido: preço em dinheiro ÷ milhas pedidas × 1.000. Abaixo da cotação de venda, venda as milhas e compre em dinheiro; acima, emita.',
         'Emita com os dados corretos de todos os passageiros. Alterações depois custam caro.',

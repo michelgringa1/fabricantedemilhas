@@ -272,7 +272,7 @@ function ModoCartao() {
         <div className="mt-5 rounded-xl bg-brand-50 px-4 py-3 text-[13.5px] text-slate-600 leading-relaxed">
           Fluxo da conta: gasto ÷ dólar × pontos/dólar = pontos no banco → transferidos com bônus viram milhas.
           Transferir <strong className="text-slate-800">sem bônus</strong> é onde a maioria perde. Veja o{' '}
-          <a href="#/como-acumular-milhas/" className="text-brand-600 underline underline-offset-2">guia de acúmulo</a>.
+          <a href="/como-acumular-milhas/" className="text-brand-600 underline underline-offset-2">guia de acúmulo</a>.
         </div>
       </div>
       <ResultPanel title="Painel · Produção">
@@ -386,12 +386,12 @@ export function Calculadora() {
           <div className="article-body mt-14 max-w-3xl">
             <h2 id="como-funciona">Como esta calculadora chega nos números</h2>
             <p>
-              Tudo gira em torno do <a href="#/glossario-de-milhas/#milheiro">milheiro</a> (bloco de mil milhas).
+              Tudo gira em torno do <a href="/glossario-de-milhas/#milheiro">milheiro</a> (bloco de mil milhas).
               O valor do saldo é <strong>saldo ÷ 1.000 × cotação</strong>; o veredito usar-ou-vender compara o{' '}
               <strong>milheiro embutido na emissão</strong> com a cotação de venda; e a produção no cartão converte
-              seu gasto mensal em pontos e aplica o <a href="#/glossario-de-milhas/#transferencia-bonificada">bônus de transferência</a>.
-              As fórmulas são as mesmas que usamos nos guias de <a href="#/vender-milhas-aereas/">venda</a> e de{' '}
-              <a href="#/como-viajar-de-graca-com-milhas/">emissão</a>.
+              seu gasto mensal em pontos e aplica o <a href="/glossario-de-milhas/#transferencia-bonificada">bônus de transferência</a>.
+              As fórmulas são as mesmas que usamos nos guias de <a href="/vender-milhas-aereas/">venda</a> e de{' '}
+              <a href="/como-viajar-de-graca-com-milhas/">emissão</a>.
             </p>
             <p>
               As cotações pré-preenchidas são referência editorial da nossa tabela mensal{' '}
@@ -410,7 +410,7 @@ export function Calculadora() {
                 exatamente o que o curso Fábrica de Milhas, do Rodrigo Góes, se propõe a ensinar.
               </p>
               <a
-                href="#/fabrica-de-milhas-vale-a-pena/"
+                href="/fabrica-de-milhas-vale-a-pena/"
                 className="shrink-0 inline-flex items-center gap-2 text-[14px] font-bold text-brand-700 hover:text-brand-800 u-link"
               >
                 Ler nossa análise do curso

@@ -80,7 +80,7 @@ function BoardingPass() {
   const [destino] = useState(() => DESTINOS[Math.floor(Math.random() * DESTINOS.length)])
   return (
     <a
-      href="#/calculadora-de-milhas/"
+      href="/calculadora-de-milhas/"
       className="float-card block w-[340px] max-w-full rounded-2xl bg-white text-slate-900 shadow-2xl shadow-black/50 rotate-[2.5deg] hover:rotate-0 transition-transform duration-500 overflow-hidden"
       aria-label="Abrir a calculadora de milhas e simular sua economia"
     >
@@ -207,7 +207,7 @@ export function Home() {
             </p>
             <div className="reveal reveal-3 mt-9 flex flex-wrap gap-3.5">
               <a
-                href="#/como-acumular-milhas/"
+                href="/como-acumular-milhas/"
                 className="inline-flex items-center gap-2.5 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-all hover:shadow-xl hover:shadow-sun-500/25"
               >
                 Começar pelo guia gratuito
@@ -216,7 +216,7 @@ export function Home() {
                 </svg>
               </a>
               <a
-                href="#/cursos-de-milhas/"
+                href="/cursos-de-milhas/"
                 className="inline-flex items-center gap-2 border border-white/25 hover:border-white/60 hover:bg-white/[0.06] text-white font-semibold px-7 py-3.5 rounded-full transition-all"
               >
                 Comparar cursos
@@ -225,7 +225,7 @@ export function Home() {
             <div className="reveal reveal-4 mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-[12.5px] text-brand-100/60">
               <span className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-sun-500" />Guias gratuitos</span>
               <span className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-sun-500" />Dados atualizados todo mês</span>
-              <a href="#/metodologia/" className="flex items-center gap-2 u-link text-brand-100/80"><span className="w-1 h-1 rounded-full bg-sun-500" />Metodologia pública</a>
+              <a href="/metodologia/" className="flex items-center gap-2 u-link text-brand-100/80"><span className="w-1 h-1 rounded-full bg-sun-500" />Metodologia pública</a>
             </div>
           </div>
           <div className="reveal reveal-3 hidden lg:flex justify-center">
@@ -240,7 +240,7 @@ export function Home() {
       <section className="bg-paper border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <a
-            href="#/destrave-suas-milhas/"
+            href="/destrave-suas-milhas/"
             className="lift group flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 rounded-2xl border border-sun-500/40 bg-white px-6 py-5 hover:border-sun-500 hover:shadow-lg hover:shadow-sun-500/10"
           >
             <span className="mono text-[10px] tracking-[0.18em] uppercase font-bold text-slate-950 bg-sun-500 rounded-full px-3 py-1 shrink-0 self-start">
@@ -272,7 +272,7 @@ export function Home() {
               <div className="eyebrow text-brand-600">Trilhas gratuitas</div>
               <h2 className="display text-[2rem] md:text-[2.5rem] text-slate-900 mt-3">Comece por aqui</h2>
             </div>
-            <a href="#/blog/" className="text-brand-700 font-semibold text-[14.5px] u-link">
+            <a href="/blog/" className="text-brand-700 font-semibold text-[14.5px] u-link">
               Ver todos os artigos →
             </a>
           </div>
@@ -280,7 +280,7 @@ export function Home() {
             {CLUSTERS.map((c) => (
               <a
                 key={c.slug}
-                href={'#' + c.slug}
+                href={c.slug}
                 className={`lift group relative rounded-2xl p-7 overflow-hidden ${
                   c.featured
                     ? 'bg-band grain text-white sm:col-span-2 lg:col-span-1 lg:row-span-2 flex flex-col justify-between min-h-[280px] border border-white/10'
@@ -332,7 +332,7 @@ export function Home() {
                 Reviews completos com prós, contras e reputação verificada, inclusive do curso que recomendamos.
               </p>
             </div>
-            <a href="#/metodologia/" className="text-sun-500 font-semibold text-[14.5px] u-link">
+            <a href="/metodologia/" className="text-sun-500 font-semibold text-[14.5px] u-link">
               Como avaliamos →
             </a>
           </div>
@@ -340,7 +340,7 @@ export function Home() {
             {ANALISES.map((a) => (
               <a
                 key={a.slug}
-                href={'#' + a.slug}
+                href={a.slug}
                 className="lift group rounded-2xl border border-white/12 bg-white/[0.05] hover:bg-white/[0.09] hover:border-sun-500/40 p-7 flex flex-col backdrop-blur-sm"
               >
                 <div className="flex items-start justify-between gap-3">
@@ -381,7 +381,7 @@ export function Home() {
               a bússola de quem acumula para vender. Citada nos nossos guias, aberta para consulta.
             </p>
             <a
-              href="#/vender-milhas-aereas/#cotacao"
+              href="/vender-milhas-aereas/#cotacao"
               className="mt-6 inline-flex items-center gap-2.5 bg-brand-700 hover:bg-brand-800 text-white font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg hover:shadow-brand-700/25"
             >
               Consultar a tabela do mês
@@ -452,7 +452,7 @@ export function Home() {
                 </span>
                 <h3 className="display text-[1.25rem] text-slate-900 relative">{c.title}</h3>
                 <p className="mt-2.5 text-[14.5px] text-slate-600 leading-relaxed">{c.desc}</p>
-                <a href={'#' + c.slug} className="mt-3.5 inline-block text-[13.5px] font-bold text-brand-600 u-link">
+                <a href={c.slug} className="mt-3.5 inline-block text-[13.5px] font-bold text-brand-600 u-link">
                   {c.link} →
                 </a>
               </div>
@@ -464,7 +464,7 @@ export function Home() {
       {/* GLOSSÁRIO CTA */}
       <section className="bg-paper border-t border-slate-100">
         <div className="max-w-6xl mx-auto px-4 py-20">
-          <a href="#/glossario-de-milhas/" className="lift group block rounded-3xl bg-band grain text-white px-8 py-12 md:px-14 relative overflow-hidden border border-white/10">
+          <a href="/glossario-de-milhas/" className="lift group block rounded-3xl bg-band grain text-white px-8 py-12 md:px-14 relative overflow-hidden border border-white/10">
             <div className="relative flex flex-col md:flex-row md:items-center gap-8 justify-between">
               <div>
                 <div className="eyebrow text-sun-500">Referência rápida</div>

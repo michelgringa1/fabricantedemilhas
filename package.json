@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:deploy": "parcel build index.html --dist-dir dist --no-source-maps",
+    "build:deploy": "parcel build index.html --dist-dir dist --no-source-maps && node scripts/prerender.mjs && node scripts/seo-files.mjs",
+    "build:spa": "parcel build index.html --dist-dir dist --no-source-maps",
     "lint": "oxlint",
     "preview": "vite preview"
   },
