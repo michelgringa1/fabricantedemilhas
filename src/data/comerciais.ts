@@ -220,7 +220,7 @@ export const cursosComparador: Article = {
     { t: 'h2', id: 'comparativo', text: 'O comparativo' },
     {
       t: 'table',
-      caption: 'Cursos de milhas comparados (dados [VERIFICAR] antes da publicação)',
+      caption: 'Cursos de milhas comparados. [VERIFICAR: dados a validar antes de publicar]',
       head: ['Curso', 'Preço de referência', 'Destaques', 'Nossa avaliação'],
       rows: [
         [

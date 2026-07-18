@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Seo, breadcrumbLd } from '@/lib/seo'
 import { PlaneMark } from '@/components/layout'
 import { TABELA_DO_MES, cotacaoDe, mesCurto } from '@/data/cotacoes'
+import { VERIFICAR_VISIVEL } from '@/lib/verificar'
 import { acumuloMilhasArt } from '@/assets/acumulo-milhas'
 import { aviaoAzul, aviaoAmarelo } from '@/assets/aviao'
 import { carimboSelo } from '@/assets/carimbo'
@@ -394,7 +395,7 @@ export function Home() {
               <span className="mono text-[11px] tracking-[0.2em] text-sun-500">PAINEL · MILHEIRO</span>
               <span className="mono text-[11px] tracking-[0.14em] text-brand-100/50 uppercase">
                 {mesCurto()}
-                {!TABELA_DO_MES.validado && <> <mark className="verificar">[VERIFICAR]</mark></>}
+                {VERIFICAR_VISIVEL && !TABELA_DO_MES.validado && <> <mark className="verificar">[VERIFICAR]</mark></>}
               </span>
             </div>
             <div className="divide-y divide-white/[0.07]">

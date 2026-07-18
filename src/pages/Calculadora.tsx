@@ -3,6 +3,7 @@ import { Seo, BASE_URL, breadcrumbLd, faqLd } from '@/lib/seo'
 import { PageHero, FaqSection, AuthorBlock, ChecksNote } from '@/components/blocks'
 import { PlaneMark } from '@/components/layout'
 import { TABELA_DO_MES, mesCurto, mesDaApuracao } from '@/data/cotacoes'
+import { VERIFICAR_VISIVEL } from '@/lib/verificar'
 
 /* Cotações vêm da tabela do mês (src/data/cotacoes.ts), fonte única do site.
    O usuário pode editar cada valor na tela; estes são só os padrões. */
@@ -152,7 +153,7 @@ function ModoSaldo() {
         </button>
         <p className="text-[12px] text-slate-400">
           Cotações pré-preenchidas são a nossa referência de {mesCurto()}
-          {!TABELA_DO_MES.validado && (
+          {VERIFICAR_VISIVEL && !TABELA_DO_MES.validado && (
             <>
               {' '}
               <mark className="verificar">[VERIFICAR: apuração pendente]</mark>
@@ -400,7 +401,7 @@ export function Calculadora() {
             <p>
               As cotações pré-preenchidas vêm da nossa tabela de referência, apurada em{' '}
               <strong>{mesDaApuracao()}</strong>
-              {!TABELA_DO_MES.validado && (
+              {VERIFICAR_VISIVEL && !TABELA_DO_MES.validado && (
                 <>
                   {' '}
                   <mark className="verificar">[VERIFICAR: apuração pendente]</mark>

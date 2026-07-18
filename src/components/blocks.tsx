@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import type { Block, Faq } from '@/data/types'
 import { AFF_URL } from '@/data/site'
 import { PlaneMark } from '@/components/layout'
+import { VERIFICAR_VISIVEL, limparVerificar, marcarVerificar } from '@/lib/verificar'
 
 /* ---------- hero de página (chrome escuro) ---------- */
 
@@ -66,7 +67,7 @@ export function Tldr({ items }: { items: string[] }) {
         {items.map((it, i) => (
           <li key={i} className="flex gap-3.5 text-[15.5px] leading-relaxed text-slate-700">
             <span className="mono text-[11px] font-bold text-sun-600 mt-1.5 shrink-0">{String(i + 1).padStart(2, '0')}</span>
-            <span dangerouslySetInnerHTML={{ __html: it }} />
+            <span dangerouslySetInnerHTML={{ __html: limparVerificar(it) }} />
           </li>
         ))}
       </ul>
@@ -143,7 +144,7 @@ function Callout({ tone, title, html }: { tone: 'info' | 'warn' | 'ok'; title?: 
   return (
     <div className={`my-7 rounded-r-2xl border-l-[3px] px-6 py-5 ${styles}`}>
       {title && <div className="eyebrow mb-2 opacity-80">{title}</div>}
-      <div className="text-[15.5px] leading-relaxed [&_a]:underline [&_a]:underline-offset-2" dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="text-[15.5px] leading-relaxed [&_a]:underline [&_a]:underline-offset-2" dangerouslySetInnerHTML={{ __html: limparVerificar(html) }} />
     </div>
   )
 }
@@ -166,11 +167,7 @@ export function ProsCons({ pros, cons }: { pros: string[]; cons: string[] }) {
             {col.items.map((p, i) => (
               <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-slate-700">
                 <span className={`mono text-[11px] font-bold mt-1 shrink-0 ${col.color}`}>{String(i + 1).padStart(2, '0')}</span>
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: p.replace(/\[VERIFICAR[^\]]*\]/g, (m) => `<mark class="verificar">${m}</mark>`),
-                  }}
-                />
+                <span dangerouslySetInnerHTML={{ __html: marcarVerificar(p) }} />
               </li>
             ))}
           </ul>
@@ -186,7 +183,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
       {blocks.map((b, i) => {
         switch (b.t) {
           case 'p':
-            return <p key={i} dangerouslySetInnerHTML={{ __html: b.html }} />
+            return <p key={i} dangerouslySetInnerHTML={{ __html: limparVerificar(b.html) }} />
           case 'h2':
             return (
               <h2 key={i} id={b.id}>
@@ -199,7 +196,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
             return (
               <ul key={i}>
                 {b.items.map((it, j) => (
-                  <li key={j} dangerouslySetInnerHTML={{ __html: it }} />
+                  <li key={j} dangerouslySetInnerHTML={{ __html: limparVerificar(it) }} />
                 ))}
               </ul>
             )
@@ -207,7 +204,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
             return (
               <ol key={i}>
                 {b.items.map((it, j) => (
-                  <li key={j} dangerouslySetInnerHTML={{ __html: it }} />
+                  <li key={j} dangerouslySetInnerHTML={{ __html: limparVerificar(it) }} />
                 ))}
               </ol>
             )
@@ -216,7 +213,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
               <div key={i} className="my-8 rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
                 {b.caption && (
                   <div className="bg-slate-50 border-b border-slate-200 px-5 py-3 text-[13px] font-semibold text-slate-600">
-                    {b.caption}
+                    {marcarVerificar(b.caption).replace(/<[^>]+>/g, '')}
                   </div>
                 )}
                 <div className="overflow-x-auto">
@@ -232,12 +229,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
                       {b.rows.map((row, j) => (
                         <tr key={j}>
                           {row.map((cell, k) => (
-                            <td
-                              key={k}
-                              dangerouslySetInnerHTML={{
-                                __html: cell.replace(/\[VERIFICAR[^\]]*\]/g, (m) => `<mark class="verificar">${m}</mark>`),
-                              }}
-                            />
+                            <td key={k} dangerouslySetInnerHTML={{ __html: marcarVerificar(cell) }} />
                           ))}
                         </tr>
                       ))}
@@ -247,9 +239,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
                 {b.note && (
                   <div
                     className="bg-slate-50 border-t border-slate-200 px-5 py-2.5 text-[12.5px] text-slate-500"
-                    dangerouslySetInnerHTML={{
-                      __html: b.note.replace(/\[VERIFICAR[^\]]*\]/g, (m) => `<mark class="verificar">${m}</mark>`),
-                    }}
+                    dangerouslySetInnerHTML={{ __html: marcarVerificar(b.note) }}
                   />
                 )}
               </div>
@@ -325,7 +315,8 @@ export function AuthorBlock({ published, updated }: { published: string; updated
 }
 
 export function ChecksNote({ checks }: { checks: string[] }) {
-  if (!checks.length) return null
+  // A nota de checagens só aparece no modo de revisão interna; no site, nunca.
+  if (!VERIFICAR_VISIVEL || !checks.length) return null
   return (
     <details className="mt-6 rounded-2xl border border-dashed border-sun-600/50 bg-sun-300/10 px-5 py-4">
       <summary className="cursor-pointer text-[13px] font-bold text-amber-900 mono tracking-wide">

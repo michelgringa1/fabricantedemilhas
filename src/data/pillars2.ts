@@ -42,7 +42,7 @@ export const cartao: Article = {
         ['R$ 2.000 – R$ 8.000', 'Intermediário com boa pontuação e anuidade negociável', 'Pulverizar em vários cartões'],
         ['Acima de R$ 8.000', 'Premium com 2+ pontos por dólar e benefícios de viagem', 'Pagar anuidade cheia sem negociar'],
       ],
-      note: 'Nomes, taxas e pontuações específicas de cada emissor: [VERIFICAR na data de publicação, condições mudam com frequência].',
+      note: 'Nomes, taxas e pontuações específicas de cada emissor mudam com frequência; confirme na data da consulta. [VERIFICAR: nomes e taxas dos cartões]',
     },
     { t: 'h2', id: 'sem-anuidade', text: 'Cartão sem anuidade vale a pena para milhas?' },
     {
