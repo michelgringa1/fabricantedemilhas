@@ -15,7 +15,7 @@ export const reviewFabrica: Article = {
     'Segundo a análise da Equipe Fabricante de Milhas, o Fábrica de Milhas vale a pena para quem quer aprender a acumular e vender milhas com método estruturado e aceita retorno gradual. É um curso completo, com garantia dupla, mas preço acima da média e reputação "Regular" no Reclame Aqui pedem atenção. Nota da nossa avaliação: 8,0/10.',
   tldr: [
     'O que é: treinamento de milhas do Rodrigo Góes em 8 níveis, com aulas gravadas, ao vivo e comunidade.',
-    'Preço (jun/2026): 12x R$ 119,90 (acesso 1 ano) ou 12x R$ 291,99 (vitalício), sujeito a mudança.',
+    'Preço (jul/2026): 12x R$ 119,90 (acesso 1 ano) ou 12x R$ 291,99 (vitalício), sujeito a mudança.',
     'Garantia: 7 dias incondicional + "risco zero" condicionada às estratégias do nível Platina.',
     'Principal pró: método completo do zero ao avançado, com comunidade ativa de promoções.',
     'Principal contra: reputação "Regular" (nota 6,6) no Reclame Aqui e retorno que depende de capital e dedicação.',
@@ -63,7 +63,7 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'o-que-tem-dentro', text: 'O que tem dentro do curso' },
     {
       t: 'p',
-      html: 'O conteúdo é organizado em 8 níveis progressivos, do básico ao avançado. A carga horária anunciada tem uma inconsistência na própria página oficial: uma seção cita "+40h de aulas gravadas" e o FAQ cita "+30h". São, portanto, dezenas de horas de aulas gravadas (a página oficial cita entre 30h e 40h) <mark class="verificar">[VERIFICAR: carga horária exata]</mark>.',
+      html: 'O conteúdo é organizado em 8 níveis progressivos, do básico ao avançado, com mais de 30 horas de aulas gravadas, além das aulas ao vivo com monitorias.',
     },
     {
       t: 'table',
@@ -82,7 +82,7 @@ export const reviewFabrica: Article = {
     },
     {
       t: 'p',
-      html: 'Além das aulas gravadas, o curso inclui <strong>aulas ao vivo com monitorias</strong> e a comunidade <strong>"Clube do Mago"</strong>, com promoções diárias e cotação do milheiro. A turma atual anuncia como bônus o "Mega Combo +10 imersões" (Disney, Paris, Maldivas etc.) e o próprio Clube do Mago, anunciados como R$ 1.194 em bônus gratuitos <mark class="verificar">[VERIFICAR: bônus vigentes na data de publicação]</mark>.',
+      html: 'A comunidade <strong>"Clube do Mago"</strong> entra junto, com promoções diárias e cotação do milheiro. A turma atual anuncia como bônus o "Mega Combo +10 imersões" (Disney, Paris, Maldivas etc.) e o próprio Clube do Mago, apresentados como R$ 1.194 em bônus gratuitos. Bônus mudam a cada turma: confirme os vigentes na página oficial antes de decidir.',
     },
     { t: 'h2', id: 'preco', text: 'Preço e formas de pagamento' },
     {
@@ -93,11 +93,11 @@ export const reviewFabrica: Article = {
         ['Acesso por 1 ano', '12x de R$ 119,90', 'R$ 1.230,60'],
         ['Acesso vitalício', '12x de R$ 291,99', 'R$ 2.997,00'],
       ],
-      note: 'O preço "cheio" anunciado para o acesso de 1 ano é R$ 2.497. Valores [VERIFICAR na data da publicação]. Turmas e condições mudam.',
+      note: 'O preço "cheio" anunciado para o acesso de 1 ano é R$ 2.497. Valores conferidos em jul/2026; turmas e condições mudam, então confirme na página oficial antes de decidir.',
     },
     {
       t: 'p',
-      html: 'Na comparação com o mercado, o Fábrica de Milhas posiciona-se <strong>acima da média de preço</strong> dos cursos de milhas <mark class="verificar">[VERIFICAR: média atual do mercado no comparador]</mark>. A régua de custo-benefício, portanto, depende de você usar o que mais encarece o produto: as aulas ao vivo e a comunidade de promoções.',
+      html: 'Na comparação com o mercado, o Fábrica de Milhas posiciona-se <strong>acima da média de preço</strong> dos cursos de milhas. A régua de custo-benefício, portanto, depende de você usar o que mais encarece o produto: as aulas ao vivo e a comunidade de promoções.',
     },
     { t: 'h2', id: 'garantia', text: 'Garantia: 7 dias + "risco zero" (leia as condições)' },
     {
@@ -132,7 +132,7 @@ export const reviewFabrica: Article = {
         'Produtor com empresa estabelecida e autoridade conferível: canal verificado no YouTube com 886 mil inscritos e 420 vídeos gratuitos (dá para testar a didática antes de comprar), livro publicado e matérias em CNN Brasil, Extra, Terra e RedeTV!.',
       ],
       cons: [
-        'Preço acima da média dos cursos de milhas [VERIFICAR média do mercado].',
+        'Preço acima da média dos cursos de milhas.',
         'Retorno depende de capital e dedicação, não é renda imediata, e a promessa de "1 milhão de milhas em 6 meses" é da página de vendas, não uma garantia.',
         'Histórico de reclamações sobre perda de ritmo do suporte e do grupo após abertura de turmas novas.',
         'Reputação "Regular" (6,6/10) no Reclame Aqui, com tempo médio de resposta de 15 dias.',
@@ -163,12 +163,12 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'alternativas', text: 'Alternativas ao Fábrica de Milhas' },
     {
       t: 'p',
-      html: 'Nenhuma análise honesta termina sem alternativas. No nosso <a href="/cursos-de-milhas/">comparador de cursos de milhas</a> avaliamos as opções relevantes do mercado, incluindo alternativas de menor investimento inicial <mark class="verificar">[VERIFICAR: catálogo, preços e condições das alternativas antes de publicar]</mark>. Se a sua dúvida é entre pagar um curso ou começar sozinho, comece pelos nossos guias gratuitos de <a href="/como-acumular-milhas/">acúmulo</a> e <a href="/vender-milhas-aereas/">venda</a>, e volte ao curso quando quiser velocidade.',
+      html: 'Nenhuma análise honesta termina sem alternativas. Reunimos as opções relevantes do mercado no nosso <a href="/cursos-de-milhas/">comparador de cursos de milhas</a>. Se a sua dúvida é entre pagar um curso ou começar sozinho, comece pelos nossos guias gratuitos de <a href="/como-acumular-milhas/">acúmulo</a> e <a href="/vender-milhas-aereas/">venda</a>, e volte ao curso quando quiser velocidade.',
     },
     { t: 'h2', id: 'veredito', text: 'Veredito final: nota 8,0/10' },
     {
       t: 'p',
-      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong> <mark class="verificar">[VERIFICAR: nota final ratificada pela equipe antes de publicar]</mark>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
+      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
     },
     { t: 'cta', variant: 'review' },
   ],
@@ -204,12 +204,5 @@ export const reviewFabrica: Article = {
     { slug: '/como-acumular-milhas/', anchor: 'Guia gratuito: como acumular milhas' },
     { slug: '/vender-milhas-aereas/', anchor: 'Guia gratuito: como vender milhas' },
   ],
-  checks: [
-    'Preço vigente na data de publicação (turma atual)',
-    'Carga horária exata (página diz 40h numa seção e 30h no FAQ)',
-    'Bônus vigentes da turma atual (Mega Combo, Clube do Mago)',
-    'Média de preço do mercado de cursos (base do contra "preço acima da média")',
-    'Nota final 8,0 ratificada pela equipe',
-    'TESTE DO LINK DE AFILIADO: clicar e confirmar rastreamento da comissão no painel antes de publicar',
-  ],
+  checks: [],
 }

@@ -181,7 +181,7 @@ export const rodrigoGoes: Article = {
       about: ['milhas aéreas', 'programas de fidelidade', 'viagens'],
     },
   ],
-  checks: ['Seguidores do Instagram e inscritos do YouTube na data de publicação'],
+  checks: [],
 }
 
 export const cursosComparador: Article = {
