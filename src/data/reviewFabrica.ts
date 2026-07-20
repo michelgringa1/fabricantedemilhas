@@ -42,7 +42,7 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma 1,6 milhão de seguidores (jul/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal.',
+      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil: seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86&src=blog" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> soma 1,6 milhão de seguidores (jul/2026), e a bio declara mais de 130 mil alunos e mais de 112 milhões de milhas acumuladas, números autodeclarados por ele, que reportamos como tal.',
     },
     {
       t: 'p',
@@ -50,7 +50,7 @@ export const reviewFabrica: Article = {
     },
     {
       t: 'p',
-      html: 'Há um dado que vale mais que qualquer número autodeclarado, porque você confere sozinho em cinco segundos: o canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes no YouTube</a> é verificado e tinha <strong>886 mil inscritos e 420 vídeos publicados</strong> em julho de 2026. Quase 900 mil pessoas acompanhando e mais de 400 aulas gratuitas no ar não se constroem num lançamento: é um arquivo público de anos, exposto à crítica nos comentários.',
+      html: 'Há um dado que vale mais que qualquer número autodeclarado, porque você confere sozinho em cinco segundos: o canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb&src=blog" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes no YouTube</a> é verificado e tinha <strong>886 mil inscritos e 420 vídeos publicados</strong> em julho de 2026. Quase 900 mil pessoas acompanhando e mais de 400 aulas gratuitas no ar não se constroem num lançamento: é um arquivo público de anos, exposto à crítica nos comentários.',
     },
     {
       t: 'p',

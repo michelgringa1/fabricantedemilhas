@@ -29,7 +29,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes' },
     {
       t: 'p',
-      html: 'Rodrigo Góes é o criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reunia 1,6 milhão de seguidores em julho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
+      html: 'Rodrigo Góes é o criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86&src=blog" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reunia 1,6 milhão de seguidores em julho de 2026. A bio declara "+130 mil alunos" e "+112 milhões de milhas acumuladas", números <strong>autodeclarados</strong>, que reportamos como tal por não haver auditoria independente.',
     },
     {
       t: 'p',
@@ -58,7 +58,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'youtube', text: 'O canal no YouTube: a autoridade que dá para conferir' },
     {
       t: 'p',
-      html: 'Aqui está o dado mais útil desta análise, porque é o único que não depende da palavra dele. O canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reunia, em julho de 2026, <strong>886 mil inscritos e 420 vídeos publicados</strong>. Diferente dos números de milhas e de alunos, essas métricas são contadores públicos da plataforma: qualquer pessoa abre o canal e confere em cinco segundos.',
+      html: 'Aqui está o dado mais útil desta análise, porque é o único que não depende da palavra dele. O canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb&src=blog" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reunia, em julho de 2026, <strong>886 mil inscritos e 420 vídeos publicados</strong>. Diferente dos números de milhas e de alunos, essas métricas são contadores públicos da plataforma: qualquer pessoa abre o canal e confere em cinco segundos.',
     },
     {
       t: 'p',
