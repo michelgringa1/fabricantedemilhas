@@ -244,11 +244,11 @@ export function Home() {
         <div className="max-w-4xl mx-auto px-4">
           <EventoBanner src="home" />
           <p className="-mt-6 mb-8 text-center text-[13px] text-slate-500">
-            Antes de participar,{' '}
+            O valor de R$ 47 é de lote promocional e pode subir a qualquer momento.{' '}
             <a href="/destrave-suas-milhas/" className="u-link text-brand-700 font-semibold">
-              leia nossa análise do evento
+              Veja datas e o que é ensinado
             </a>
-            : datas, preço e o que é ensinado.
+            .
           </p>
         </div>
       </section>
