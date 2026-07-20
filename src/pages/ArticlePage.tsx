@@ -12,6 +12,25 @@ import {
   ChecksNote,
   RelatedLinks,
 } from '@/components/blocks'
+import { EventoBanner, BANNER_SRC } from '@/components/EventoBanner'
+
+/** Escolhe um ponto de corte no meio do artigo, preferindo o início de uma
+ * seção (h2) mais próxima do centro, para o banner não partir um parágrafo. */
+function pontoDeCorte(blocks: Article['blocks']): number {
+  const meio = Math.floor(blocks.length / 2)
+  let melhor = -1
+  let menorDist = Infinity
+  blocks.forEach((b, i) => {
+    if (i > 0 && b.t === 'h2') {
+      const dist = Math.abs(i - meio)
+      if (dist < menorDist) {
+        menorDist = dist
+        melhor = i
+      }
+    }
+  })
+  return melhor === -1 ? meio : melhor
+}
 
 export function ArticlePage({ article }: { article: Article }) {
   const jsonLd = useMemo(() => {
@@ -90,7 +109,20 @@ export function ArticlePage({ article }: { article: Article }) {
             {article.tldr && <Tldr items={article.tldr} />}
 
             <div className="mt-10">
-              <BlockRenderer blocks={article.blocks} />
+              {BANNER_SRC[article.slug] ? (
+                (() => {
+                  const corte = pontoDeCorte(article.blocks)
+                  return (
+                    <>
+                      <BlockRenderer blocks={article.blocks.slice(0, corte)} />
+                      <EventoBanner src={BANNER_SRC[article.slug]} />
+                      <BlockRenderer blocks={article.blocks.slice(corte)} />
+                    </>
+                  )
+                })()
+              ) : (
+                <BlockRenderer blocks={article.blocks} />
+              )}
             </div>
 
             <FaqSection faq={article.faq} />

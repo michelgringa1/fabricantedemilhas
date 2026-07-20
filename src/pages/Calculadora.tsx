@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Seo, BASE_URL, breadcrumbLd, faqLd } from '@/lib/seo'
 import { PageHero, FaqSection, AuthorBlock, ChecksNote } from '@/components/blocks'
+import { EventoBanner } from '@/components/EventoBanner'
 import { PlaneMark } from '@/components/layout'
 import { TABELA_DO_MES, mesCurto, mesDaApuracao } from '@/data/cotacoes'
 import { VERIFICAR_VISIVEL } from '@/lib/verificar'
@@ -385,6 +386,11 @@ export function Calculadora() {
             {modo === 'saldo' && <ModoSaldo />}
             {modo === 'usar-vender' && <ModoUsarVender />}
             {modo === 'cartao' && <ModoCartao />}
+          </div>
+
+          {/* banner do evento */}
+          <div className="mt-12 max-w-3xl">
+            <EventoBanner src="calculadora" />
           </div>
 
           {/* conteúdo de apoio */}
