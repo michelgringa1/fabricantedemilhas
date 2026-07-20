@@ -5,7 +5,7 @@ import { PlaneMark } from '@/components/layout'
 import { logoEvento, iconCarrinho, iconCartao, seloGarantia, texturaMapa } from '@/assets/destrave'
 
 /** Link de inscrição do evento (afiliado) */
-const INSCRICAO = 'https://go.hotmart.com/Y102512256Q?ap=a657'
+const INSCRICAO = 'https://go.hotmart.com/Y102512256Q?ap=a657&src=blg_destrave'
 
 const FAQ = [
   {
