@@ -57,10 +57,12 @@ export function Header() {
           </nav>
           <div className="flex items-center gap-2">
             <a
-              href="/fabrica-de-milhas-vale-a-pena/"
+              href="https://go.hotmart.com/Y102512256Q?ap=a657&src=blg_destravemenu"
+              target="_blank"
+              rel="sponsored nofollow noopener"
               className="hidden sm:inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold text-[13.5px] px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-sun-500/25"
             >
-              A análise nº 1
+              Destravar Milhas
               <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
