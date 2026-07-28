@@ -146,11 +146,19 @@ for (const { path: rota } of rotas) {
  * 404 do servidor, e não mais na SPA. Renderizamos uma rota qualquer que não
  * existe para capturar a nossa página de erro e salvamos em dist/404.html; o
  * .htaccess aponta o ErrorDocument para ela.
+ *
+ * Antes de salvar, tiramos o canonical (apontava para /404/, que não existe) e
+ * marcamos noindex: quem chega via ErrorDocument recebe status 404 e o Google
+ * ignora, mas /404.html acessado direto responde 200 e viraria página órfã
+ * indexável no relatório de indexação.
  */
 try {
   const html404 = await render(chrome, '/pagina-inexistente-para-gerar-o-404/')
   if (/não encontrada/i.test(html404)) {
-    await writeFile(path.join(DIST, '404.html'), html404, 'utf8')
+    const limpo = html404
+      .replace(/<link rel="canonical"[^>]*>/i, '')
+      .replace(/<head>/i, '<head><meta name="robots" content="noindex,follow">')
+    await writeFile(path.join(DIST, '404.html'), limpo, 'utf8')
     console.log('  ok     404.html (página de erro da marca)')
   } else {
     console.error('  AVISO  404.html não gerado: a rota de teste não caiu no NotFound')
