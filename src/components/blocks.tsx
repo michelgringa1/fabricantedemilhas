@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import type { Block, Faq } from '@/data/types'
-import { AFF_URL } from '@/data/site'
+import { affUrl } from '@/data/site'
 import { PlaneMark } from '@/components/layout'
 import { VERIFICAR_VISIVEL, limparVerificar, marcarVerificar } from '@/lib/verificar'
 
@@ -77,7 +77,14 @@ export function Tldr({ items }: { items: string[] }) {
 
 /* ---------- CTA de afiliado (máx. 1 por artigo) ---------- */
 
-export function CtaAffiliate({ variant = 'padrao' }: { variant?: 'padrao' | 'review' }) {
+export function CtaAffiliate({
+  variant = 'padrao',
+  src,
+}: {
+  variant?: 'padrao' | 'review'
+  /** Abreviação da página de origem (ver PAGE_SRC), vira o &src= do hotlink. */
+  src?: string
+}) {
   return (
     <aside className="my-14 rounded-3xl bg-night grain text-white px-7 py-9 md:px-11 md:py-11 relative overflow-hidden border border-white/10 not-prose">
       <svg className="absolute inset-0 w-full h-full" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 800 300" fill="none">
@@ -109,7 +116,7 @@ export function CtaAffiliate({ variant = 'padrao' }: { variant?: 'padrao' | 'rev
         )}
         <div className="mt-7 flex flex-wrap items-center gap-4">
           <a
-            href={AFF_URL}
+            href={affUrl(src)}
             target="_blank"
             rel="sponsored nofollow noopener"
             className="inline-flex items-center gap-2.5 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-all hover:shadow-xl hover:shadow-sun-500/20"
@@ -177,7 +184,7 @@ export function ProsCons({ pros, cons }: { pros: string[]; cons: string[] }) {
   )
 }
 
-export function BlockRenderer({ blocks }: { blocks: Block[] }) {
+export function BlockRenderer({ blocks, src }: { blocks: Block[]; src?: string }) {
   return (
     <div className="article-body">
       {blocks.map((b, i) => {
@@ -247,7 +254,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
           case 'callout':
             return <Callout key={i} tone={b.tone} title={b.title} html={b.html} />
           case 'cta':
-            return <CtaAffiliate key={i} variant={b.variant} />
+            return <CtaAffiliate key={i} variant={b.variant} src={src} />
           case 'proscons':
             return <ProsCons key={i} pros={b.pros} cons={b.cons} />
           default:

@@ -1,11 +1,39 @@
 /**
+ * Abreviação de origem por página. É o que aparece no relatório da Hotmart
+ * (campo hsrc) e diz de qual página do site veio o clique.
+ *
+ * Usada por dois lugares diferentes, com prefixos que os separam no relatório:
+ *   curso_XXX  · CTA "Conhecer o Fábrica de Milhas" (bloco cta dos artigos)
+ *   blg_XXX    · banner do evento Destrave suas Milhas
+ *
+ * AO CRIAR PÁGINA NOVA COM CTA OU BANNER, ADICIONE AQUI, senão o clique cai
+ * no balde genérico e some a informação de origem.
+ */
+export const PAGE_SRC: Record<string, string> = {
+  '/como-acumular-milhas/': 'acumular',
+  '/como-ganhar-dinheiro-com-milhas/': 'ganhar',
+  '/vender-milhas-aereas/': 'vender',
+  '/cartao-de-credito-para-milhas/': 'cartao',
+  '/programas-de-milhas/': 'programas',
+  '/como-viajar-de-graca-com-milhas/': 'viajar',
+  '/milhas-aereas-como-renda-extra/': 'renda',
+  '/fabrica-de-milhas-vale-a-pena/': 'review',
+  '/rodrigo-goes-e-confiavel/': 'confiavel',
+  '/cursos-de-milhas/': 'cursos',
+  '/melhor-curso-de-milhas/': 'melhorcurso',
+  '/calculadora-de-milhas/': 'calculadora',
+}
+
+/**
  * Link de afiliado do curso Fábrica de Milhas (sempre rel="sponsored nofollow").
  *
  * Tem que ser o hotlink do go.hotmart.com, nunca a LP do produtor direto: é o
- * go.hotmart que registra o clique no painel e converte o &src= em hsrc. Ele
+ * go.hotmart que registra o clique no painel e converte o ?src= em hsrc. Ele
  * cai exatamente na mesma página de inscrição.
  */
-export const AFF_URL = 'https://go.hotmart.com/Y102512256Q?src=review'
+export function affUrl(pagina?: string) {
+  return `https://go.hotmart.com/Y102512256Q?src=curso_${pagina || 'geral'}`
+}
 
 export const BRAND = 'Fabricante de Milhas'
 export const CONTACT_EMAIL = 'contato@fabricantedemilhas.com.br'

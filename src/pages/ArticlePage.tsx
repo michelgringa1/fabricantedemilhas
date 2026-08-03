@@ -12,7 +12,8 @@ import {
   ChecksNote,
   RelatedLinks,
 } from '@/components/blocks'
-import { EventoBanner, BANNER_SRC } from '@/components/EventoBanner'
+import { EventoBanner } from '@/components/EventoBanner'
+import { PAGE_SRC } from '@/data/site'
 
 /** Escolhe um ponto de corte no meio do artigo, preferindo o início de uma
  * seção (h2) mais próxima do centro, para o banner não partir um parágrafo. */
@@ -109,14 +110,15 @@ export function ArticlePage({ article }: { article: Article }) {
             {article.tldr && <Tldr items={article.tldr} />}
 
             <div className="mt-10">
-              {BANNER_SRC[article.slug] ? (
+              {PAGE_SRC[article.slug] ? (
                 (() => {
                   const corte = pontoDeCorte(article.blocks)
+                  const src = PAGE_SRC[article.slug]
                   return (
                     <>
-                      <BlockRenderer blocks={article.blocks.slice(0, corte)} />
-                      <EventoBanner src={BANNER_SRC[article.slug]} />
-                      <BlockRenderer blocks={article.blocks.slice(corte)} />
+                      <BlockRenderer blocks={article.blocks.slice(0, corte)} src={src} />
+                      <EventoBanner src={src} />
+                      <BlockRenderer blocks={article.blocks.slice(corte)} src={src} />
                     </>
                   )
                 })()

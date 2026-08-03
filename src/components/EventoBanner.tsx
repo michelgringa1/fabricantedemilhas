@@ -3,25 +3,6 @@ import { bannerDestraveDesktop, bannerDestraveMobile } from '@/assets/banner-des
 const AFF = 'https://go.hotmart.com/Y102512256Q?ap=a657'
 
 /**
- * Abreviação de origem por página (o &src=blg_XXX permite rastrear no painel
- * da Hotmart de qual página do blog veio o clique e a venda).
- */
-export const BANNER_SRC: Record<string, string> = {
-  '/como-acumular-milhas/': 'acumular',
-  '/como-ganhar-dinheiro-com-milhas/': 'ganhar',
-  '/vender-milhas-aereas/': 'vender',
-  '/cartao-de-credito-para-milhas/': 'cartao',
-  '/programas-de-milhas/': 'programas',
-  '/como-viajar-de-graca-com-milhas/': 'viajar',
-  '/milhas-aereas-como-renda-extra/': 'renda',
-  '/fabrica-de-milhas-vale-a-pena/': 'review',
-  '/rodrigo-goes-e-confiavel/': 'confiavel',
-  '/cursos-de-milhas/': 'cursos',
-  '/melhor-curso-de-milhas/': 'melhorcurso',
-  '/calculadora-de-milhas/': 'calculadora',
-}
-
-/**
  * Banner do evento "Destrave suas Milhas". Imagem responsiva (arte própria
  * para mobile e desktop) que leva ao checkout com rastreio de origem.
  */
