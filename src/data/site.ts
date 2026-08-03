@@ -1,6 +1,11 @@
-/** Link de afiliado oficial (sempre rel="sponsored nofollow") */
-export const AFF_URL =
-  'https://lp.fabricademilha.com/t31-inscricoes-abertas/?ref=Y102512256Q'
+/**
+ * Link de afiliado do curso Fábrica de Milhas (sempre rel="sponsored nofollow").
+ *
+ * Tem que ser o hotlink do go.hotmart.com, nunca a LP do produtor direto: é o
+ * go.hotmart que registra o clique no painel e converte o &src= em hsrc. Ele
+ * cai exatamente na mesma página de inscrição.
+ */
+export const AFF_URL = 'https://go.hotmart.com/Y102512256Q?src=review'
 
 export const BRAND = 'Fabricante de Milhas'
 export const CONTACT_EMAIL = 'contato@fabricantedemilhas.com.br'
