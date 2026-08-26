@@ -57,7 +57,7 @@ export function Header() {
           </nav>
           <div className="flex items-center gap-2">
             <a
-              href="https://go.hotmart.com/Y102512256Q?ap=a657&src=blg_destravemenu"
+              href="https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destravemenu"
               target="_blank"
               rel="sponsored nofollow noopener"
               className="hidden sm:inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold text-[13.5px] px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-sun-500/25"

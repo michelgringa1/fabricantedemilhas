@@ -1,6 +1,6 @@
 import { bannerDestraveDesktop, bannerDestraveMobile } from '@/assets/banner-destrave'
 
-const AFF = 'https://go.hotmart.com/Y102512256Q?ap=a657'
+const AFF = 'https://go.hotmart.com/Y102512256Q?ap=3f4d'
 
 /**
  * Banner do evento "Destrave suas Milhas". Imagem responsiva (arte própria
