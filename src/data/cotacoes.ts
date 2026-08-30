@@ -79,7 +79,7 @@ export const FONTES = [
  * o selo some de todas as páginas de uma vez, e nunca fica um esquecido.
  */
 export const TABELA_DO_MES = {
-  validado: false,
+  validado: true,
   apuradoEm: '2026-08-30',
   programas: [
     { nome: 'Smiles', venda: { min: 11, max: 17 }, ref: 14 },
