@@ -42,20 +42,52 @@ export const FONTES = [
 ] as const
 
 /**
+ * ─── REGISTRO DA APURAÇÃO ──────────────────────────────────────────────
+ * O que foi efetivamente observado, por fonte, na data de `apuradoEm`. É o
+ * que sustenta a faixa publicada: sem isto a tabela é um número sem lastro,
+ * e é justamente o lastro que a torna citável.
+ *
+ * 30/08/2026
+ *
+ *   MaxMilhas · maxmilhas.com.br/vender-milhas · "preço médio para cada
+ *   10.000 milhas", valor público na página, sem login:
+ *     Smiles              R$ 171,50 / 10k  →  R$ 17,15 / milheiro
+ *     LATAM Pass          R$ 282,40 / 10k  →  R$ 28,24 / milheiro
+ *     TudoAzul            R$ 166,90 / 10k  →  R$ 16,69 / milheiro
+ *
+ *   BankMilhas · bankmilhas.com.br/vender-milhas/<programa> · valor à vista
+ *   por PIX, tabelado por faixa de quantidade:
+ *     Smiles       30k e 40k  R$ 11,00 · 50k e 60k  R$ 12,50
+ *     LATAM Pass   10k        R$ 10,00 · 15k a 25k  R$ 16,00
+ *     Livelo       50k a 75k  R$ 15,00
+ *     TudoAzul e Esfera: não compra.
+ *
+ *   HotMilhas: cotação atrás de login. Não apurada nesta rodada.
+ *
+ * ─── POR QUE A FAIXA É LARGA ───────────────────────────────────────────
+ * MaxMilhas e BankMilhas não vendem o mesmo produto. A MaxMilhas publica a
+ * MÉDIA de marketplace: você anuncia e espera alguém emitir com as suas
+ * milhas. A BankMilhas paga À VISTA por PIX e desconta o risco de carregar
+ * o estoque. Daí Smiles sair a R$ 11 num canal e R$ 17 no outro no mesmo
+ * dia. A faixa min–max publicada é exatamente essa distância, e ela é o
+ * dado: mede quanto custa ter pressa.
+ */
+
+/**
  * ⚠️ `validado: false` faz o site inteiro exibir o selo [VERIFICAR] sozinho.
  * Vire para `true` só quando os números forem apuração real da equipe. Assim
  * o selo some de todas as páginas de uma vez, e nunca fica um esquecido.
  */
 export const TABELA_DO_MES = {
   validado: false,
-  apuradoEm: '2026-07-17',
+  apuradoEm: '2026-08-30',
   programas: [
-    { nome: 'Smiles', venda: { min: 14, max: 19 }, ref: 16 },
-    { nome: 'LATAM Pass', venda: { min: 19, max: 25 }, ref: 22 },
-    { nome: 'Azul Fidelidade', venda: { min: 16, max: 22 }, ref: 19 },
-    { nome: 'Livelo', venda: { min: 15, max: 21 }, ref: 18, nota: 'Programa de pontos: transfira com bônus antes de vender.' },
-    { nome: 'Esfera', venda: { min: 14, max: 19 }, ref: 16, nota: 'Programa de pontos: transfira com bônus antes de vender.' },
-    { nome: 'Outro programa', venda: { min: 12, max: 26 }, ref: 20 },
+    { nome: 'Smiles', venda: { min: 11, max: 17 }, ref: 14 },
+    { nome: 'LATAM Pass', venda: { min: 16, max: 28 }, ref: 22 },
+    { nome: 'Azul Fidelidade', venda: { min: 16, max: 17 }, ref: 17, nota: 'Fonte única: só a MaxMilhas compra TudoAzul entre os canais consultados.' },
+    { nome: 'Livelo', venda: { min: 15, max: 15 }, ref: 15, nota: 'Programa de pontos: transfira com bônus antes de vender. Fonte única (BankMilhas).' },
+    { nome: 'Esfera', venda: { min: 14, max: 19 }, ref: 16, nota: 'Sem compra direta no mercado: o valor sai do programa aéreo de destino após a transferência. Faixa herdada de jul/2026, não reapurada em agosto.' },
+    { nome: 'Outro programa', venda: { min: 11, max: 28 }, ref: 18 },
   ] as Cotacao[],
 }
 
