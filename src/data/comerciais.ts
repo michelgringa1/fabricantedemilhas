@@ -191,15 +191,15 @@ export const cursosComparador: Article = {
   keyword: 'curso de milhas',
   commercial: true,
   answerFirst:
-    'Segundo a análise da Equipe Fabricante de Milhas, o melhor curso de milhas para a maioria dos perfis em 2026 é o Fábrica de Milhas, do Rodrigo Góes, pela combinação de método completo e comunidade ativa. Alternativas fazem sentido para quem busca menor investimento inicial. Compare critérios, preços e reputação antes de decidir.',
+    'Segundo a análise da Equipe Fabricante de Milhas, o melhor curso de milhas para a maioria dos perfis em 2026 é o Fábrica de Milhas, do Rodrigo Góes, pela combinação de método completo e comunidade ativa. O Papo de Milhas (EBC) faz sentido para quem busca menor investimento inicial e foca em emitir passagens. Compare critérios, preços e escopo antes de decidir.',
   tldr: [
     'Avaliamos cursos por 6 critérios públicos: conteúdo, custo-benefício, suporte, reputação, garantia e atualização.',
     'Fábrica de Milhas é nossa recomendação principal: completo, com ressalvas de preço e suporte.',
-    'Alternativas de menor investimento existem e estão em avaliação [VERIFICAR].',
+    'Alternativa avaliada: Papo de Milhas (EBC), 7,0/10, bem mais barato e focado em emissão.',
     'Nenhum curso garante renda: desconfie de quem promete.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-08-30',
   blocks: [
     { t: 'h2', id: 'bom-curso', text: 'O que um bom curso de milhas precisa ensinar' },
     {
@@ -215,29 +215,62 @@ export const cursosComparador: Article = {
     { t: 'h2', id: 'comparativo', text: 'O comparativo' },
     {
       t: 'table',
-      caption: 'Cursos de milhas comparados. [VERIFICAR: dados a validar antes de publicar]',
-      head: ['Curso', 'Preço de referência', 'Destaques', 'Nossa avaliação'],
+      caption: 'Cursos de milhas comparados, pelos 6 critérios da nossa metodologia.',
+      head: ['Curso', 'Preço de referência', 'Foco principal', 'Nossa avaliação'],
       rows: [
         [
           'Fábrica de Milhas (Rodrigo Góes)',
           '12x R$ 119,90 (1 ano) · jun/2026',
-          '8 níveis, aulas ao vivo, comunidade de promoções, garantia dupla',
+          'Do zero ao avançado: acúmulo, emissão, executiva e venda de milhas',
           '8,0/10 · recomendação principal',
         ],
         [
-          'Alternativa A [VERIFICAR: curso, produtor e preço]',
-          '[VERIFICAR]',
-          'Perfil de menor investimento inicial [VERIFICAR]',
-          'Em avaliação',
-        ],
-        [
-          'Alternativa B [VERIFICAR: curso, produtor e preço]',
-          '[VERIFICAR]',
-          'Foco em emissões/viagens [VERIFICAR]',
-          'Em avaliação',
+          'Papo de Milhas — EBC (João Paulo Aragão)',
+          'R$ 397 por ano ou 12x R$ 41,06 · ago/2026',
+          'Emissão de passagens, alertas de promoção e hospedagem',
+          '7,0/10 · alternativa de menor investimento',
         ],
       ],
-      note: 'Só publicamos nota de cursos que analisamos pela metodologia completa. As alternativas entram no ranking após validação humana dos dados.',
+      note: 'Preços apurados na página oficial de cada curso, na data indicada. Só publicamos nota de curso que analisamos pelos seis critérios; um curso ausente desta tabela é curso que ainda não avaliamos, não curso reprovado.',
+    },
+    { t: 'h2', id: 'papo-de-milhas', text: 'Papo de Milhas (EBC): a alternativa barata' },
+    {
+      t: 'p',
+      html: 'O <strong>Papo de Milhas — EBC</strong>, de João Paulo Aragão, é o curso que faz mais sentido comparar com o Fábrica de Milhas hoje, porque ataca o mesmo problema por um caminho diferente e por um preço muito menor: <strong>R$ 397 por ano</strong>, ou 12x R$ 41,06, contra 12x R$ 119,90 do líder. Nota da nossa avaliação: <strong>7,0/10</strong>.',
+    },
+    {
+      t: 'p',
+      html: 'A diferença que importa não é o preço, é o <strong>escopo</strong>. O Papo de Milhas é forte em <strong>emissão</strong>: encontrar passagem boa, usar tabelas fixas, alertas de promoção no Telegram e hospedagem barata. O Fábrica de Milhas cobre um arco maior, do acúmulo em escala até a venda do saldo e a classe executiva. Se o seu objetivo é viajar mais gastando menos, o Papo de Milhas entrega isso por um quarto do preço. Se o objetivo inclui transformar milhas em renda, ele não cobre a parte que interessa.',
+    },
+    {
+      t: 'callout',
+      tone: 'warn',
+      title: 'Leia a letra miúda do preço',
+      html: 'A página de vendas anuncia "R$ 397,00 à vista" sem deixar claro na mesma linha que o acesso é <strong>anual</strong>. Isso só aparece na home do produto, como "R$ 397,00/ano". Não é cobrança escondida, mas é informação que deveria estar no mesmo lugar do preço: você está assinando, não comprando acesso permanente.',
+    },
+    {
+      t: 'p',
+      html: 'Outro ponto que pesa na nota: a oferta ancora em <strong>"De R$ 2.600"</strong>, valor que sai da soma de oito itens empacotados. Comparando as três páginas do próprio produtor, os preços desses bônus mudam de uma para outra — o guia de cartões aparece como R$ 190, R$ 199 e R$ 200; o curso de investimentos, como R$ 250 e R$ 400. Preço de bônus que muda conforme a página é preço de ancoragem, não valor de mercado. O número real a considerar é o que sai do seu bolso: R$ 397 por ano.',
+    },
+    {
+      t: 'proscons',
+      pros: [
+        'Preço muito abaixo do líder: R$ 397/ano contra 12x R$ 119,90, para quem só quer aprender a emitir bem.',
+        'Foco claro em emissão de passagens, tabelas fixas e hospedagem, com alertas de oportunidade no Telegram.',
+        'Produtor identificável, com canal público desde 2019 e outros projetos na área de finanças.',
+        'Garantia de 7 dias incondicional, padrão legal para produto digital.',
+      ],
+      cons: [
+        'Cobertura mais estreita: não trata venda de milhas com profundidade, que é metade do assunto de quem quer renda.',
+        'Acesso anual, não vitalício, e a página de vendas não deixa isso claro junto ao preço.',
+        'Ancoragem de R$ 2.600 baseada em bônus cujos preços variam entre as páginas do próprio produtor.',
+        'Base declarada de pouco mais de 3.100 alunos, bem menor que a do líder: menos histórico público para avaliar.',
+        'Sinais de manutenção fraca do site: rodapé de 2024 e texto que se anuncia como "estratégias de 2025", em 2026.',
+      ],
+    },
+    {
+      t: 'p',
+      html: 'Números como faturamento do produtor e total de alunos são <strong>autodeclarados</strong> na própria página, sem auditoria independente, e reportamos como tal. Preço e garantia foram apurados em <strong>30 de agosto de 2026</strong> nas páginas oficiais; ofertas de infoproduto mudam com frequência, então confirme antes de comprar.',
     },
     { t: 'h2', id: 'recomendacao', text: 'Nossa recomendação e por quê' },
     {
@@ -254,7 +287,7 @@ export const cursosComparador: Article = {
   faq: [
     {
       q: 'Qual o melhor curso de milhas em 2026?',
-      a: 'Nossa recomendação principal é o Fábrica de Milhas, do Rodrigo Góes, avaliado em 8,0/10 pela nossa metodologia: método completo em 8 níveis e comunidade ativa de promoções. Alternativas de menor investimento estão em avaliação; compare antes de decidir.',
+      a: 'Nossa recomendação principal é o Fábrica de Milhas, do Rodrigo Góes, avaliado em 8,0/10 pela nossa metodologia: método completo em 8 níveis e comunidade ativa de promoções. A alternativa avaliada é o Papo de Milhas (EBC), 7,0/10: bem mais barato e focado em emissão, com cobertura mais estreita.',
     },
     {
       q: 'Curso de milhas funciona mesmo?',
@@ -276,7 +309,7 @@ export const cursosComparador: Article = {
     { slug: '/como-acumular-milhas/', anchor: 'Guia gratuito de acúmulo de milhas' },
   ],
   checks: [
-    'Definir e validar alternativas A e B (curso, produtor, preço, garantia, reputação)',
+    'Papo de Milhas: confirmar preço (R$ 397/ano), garantia de 7 dias e o fato de o acesso ser anual, não vitalício',
     'Preço vigente do Fábrica de Milhas na data de publicação',
   ],
 }
@@ -293,26 +326,25 @@ export const melhorCurso: Article = {
   keyword: 'melhor curso de milhas',
   commercial: true,
   answerFirst:
-    'Segundo o ranking da Equipe Fabricante de Milhas, o melhor curso de milhas em 2026 é o Fábrica de Milhas, do Rodrigo Góes (nota 8,0/10): método mais completo e comunidade mais ativa do mercado, apesar do preço acima da média. As posições seguintes estão em avaliação pela nossa metodologia pública.',
+    'Segundo o ranking da Equipe Fabricante de Milhas, o melhor curso de milhas em 2026 é o Fábrica de Milhas, do Rodrigo Góes (nota 8,0/10): método mais completo e comunidade mais ativa do mercado, apesar do preço acima da média. Em 2º vem o Papo de Milhas (7,0/10), quatro vezes mais barato e focado em emissão. As posições seguintes estão em avaliação pela nossa metodologia pública.',
   tldr: [
     '1º lugar: Fábrica de Milhas, 8,0/10 (completo; ressalvas de preço e suporte).',
-    'Posições seguintes em avaliação [VERIFICAR]: só ranqueamos o que analisamos por completo.',
+    '2º lugar: Papo de Milhas (EBC), 7,0/10 (R$ 397/ano; foco em emissão, cobertura mais estreita).',
     'Critérios públicos: conteúdo, custo-benefício, suporte, reputação, garantia, atualização.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-08-30',
   blocks: [
     { t: 'h2', id: 'ranking', text: 'O ranking 2026' },
     {
       t: 'table',
-      caption: 'Ranking atualizado em jul/2026',
+      caption: 'Ranking atualizado em ago/2026',
       head: ['Posição', 'Curso', 'Nota', 'Para quem'],
       rows: [
         ['1º', 'Fábrica de Milhas (Rodrigo Góes)', '8,0/10', 'Quem quer o método completo + comunidade diária de promoções'],
-        ['2º', '[VERIFICAR: alternativa em avaliação]', '—', 'Perfil de menor investimento inicial'],
-        ['3º', '[VERIFICAR: alternativa em avaliação]', '—', 'Foco em emissões e viagens'],
+        ['2º', 'Papo de Milhas — EBC (João Paulo Aragão)', '7,0/10', 'Quem quer gastar pouco e foca em emitir passagens, não em vender milhas'],
       ],
-      note: 'Não publicamos nota sem análise completa. Ranking revisado a cada atualização de página.',
+      note: 'Não publicamos nota sem análise completa: um curso fora do ranking é curso que ainda não avaliamos, não curso reprovado. Ranking revisado a cada atualização de página.',
     },
     { t: 'h2', id: 'por-que-lidera', text: 'Por que o Fábrica de Milhas lidera' },
     {
@@ -336,7 +368,7 @@ export const melhorCurso: Article = {
   faq: [
     {
       q: 'Qual é o melhor curso de milhas em 2026?',
-      a: 'Pelo nosso ranking, o Fábrica de Milhas, do Rodrigo Góes, com nota 8,0/10: é o método mais completo e a comunidade mais ativa que avaliamos. Ele custa acima da média; para orçamentos menores, acompanhe as alternativas em avaliação no comparador.',
+      a: 'Pelo nosso ranking, o Fábrica de Milhas, do Rodrigo Góes, com nota 8,0/10: é o método mais completo e a comunidade mais ativa que avaliamos. Ele custa acima da média; para orçamentos menores, o Papo de Milhas (EBC) fica em 2º com 7,0/10, a R$ 397 por ano.',
     },
     {
       q: 'O ranking é pago pelos cursos?',
@@ -353,7 +385,7 @@ export const melhorCurso: Article = {
     { slug: '/metodologia/', anchor: 'Nossa metodologia de avaliação' },
   ],
   checks: [
-    'Alternativas do ranking (2º e 3º) analisadas e validadas',
+    'Papo de Milhas no 2º lugar: confirmar preço e nota antes de manter no ar',
     'Nota e preço do líder revisados na data de publicação',
   ],
 }
