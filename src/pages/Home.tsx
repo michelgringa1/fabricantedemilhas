@@ -136,7 +136,7 @@ const ANALISES = [
     slug: '/fabrica-de-milhas-vale-a-pena/',
     tag: 'REVIEW',
     title: 'Fábrica de Milhas vale a pena?',
-    desc: 'Preço, garantia dupla, Reclame Aqui e 5 contras reais do curso do Rodrigo Góes.',
+    desc: 'Preço, garantia dupla e 5 contras reais do curso do Rodrigo Góes.',
     nota: 80,
   },
   {
@@ -427,7 +427,7 @@ export function Home() {
               {
                 n: '01',
                 title: 'Análise em terceira pessoa',
-                desc: 'Avaliamos cursos e produtores com fontes públicas e verificáveis: CNPJ, Reclame Aqui, imprensa.',
+                desc: 'Avaliamos cursos e produtores com fontes públicas e verificáveis: CNPJ, imprensa, histórico.',
                 slug: '/sobre/',
                 link: 'Quem somos',
               },

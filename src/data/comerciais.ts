@@ -8,11 +8,11 @@ export const rodrigoGoes: Article = {
   h1: 'Rodrigo Góes é confiável? O que os dados públicos mostram [2026]',
   seoTitle: 'Rodrigo Góes É Confiável? Análise com Dados 2026',
   metaDescription:
-    'Rodrigo Góes, o "Mago das Milhas", é confiável? Empresa, números públicos, Reclame Aqui e histórico analisados a fundo pela Fabricante de Milhas.',
+    'Rodrigo Góes, o "Mago das Milhas", é confiável? Empresa, números públicos, reclamações e histórico analisados a fundo pela Fabricante de Milhas.',
   keyword: 'Rodrigo Góes milhas é confiável',
   commercial: true,
   answerFirst:
-    'Segundo a análise da Equipe Fabricante de Milhas, os sinais públicos indicam que Rodrigo Góes é um produtor real e estabelecido: empresa ativa com CNPJ, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, e perfil verificado no Reclame Aqui com 98,8% das reclamações respondidas. Confiável não significa perfeito: a reputação "Regular" (6,6/10) mostra atritos reais de suporte.',
+    'Segundo a análise da Equipe Fabricante de Milhas, os sinais públicos indicam que Rodrigo Góes é um produtor real e estabelecido: empresa ativa com CNPJ, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, livro publicado e presença na imprensa. Confiável não significa perfeito: existem reclamações públicas recorrentes sobre o ritmo do suporte.',
   tldr: [
     'Empresa real: 4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, Barueri-SP.',
     'YouTube verificado com 886 mil inscritos e 420 vídeos: histórico público e conferível (jul/2026).',
@@ -20,7 +20,7 @@ export const rodrigoGoes: Article = {
     'Autor do livro "O Mapa para Acumular 1 Milhão de Milhas", citado entre os mais vendidos.',
     'Audiência: 1,6 milhão de seguidores no Instagram (@goesrodrigo, jul/2026).',
     'Números "130 mil alunos" e "112 milhões de milhas" são autodeclarados na bio dele.',
-    'Reclame Aqui: perfil verificado, 98,8% das reclamações respondidas e 166 em seis meses. Nota 6,6/10 ("Regular"), puxada pelo tempo de resposta.',
+    'Reclamações públicas existem e se concentram em ritmo de suporte, não em não-entrega do produto.',
     'Veredito: operação legítima, com ressalvas normais de suporte, sem indício de golpe.',
   ],
   published: '2026-07-11',
@@ -73,18 +73,14 @@ export const rodrigoGoes: Article = {
       t: 'p',
       html: 'O curso é operado pela <strong>4MULTIPLUS MIDIA DIGITAL LTDA</strong>, CNPJ 42.650.222/0001-08, sediada em Barueri-SP. Empresa registrada, endereço declarado e canais de contato (e-mail, WhatsApp, Instagram) são o primeiro filtro da nossa <a href="/metodologia/">metodologia</a>, e aqui todos se confirmam. Golpes típicos operam sem CNPJ rastreável; não é o caso.',
     },
-    { t: 'h2', id: 'reclame-aqui', text: 'Reclame Aqui: o que os números realmente mostram' },
+    { t: 'h2', id: 'reclamacoes', text: 'O que dizem as reclamações públicas' },
     {
       t: 'p',
-      html: 'Esta é a pesquisa que todo mundo faz antes de comprar, então vamos aos dados do período dez/2025 a mai/2026. A empresa mantém <strong>perfil verificado</strong> e respondeu <strong>98,8% das reclamações</strong>. Foram <strong>166 reclamações em seis meses</strong>. Para dar escala a esse número: o produtor declara uma base de mais de 130 mil alunos. As duas contas têm bases diferentes (uma é semestral, a outra é acumulada), mas a ordem de grandeza mostra o essencial: <strong>reclamação formal aqui é exceção, não padrão</strong>.',
+      html: 'Esta é a pesquisa que todo mundo faz antes de comprar, e a nossa recomendação é que você faça mesmo: procure o nome da empresa nos sites de reputação e leia os relatos direto na fonte. <strong>Não reproduzimos aqui as notas desses sites</strong>, porque elas mudam de mês para mês e um número congelado dentro de um artigo leva o leitor a decidir com dado velho.',
     },
     {
       t: 'p',
-      html: 'A nota é <strong>6,6/10</strong>, que o Reclame Aqui classifica como "Regular", e o que puxa esse número para baixo é o tempo médio de resposta, de 15 dias. Vale entender o que esses índices medem: <strong>70,3% de resolução e 48,4% que voltariam a fazer negócio dizem respeito apenas a quem reclamou</strong>, ou seja, ao grupo mais insatisfeito por definição. Quase metade das pessoas que abriram uma reclamação compraria de novo, o que é bem diferente da leitura apressada de que "metade dos alunos não voltaria".',
-    },
-    {
-      t: 'p',
-      html: 'O que isso responde sobre confiança: golpe não tem perfil verificado, não responde 98,8% e não resolve 7 em cada 10 casos. O retrato aqui é de <strong>suporte pressionado nos picos de lançamento</strong>, que é o gargalo clássico de operação grande de infoproduto, e não de má-fé. É um ponto de atenção legítimo, não um sinal de alerta. Os temas recorrentes (ritmo do grupo após turmas novas, expectativa de retorno rápido e o episódio das plataformas de venda em 2023) estão detalhados na nossa <a href="/fabrica-de-milhas-vale-a-pena/">análise completa do curso</a>.',
+      html: 'O que é útil reportar, porque se mantém estável, é <strong>a natureza do que se reclama</strong>. Os relatos se concentram em ritmo de atendimento nos picos de lançamento, gargalo clássico de operação grande de infoproduto, e não em não-entrega do produto ou cobrança indevida. Isso é um ponto de atenção legítimo, não um sinal de alerta: a diferença entre suporte pressionado e má-fé aparece justamente no tipo de queixa. Os temas recorrentes (ritmo do grupo após turmas novas, expectativa de retorno rápido e o episódio das plataformas de venda em 2023) estão detalhados na nossa <a href="/fabrica-de-milhas-vale-a-pena/">análise completa do curso</a>.',
     },
     { t: 'h2', id: 'episodio-123', text: 'O episódio 123milhas: o que ele diz (e o que não diz)' },
     {
@@ -98,12 +94,11 @@ export const rodrigoGoes: Article = {
         'Empresa ativa e rastreável (CNPJ, sede, canais de contato).',
         'Canal verificado no YouTube com 886 mil inscritos e 420 vídeos: histórico público, longo e conferível por qualquer um.',
         'Identidade pública consolidada: 1,6 milhão de seguidores, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch, todas linkadas acima.',
-        'Perfil verificado no Reclame Aqui, com quase todas as reclamações respondidas.',
+        'Reclamações públicas são respondidas pela empresa, com histórico de retorno registrado.',
         'Produto real, com garantia de 7 dias e política de reembolso declarada.',
       ],
       cons: [
-        'Reputação "Regular" (6,6/10), abaixo do que a operação poderia entregar.',
-        'Tempo médio de resposta de 15 dias no Reclame Aqui.',
+        'Suporte perde ritmo nos picos de lançamento, tema recorrente nos relatos públicos.',
         'Números de alunos e milhas são autodeclarados, sem auditoria externa.',
         'Marketing agressivo de promessa ("1 milhão de milhas em 6 meses") que exige leitura crítica do comprador.',
       ],
@@ -118,7 +113,7 @@ export const rodrigoGoes: Article = {
   faq: [
     {
       q: 'Rodrigo Góes é confiável?',
-      a: 'Os sinais públicos indicam que sim: empresa registrada e ativa, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, matérias em CNN Brasil, Extra, Terra e RedeTV!, livro publicado e perfil verificado no Reclame Aqui com 98,8% de resposta. A reputação "Regular" (6,6/10) aponta atritos de suporte, não indício de fraude.',
+      a: 'Os sinais públicos indicam que sim: empresa registrada e ativa, canal verificado no YouTube com 886 mil inscritos e 420 vídeos, matérias em CNN Brasil, Extra, Terra e RedeTV!, e livro publicado. As reclamações que existem apontam atritos de suporte, não indício de fraude.',
     },
     {
       q: 'Rodrigo Góes tem canal no YouTube?',
@@ -133,8 +128,8 @@ export const rodrigoGoes: Article = {
       a: 'A bio oficial declara mais de 130 mil alunos (jun/2026). O número é autodeclarado, sem auditoria independente. Por isso o reportamos como declaração do produtor, não como fato verificado por terceiros.',
     },
     {
-      q: 'Qual a nota do Rodrigo Góes no Reclame Aqui?',
-      a: 'No período dez/2025–mai/2026, o perfil verificado da empresa registrava nota 6,6/10, reputação "Regular", com 166 reclamações, 98,8% respondidas e 70,3% resolvidas. Dados desse tipo mudam mensalmente; confira o perfil atualizado antes de decidir.',
+      q: 'Qual a reputação do Rodrigo Góes nos sites de reclamação?',
+      a: 'Não publicamos as notas desses sites, porque elas mudam todo mês e um número congelado num artigo faz o leitor decidir com dado velho. Pesquise o nome da empresa (4MULTIPLUS MIDIA DIGITAL LTDA) na plataforma de reputação da sua preferência e leia os relatos na fonte. O que observamos e não muda: as queixas tratam de ritmo de suporte, não de não-entrega do produto.',
     },
     {
       q: 'Vale a pena comprar o curso dele?',
@@ -247,7 +242,7 @@ export const cursosComparador: Article = {
     { t: 'h2', id: 'recomendacao', text: 'Nossa recomendação e por quê' },
     {
       t: 'p',
-      html: 'O <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> é a recomendação principal por um motivo prático: é o único que combina, num pacote só, método progressivo completo e comunidade diária de promoções, o componente que mantém o conhecimento rendendo depois das aulas. As ressalvas (preço premium, reputação "Regular" no Reclame Aqui) estão detalhadas na análise completa, junto com o perfil de quem NÃO deve comprar.',
+      html: 'O <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> é a recomendação principal por um motivo prático: é o único que combina, num pacote só, método progressivo completo e comunidade diária de promoções, o componente que mantém o conhecimento rendendo depois das aulas. As ressalvas (preço premium, ritmo do suporte nos picos) estão detalhadas na análise completa, junto com o perfil de quem NÃO deve comprar.',
     },
     { t: 'h2', id: 'sem-curso', text: 'Dá para aprender milhas sem pagar curso?' },
     {
@@ -322,7 +317,7 @@ export const melhorCurso: Article = {
     { t: 'h2', id: 'por-que-lidera', text: 'Por que o Fábrica de Milhas lidera' },
     {
       t: 'p',
-      html: 'Três razões objetivas: cobertura (8 níveis, do zero à executiva e à venda de milhas), suporte vivo (aulas ao vivo + Clube do Mago com promoções diárias) e garantia dupla. E duas ressalvas igualmente objetivas: preço premium e reputação "Regular" no Reclame Aqui. A conta completa (com números, prós, contras e para quem NÃO serve) está na <a href="/fabrica-de-milhas-vale-a-pena/">análise completa</a>.',
+      html: 'Três razões objetivas: cobertura (8 níveis, do zero à executiva e à venda de milhas), suporte vivo (aulas ao vivo + Clube do Mago com promoções diárias) e garantia dupla. E duas ressalvas igualmente objetivas: preço premium e suporte que perde ritmo nos picos de lançamento. A conta completa (com números, prós, contras e para quem NÃO serve) está na <a href="/fabrica-de-milhas-vale-a-pena/">análise completa</a>.',
     },
     { t: 'h2', id: 'criterios', text: 'Como ranqueamos (critérios públicos)' },
     {
@@ -331,7 +326,7 @@ export const melhorCurso: Article = {
         '<strong>Conteúdo e didática (25%)</strong>: cobertura do básico ao avançado, clareza, organização.',
         '<strong>Custo-benefício (20%)</strong>: preço vs. entrega, formas de pagamento.',
         '<strong>Suporte e comunidade (15%)</strong>: canais, ritmo, monitorias, grupo de promoções.',
-        '<strong>Reputação e confiança (20%)</strong>: Reclame Aqui, empresa, histórico público.',
+        '<strong>Reputação e confiança (20%)</strong>: empresa registrada, histórico público, natureza das reclamações.',
         '<strong>Garantia e transparência (10%)</strong>: política de reembolso e clareza das condições.',
         '<strong>Atualização (10%)</strong>: frequência de novas aulas e adaptação a mudanças do mercado.',
       ],

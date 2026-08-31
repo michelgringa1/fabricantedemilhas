@@ -8,17 +8,17 @@ export const reviewFabrica: Article = {
   h1: 'Fábrica de Milhas vale a pena? Análise honesta e completa [2026]',
   seoTitle: 'Fábrica de Milhas Vale a Pena? Review Honesto 2026',
   metaDescription:
-    'Análise completa do Fábrica de Milhas, do Rodrigo Góes: preço, garantia, reputação no Reclame Aqui, prós e contras. Veja se vale a pena em 2026.',
+    'Análise completa do Fábrica de Milhas, do Rodrigo Góes: preço, garantia, o que dizem os alunos, prós e contras. Veja se vale a pena em 2026.',
   keyword: 'fábrica de milhas vale a pena',
   commercial: true,
   answerFirst:
-    'Segundo a análise da Equipe Fabricante de Milhas, o Fábrica de Milhas vale a pena para quem quer aprender a acumular e vender milhas com método estruturado e aceita retorno gradual. É um curso completo, com garantia dupla, mas preço acima da média e reputação "Regular" no Reclame Aqui pedem atenção. Nota da nossa avaliação: 8,0/10.',
+    'Segundo a análise da Equipe Fabricante de Milhas, o Fábrica de Milhas vale a pena para quem quer aprender a acumular e vender milhas com método estruturado e aceita retorno gradual. É um curso completo, com garantia dupla, mas o preço acima da média e o ritmo do suporte pedem atenção. Nota da nossa avaliação: 8,0/10.',
   tldr: [
     'O que é: treinamento de milhas do Rodrigo Góes em 8 níveis, com aulas gravadas, ao vivo e comunidade.',
     'Preço (jul/2026): 12x R$ 119,90 (acesso 1 ano) ou 12x R$ 291,99 (vitalício), sujeito a mudança.',
     'Garantia: 7 dias incondicional + "risco zero" condicionada às estratégias do nível Platina.',
     'Principal pró: método completo do zero ao avançado, com comunidade ativa de promoções.',
-    'Principal contra: reputação "Regular" (nota 6,6) no Reclame Aqui e retorno que depende de capital e dedicação.',
+    'Principal contra: reclamações recorrentes sobre o ritmo do suporte e retorno que depende de capital e dedicação.',
   ],
   published: '2026-07-11',
   updated: '2026-07-16',
@@ -107,11 +107,11 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'reputacao', text: 'O que dizem os alunos: reputação real'},
     {
       t: 'p',
-      html: 'No <strong>Reclame Aqui</strong> (período dez/2025 a mai/2026), a empresa aparece com <strong>perfil verificado</strong> e <strong>98,8% das reclamações respondidas</strong>, com 70,3% resolvidas. Foram 166 reclamações em seis meses, para uma base que o produtor declara em mais de 130 mil alunos: bases de cálculo diferentes, mas a ordem de grandeza já diz que reclamação formal é exceção por aqui.',
+      html: 'Como todo produto com base grande, o Fábrica de Milhas tem reclamações públicas registradas. <strong>Não reproduzimos aqui notas de sites de reputação</strong>: elas mudam de um mês para o outro e envelhecem mal dentro de um texto, o que faria você tomar decisão com número velho. Se esse ponto pesa para você, pesquise o nome da empresa nesses sites antes de comprar e leia os relatos direto na fonte.',
     },
     {
       t: 'p',
-      html: 'A nota fica em <strong>6,6/10</strong>, faixa que o Reclame Aqui chama de "Regular", puxada principalmente pelo tempo médio de resposta de 15 dias. Um detalhe que muda a leitura: os índices de resolução e o de 48,4% que voltariam a fazer negócio medem <strong>somente quem reclamou</strong>, o grupo mais insatisfeito por definição. Quase metade de quem abriu reclamação compraria de novo, o que é um dado melhor do que parece à primeira vista.',
+      html: 'O que dá para reportar com utilidade, porque não muda de mês para mês, é <strong>o padrão do que se reclama</strong>. Lendo os relatos públicos, eles se concentram em três frentes:',
     },
     {
       t: 'ul',
@@ -135,7 +135,7 @@ export const reviewFabrica: Article = {
         'Preço acima da média dos cursos de milhas.',
         'Retorno depende de capital e dedicação, não é renda imediata, e a promessa de "1 milhão de milhas em 6 meses" é da página de vendas, não uma garantia.',
         'Histórico de reclamações sobre perda de ritmo do suporte e do grupo após abertura de turmas novas.',
-        'Reputação "Regular" (6,6/10) no Reclame Aqui, com tempo médio de resposta de 15 dias.',
+        'Suporte com tempo de resposta lento em períodos de pico, segundo relatos públicos de alunos.',
         'O mercado de venda de milhas embute risco de plataformas, como mostrou a crise 123milhas em 2023, e nenhum curso elimina esse risco.',
       ],
     },
@@ -168,18 +168,18 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'veredito', text: 'Veredito final: nota 8,0/10' },
     {
       t: 'p',
-      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reputação "Regular" no Reclame Aqui e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
+      html: 'O Fábrica de Milhas é um curso sólido, completo e operado por uma empresa real com o maior nome do nicho à frente. Os contras são igualmente reais: preço premium, reclamações recorrentes sobre o ritmo do suporte e a dependência (inevitável em milhas) de capital, dedicação e mercado. Pelos critérios da nossa <a href="/metodologia/">metodologia</a> (conteúdo, custo-benefício, suporte, reputação, garantia e atualização), a nota é <strong>8,0/10</strong>: recomendado para quem se encaixa no perfil descrito acima, com as ressalvas na mesa.',
     },
     { t: 'cta', variant: 'review' },
   ],
   faq: [
     {
       q: 'O Fábrica de Milhas vale a pena?',
-      a: 'Para quem quer método estruturado, comunidade ativa de promoções e aceita retorno gradual, sim: nossa avaliação é 8,0/10. Para quem espera renda garantida ou não pode dedicar tempo e capital, não. Os contras: preço acima da média e reputação "Regular" no Reclame Aqui.',
+      a: 'Para quem quer método estruturado, comunidade ativa de promoções e aceita retorno gradual, sim: nossa avaliação é 8,0/10. Para quem espera renda garantida ou não pode dedicar tempo e capital, não. Os contras: preço acima da média e reclamações recorrentes sobre o ritmo do suporte.',
     },
     {
       q: 'O Fábrica de Milhas é confiável?',
-      a: 'Os sinais públicos indicam operação real: empresa registrada (CNPJ ativo em Barueri-SP), produtor com livro publicado e matérias na imprensa, perfil verificado no Reclame Aqui com 98,8% das reclamações respondidas e 166 registros em seis meses, para uma base declarada de mais de 130 mil alunos. A nota 6,6 ("Regular") reflete tempo de resposta do suporte, não indício de golpe.',
+      a: 'Os sinais públicos indicam operação real: empresa registrada (CNPJ ativo em Barueri-SP), produtor com livro publicado e matérias na imprensa, e uma base de alunos que o produtor declara em mais de 130 mil. As reclamações que existem tratam de ritmo de suporte e expectativa de retorno, não de indício de golpe. Para avaliar a reputação por conta própria, pesquise o nome da empresa nos sites de reputação e leia os relatos na fonte.',
     },
     {
       q: 'Quanto custa o Fábrica de Milhas?',

@@ -84,13 +84,13 @@ export function Metodologia() {
           <li><strong>Conteúdo e didática (25%)</strong>: cobertura do básico ao avançado, organização, clareza e profundidade das aulas.</li>
           <li><strong>Custo-benefício (20%)</strong>: preço em relação à entrega, formas de pagamento, comparação com o mercado.</li>
           <li><strong>Suporte e comunidade (15%)</strong>: canais de dúvida, monitorias, ritmo do grupo de promoções ao longo do tempo.</li>
-          <li><strong>Reputação e confiança (20%)</strong>: Reclame Aqui, empresa registrada, histórico público do produtor, consistência entre promessa e entrega.</li>
+          <li><strong>Reputação e confiança (20%)</strong>: empresa registrada, histórico público do produtor, natureza das reclamações, consistência entre promessa e entrega.</li>
           <li><strong>Garantia e transparência (10%)</strong>: política de reembolso, clareza das condições, ausência de letra miúda enganosa.</li>
           <li><strong>Atualização (10%)</strong>: frequência de novas aulas e adaptação a mudanças de regras do mercado.</li>
         </ul>
         <h2 id="processo">O processo, passo a passo</h2>
         <ol>
-          <li>Levantamento de dados públicos: página oficial, preços, garantia, empresa (CNPJ), Reclame Aqui e imprensa;</li>
+          <li>Levantamento de dados públicos: página oficial, preços, garantia, empresa (CNPJ) e imprensa;</li>
           <li>Análise do conteúdo e da estrutura do curso;</li>
           <li>Leitura de padrões de elogio e reclamação de alunos (sem expor nomes);</li>
           <li>Redação da análise com prós e contras reais (contras genéricos não contam);</li>
@@ -142,7 +142,7 @@ export function Divulgacao() {
         <p>
           A comissão financia o site; ela <strong>não define nota nem esconde contras</strong>. Nossa{' '}
           <a href="/metodologia/">metodologia é pública</a>, os contras dos produtos recomendados ficam no
-          texto, e reportamos dados desfavoráveis (como reputação no Reclame Aqui) mesmo quando somos afiliados
+          texto, e reportamos os pontos desfavoráveis que apuramos mesmo quando somos afiliados
           do produto analisado.
         </p>
         <h2 id="promessas">Sobre promessas de ganho</h2>
