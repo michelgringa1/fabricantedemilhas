@@ -106,6 +106,13 @@ feitas através de seus links, sem custo extra para o leitor.
 - [Como viajar de graça com milhas](${BASE}/como-viajar-de-graca-com-milhas/): quando e como emitir para extrair mais valor.
 - [Milhas como renda extra](${BASE}/milhas-aereas-como-renda-extra/): expectativa realista, sem projeção de ganho.
 
+## Dados próprios
+
+- [Cotação do milheiro](${BASE}/cotacao-do-milheiro/): apuração mensal e datada de quanto os
+  canais de compra pagam por milheiro em cada programa de fidelidade brasileiro, com a tabela de
+  quanto o prazo de recebimento altera o preço. Coleta manual em três canais, metodologia descrita
+  na própria página. É dado primário da Fabricante de Milhas, não republicação de terceiros.
+
 ## Ferramentas e referência
 
 - [Calculadora de milhas](${BASE}/calculadora-de-milhas/): valor do saldo, usar ou vender, e produção mensal no cartão.

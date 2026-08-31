@@ -22,6 +22,7 @@ export const PAGE_SRC: Record<string, string> = {
   '/cursos-de-milhas/': 'cursos',
   '/melhor-curso-de-milhas/': 'melhorcurso',
   '/calculadora-de-milhas/': 'calculadora',
+  '/cotacao-do-milheiro/': 'cotacao',
 }
 
 /**
@@ -69,6 +70,7 @@ export const NAV = [
   {
     label: 'Recursos',
     items: [
+      { label: 'Cotação do milheiro', slug: '/cotacao-do-milheiro/' },
       { label: 'Calculadora de milhas', slug: '/calculadora-de-milhas/' },
       { label: 'Glossário de milhas', slug: '/glossario-de-milhas/' },
       { label: 'Blog (todos os artigos)', slug: '/blog/' },
@@ -94,6 +96,7 @@ export const FOOTER_COLS = [
     links: [
       { label: 'Cartão de crédito para milhas', slug: '/cartao-de-credito-para-milhas/' },
       { label: 'Programas de milhas', slug: '/programas-de-milhas/' },
+      { label: 'Cotação do milheiro', slug: '/cotacao-do-milheiro/' },
       { label: 'Calculadora de milhas', slug: '/calculadora-de-milhas/' },
       { label: 'Glossário de milhas', slug: '/glossario-de-milhas/' },
       { label: 'Blog', slug: '/blog/' },

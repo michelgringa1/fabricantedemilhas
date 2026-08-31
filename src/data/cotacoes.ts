@@ -36,9 +36,8 @@ export interface Cotacao {
 /** Canais consultados na apuração. Nenhum deles tem API: a coleta é manual. */
 export const FONTES = [
   'MaxMilhas',
-  'HotMilhas',
   'BankMilhas',
-  'Cotação em canais de emissores diretos',
+  'Compro Milhas',
 ] as const
 
 /**
@@ -62,15 +61,32 @@ export const FONTES = [
  *     Livelo       50k a 75k  R$ 15,00
  *     TudoAzul e Esfera: não compra.
  *
- *   HotMilhas: cotação atrás de login. Não apurada nesta rodada.
+ *   Compro Milhas · compromilhas.com · calculadora pública, preço por 1.000
+ *   milhas escalonado pelo PRAZO até receber (mínimo de 40.000 para venda):
+ *                      Smiles    LATAM    Azul
+ *     30 dias úteis    19,10     29,50    16,00
+ *     15 dias úteis    15,45     25,49    13,90
+ *      5 dias úteis    15,30     25,24    13,77
+ *      3 dias úteis    15,15     24,99    13,63
+ *      1 dia útil      15,00     24,75    13,50
+ *     Não cota Livelo nem Esfera.
+ *
+ *   HotMilhas: cotação só depois de entregar e-mail e WhatsApp num
+ *   formulário de captação. Não apurada: não vale virar lead por um número
+ *   que as outras três fontes já dão.
  *
  * ─── POR QUE A FAIXA É LARGA ───────────────────────────────────────────
- * MaxMilhas e BankMilhas não vendem o mesmo produto. A MaxMilhas publica a
- * MÉDIA de marketplace: você anuncia e espera alguém emitir com as suas
- * milhas. A BankMilhas paga À VISTA por PIX e desconta o risco de carregar
- * o estoque. Daí Smiles sair a R$ 11 num canal e R$ 17 no outro no mesmo
- * dia. A faixa min–max publicada é exatamente essa distância, e ela é o
- * dado: mede quanto custa ter pressa.
+ * As três fontes não vendem o mesmo produto, e a distância entre elas É o
+ * dado: mede quanto custa receber rápido.
+ *
+ * A MaxMilhas publica a MÉDIA de marketplace — você anuncia e espera alguém
+ * emitir. A BankMilhas paga À VISTA por PIX e desconta o risco de carregar o
+ * estoque. A Compro Milhas escancara o mecanismo ao tabelar o mesmo saldo por
+ * prazo de recebimento: no Smiles, esperar 30 dias em vez de 1 paga R$ 19,10
+ * contra R$ 15,00, ou 27% a mais pela mesma milha.
+ *
+ * É por isso que a faixa min–max fica larga e deve ficar. Um número único
+ * esconderia a única decisão que o vendedor realmente toma.
  */
 
 /**
@@ -82,13 +98,45 @@ export const TABELA_DO_MES = {
   validado: true,
   apuradoEm: '2026-08-30',
   programas: [
-    { nome: 'Smiles', venda: { min: 11, max: 17 }, ref: 14 },
-    { nome: 'LATAM Pass', venda: { min: 16, max: 28 }, ref: 22 },
-    { nome: 'Azul Fidelidade', venda: { min: 16, max: 17 }, ref: 17, nota: 'Fonte única: só a MaxMilhas compra TudoAzul entre os canais consultados.' },
+    { nome: 'Smiles', venda: { min: 11, max: 19 }, ref: 15 },
+    { nome: 'LATAM Pass', venda: { min: 16, max: 30 }, ref: 23 },
+    { nome: 'Azul Fidelidade', venda: { min: 13, max: 17 }, ref: 15 },
     { nome: 'Livelo', venda: { min: 15, max: 15 }, ref: 15, nota: 'Programa de pontos: transfira com bônus antes de vender. Fonte única (BankMilhas).' },
     { nome: 'Esfera', venda: { min: 14, max: 19 }, ref: 16, nota: 'Sem compra direta no mercado: o valor sai do programa aéreo de destino após a transferência. Faixa herdada de jul/2026, não reapurada em agosto.' },
-    { nome: 'Outro programa', venda: { min: 11, max: 28 }, ref: 18 },
+    { nome: 'Outro programa', venda: { min: 11, max: 30 }, ref: 18 },
   ] as Cotacao[],
+}
+
+/**
+ * O CUSTO DA PRESSA.
+ *
+ * Mesma milha, mesmo dia, mesma plataforma: o que muda é só quantos dias você
+ * espera para receber. Apurado na calculadora pública da Compro Milhas, que é
+ * a única das três fontes que tabela por prazo — as outras entregam um número
+ * só e escondem esta decisão.
+ *
+ * É o dado mais original da tabela: em nenhum outro lugar do mercado
+ * brasileiro isto está publicado lado a lado.
+ */
+export const PRAZOS = {
+  fonte: 'Compro Milhas',
+  apuradoEm: '2026-08-30',
+  minimoVenda: 40000,
+  linhas: [
+    { prazo: '30 dias úteis após o uso', smiles: 19.1, latam: 29.5, azul: 16.0 },
+    { prazo: '15 dias úteis após o uso', smiles: 15.45, latam: 25.49, azul: 13.9 },
+    { prazo: '5 dias úteis após o uso', smiles: 15.3, latam: 25.24, azul: 13.77 },
+    { prazo: '3 dias úteis após o uso', smiles: 15.15, latam: 24.99, azul: 13.63 },
+    { prazo: '1 dia útil após o uso', smiles: 15.0, latam: 24.75, azul: 13.5 },
+  ],
+}
+
+/** Quanto a mais rende esperar o prazo mais longo em vez do mais curto, em %. */
+export function premioDaEspera(programa: 'smiles' | 'latam' | 'azul'): number {
+  const l = PRAZOS.linhas
+  const maior = l[0][programa]
+  const menor = l[l.length - 1][programa]
+  return Math.round(((maior - menor) / menor) * 100)
 }
 
 /** Data da apuração por extenso, ex.: "julho de 2026". */
