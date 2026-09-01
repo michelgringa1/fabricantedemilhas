@@ -236,7 +236,7 @@ export const cursosComparador: Article = {
     { t: 'h2', id: 'papo-de-milhas', text: 'Papo de Milhas (EBC): a alternativa barata' },
     {
       t: 'p',
-      html: 'O <strong>Papo de Milhas — EBC</strong>, de João Paulo Aragão, é o curso que faz mais sentido comparar com o Fábrica de Milhas hoje, porque ataca o mesmo problema por um caminho diferente e por um preço muito menor: <strong>R$ 397 por ano</strong>, ou 12x R$ 41,06, contra 12x R$ 119,90 do líder. Nota da nossa avaliação: <strong>7,0/10</strong>.',
+      html: 'O <a href="https://kiwify.app/LCTATKB?afid=imrX6P6K&src=papo_cursos" target="_blank" rel="sponsored nofollow noopener"><strong>Papo de Milhas — EBC</strong></a>, de João Paulo Aragão, é o curso que faz mais sentido comparar com o Fábrica de Milhas hoje, porque ataca o mesmo problema por um caminho diferente e por um preço muito menor: <strong>R$ 397 por ano</strong>, ou 12x R$ 41,06, contra 12x R$ 119,90 do líder. Nota da nossa avaliação: <strong>7,0/10</strong>.',
     },
     {
       t: 'p',
@@ -309,7 +309,6 @@ export const cursosComparador: Article = {
     { slug: '/como-acumular-milhas/', anchor: 'Guia gratuito de acúmulo de milhas' },
   ],
   checks: [
-    'Papo de Milhas: confirmar preço (R$ 397/ano), garantia de 7 dias e o fato de o acesso ser anual, não vitalício',
     'Preço vigente do Fábrica de Milhas na data de publicação',
   ],
 }
@@ -345,6 +344,15 @@ export const melhorCurso: Article = {
         ['2º', 'Papo de Milhas — EBC (João Paulo Aragão)', '7,0/10', 'Quem quer gastar pouco e foca em emitir passagens, não em vender milhas'],
       ],
       note: 'Não publicamos nota sem análise completa: um curso fora do ranking é curso que ainda não avaliamos, não curso reprovado. Ranking revisado a cada atualização de página.',
+    },
+    { t: 'h2', id: 'segundo-lugar', text: 'O 2º lugar: quando o mais barato é a escolha certa' },
+    {
+      t: 'p',
+      html: 'O <a href="https://kiwify.app/LCTATKB?afid=imrX6P6K&src=papo_melhorcurso" target="_blank" rel="sponsored nofollow noopener">Papo de Milhas — EBC</a>, de João Paulo Aragão, fica em 2º com <strong>7,0/10</strong> e custa <strong>R$ 397 por ano</strong> — cerca de um quarto do líder. Ele não perde por ser fraco: perde por ser <strong>mais estreito</strong>. O foco está em emitir passagem bem, com tabelas fixas, alertas de promoção e hospedagem barata. A venda de milhas, que é metade do assunto de quem quer renda, não é coberta com profundidade.',
+    },
+    {
+      t: 'p',
+      html: 'A conta é direta: se você quer <strong>viajar mais gastando menos</strong>, ele resolve por muito menos dinheiro e é a escolha racional. Se você quer <strong>transformar milhas em renda</strong>, vai faltar a parte que interessa e o preço menor deixa de ser vantagem. Duas ressalvas honestas: o acesso é anual, não vitalício, e a página de vendas não deixa isso claro junto ao preço. Os detalhes estão no <a href="/cursos-de-milhas/">comparador</a>.',
     },
     { t: 'h2', id: 'por-que-lidera', text: 'Por que o Fábrica de Milhas lidera' },
     {
@@ -385,7 +393,6 @@ export const melhorCurso: Article = {
     { slug: '/metodologia/', anchor: 'Nossa metodologia de avaliação' },
   ],
   checks: [
-    'Papo de Milhas no 2º lugar: confirmar preço e nota antes de manter no ar',
     'Nota e preço do líder revisados na data de publicação',
   ],
 }

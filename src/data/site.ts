@@ -5,6 +5,7 @@
  * Usada por dois lugares diferentes, com prefixos que os separam no relatório:
  *   curso_XXX  · CTA "Conhecer o Fábrica de Milhas" (bloco cta dos artigos)
  *   blg_XXX    · banner do evento Destrave suas Milhas
+ *   papo_XXX   · links do Papo de Milhas (EBC), que roda na Kiwify
  *
  * AO CRIAR PÁGINA NOVA COM CTA OU BANNER, ADICIONE AQUI, senão o clique cai
  * no balde genérico e some a informação de origem.
@@ -34,6 +35,21 @@ export const PAGE_SRC: Record<string, string> = {
  */
 export function affUrl(pagina?: string) {
   return `https://go.hotmart.com/Y102512256Q?src=curso_${pagina || 'geral'}`
+}
+
+/**
+ * Link de afiliado do Papo de Milhas (EBC), de João Paulo Aragão.
+ *
+ * Plataforma diferente: aqui é Kiwify, não Hotmart. O hotlink registra a
+ * afiliação e cai na LP oficial do curso. O prefixo de origem é `papo_` para
+ * separar dos dois produtos da Hotmart no relatório.
+ *
+ * ATENÇÃO: o &src= é carregado até o endpoint de tracking da Kiwify, mas não
+ * confirmamos que ele aparece no relatório de afiliado. Confira uma venda no
+ * painel antes de confiar nele para atribuição.
+ */
+export function papoUrl(pagina?: string) {
+  return `https://kiwify.app/LCTATKB?afid=imrX6P6K&src=papo_${pagina || 'geral'}`
 }
 
 export const BRAND = 'Fabricante de Milhas'
