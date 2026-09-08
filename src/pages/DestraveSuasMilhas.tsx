@@ -14,7 +14,7 @@ const FAQ = [
   },
   {
     q: 'Quando acontece e quanto custa?',
-    a: 'As aulas ao vivo acontecem de segunda 3 a sexta 7 de agosto de 2026, com cerca de uma hora por dia. O acesso custa R$ 47 no cartão ou via Pix, ante um valor cheio anunciado de R$ 119. As condições valem para a turma atual e podem mudar nas próximas.',
+    a: 'As aulas ao vivo acontecem de segunda 5 a sexta 9 de outubro de 2026, com cerca de uma hora por dia. O acesso custa R$ 47 no cartão ou via Pix, ante um valor cheio anunciado de R$ 119. As condições valem para a turma atual e podem mudar nas próximas.',
   },
   {
     q: 'Preciso ter cartão de crédito para participar?',
@@ -26,7 +26,7 @@ const FAQ = [
   },
   {
     q: 'As 5.000 milhas são garantidas mesmo?',
-    a: 'Trate esse número como estimativa, não como garantia contratual. A página oficial usa a expressão "5.000 milhas garantidas", mas o volume real depende de você aplicar o que é ensinado durante os 5 dias. A Fabricante de Milhas não intermedeia esse crédito: confirme as condições na página oficial antes de contar com o benefício.',
+    a: 'Na edição de outubro de 2026, a página oficial trata as 5.000 milhas como compromisso, não como estimativa: diz que a responsabilidade de cumprir é do evento e oferece devolução se não entregar. Some-se a isso a garantia legal de 7 dias. Ainda assim, o resultado passa por você participar e aplicar o que é ensinado nos 5 dias. A Fabricante de Milhas reporta os termos anunciados pelo produtor; confirme as condições na página oficial antes de se inscrever',
   },
   {
     q: 'O evento tem garantia se eu não gostar?',
@@ -89,8 +89,8 @@ export function DestraveSuasMilhas() {
         description:
           'Treinamento online de 5 dias ao vivo com Rodrigo Góes sobre como destravar o acúmulo de milhas aéreas a partir dos gastos do dia a dia, reduzir o custo de viagens e usar milhas como renda extra.',
         url: BASE_URL + '/destrave-suas-milhas/',
-        startDate: '2026-08-03',
-        endDate: '2026-08-07',
+        startDate: '2026-10-05',
+        endDate: '2026-10-09',
         eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
         eventStatus: 'https://schema.org/EventScheduled',
         inLanguage: 'pt-BR',
@@ -104,7 +104,7 @@ export function DestraveSuasMilhas() {
           '@type': 'Event',
           name: `${d.dia}: ${d.title}`,
           description: d.desc,
-          startDate: `2026-08-0${i + 3}`,
+          startDate: `2026-10-0${i + 5}`,
           eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
           eventStatus: 'https://schema.org/EventScheduled',
           location: {
@@ -164,7 +164,7 @@ export function DestraveSuasMilhas() {
                   Evento ao vivo
                 </span>
                 <span className="mono text-[10.5px] tracking-[0.18em] text-brand-100/60 uppercase">
-                  3 a 7 de agosto de 2026
+                  5 a 9 de outubro de 2026
                 </span>
               </div>
 
@@ -221,7 +221,7 @@ export function DestraveSuasMilhas() {
                 <div className="mt-6 divide-y divide-white/[0.08] border-t border-white/[0.08]">
                   {[
                     ['FORMATO', '5 dias, online e ao vivo'],
-                    ['QUANDO', 'seg 3 a sex 7 de agosto'],
+                    ['QUANDO', 'seg 5 a sex 9 de outubro'],
                     ['DEDICAÇÃO', 'cerca de 1 hora por dia'],
                     ['INVESTIMENTO', 'R$ 47 (de R$ 119)'],
                   ].map(([k, v]) => (
@@ -232,7 +232,7 @@ export function DestraveSuasMilhas() {
                   ))}
                 </div>
                 <p className="mt-4 mono text-[10px] tracking-[0.1em] text-brand-100/35 uppercase text-center">
-                  Condições da turma de agosto de 2026
+                  Condições da turma de outubro de 2026
                 </p>
               </div>
             </div>
@@ -253,7 +253,7 @@ export function DestraveSuasMilhas() {
             <p className="text-[17.5px] leading-relaxed text-slate-800 font-medium">
               Segundo a Equipe Fabricante de Milhas, o Protocolo Destrave suas Milhas é um evento online
               de 5 dias ao vivo, conduzido por Rodrigo Góes, que ensina a acumular milhas a partir dos
-              gastos que você já tem. Acontece de 3 a 7 de agosto de 2026 por R$ 47, com garantia de 7
+              gastos que você já tem. Acontece de 5 a 9 de outubro de 2026 por R$ 47, com garantia de 7
               dias, e a expectativa anunciada é sair da semana com cerca de 5.000 milhas.
             </p>
           </div>
@@ -380,7 +380,7 @@ export function DestraveSuasMilhas() {
                     </svg>
                   </a>
                   <span className="mono text-[10.5px] tracking-[0.1em] text-brand-100/50 uppercase">
-                    Valores e condições da turma de agosto de 2026
+                    Valores e condições da turma de outubro de 2026
                   </span>
                 </div>
               </div>
@@ -499,10 +499,10 @@ export function DestraveSuasMilhas() {
                 <h2 className="display text-[1.9rem] md:text-[2.3rem] mt-4 leading-tight">
                   Sua próxima viagem começa
                   <br />
-                  numa segunda-feira de agosto.
+                  numa segunda-feira de outubro.
                 </h2>
                 <p className="mt-4 text-[16px] text-white/85 leading-relaxed">
-                  De 3 a 7 de agosto, cerca de uma hora por dia, R$ 47 e garantia de 7 dias. É uma
+                  De 5 a 9 de outubro, cerca de uma hora por dia, R$ 47 e garantia de 7 dias. É uma
                   semana para destravar o acúmulo e sair com as primeiras milhas na conta, em torno de
                   5.000 segundo a estimativa do evento.
                 </p>
@@ -557,7 +557,7 @@ export function DestraveSuasMilhas() {
               </div>
             </section>
 
-            <AuthorBlock published="2026-07-16" updated="2026-07-16" />
+            <AuthorBlock published="2026-07-16" updated="2026-09-08" />
             <div className="pb-8" />
           </div>
         </div>
