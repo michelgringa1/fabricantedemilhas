@@ -20,7 +20,7 @@ export const acumular: Article = {
     'Milhas expiram: planeje o uso ou a venda antes do vencimento.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'o-que-sao', text: 'O que são milhas e como o acúmulo funciona' },
     {
@@ -30,6 +30,38 @@ export const acumular: Article = {
     {
       t: 'p',
       html: 'O fluxo clássico no Brasil tem três etapas: gasto no cartão gera pontos no programa do banco (Livelo, Esfera, Átomos etc.); os pontos são transferidos para um programa aéreo (Smiles, LATAM Pass, Azul Fidelidade); e a transferência, feita no momento certo, recebe <a href="/glossario-de-milhas/#transferencia-bonificada">bônus</a> que multiplica o saldo.',
+    },
+    {
+      t: 'table',
+      caption: 'As quatro rotas de acúmulo, lado a lado',
+      head: ['Rota', 'Esforço inicial', 'Onde ela ganha', 'O erro clássico'],
+      rows: [
+        [
+          '<strong>Cartão que pontua</strong>',
+          'Alto: exige aprovação e anuidade',
+          'Volume. É a única rota que escala com o gasto que você já tem',
+          'Pulverizar em vários cartões fracos em vez de concentrar num bom',
+        ],
+        [
+          '<strong>Transferência bonificada</strong>',
+          'Baixo: só exige ter pontos e esperar',
+          'Multiplicação. É onde o saldo dobra, não onde ele nasce',
+          'Transferir fora de campanha e perder metade do potencial',
+        ],
+        [
+          '<strong>Clube de assinatura</strong>',
+          'Médio: mensalidade fixa',
+          'Constância e acesso a bônus maiores nas transferências',
+          'Assinar sem fazer a conta e pagar mais do que o clube devolve',
+        ],
+        [
+          '<strong>Compras do dia a dia</strong>',
+          'Nenhum: CPF na nota e portais',
+          'Quem não tem cartão. Rende pouco, mas rende sempre',
+          'Esquecer de iniciar a compra pelo portal do programa',
+        ],
+      ],
+      note: 'As quatro se somam: não é escolha, é sequência. Quem está começando costuma pegar a quarta e a segunda primeiro, porque não dependem de aprovação de crédito.',
     },
     { t: 'h2', id: 'cartao', text: 'Cartão de crédito: o motor principal do acúmulo' },
     {
@@ -254,7 +286,7 @@ export const vender: Article = {
     'Prefira receber à vista ou em prazos curtos; desconfie de cotação muito acima do mercado.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'como-funciona', text: 'Como funciona a venda de milhas' },
     {
@@ -277,7 +309,23 @@ export const vender: Article = {
     { t: 'h2', id: 'cotacao', text: 'Cotação do milheiro: a referência do mês' },
     {
       t: 'p',
-      html: 'A Equipe Fabricante de Milhas mantém uma tabela mensal de referência da cotação do milheiro por programa, nosso dado próprio, citado nas respostas rápidas deste site <mark class="verificar">[VERIFICAR: publicar cotação do mês corrente antes de ir ao ar]</mark>. Use como bússola, não como promessa: a cotação real depende do prazo, do volume e do canal.',
+      html: 'A Equipe Fabricante de Milhas apura mensalmente, em três canais de compra, quanto se paga por milheiro em cada programa. É dado próprio, com data e método abertos na <a href="/cotacao-do-milheiro/">página da cotação</a>. Use como bússola, não como promessa: o valor real depende do prazo, do volume e do canal.',
+    },
+    {
+      t: 'table',
+      caption: 'Faixa de venda por milheiro, apuração de agosto de 2026',
+      head: ['Programa', 'Faixa apurada', 'Referência'],
+      rows: [
+        ['Smiles', 'R$ 11 a R$ 19', 'R$ 15'],
+        ['LATAM Pass', 'R$ 16 a R$ 30', 'R$ 23'],
+        ['Azul Fidelidade', 'R$ 13 a R$ 17', 'R$ 15'],
+        ['Livelo', 'R$ 15', 'R$ 15'],
+      ],
+      note: 'Apurado em MaxMilhas, BankMilhas e Compro Milhas em 30/08/2026. A faixa é larga porque cada canal vende um produto diferente: marketplace paga mais e demora, plataforma à vista paga menos e paga rápido. Tabela completa e método na página da cotação.',
+    },
+    {
+      t: 'p',
+      html: 'A largura da faixa é o dado, não um defeito da medição. No Smiles, aceitar receber em 30 dias úteis em vez de 1 pagou <strong>27% a mais</strong> pela mesma milha na apuração de agosto. Antes de fechar venda, decida o que vale mais para você: o preço ou a pressa.',
     },
     { t: 'h2', id: 'passo-a-passo', text: 'Passo a passo para vender com segurança' },
     {
@@ -302,6 +350,29 @@ export const vender: Article = {
       title: 'Risco de bloqueio',
       html: 'Os regulamentos de Smiles, LATAM Pass e Azul Fidelidade proíbem a comercialização de milhas. Vender, especialmente em escala, pode resultar em bloqueio de conta e perda do saldo. Quem vende assume esse risco contratual de forma consciente.',
     },
+    { t: 'h2', id: 'penhora-stj', text: 'Suas milhas podem ser penhoradas: o que mudou em 2026' },
+    {
+      t: 'p',
+      html: 'Em <strong>18 de agosto de 2026</strong>, a Terceira Turma do Superior Tribunal de Justiça decidiu, <strong>por unanimidade</strong>, que milhas aéreas e pontos de programas de fidelidade <strong>podem ser penhorados</strong> para o pagamento de dívidas. É uma mudança relevante para quem trata milhas como reserva de valor, e quase nenhum conteúdo do nicho ainda incorporou.',
+    },
+    {
+      t: 'p',
+      html: 'O ponto central da decisão: a <strong>cláusula de intransferibilidade</strong> que os programas colocam nos regulamentos <strong>não impede a penhora</strong>. O argumento aceito foi o de que, se a milha tem expressão econômica — e tem, já que existe um mercado que a compra e vende —, ela é patrimônio do titular e responde por dívidas como qualquer outro bem.',
+    },
+    {
+      t: 'callout',
+      tone: 'info',
+      title: 'A ressalva que importa',
+      html: 'A decisão <strong>não torna todo saldo penhorável indistintamente</strong>. O critério é a <strong>expressão econômica</strong> do saldo: pontos sem valor de mercado relevante seguem fora do alcance. Na prática, quem tem saldo pequeno e uso pessoal dificilmente será afetado; quem acumula volume alto passou a ter um ativo juridicamente alcançável.',
+    },
+    {
+      t: 'p',
+      html: 'O que isso muda para você, de forma prática: se você acumula milhas em volume e tem dívidas em execução, esse saldo deixou de ser um lugar seguro. E se você vende milhas com frequência, a decisão reforça o que já era verdade no imposto de renda — o mercado e a Justiça enxergam milha como patrimônio, não como brinde. <mark class="verificar">[VERIFICAR: confirmar a decisão e sua repercussão atual antes de publicar]</mark>',
+    },
+    {
+      t: 'p',
+      html: 'Fontes consultadas em setembro de 2026: <a href="https://www.migalhas.com.br/" target="_blank" rel="noopener">Migalhas</a> e <a href="https://www.jota.info/" target="_blank" rel="noopener">JOTA</a> (18/08/2026), Ministério Público do Paraná (25/08/2026) e <a href="https://www.conjur.com.br/" target="_blank" rel="noopener">Consultor Jurídico</a> (30/08/2026). Esta seção descreve o entendimento do tribunal, não é orientação jurídica: para o seu caso, consulte um advogado.',
+    },
     { t: 'h2', id: 'impostos', text: 'E o imposto de renda?' },
     {
       t: 'p',
@@ -310,6 +381,10 @@ export const vender: Article = {
     { t: 'cta' },
   ],
   faq: [
+    {
+      q: 'Milhas podem ser penhoradas para pagar dívidas?',
+      a: 'Sim. Em 18 de agosto de 2026, a Terceira Turma do STJ decidiu por unanimidade que milhas e pontos de fidelidade podem ser penhorados, e que a cláusula de intransferibilidade dos programas não impede a penhora. O alcance é sobre saldos com expressão econômica relevante, não sobre qualquer pontuação. Na prática, a Justiça passou a tratar milha como patrimônio do titular.',
+    },
     {
       q: 'Vender milhas é permitido?',
       a: 'Não há lei que proíba, mas os regulamentos dos programas de fidelidade vedam a comercialização. Na prática existe um mercado grande e consolidado, e o risco de quem vende é contratual: bloqueio da conta e perda do saldo caso o programa identifique a prática.',
@@ -341,6 +416,7 @@ export const vender: Article = {
     'Lista de plataformas de venda ativas e reputação atual (Reclame Aqui) de cada uma',
     'Cotação do milheiro do mês corrente (tabela própria)',
     'Orientação tributária revisada por contador',
+    'Decisão do STJ de 18/08/2026 sobre penhora de milhas: confirmar ementa e repercussão atual',
     'Status atual da recuperação judicial do grupo 123milhas',
   ],
 }

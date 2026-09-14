@@ -10,12 +10,12 @@
   "rotas": [
     { "path": "/", "lastmod": "2026-07-16", "priority": "1.0", "changefreq": "weekly" },
 
-    { "path": "/como-acumular-milhas/", "lastmod": "2026-07-11", "priority": "0.9", "changefreq": "monthly" },
+    { "path": "/como-acumular-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
     { "path": "/como-ganhar-dinheiro-com-milhas/", "lastmod": "2026-07-11", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/vender-milhas-aereas/", "lastmod": "2026-07-11", "priority": "0.9", "changefreq": "monthly" },
+    { "path": "/vender-milhas-aereas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
     { "path": "/cartao-de-credito-para-milhas/", "lastmod": "2026-07-11", "priority": "0.9", "changefreq": "monthly" },
     { "path": "/programas-de-milhas/", "lastmod": "2026-07-11", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/como-viajar-de-graca-com-milhas/", "lastmod": "2026-07-11", "priority": "0.9", "changefreq": "monthly" },
+    { "path": "/como-viajar-de-graca-com-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
     { "path": "/milhas-aereas-como-renda-extra/", "lastmod": "2026-07-11", "priority": "0.7", "changefreq": "monthly" },
 
     { "path": "/fabrica-de-milhas-vale-a-pena/", "lastmod": "2026-07-16", "priority": "1.0", "changefreq": "weekly" },

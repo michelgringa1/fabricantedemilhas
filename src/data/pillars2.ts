@@ -196,7 +196,7 @@ export const viajar: Article = {
     'Milhas valem mais em emissões caras (internacional, executiva). Evite queimar saldo em passagem barata.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'de-graca', text: 'O que significa viajar "de graça" com milhas' },
     {
@@ -213,6 +213,23 @@ export const viajar: Article = {
         'Emita com os dados corretos de todos os passageiros. Alterações depois custam caro.',
         'Pague a taxa de embarque com um cartão que pontue: até a taxa vira milha.',
       ],
+    },
+    {
+      t: 'table',
+      caption: 'Quanto vale o seu saldo em dinheiro, pela nossa apuração de agosto de 2026',
+      head: ['Saldo', 'Smiles', 'LATAM Pass', 'Azul Fidelidade'],
+      rows: [
+        ['5.000 milhas', 'R$ 75', 'R$ 115', 'R$ 75'],
+        ['10.000 milhas', 'R$ 150', 'R$ 230', 'R$ 150'],
+        ['20.000 milhas', 'R$ 300', 'R$ 460', 'R$ 300'],
+        ['50.000 milhas', 'R$ 750', 'R$ 1.150', 'R$ 750'],
+        ['100.000 milhas', 'R$ 1.500', 'R$ 2.300', 'R$ 1.500'],
+      ],
+      note: 'Calculado sobre o valor de referência da nossa <a href="/cotacao-do-milheiro/">cotação do milheiro</a> de agosto de 2026 (R$ 15 no Smiles e no Azul, R$ 23 no LATAM Pass). É quanto o mercado paga pelo saldo, não quanto ele economiza numa emissão.',
+    },
+    {
+      t: 'p',
+      html: 'Esta tabela existe para você ter um <strong>piso de comparação</strong>. Antes de emitir, olhe o preço da passagem em dinheiro e compare com a coluna do seu programa: se a emissão economiza <strong>menos</strong> do que o saldo valeria vendido, emitir está destruindo valor. Se economiza mais, emitir é o melhor uso. A <a href="/calculadora-de-milhas/">calculadora</a> faz essa conta com o seu número.',
     },
     { t: 'h2', id: 'quando-emitir', text: 'Quando emitir: os dois momentos de ouro' },
     {
