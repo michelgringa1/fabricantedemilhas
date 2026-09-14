@@ -84,13 +84,19 @@ export const acumular: Article = {
     {
       t: 'callout',
       tone: 'warn',
+      title: 'O bônus da Smiles expira em 6 meses',
+      html: 'Este é o detalhe que quase ninguém conta, e ele muda a estratégia. Na Smiles, as milhas que você transfere do banco valem <strong>3 anos</strong>, mas as <strong>milhas de bônus da promoção valem apenas 6 meses</strong> — conforme a própria tabela de validade da Smiles, apurada em 14/09/2026. Transferir 100 mil pontos com 80% credita 180 mil milhas, mas 80 mil delas somem em meio ano. No LATAM Pass a regra é outra: as milhas bônus valem os mesmos <strong>36 meses</strong> das demais. Se você transfere com bônus e não tem uso próximo, o destino muda a conta.',
+    },
+    {
+      t: 'callout',
+      tone: 'warn',
       title: 'Erro mais comum',
       html: 'Transferir pontos <strong>sem bônus</strong>. Fora de campanha, a conversão costuma ser desvantajosa. E atenção: em boa parte das campanhas é preciso <strong>se cadastrar na promoção antes de transferir</strong> — transferir sem o cadastro prévio não credita o bônus.',
     },
     { t: 'h2', id: 'clubes', text: 'Clubes de fidelidade e assinaturas' },
     {
       t: 'p',
-      html: 'Os clubes mensais entregam milhas todo mês por uma assinatura fixa e, mais importante, costumam dar acesso a <strong>bônus maiores nas transferências</strong> e a promoções exclusivas. Em 14 de setembro de 2026, os planos do <strong>Clube Smiles</strong> iam de R$ 43,70 a R$ 819,00 e os do <strong>Clube Azul</strong> de R$ 39,90 a R$ 118,90 por mês, conforme o volume de milhas creditado. Para quem acumula com estratégia, o clube muitas vezes se paga só pelo bônus extra, mas faça a conta do seu caso antes de assinar. Valores e regras mudam com frequência <mark class="verificar">[VERIFICAR: valores atuais dos clubes]</mark>.',
+      html: 'Os clubes mensais entregam milhas todo mês por uma assinatura fixa e, mais importante, costumam dar acesso a <strong>bônus maiores nas transferências</strong> e a promoções exclusivas. Em 14 de setembro de 2026, os planos do <strong>Clube Smiles</strong> iam de R$ 43,70 a R$ 819,00, os do <strong>Clube Azul</strong> de R$ 39,90 a R$ 118,90 e os do <strong>Clube Livelo</strong> de 12x R$ 42,65 (1.000 pontos/mês) a 12x R$ 759,90 (20.000 pontos/mês). Para quem acumula com estratégia, o clube muitas vezes se paga só pelo bônus extra, mas faça a conta do seu caso antes de assinar. Valores e regras mudam com frequência <mark class="verificar">[VERIFICAR: valores atuais dos clubes]</mark>.',
     },
     { t: 'h2', id: 'dia-a-dia', text: 'Acumulando nas compras do dia a dia' },
     {
@@ -150,7 +156,6 @@ export const acumular: Article = {
   ],
   checks: [
     'Exemplo numérico de pontuação com cotação do dólar na data de publicação',
-    'Clube Livelo: valores dos planos (só visíveis logado)',
   ],
 }
 

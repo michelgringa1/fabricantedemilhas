@@ -130,6 +130,41 @@ export const programas: Article = {
       ],
       note: 'Contagem de parceiros apurada pela Equipe Fabricante de Milhas em 14/09/2026, nas páginas oficiais de transferência de cada programa: 14 na Livelo, 11 na Esfera. A composição difere — a Esfera tem TAP Miles&Go, Turkish e IHG; a Livelo tem MileagePlus, British Airways, Etihad, Hilton, Dotz e Seedz. Regras, validades e clubes mudam com frequência: a tabela é revisada a cada atualização desta página.',
     },
+    { t: 'h2', id: 'validade', text: 'Validade: a regra que decide para onde transferir' },
+    {
+      t: 'p',
+      html: 'Validade não é detalhe de regulamento, é estratégia. O erro mais caro do acúmulo é deixar saldo expirar, e os três programas tratam o assunto de formas bem diferentes — especialmente no ponto que mais importa para quem transfere pontos do cartão: <strong>quanto tempo dura a milha de bônus</strong>.',
+    },
+    {
+      t: 'table',
+      caption: 'Validade por programa, apurado em 14 de setembro de 2026',
+      head: ['Programa', 'Validade padrão', 'Milhas de bônus', 'Como estender'],
+      rows: [
+        [
+          '<strong>Smiles</strong>',
+          '3 anos (transferidas do banco); 6 anos se vieram de voo GOL',
+          '<strong>6 meses</strong>',
+          'Categoria elite (Ouro 4 anos, Diamante 10 anos), Clube, ou extensão paga de 30, 60 ou 90 dias',
+        ],
+        [
+          '<strong>LATAM Pass</strong>',
+          '36 meses (3 anos)',
+          '<strong>36 meses</strong>',
+          'Clube LATAM Pass; milhas expiradas podem ser renovadas em até 180 dias',
+        ],
+        [
+          '<strong>Azul Fidelidade</strong>',
+          'Mínimo de 24 meses',
+          'Segue a regra geral do programa',
+          'Clube Azul estende para 3 anos; com Cartão Azul Itaú Visa Infinite ativo, os pontos não expiram',
+        ],
+      ],
+      note: 'Apurado nas páginas oficiais de cada programa em 14/09/2026 pela Equipe Fabricante de Milhas. A Smiles publica 16 prazos distintos conforme a origem da milha: os dois citados são os que atingem a maior parte de quem acumula por cartão.',
+    },
+    {
+      t: 'p',
+      html: 'A leitura prática: se você acumula via cartão e transfere com bônus, <strong>o LATAM Pass protege melhor a parte bonificada</strong> — 36 meses contra 6 meses da Smiles. Isso não faz da Smiles um programa pior; faz dela um programa que exige uso rápido do que veio de promoção. Transferir para a Smiles com bônus e deixar o saldo parado é, na prática, jogar fora a metade que a promoção deu.',
+    },
     { t: 'h2', id: 'como-escolher', text: 'Como escolher o seu programa principal' },
     {
       t: 'ol',
@@ -171,7 +206,6 @@ export const programas: Article = {
     { slug: '/cartao-de-credito-para-milhas/', anchor: 'O cartão certo para alimentar seu programa' },
   ],
   checks: [
-    'Regras de validade atuais de Smiles, LATAM Pass e Azul Fidelidade',
   ],
 }
 
