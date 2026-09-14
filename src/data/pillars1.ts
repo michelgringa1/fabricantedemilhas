@@ -66,7 +66,7 @@ export const acumular: Article = {
     { t: 'h2', id: 'cartao', text: 'Cartão de crédito: o motor principal do acúmulo' },
     {
       t: 'p',
-      html: 'Nenhuma técnica compensa um cartão errado. O critério central é o quanto o cartão pontua por dólar gasto e quanto custa a anuidade em relação ao seu volume de gastos. Um cartão que rende 2 pontos por dólar transforma um gasto mensal de R$ 5.000 em cerca de 24 mil pontos por ano antes de qualquer bônus (<mark class="verificar">[VERIFICAR: exemplo numérico com cotação do dólar atual]</mark>).',
+      html: 'Nenhuma técnica compensa um cartão errado. O critério central é o quanto o cartão pontua por dólar gasto e quanto custa a anuidade em relação ao seu volume de gastos. Com o dólar comercial a <strong>R$ 5,15</strong> (cotação de 14 de setembro de 2026), um cartão que rende 2 pontos por dólar transforma um gasto mensal de R$ 5.000 em cerca de <strong>23.300 pontos por ano</strong>, antes de qualquer bônus de transferência. A conta se move com o câmbio: a pontuação é por dólar gasto, não por real.',
     },
     {
       t: 'p',
@@ -155,7 +155,6 @@ export const acumular: Article = {
     { slug: '/glossario-de-milhas/', anchor: 'Glossário: os termos das milhas explicados' },
   ],
   checks: [
-    'Exemplo numérico de pontuação com cotação do dólar na data de publicação',
   ],
 }
 
@@ -382,21 +381,7 @@ export const vender: Article = {
     { t: 'h2', id: 'impostos', text: 'E o imposto de renda?' },
     {
       t: 'p',
-      html: 'A leitura que prevalece entre especialistas é que a venda de milhas configura <strong>ganho de capital</strong>: você aliena um direito e apura lucro sobre ele. Como as milhas normalmente vêm de gasto que você já faria, o custo de aquisição tende a zero, e o ganho acaba sendo praticamente todo o valor recebido.',
-    },
-    {
-      t: 'p',
-      html: 'Nesse enquadramento vale a isenção de <strong>bens de pequeno valor</strong>: a Instrução Normativa SRF nº 599/2005, no artigo 1º, isenta o ganho de capital quando as alienações do mês somam até <strong>R$ 35 mil</strong> (o limite é de R$ 20 mil apenas para ações em bolsa). Acima disso, a alíquota começa em 15% e sobe por faixas. O imposto é apurado no programa GCAP e pago até o último dia útil do mês seguinte à venda.',
-    },
-    {
-      t: 'callout',
-      tone: 'warn',
-      title: 'Duas ressalvas que mudam tudo',
-      html: 'Primeira: <strong>não localizamos uma Solução de Consulta da Receita Federal específica sobre venda de milhas</strong>. O tratamento como ganho de capital é interpretação predominante de especialistas e da imprensa, não doutrina oficial fechada. Segunda: quem vende <strong>com habitualidade</strong> pode ser reenquadrado, deixando de apurar ganho de capital e passando a ser tributado como atividade. As duas ressalvas apontam para o mesmo lugar: <strong>leve o seu caso a um contador</strong> antes de operar em volume.',
-    },
-    {
-      t: 'p',
-      html: 'O que não tem nuance: não siga "dicas" de sonegação. A movimentação bancária deixa rastro, e desde a decisão do STJ deste ano o próprio Judiciário trata milha como patrimônio. O barato sai caro. <mark class="verificar">[VERIFICAR: revisar enquadramento e limites com contador antes de publicar]</mark>',
+      html: 'Vender milhas tem implicação fiscal, e ela depende do seu volume e da sua situação. <strong>Não damos orientação tributária aqui</strong>: é assunto de contador, e conselho genérico na internet sobre imposto costuma sair caro para quem segue. O que vale dizer é o óbvio que muita gente ignora: a movimentação bancária deixa rastro, e desde a decisão do STJ deste ano o próprio Judiciário trata milha como patrimônio. Registre as suas operações e leve o seu caso a um profissional antes de operar em volume.',
     },
     { t: 'cta' },
   ],
@@ -433,6 +418,5 @@ export const vender: Article = {
     { slug: '/glossario-de-milhas/', anchor: 'Glossário: milheiro, cotação e outros termos' },
   ],
   checks: [
-    'Orientação tributária revisada por contador',
   ],
 }

@@ -32,6 +32,24 @@ export const cartao: Article = {
         '<strong>Benefícios de viagem</strong>: salas VIP, seguros e upgrades contam, mas são desempate, não critério principal.',
       ],
     },
+    {
+      t: 'table',
+      caption: 'Pontuação por dólar de cartões do mercado, apurado em 14 de setembro de 2026',
+      head: ['Cartão', 'Pontos por dólar', 'A condição que quase ninguém lê'],
+      rows: [
+        ['<strong>Itaú Visa Infinite</strong>', '1,8 a 2,0', 'Só chega a 2,0 no nível 3 ou superior do Minhas Vantagens'],
+        ['<strong>Itaú Uniclass</strong> (Plano Pontos+)', '2,0 a 2,5', '2,5 exige fatura fechada a partir de R$ 4 mil e adesão ao Minhas Vantagens'],
+        ['<strong>Santander</strong> (Rewards)', '2,2', 'Pontuação base; sobe com bônus promocional temporário'],
+        ['<strong>Nubank Ultravioleta</strong>', 'a partir de 2,2', 'Alternativa a 1,25% de cashback: são caminhos excludentes'],
+        ['<strong>C6 Carbon</strong>', '2,0 a 3,5', '3,5 exige a partir de R$ 1 milhão investido no banco'],
+        ['<strong>Itaú Personnalité The One</strong>', '3,0 nacional · 3,5 internacional', 'Exige relacionamento Personnalité'],
+      ],
+      note: 'Dados coletados pela Equipe Fabricante de Milhas em 14/09/2026, nos sites oficiais de cada emissor (itau.com.br, c6bank.com.br, santander.com.br e nubank.com.br). <strong>Pontuação, anuidade e condições de cartão mudam com frequência e sem aviso</strong>, e variam conforme o seu relacionamento com o banco. Trate esta tabela como retrato de uma data, não como oferta vigente: confirme na página oficial do emissor antes de decidir.',
+    },
+    {
+      t: 'p',
+      html: 'O padrão que a tabela revela é mais útil que qualquer número isolado: <strong>quase todo valor alto tem condição atrelada</strong>. Investimento mínimo, fatura mínima, nível de relacionamento. O número da vitrine raramente é o que cai na sua conta. Antes de trocar de cartão atrás de meio ponto a mais, leia a condição e veja se ela cabe na sua realidade.',
+    },
     { t: 'h2', id: 'perfis', text: 'Qual cartão faz sentido para cada perfil de gasto' },
     {
       t: 'table',
@@ -85,8 +103,6 @@ export const cartao: Article = {
     { slug: '/glossario-de-milhas/', anchor: 'Entenda os termos: pontos, milhas e milheiro' },
   ],
   checks: [
-    'Nomes/taxas/pontuações específicas de cartões citados em versões futuras',
-    'Faixas de pontuação de mercado (1 / 1,5–2 / 2+): validar com levantamento atual',
   ],
 }
 
