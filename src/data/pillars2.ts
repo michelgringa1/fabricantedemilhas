@@ -222,7 +222,7 @@ export const viajar: Article = {
   answerFirst:
     'Segundo a análise da Fabricante de Milhas, viajar "de graça" com milhas significa pagar a passagem com saldo acumulado no cartão e em promoções, restando apenas taxas de embarque. Com método, uma família emite voos que custariam milhares de reais por uma fração disso. O segredo está em quando e como emitir.',
   tldr: [
-    '"De graça" real: a tarifa sai no saldo de milhas; taxas de embarque continuam existindo.',
+    '"De graça" é exagero: a taxa de embarque sai em dinheiro (R$ 96,29 numa ida e volta doméstica que simulamos).',
     'Emita com antecedência ou em promoções-relâmpago: os dois extremos concentram as melhores tabelas.',
     'Flexibilidade de datas e aeroportos vale mais que qualquer técnica avançada.',
     'Milhas valem mais em emissões caras (internacional, executiva). Evite queimar saldo em passagem barata.',
@@ -233,7 +233,15 @@ export const viajar: Article = {
     { t: 'h2', id: 'de-graca', text: 'O que significa viajar "de graça" com milhas' },
     {
       t: 'p',
-      html: 'Sejamos exatos: com milhas você não paga a <strong>tarifa</strong> da passagem, mas taxas de embarque e eventuais encargos continuam sendo cobrados em dinheiro. Uma emissão doméstica pode ter taxa na casa das dezenas de reais; internacionais variam bastante por aeroporto <mark class="verificar">[VERIFICAR: faixas de taxa atuais]</mark>. Ainda assim, o desconto real costuma passar de 90% do valor do bilhete: de graça no sentido que importa para o bolso.',
+      html: 'Sejamos exatos: com milhas você não paga a <strong>tarifa</strong> da passagem, mas taxas de embarque e eventuais encargos continuam sendo cobrados em dinheiro. Numa emissão que a Equipe Fabricante de Milhas simulou em 14 de setembro de 2026 (GRU–REC, ida e volta em novembro), a taxa somou <strong>R$ 96,29 pelos dois trechos</strong>, cerca de R$ 48 por trecho doméstico. Internacionais variam bastante por aeroporto e costumam ser bem mais altas.',
+    },
+    {
+      t: 'p',
+      html: 'E aqui vale desfazer um exagero que circula no nicho, inclusive em versões anteriores deste guia: <strong>o desconto não é de 90%</strong>. Essa conta só fecha se você fingir que as milhas foram de graça. Na mesma simulação, a ida custava <strong>23.300 milhas ou R$ 466,45</strong> em dinheiro. Avaliando as milhas pela nossa <a href="/cotacao-do-milheiro/">cotação</a> de R$ 15 por milheiro, elas valiam R$ 349,50; somando os R$ 48 de taxa, a emissão saiu por R$ 397,50 contra R$ 466,45. Economia real: <strong>cerca de 15%</strong>.',
+    },
+    {
+      t: 'p',
+      html: 'Isso não torna a emissão ruim: torna a conta honesta. O ganho de verdade está em outro lugar. Naquela emissão, <strong>cada milheiro entregou R$ 17,95</strong> de valor, contra os R$ 15 que o mercado paga pelo mesmo milheiro. Usar rendeu cerca de 20% mais que vender, e é esse o número que deve guiar a decisão, não o desconto aparente sobre a tarifa cheia.',
     },
     { t: 'h2', id: 'passo-a-passo', text: 'Passo a passo da emissão' },
     {
@@ -243,7 +251,7 @@ export const viajar: Article = {
         'Pesquise a emissão em milhas E o preço em dinheiro: a razão entre os dois diz se a emissão vale a pena.',
         'Calcule o valor do milheiro embutido: preço em dinheiro ÷ milhas pedidas × 1.000. Abaixo da cotação de venda, venda as milhas e compre em dinheiro; acima, emita.',
         'Emita com os dados corretos de todos os passageiros. Alterações depois custam caro.',
-        'Pague a taxa de embarque com um cartão que pontue: até a taxa vira milha.',
+        'Pague a taxa de embarque <strong>em dinheiro</strong>, de preferência num cartão que pontue: até a taxa vira milha. Nunca pague a taxa com milhas (veja o porquê abaixo).',
       ],
     },
     {
@@ -263,7 +271,31 @@ export const viajar: Article = {
       t: 'p',
       html: 'Esta tabela existe para você ter um <strong>piso de comparação</strong>. Antes de emitir, olhe o preço da passagem em dinheiro e compare com a coluna do seu programa: se a emissão economiza <strong>menos</strong> do que o saldo valeria vendido, emitir está destruindo valor. Se economiza mais, emitir é o melhor uso. A <a href="/calculadora-de-milhas/">calculadora</a> faz essa conta com o seu número.',
     },
+    {
+      t: 'callout',
+      tone: 'warn',
+      title: 'Nunca pague a taxa de embarque com milhas',
+      html: 'Os programas oferecem essa opção e ela é sempre ruim. Na emissão que simulamos em 14/09/2026, a Smiles cobrava R$ 96,29 de taxa e aceitava pagá-la de cinco formas. Convertendo cada uma em valor por milheiro: <strong>7.600 milhas equivalem a R$ 12,67</strong>; 5.400 milhas + R$ 24 a R$ 13,39; 4.100 milhas + R$ 48 a R$ 11,78; e 2.700 milhas + R$ 72 a apenas <strong>R$ 9,00</strong>. Todas abaixo dos R$ 15 que o mercado paga pelo milheiro e muito abaixo dos R$ 17,95 que a mesma milha entrega na passagem. Pague a taxa em dinheiro e guarde a milha para o bilhete.',
+    },
     { t: 'h2', id: 'quando-emitir', text: 'Quando emitir: os dois momentos de ouro' },
+    {
+      t: 'p',
+      html: 'O dia da semana muda tudo, e dá para medir. Na busca que fizemos em 14/09/2026 para GRU–REC, o mesmo trecho variou de <strong>22.600 milhas na segunda-feira a 41.300 na quinta</strong> da mesma semana — <strong>83% de diferença</strong> sem mudar nada além da data. Mover a viagem em um ou dois dias costuma render mais que qualquer outra técnica de economia.',
+    },
+    {
+      t: 'table',
+      caption: 'GRU–REC em novembro de 2026: o mesmo trecho, dia a dia',
+      head: ['Dia', 'Custo em milhas'],
+      rows: [
+        ['Sexta, 13/11', '35.900'],
+        ['Domingo, 15/11', '23.100'],
+        ['<strong>Segunda, 16/11</strong>', '<strong>22.600</strong>'],
+        ['Terça, 17/11', '23.100'],
+        ['Quarta, 18/11', '40.700'],
+        ['Quinta, 19/11', '41.300'],
+      ],
+      note: 'Busca feita pela Equipe Fabricante de Milhas em 14/09/2026, econômica, 1 adulto, tarifa para assinantes do Clube Smiles. Preços de emissão mudam diariamente: o padrão que se repete é a diferença entre meio e fim de semana, não os números exatos.',
+    },
     {
       t: 'p',
       html: 'As melhores tabelas aparecem em dois extremos: <strong>bem antecipado</strong> (assentos promocionais liberados na abertura do calendário) e <strong>em promoções-relâmpago</strong>, quando programas baixam o custo de rotas específicas por horas ou dias. O meio do caminho (busca de última hora sem promoção) é onde as milhas valem menos.',
@@ -288,7 +320,7 @@ export const viajar: Article = {
   faq: [
     {
       q: 'Viajar com milhas é realmente de graça?',
-      a: 'A tarifa sai do saldo de milhas; taxas de embarque e encargos são pagos em dinheiro. Na prática o desconto costuma superar 90% do valor do bilhete. "De graça" é impreciso no rigor, mas descreve bem o efeito no orçamento de quem emite com método.',
+      a: 'Não é de graça, e o desconto é menor do que se costuma dizer. A tarifa sai do saldo de milhas, mas a taxa de embarque é paga em dinheiro: numa emissão GRU–REC que simulamos em setembro de 2026, foram R$ 96,29 de taxa na ida e volta. E se você valorizar suas milhas pelo preço de mercado, a economia real naquele trecho foi de cerca de 15%, não de 90%. O ganho verdadeiro é outro: a milha usada na passagem rendeu R$ 17,95 por milheiro contra os R$ 15 que o mercado paga por ela.',
     },
     {
       q: 'Com quantas milhas consigo viajar?',
@@ -309,7 +341,5 @@ export const viajar: Article = {
     { slug: '/como-ganhar-dinheiro-com-milhas/', anchor: 'Usar ou vender? A conta completa' },
   ],
   checks: [
-    'Faixas de taxa de embarque doméstica/internacional atuais',
-    'Percentual de desconto médio (90%): validar com emissões de exemplo do mês',
   ],
 }
