@@ -20,15 +20,15 @@ export const cartao: Article = {
     'Juros do rotativo destroem qualquer ganho com milhas. Pontue apenas o que pode pagar.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'criterios', text: 'Os 4 critérios que realmente importam' },
     {
       t: 'ol',
       items: [
-        '<strong>Pontuação por dólar</strong>: quantos pontos cada dólar gasto gera. É a base de tudo.',
-        '<strong>Anuidade líquida</strong>: quanto o cartão custa depois de descontos e se a pontuação anual paga esse custo.',
-        '<strong>Flexibilidade do programa</strong>: pontos que transferem para várias companhias (via Livelo, Esfera etc.) valem mais que pontos presos.',
+        '<strong><a href="/glossario-de-milhas/#pontos-por-dolar">Pontuação por dólar</a></strong>: quantos pontos cada dólar gasto gera. É a base de tudo.',
+        '<strong><a href="/glossario-de-milhas/#anuidade">Anuidade</a> líquida</strong>: quanto o cartão custa depois de descontos e se a pontuação anual paga esse custo.',
+        '<strong>Flexibilidade do programa</strong>: pontos que transferem para várias companhias (via Livelo, Esfera etc.) valem mais que pontos presos. Veja o <a href="/programas-de-milhas/">comparativo dos programas brasileiros</a>.',
         '<strong>Benefícios de viagem</strong>: salas VIP, seguros e upgrades contam, mas são desempate, não critério principal.',
       ],
     },
@@ -47,16 +47,16 @@ export const cartao: Article = {
     { t: 'h2', id: 'sem-anuidade', text: 'Cartão sem anuidade vale a pena para milhas?' },
     {
       t: 'p',
-      html: 'Para começar, sim. Cartões sem anuidade costumam pontuar menos (ou converter em cashback), mas eliminam o risco de pagar mais de tarifa do que se ganha em pontos. A migração para um cartão pago faz sentido quando a conta fecha: pontuação anual × valor do ponto > anuidade líquida. Antes disso, é vaidade.',
+      html: 'Para começar, sim. Cartões sem anuidade costumam pontuar menos (ou converter em cashback), mas eliminam o risco de pagar mais de tarifa do que se ganha em pontos. A migração para um cartão pago faz sentido quando a conta fecha: pontuação anual × valor do ponto > anuidade líquida. Para estimar o valor do ponto, use a nossa <a href="/cotacao-do-milheiro/">cotação do milheiro</a> do mês. Antes disso, é vaidade.',
     },
     { t: 'h2', id: 'erros', text: 'Erros que anulam o acúmulo' },
     {
       t: 'ul',
       items: [
         '<strong>Pagar juros para pontuar</strong>: o rotativo do cartão custa mais em um mês do que as milhas rendem no ano. Regra absoluta: só passe no cartão o que consegue pagar integral.',
-        '<strong>Deixar pontos no programa do banco sem plano</strong>: pontos parados perdem campanhas de bônus e podem expirar.',
+        '<strong>Deixar pontos no programa do banco sem plano</strong>: pontos parados perdem campanhas de <a href="/como-acumular-milhas/#transferencia-bonificada">transferência bonificada</a> e podem expirar.',
         '<strong>Escolher pelo brinde de adesão</strong>: bônus de boas-vindas é bom, mas o que sustenta o acúmulo é a pontuação recorrente.',
-        '<strong>Ignorar a cotação do dólar</strong>: pontuação é por dólar gasto; a conversão afeta diretamente seu custo por ponto.',
+        '<strong>Ignorar a cotação do dólar</strong>: pontuação é por dólar gasto; a conversão afeta diretamente seu custo por ponto. A <a href="/calculadora-de-milhas/">calculadora</a> mostra quantas milhas o seu gasto mensal gera.',
       ],
     },
     { t: 'cta' },
@@ -109,7 +109,7 @@ export const programas: Article = {
     'Diversificar demais pulveriza o saldo; concentre onde você realmente voa ou vende.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'dois-tipos', text: 'Primeiro: existem dois tipos de programa' },
     {
@@ -125,10 +125,10 @@ export const programas: Article = {
         ['Smiles', 'GOL', 'Malha doméstica ampla, promoções frequentes, mercado líquido para venda', 'Validade do saldo e mudanças de tabela [VERIFICAR regras atuais]'],
         ['LATAM Pass', 'LATAM', 'Malha internacional forte, parcerias amplas', 'Cotações de emissão variam muito [VERIFICAR]'],
         ['Azul Fidelidade', 'Azul', 'Cobertura de cidades médias no Brasil', 'Programa reformulado: regras e nome de clube [VERIFICAR]'],
-        ['Livelo', '— (pontos)', 'Flexível, campanhas de bônus agressivas', 'Ponto parado sem transferir rende pouco'],
-        ['Esfera', '— (pontos)', 'Alternativa de bônus e promoções', 'Menos parceiros que a Livelo [VERIFICAR]'],
+        ['Livelo', '— (pontos)', '14 programas parceiros de transferência (set/2026)', 'Ponto parado sem transferir rende pouco'],
+        ['Esfera', '— (pontos)', 'Alternativa de bônus e promoções', 'Lista de parceiros só visível logado; não apuramos'],
       ],
-      note: 'Regras, validades e clubes mudam com frequência. A tabela é revisada a cada atualização desta página.',
+      note: 'Contagem de parceiros da Livelo apurada pela Equipe Fabricante de Milhas em 14/09/2026, na página oficial de transferências. Regras, validades e clubes mudam com frequência: a tabela é revisada a cada atualização desta página.',
     },
     { t: 'h2', id: 'como-escolher', text: 'Como escolher o seu programa principal' },
     {
@@ -173,7 +173,7 @@ export const programas: Article = {
   checks: [
     'Regras de validade atuais de Smiles, LATAM Pass e Azul Fidelidade',
     'Nome/estrutura atual do programa da Azul (reformulação) e dos clubes',
-    'Número de parceiros Esfera vs Livelo',
+    'Número de parceiros da Esfera: lista só aparece logada, precisa de acesso à conta',
   ],
 }
 
