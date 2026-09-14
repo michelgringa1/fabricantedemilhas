@@ -6,7 +6,7 @@ export const cartao: Article = {
   cluster: 'Cartões',
   kicker: 'Guia completo',
   h1: 'Cartão de crédito para acumular milhas: como escolher o certo',
-  seoTitle: 'Cartão de Crédito para Acumular Milhas: Guia 2026 | Fabricante de Milhas',
+  seoTitle: 'Cartão de Crédito para Milhas | Fabricante de Milhas',
   metaDescription:
     'Como escolher cartão de crédito para acumular milhas em 2026: pontos por dólar, anuidade, perfis de renda e os erros que anulam o acúmulo.',
   keyword: 'cartão de crédito para acumular milhas',
@@ -96,7 +96,7 @@ export const programas: Article = {
   cluster: 'Programas',
   kicker: 'Comparativo',
   h1: 'Programas de milhas no Brasil: qual é o melhor em 2026?',
-  seoTitle: 'Melhor Programa de Milhas Brasil 2026: Comparativo | Fabricante de Milhas',
+  seoTitle: 'Melhor Programa de Milhas do Brasil | Fabricante de Milhas',
   metaDescription:
     'Smiles, LATAM Pass, Azul Fidelidade, Livelo e Esfera comparados: acúmulo, validade, clubes e uso. Qual programa de milhas rende mais no seu caso.',
   keyword: 'melhor programa de milhas Brasil',
@@ -183,7 +183,7 @@ export const viajar: Article = {
   cluster: 'Viajar',
   kicker: 'Guia completo',
   h1: 'Como viajar de graça com milhas (e o que "de graça" significa de verdade)',
-  seoTitle: 'Como Viajar de Graça com Milhas: Guia Real | Fabricante de Milhas',
+  seoTitle: 'Como Viajar de Graça com Milhas | Fabricante de Milhas',
   metaDescription:
     'Como viajar de graça com milhas: passo a passo da emissão, quando emitir, taxas que ainda existem e como multiplicar o valor do seu saldo.',
   keyword: 'como viajar de graça com milhas',

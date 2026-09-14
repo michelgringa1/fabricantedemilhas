@@ -351,8 +351,11 @@ export function DestraveSuasMilhas() {
                 <div className="mt-8 grid sm:grid-cols-2 gap-x-10 gap-y-5">
                   {[
                     ['5 dias de conteúdo ao vivo', 'Prático e objetivo, cerca de uma hora por dia.'],
-                    ['Cerca de 5.000 milhas', 'Estimativa anunciada pelo evento para quem aplica o método na semana.'],
-                    ['3 materiais de apoio', 'A organização não detalhou o conteúdo até a publicação desta página.'],
+                    ['5.000 milhas', 'O evento anuncia como compromisso, com devolução caso não entregue. Depende de você participar e aplicar.'],
+                    ['Material de economia em viagem', 'Como reduzir entre 20% e 90% dos custos da próxima viagem, segundo a página oficial.'],
+                    ['Material de renda extra', 'Como usar milhas como fonte de renda adicional.'],
+                    ['Material de compras com desconto', 'Como adquirir eletrônicos com até 40% de desconto usando milhas.'],
+                    ['Grupo exclusivo no WhatsApp', 'Canal de acompanhamento durante os 5 dias do evento.'],
                     ['Garantia de 7 dias', 'Devolução integral do valor, sem precisar justificar.'],
                   ].map(([t, d], i) => (
                     <div key={t} className="flex gap-4">

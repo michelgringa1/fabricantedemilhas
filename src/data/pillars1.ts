@@ -6,7 +6,7 @@ export const acumular: Article = {
   cluster: 'Acumular milhas',
   kicker: 'Guia completo',
   h1: 'Como acumular milhas aéreas em 2026: o guia completo',
-  seoTitle: 'Como Acumular Milhas em 2026: Guia Completo | Fabricante de Milhas',
+  seoTitle: 'Como Acumular Milhas em 2026 | Fabricante de Milhas',
   metaDescription:
     'Como acumular milhas aéreas em 2026: cartão de crédito, transferência bonificada, clubes e compras do dia a dia. Guia honesto e passo a passo.',
   keyword: 'como acumular milhas',
@@ -125,7 +125,7 @@ export const ganharDinheiro: Article = {
   cluster: 'Ganhar dinheiro',
   kicker: 'Guia completo',
   h1: 'Como ganhar dinheiro com milhas: o que funciona de verdade',
-  seoTitle: 'Como Ganhar Dinheiro com Milhas: Guia Realista | Fabricante de Milhas',
+  seoTitle: 'Como Ganhar Dinheiro com Milhas | Fabricante de Milhas',
   metaDescription:
     'Como ganhar dinheiro com milhas aéreas de forma realista: venda de milhas, economia em passagens e emissões. Sem promessa milagrosa, com os riscos na mesa.',
   keyword: 'como ganhar dinheiro com milhas',
@@ -240,7 +240,7 @@ export const vender: Article = {
   cluster: 'Vender milhas',
   kicker: 'Guia completo',
   h1: 'Vender milhas aéreas: guia seguro e realista (2026)',
-  seoTitle: 'Vender Milhas Aéreas: Guia Seguro 2026 | Fabricante de Milhas',
+  seoTitle: 'Vender Milhas Aéreas com Segurança | Fabricante de Milhas',
   metaDescription:
     'Como vender milhas aéreas com segurança em 2026: onde vender, cotação do milheiro, passo a passo, riscos reais e o que aprender com o caso 123milhas.',
   keyword: 'vender milhas aéreas',

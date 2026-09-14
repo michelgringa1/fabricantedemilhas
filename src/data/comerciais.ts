@@ -185,7 +185,7 @@ export const cursosComparador: Article = {
   cluster: 'Cursos',
   kicker: 'Comparador',
   h1: 'Cursos de milhas: o comparativo completo [2026]',
-  seoTitle: 'Curso de Milhas: Comparativo Completo 2026 | Fabricante de Milhas',
+  seoTitle: 'Curso de Milhas: Comparativo 2026 | Fabricante de Milhas',
   metaDescription:
     'Comparamos os principais cursos de milhas do Brasil: conteúdo, preço, suporte, reputação e garantia. Análise com critérios públicos.',
   keyword: 'curso de milhas',
@@ -319,7 +319,7 @@ export const melhorCurso: Article = {
   cluster: 'Cursos',
   kicker: 'Ranking',
   h1: 'Melhor curso de milhas em 2026: o ranking da Fabricante de Milhas',
-  seoTitle: 'Melhor Curso de Milhas 2026: Ranking Honesto | Fabricante de Milhas',
+  seoTitle: 'Melhor Curso de Milhas 2026 | Fabricante de Milhas',
   metaDescription:
     'Ranking do melhor curso de milhas em 2026 com critérios públicos: conteúdo, preço, suporte, reputação e garantia. Veja quem lidera e por quê.',
   keyword: 'melhor curso de milhas',
@@ -403,7 +403,7 @@ export const rendaExtra: Article = {
   cluster: 'Ganhar dinheiro',
   kicker: 'Guia',
   h1: 'Milhas aéreas como renda extra: expectativa realista para 2026',
-  seoTitle: 'Milhas Aéreas Como Renda Extra: Guia Realista | Fabricante de Milhas',
+  seoTitle: 'Milhas Aéreas como Renda Extra | Fabricante de Milhas',
   metaDescription:
     'Milhas aéreas como renda extra: o que é realista esperar, quanto tempo exige, os riscos e o passo a passo honesto para começar em 2026.',
   keyword: 'milhas aéreas como renda extra',
