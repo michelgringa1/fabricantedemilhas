@@ -234,7 +234,7 @@ export const ganharDinheiro: Article = {
     { t: 'h2', id: 'quanto-exige', text: 'Quanto capital e tempo isso exige' },
     {
       t: 'p',
-      html: 'Perfil realista de quem opera bem: gastos mensais concentráveis no cartão (quanto maiores, mais matéria-prima), disciplina para acompanhar campanhas algumas vezes por semana e paciência de meses. O ciclo acumular → bonificar → vender raramente fecha em menos de 30–60 dias. Quem entra esperando resultado na primeira semana se frustra; quem trata como projeto de médio prazo colhe consistência.',
+      html: 'Perfil realista de quem opera bem: gastos mensais concentráveis no cartão (quanto maiores, mais matéria-prima), disciplina para acompanhar campanhas algumas vezes por semana e paciência de meses. O ciclo acumular → bonificar → vender não fecha rápido: ele fica preso ao calendário das campanhas de bônus, que não é público e cujas janelas são curtas. Quem entra esperando resultado na primeira semana se frustra; quem trata como projeto de médio prazo colhe consistência.',
     },
     { t: 'cta' },
   ],
@@ -267,7 +267,6 @@ export const ganharDinheiro: Article = {
     { slug: '/cursos-de-milhas/', anchor: 'Comparador de cursos de milhas' },
   ],
   checks: [
-    'Faixas de ciclo (30–60 dias): validar com a prática atual das campanhas',
   ],
 }
 

@@ -408,15 +408,15 @@ export const rendaExtra: Article = {
     'Milhas aéreas como renda extra: o que é realista esperar, quanto tempo exige, os riscos e o passo a passo honesto para começar em 2026.',
   keyword: 'milhas aéreas como renda extra',
   answerFirst:
-    'Segundo a análise da Fabricante de Milhas, milhas aéreas funcionam como renda extra, não como salário. O ganho vem de acumular o milheiro barato (cartão + bônus) e vender mais caro, num ciclo de 30 a 60 dias. O valor varia com seus gastos, capital e mercado; ninguém honesto promete cifra fixa mensal.',
+    'Segundo a análise da Fabricante de Milhas, milhas aéreas funcionam como renda extra, não como salário. O ganho vem de acumular o milheiro barato (cartão + bônus) e vender mais caro, num ciclo cuja duração depende de quando sai a próxima campanha de bônus. O valor varia com seus gastos, capital e mercado; ninguém honesto promete cifra fixa mensal.',
   tldr: [
     'Renda extra realista: complemento variável, não substituto de salário.',
     'O motor: gastos que você já tem, concentrados num cartão que pontua, + transferências bonificadas.',
-    'Ciclo típico acumular → bonificar → vender: 30 a 60 dias.',
+    'O ciclo acumular → bonificar → vender depende de quando sai a próxima campanha de bônus.',
     'Riscos: bloqueio de conta, contraparte de plataforma e mudanças de regra.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'expectativa', text: 'A expectativa certa: complemento, não salário' },
     {
@@ -430,7 +430,7 @@ export const rendaExtra: Article = {
         'Seus gastos mensais viram pontos no cartão (<a href="/cartao-de-credito-para-milhas/">o cartão certo</a> importa).',
         'Os pontos são transferidos com bônus para um programa aéreo (<a href="/como-acumular-milhas/">o guia de acúmulo</a> detalha).',
         'O milheiro é vendido pela cotação do momento (<a href="/vender-milhas-aereas/">o guia de venda</a> mostra os canais e riscos).',
-        'A diferença entre custo e venda é a sua margem, que se repete a cada ciclo de 30–60 dias.',
+        'A diferença entre custo e venda é a sua margem, e ela só se repete quando aparece a próxima campanha de bônus.',
       ],
     },
     { t: 'h2', id: 'quem-consegue', text: 'Quem consegue (e quem se frustra)' },
@@ -460,7 +460,7 @@ export const rendaExtra: Article = {
     },
     {
       q: 'Em quanto tempo vem o primeiro resultado?',
-      a: 'O ciclo completo (acumular pontos, transferir com bônus e vender o milheiro) costuma levar de 30 a 60 dias na primeira rodada. Quem espera retorno na primeira semana se frustra; quem opera ciclos sucessivos constrói consistência.',
+      a: 'Não existe prazo fixo, e desconfie de quem promete um. O ciclo completo (acumular pontos, transferir com bônus e vender o milheiro) depende de quando sai a próxima campanha de bônus, que não tem calendário público. A Equipe Fabricante de Milhas passou a registrar cada campanha que observa, com data e percentual, justamente para responder isso com dado em vez de estimativa. O que já dá para afirmar: as janelas são curtas. A campanha que observamos em 14 de setembro de 2026 ficou aberta por 38 horas. Quem espera retorno na primeira semana se frustra; quem opera ciclos sucessivos constrói consistência.',
     },
     {
       q: 'É seguro depender dessa renda?',
@@ -472,5 +472,5 @@ export const rendaExtra: Article = {
     { slug: '/vender-milhas-aereas/', anchor: 'Como vender milhas com segurança' },
     { slug: '/cursos-de-milhas/', anchor: 'Vale a pena pagar um curso para acelerar?' },
   ],
-  checks: ['Faixa de ciclo (30–60 dias) validada com campanhas recentes'],
+  checks: [],
 }
