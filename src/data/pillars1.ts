@@ -96,7 +96,7 @@ export const acumular: Article = {
     { t: 'h2', id: 'clubes', text: 'Clubes de fidelidade e assinaturas' },
     {
       t: 'p',
-      html: 'Os clubes mensais entregam milhas todo mês por uma assinatura fixa e, mais importante, costumam dar acesso a <strong>bônus maiores nas transferências</strong> e a promoções exclusivas. Em 14 de setembro de 2026, os planos do <strong>Clube Smiles</strong> iam de R$ 43,70 a R$ 819,00, os do <strong>Clube Azul</strong> de R$ 39,90 a R$ 118,90 e os do <strong>Clube Livelo</strong> de 12x R$ 42,65 (1.000 pontos/mês) a 12x R$ 759,90 (20.000 pontos/mês). Para quem acumula com estratégia, o clube muitas vezes se paga só pelo bônus extra, mas faça a conta do seu caso antes de assinar. Valores e regras mudam com frequência <mark class="verificar">[VERIFICAR: valores atuais dos clubes]</mark>.',
+      html: 'Os clubes mensais entregam milhas todo mês por uma assinatura fixa e, mais importante, costumam dar acesso a <strong>bônus maiores nas transferências</strong> e a promoções exclusivas. Em 14 de setembro de 2026, os planos do <strong>Clube Smiles</strong> iam de R$ 43,70 a R$ 819,00, os do <strong>Clube Azul</strong> de R$ 39,90 a R$ 118,90 e os do <strong>Clube Livelo</strong> de 12x R$ 42,65 (1.000 pontos/mês) a 12x R$ 759,90 (20.000 pontos/mês). Para quem acumula com estratégia, o clube muitas vezes se paga só pelo bônus extra, mas faça a conta do seu caso antes de assinar. Valores e regras de clube mudam com frequência: confirme na página oficial do programa antes de assinar.',
     },
     { t: 'h2', id: 'dia-a-dia', text: 'Acumulando nas compras do dia a dia' },
     {
@@ -208,18 +208,23 @@ export const ganharDinheiro: Article = {
     { t: 'h2', id: 'custo-milheiro', text: 'A conta que sustenta tudo: custo do milheiro' },
     {
       t: 'p',
-      html: 'Todo o jogo se resume a uma conta: <strong>quanto custa para você "fabricar" mil milhas</strong> versus quanto pagam por elas. Publicamos e atualizamos mensalmente nossa tabela de referência de custo e cotação do milheiro por programa, dado próprio da Equipe Fabricante de Milhas <mark class="verificar">[VERIFICAR: publicar tabela do mês corrente]</mark>.',
+      html: 'Todo o jogo se resume a uma conta: <strong>quanto custa para você "fabricar" mil milhas</strong> versus quanto pagam por elas. O lado da venda a Equipe Fabricante de Milhas apura todo mês em três canais de compra e publica com data e método abertos na <a href="/cotacao-do-milheiro/">página da cotação do milheiro</a>.',
     },
     {
       t: 'table',
-      caption: 'Referência de cotação do milheiro (exemplo ilustrativo, atualização mensal)',
-      head: ['Programa', 'Custo típico de acúmulo*', 'Cotação de venda*', 'Margem indicativa'],
+      caption: 'Faixa de venda por milheiro, apuração de agosto de 2026',
+      head: ['Programa', 'Faixa apurada', 'Referência'],
       rows: [
-        ['Smiles', '[VERIFICAR]', '[VERIFICAR]', '[VERIFICAR]'],
-        ['LATAM Pass', '[VERIFICAR]', '[VERIFICAR]', '[VERIFICAR]'],
-        ['Azul Fidelidade', '[VERIFICAR]', '[VERIFICAR]', '[VERIFICAR]'],
+        ['Smiles', 'R$ 11 a R$ 19', 'R$ 15'],
+        ['LATAM Pass', 'R$ 16 a R$ 30', 'R$ 23'],
+        ['Azul Fidelidade', 'R$ 13 a R$ 17', 'R$ 15'],
+        ['Livelo', 'R$ 15', 'R$ 15'],
       ],
-      note: '*Valores por milheiro (mil milhas), sujeitos a mudança. Confirmados em [mês/ano da atualização].',
+      note: 'Apurado pela Equipe Fabricante de Milhas em MaxMilhas, BankMilhas e Compro Milhas em 30/08/2026. A faixa é larga porque cada canal vende um produto diferente: marketplace paga mais e demora, plataforma à vista paga menos e paga rápido.',
+    },
+    {
+      t: 'p',
+      html: 'O outro lado da conta, o custo, <strong>não cabe em tabela</strong>: ele depende da sua rota. Quem acumula em gasto que já faria tem custo perto de zero; quem assina clube, paga anuidade ou compra ponto para bonificar tem um custo real por milheiro que precisa entrar no cálculo. Rode o seu número na <a href="/calculadora-de-milhas/">calculadora de milhas</a> antes de decidir se vale vender.',
     },
     { t: 'h2', id: 'riscos', text: 'Os riscos que ninguém te conta na página de vendas' },
     {

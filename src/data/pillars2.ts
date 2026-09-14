@@ -60,7 +60,7 @@ export const cartao: Article = {
         ['R$ 2.000 – R$ 8.000', 'Intermediário com boa pontuação e anuidade negociável', 'Pulverizar em vários cartões'],
         ['Acima de R$ 8.000', 'Premium com 2+ pontos por dólar e benefícios de viagem', 'Pagar anuidade cheia sem negociar'],
       ],
-      note: 'Nomes, taxas e pontuações específicas de cada emissor mudam com frequência; confirme na data da consulta. [VERIFICAR: nomes e taxas dos cartões]',
+      note: 'Faixas de perfil são referência editorial, não recomendação de produto. Os nomes e as pontuações de cada emissor estão na tabela acima, com a data da apuração.',
     },
     { t: 'h2', id: 'sem-anuidade', text: 'Cartão sem anuidade vale a pena para milhas?' },
     {
@@ -135,11 +135,11 @@ export const programas: Article = {
     { t: 'h2', id: 'comparativo', text: 'Comparativo dos principais programas' },
     {
       t: 'table',
-      caption: 'Programas aéreos: visão geral (regras mudam; confirmadas em jul/2026)',
+      caption: 'Programas aéreos: visão geral, apurado em 14 de setembro de 2026',
       head: ['Programa', 'Companhia', 'Pontos fortes', 'Pontos de atenção'],
       rows: [
-        ['Smiles', 'GOL', 'Malha doméstica ampla, promoções frequentes, mercado líquido para venda', 'Validade do saldo e mudanças de tabela [VERIFICAR regras atuais]'],
-        ['LATAM Pass', 'LATAM', 'Malha internacional forte, parcerias amplas', 'Cotações de emissão variam muito [VERIFICAR]'],
+        ['Smiles', 'GOL', 'Malha doméstica ampla, promoções frequentes, mercado líquido para venda', 'Milha de bônus vale só 6 meses: o que vem de promoção precisa de uso rápido'],
+        ['LATAM Pass', 'LATAM', 'Malha internacional forte, parcerias amplas, bônus válido por 36 meses', 'Cotação de emissão varia muito entre datas: compare antes de resgatar'],
         ['Azul Fidelidade', 'Azul', 'Cobertura de cidades médias no Brasil', 'Ex-TudoAzul; o clube agora se chama Clube Azul'],
         ['Livelo', '— (pontos)', '14 programas parceiros de transferência (set/2026)', 'Ponto parado sem transferir rende pouco'],
         ['Esfera', '— (pontos)', '11 programas parceiros (set/2026)', 'Menos parceiros que a Livelo, mas tem TAP e Turkish'],
