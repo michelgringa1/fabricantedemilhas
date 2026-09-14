@@ -363,7 +363,7 @@ export const vender: Article = {
     },
     {
       t: 'p',
-      html: 'O ponto central da decisão: a <strong>cláusula de intransferibilidade</strong> que os programas colocam nos regulamentos <strong>não impede a penhora</strong>. O argumento aceito foi o de que, se a milha tem expressão econômica — e tem, já que existe um mercado que a compra e vende —, ela é patrimônio do titular e responde por dívidas como qualquer outro bem.',
+      html: 'O ponto central da decisão: a <strong>cláusula de intransferibilidade</strong> que os programas colocam nos regulamentos <strong>não impede a penhora</strong>. O argumento aceito foi o de que, se a milha tem expressão econômica — e tem, já que existe um mercado que a compra e vende —, ela é patrimônio do titular e responde por dívidas como qualquer outro bem. A decisão reformou entendimento da Justiça de São Paulo, que vinha negando o bloqueio sob o argumento de que faltaria mecanismo seguro para converter os pontos em dinheiro.',
     },
     {
       t: 'callout',
@@ -373,7 +373,7 @@ export const vender: Article = {
     },
     {
       t: 'p',
-      html: 'O que isso muda para você, de forma prática: se você acumula milhas em volume e tem dívidas em execução, esse saldo deixou de ser um lugar seguro. E se você vende milhas com frequência, a decisão reforça o que já era verdade no imposto de renda — o mercado e a Justiça enxergam milha como patrimônio, não como brinde. <mark class="verificar">[VERIFICAR: confirmar a decisão e sua repercussão atual antes de publicar]</mark>',
+      html: 'O que isso muda para você, de forma prática: se você acumula milhas em volume e tem dívidas em execução, esse saldo deixou de ser um lugar seguro. E se você vende milhas com frequência, a decisão reforça o que já era verdade no imposto de renda — o mercado e a Justiça enxergam milha como patrimônio, não como brinde.',
     },
     {
       t: 'p',
@@ -434,6 +434,5 @@ export const vender: Article = {
   ],
   checks: [
     'Orientação tributária revisada por contador',
-    'Decisão do STJ de 18/08/2026 sobre penhora de milhas: confirmar ementa e repercussão atual',
   ],
 }
