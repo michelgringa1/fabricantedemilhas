@@ -196,7 +196,7 @@ export const TERMOS: Termo[] = [
     id: 'validade-das-milhas',
     termo: 'Validade das milhas',
     definicao:
-      'Prazo após o qual as milhas não usadas expiram. Varia por programa e, em alguns casos, pela categoria do cliente; assinantes de clube costumam ter validade estendida ou suspensa.',
+      'Prazo após o qual as milhas não usadas expiram. Varia por programa, pela origem da milha e pela categoria do cliente. Em setembro de 2026: LATAM Pass usa 36 meses para tudo; a Azul Fidelidade, no mínimo 24 meses; e a Smiles publica 16 prazos distintos, com 3 anos para milhas transferidas do banco e apenas 6 meses para as milhas de bônus de promoção.',
   },
   {
     id: 'expiracao',
@@ -353,5 +353,11 @@ export const TERMOS: Termo[] = [
     termo: 'Taxa de conveniência',
     definicao:
       'Cobrança adicional de algumas plataformas para processar a emissão com milhas de terceiros. Deve entrar no cálculo do custo real da passagem.',
+  },
+  {
+    id: 'milhas-bonus',
+    termo: 'Milhas bônus',
+    definicao:
+      'Parcela de milhas creditada como prêmio numa campanha de transferência, separada das milhas que você efetivamente transferiu. Importa porque a validade costuma ser diferente: na Smiles, em setembro de 2026, o bônus expirava em 6 meses contra 3 anos das milhas transferidas.',
   },
 ]
