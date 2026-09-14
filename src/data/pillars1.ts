@@ -174,7 +174,7 @@ export const ganharDinheiro: Article = {
     'Desconfie de qualquer promessa de renda garantida: resultados variam caso a caso.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-11',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'da-pra-ganhar', text: 'Dá para ganhar dinheiro com milhas de verdade?' },
     {
@@ -263,8 +263,6 @@ export const ganharDinheiro: Article = {
     { slug: '/cursos-de-milhas/', anchor: 'Comparador de cursos de milhas' },
   ],
   checks: [
-    'Tabela de custo/cotação do milheiro do mês corrente (dado próprio)',
-    'Status atual do caso 123milhas/MaxMilhas/HotMilhas (recuperação judicial)',
     'Faixas de ciclo (30–60 dias): validar com a prática atual das campanhas',
   ],
 }
@@ -304,7 +302,7 @@ export const vender: Article = {
     {
       t: 'ul',
       items: [
-        '<strong>Plataformas especializadas</strong>: intermediam a venda e pagam conforme o prazo escolhido (à vista paga menos; prazos longos pagam mais e carregam mais risco) <mark class="verificar">[VERIFICAR: plataformas ativas e reputação atual de cada uma]</mark>.',
+        '<strong>Plataformas especializadas</strong>: intermediam a venda e pagam conforme o prazo escolhido (à vista paga menos; prazos longos pagam mais e carregam mais risco). Em setembro de 2026, as que apuramos em operação eram MaxMilhas, HotMilhas, BankMilhas, Compro Milhas, FlipMilhas e Mundo Com Milhas. Não publicamos as notas delas em sites de reputação, porque mudam mês a mês: pesquise o nome de cada uma antes de fechar.',
         '<strong>Emissores e agências de confiança</strong>: negociação direta, geralmente com cotação um pouco melhor, mas que exige relação de confiança estabelecida.',
         '<strong>Nunca</strong>: grupos anônimos, compradores sem histórico e qualquer canal que peça sua senha do programa fora de ambiente seguro.',
       ],
@@ -345,7 +343,7 @@ export const vender: Article = {
     { t: 'h2', id: 'riscos', text: 'Riscos reais e a lição do caso 123milhas' },
     {
       t: 'p',
-      html: 'Em 2023, a crise do grupo 123milhas/MaxMilhas/HotMilhas deixou milhares de clientes e vendedores sem receber. A lição permanente: <strong>plataforma é contraparte privada, não banco</strong>: se ela quebra, seu crédito entra na fila. Por isso: prazos curtos, diversificação de canais e desconfiança saudável de cotações muito acima do mercado (spread alto demais costuma sinalizar risco alto demais).',
+      html: 'Em agosto de 2023, o grupo 123milhas/MaxMilhas/HotMilhas suspendeu passagens e entrou em recuperação judicial com dívida declarada de <strong>R$ 2,3 bilhões</strong>. Três anos depois, em setembro de 2026, o processo <strong>segue em curso</strong>: o plano foi protocolado em dezembro de 2024 e credores ainda movem cumprimentos de sentença para receber. A lição permanente: <strong>plataforma é contraparte privada, não banco</strong>: se ela quebra, seu crédito entra na fila. Por isso: prazos curtos, diversificação de canais e desconfiança saudável de cotações muito acima do mercado (spread alto demais costuma sinalizar risco alto demais).',
     },
     {
       t: 'callout',
@@ -416,10 +414,7 @@ export const vender: Article = {
     { slug: '/glossario-de-milhas/', anchor: 'Glossário: milheiro, cotação e outros termos' },
   ],
   checks: [
-    'Lista de plataformas de venda ativas e reputação atual (Reclame Aqui) de cada uma',
-    'Cotação do milheiro do mês corrente (tabela própria)',
     'Orientação tributária revisada por contador',
     'Decisão do STJ de 18/08/2026 sobre penhora de milhas: confirmar ementa e repercussão atual',
-    'Status atual da recuperação judicial do grupo 123milhas',
   ],
 }
