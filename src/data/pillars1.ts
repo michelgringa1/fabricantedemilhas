@@ -407,7 +407,7 @@ export const vender: Article = {
     },
     {
       q: 'Preciso declarar a venda de milhas no imposto de renda?',
-      a: 'Na leitura que prevalece entre especialistas, a venda de milhas é ganho de capital, e há isenção quando as alienações do mês somam até R$ 35 mil (Instrução Normativa SRF 599/2005). Acima disso a alíquota parte de 15%. Duas ressalvas importam: não localizamos uma Solução de Consulta da Receita específica sobre milhas, e quem vende com habitualidade pode ser reenquadrado como atividade. Registre as operações e confirme o seu caso com um contador. Desconfie de quem ensina a esconder.',
+      a: 'Vender milhas tem implicação fiscal, mas não damos orientação tributária aqui: o enquadramento depende do seu volume e da sua situação, e conselho genérico de imposto na internet sai caro para quem segue. Registre todas as suas operações e leve o seu caso a um contador. O que vale alertar: a movimentação bancária deixa rastro, e desde a decisão do STJ de agosto de 2026 o próprio Judiciário trata milha como patrimônio. Desconfie de quem ensina a esconder.',
     },
   ],
   related: [
