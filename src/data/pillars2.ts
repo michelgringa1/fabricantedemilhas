@@ -124,11 +124,11 @@ export const programas: Article = {
       rows: [
         ['Smiles', 'GOL', 'Malha doméstica ampla, promoções frequentes, mercado líquido para venda', 'Validade do saldo e mudanças de tabela [VERIFICAR regras atuais]'],
         ['LATAM Pass', 'LATAM', 'Malha internacional forte, parcerias amplas', 'Cotações de emissão variam muito [VERIFICAR]'],
-        ['Azul Fidelidade', 'Azul', 'Cobertura de cidades médias no Brasil', 'Programa reformulado: regras e nome de clube [VERIFICAR]'],
+        ['Azul Fidelidade', 'Azul', 'Cobertura de cidades médias no Brasil', 'Ex-TudoAzul; o clube agora se chama Clube Azul'],
         ['Livelo', '— (pontos)', '14 programas parceiros de transferência (set/2026)', 'Ponto parado sem transferir rende pouco'],
-        ['Esfera', '— (pontos)', 'Alternativa de bônus e promoções', 'Lista de parceiros só visível logado; não apuramos'],
+        ['Esfera', '— (pontos)', '11 programas parceiros (set/2026)', 'Menos parceiros que a Livelo, mas tem TAP e Turkish'],
       ],
-      note: 'Contagem de parceiros da Livelo apurada pela Equipe Fabricante de Milhas em 14/09/2026, na página oficial de transferências. Regras, validades e clubes mudam com frequência: a tabela é revisada a cada atualização desta página.',
+      note: 'Contagem de parceiros apurada pela Equipe Fabricante de Milhas em 14/09/2026, nas páginas oficiais de transferência de cada programa: 14 na Livelo, 11 na Esfera. A composição difere — a Esfera tem TAP Miles&Go, Turkish e IHG; a Livelo tem MileagePlus, British Airways, Etihad, Hilton, Dotz e Seedz. Regras, validades e clubes mudam com frequência: a tabela é revisada a cada atualização desta página.',
     },
     { t: 'h2', id: 'como-escolher', text: 'Como escolher o seu programa principal' },
     {
@@ -172,8 +172,6 @@ export const programas: Article = {
   ],
   checks: [
     'Regras de validade atuais de Smiles, LATAM Pass e Azul Fidelidade',
-    'Nome/estrutura atual do programa da Azul (reformulação) e dos clubes',
-    'Número de parceiros da Esfera: lista só aparece logada, precisa de acesso à conta',
   ],
 }
 

@@ -199,7 +199,7 @@ export const cursosComparador: Article = {
     'Nenhum curso garante renda: desconfie de quem promete.',
   ],
   published: '2026-07-11',
-  updated: '2026-08-30',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'bom-curso', text: 'O que um bom curso de milhas precisa ensinar' },
     {
@@ -220,7 +220,7 @@ export const cursosComparador: Article = {
       rows: [
         [
           'Fábrica de Milhas (Rodrigo Góes)',
-          '12x R$ 119,90 (1 ano) · jun/2026',
+          '12x R$ 119,90 ou R$ 1.230,60 à vista (1 ano) · set/2026',
           'Do zero ao avançado: acúmulo, emissão, executiva e venda de milhas',
           '8,0/10 · recomendação principal',
         ],
@@ -309,7 +309,7 @@ export const cursosComparador: Article = {
     { slug: '/como-acumular-milhas/', anchor: 'Guia gratuito de acúmulo de milhas' },
   ],
   checks: [
-    'Preço vigente do Fábrica de Milhas na data de publicação',
+
   ],
 }
 
@@ -332,7 +332,7 @@ export const melhorCurso: Article = {
     'Critérios públicos: conteúdo, custo-benefício, suporte, reputação, garantia, atualização.',
   ],
   published: '2026-07-11',
-  updated: '2026-08-30',
+  updated: '2026-09-14',
   blocks: [
     { t: 'h2', id: 'ranking', text: 'O ranking 2026' },
     {
@@ -393,7 +393,7 @@ export const melhorCurso: Article = {
     { slug: '/metodologia/', anchor: 'Nossa metodologia de avaliação' },
   ],
   checks: [
-    'Nota e preço do líder revisados na data de publicação',
+
   ],
 }
 

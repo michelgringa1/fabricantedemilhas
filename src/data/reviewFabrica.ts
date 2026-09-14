@@ -15,13 +15,13 @@ export const reviewFabrica: Article = {
     'Segundo a análise da Equipe Fabricante de Milhas, o Fábrica de Milhas vale a pena para quem quer aprender a acumular e vender milhas com método estruturado e aceita retorno gradual. É um curso completo, com garantia dupla, mas o preço acima da média e o ritmo do suporte pedem atenção. Nota da nossa avaliação: 8,0/10.',
   tldr: [
     'O que é: treinamento de milhas do Rodrigo Góes em 8 níveis, com aulas gravadas, ao vivo e comunidade.',
-    'Preço (jul/2026): 12x R$ 119,90 (acesso 1 ano) ou 12x R$ 291,99 (vitalício), sujeito a mudança.',
+    'Preço (set/2026): 1 ano por 12x R$ 119,90 ou R$ 1.230,60 à vista; vitalício por 12x R$ 291,99 ou R$ 2.997,00 à vista.',
     'Garantia: 7 dias incondicional + "risco zero" condicionada às estratégias do nível Platina.',
     'Principal pró: método completo do zero ao avançado, com comunidade ativa de promoções.',
     'Principal contra: reclamações recorrentes sobre o ritmo do suporte e retorno que depende de capital e dedicação.',
   ],
   published: '2026-07-11',
-  updated: '2026-07-16',
+  updated: '2026-09-14',
   rating: {
     value: 8.0,
     itemName: 'Fábrica de Milhas',
@@ -63,11 +63,11 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'o-que-tem-dentro', text: 'O que tem dentro do curso' },
     {
       t: 'p',
-      html: 'O conteúdo é organizado em 8 níveis progressivos, do básico ao avançado, com mais de 30 horas de aulas gravadas, além das aulas ao vivo com monitorias.',
+      html: 'O conteúdo é organizado em 8 níveis progressivos, do básico ao avançado, além das aulas ao vivo com monitorias. Sobre a carga horária, um detalhe que vale registrar: em 14 de setembro de 2026 a <strong>própria página de vendas se contradiz</strong>. O corpo da página anuncia <em>"mais de 40h de aulas gravadas"</em>, enquanto a resposta da FAQ, na mesma página, fala em <em>"mais de 30 horas"</em>. Adotamos o número menor, que é o mais conservador dos dois.',
     },
     {
       t: 'table',
-      caption: 'Os 8 níveis do Fábrica de Milhas (conforme a página oficial, jun/2026)',
+      caption: 'Os 8 níveis do Fábrica de Milhas (conforme a página oficial, set/2026)',
       head: ['Nível', 'Foco'],
       rows: [
         ['Bronze', 'Boas-vindas e fundamentos do método'],
@@ -87,13 +87,13 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'preco', text: 'Preço e formas de pagamento' },
     {
       t: 'table',
-      caption: 'Preços da turma atual (coletados em jun/2026, sujeitos a mudança)',
+      caption: 'Preços da turma atual (coletados em 14/09/2026, sujeitos a mudança)',
       head: ['Plano', 'Parcelado', 'À vista'],
       rows: [
         ['Acesso por 1 ano', '12x de R$ 119,90', 'R$ 1.230,60'],
         ['Acesso vitalício', '12x de R$ 291,99', 'R$ 2.997,00'],
       ],
-      note: 'O preço "cheio" anunciado para o acesso de 1 ano é R$ 2.497. Valores conferidos em jul/2026; turmas e condições mudam, então confirme na página oficial antes de decidir.',
+      note: 'O preço "cheio" anunciado para o acesso de 1 ano é R$ 2.497. Pagar à vista sai cerca de 14% mais barato que parcelar em 12x nos dois planos. Valores conferidos em 14/09/2026; turmas e condições mudam, então confirme na página oficial antes de decidir.',
     },
     {
       t: 'p',

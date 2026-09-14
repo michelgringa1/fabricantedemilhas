@@ -75,18 +75,22 @@ export const acumular: Article = {
     { t: 'h2', id: 'transferencia-bonificada', text: 'Transferências bonificadas: onde o saldo multiplica' },
     {
       t: 'p',
-      html: 'A transferência bonificada é a técnica que separa quem acumula pouco de quem acumula muito. Os programas de pontos (Livelo, Esfera) fazem campanhas periódicas oferecendo bônus (historicamente entre 60% e 120%) para quem transfere pontos para um programa aéreo parceiro. Transferir 100 mil pontos com bônus de 100% credita 200 mil milhas.',
+      html: 'A transferência bonificada é a técnica que separa quem acumula pouco de quem acumula muito. Os programas de pontos (Livelo, Esfera) abrem campanhas periódicas de bônus para quem transfere pontos a um programa aéreo parceiro. Na apuração da Equipe Fabricante de Milhas em <strong>14 de setembro de 2026</strong>, a Livelo oferecia <strong>até 80% de bônus</strong> para transferências à Smiles. Transferir 100 mil pontos com 80% credita 180 mil milhas.',
+    },
+    {
+      t: 'p',
+      html: 'O detalhe que pega quem não está preparado é o <strong>prazo</strong>. Na campanha que apuramos em setembro de 2026, a janela de cadastro durou <strong>38 horas</strong>: abriu às 10h de uma segunda-feira e fechou às 23h59 do dia seguinte. O padrão se repete — bônus alto, prazo curtíssimo. Quem só descobre a promoção depois de transferir já perdeu.',
     },
     {
       t: 'callout',
       tone: 'warn',
       title: 'Erro mais comum',
-      html: 'Transferir pontos <strong>sem bônus</strong>. Fora de campanha, a conversão costuma ser desvantajosa. Quem tem pressa perde milhas; quem espera a campanha certa multiplica o saldo.',
+      html: 'Transferir pontos <strong>sem bônus</strong>. Fora de campanha, a conversão costuma ser desvantajosa. E atenção: em boa parte das campanhas é preciso <strong>se cadastrar na promoção antes de transferir</strong> — transferir sem o cadastro prévio não credita o bônus.',
     },
     { t: 'h2', id: 'clubes', text: 'Clubes de fidelidade e assinaturas' },
     {
       t: 'p',
-      html: 'Os clubes mensais (Clube Smiles, Clube LATAM Pass, clube da Livelo e similares) entregam milhas todo mês por uma assinatura fixa e, mais importante, costumam dar acesso a <strong>bônus maiores nas transferências</strong> e a promoções exclusivas. Para quem acumula com estratégia, o clube muitas vezes se paga só pelo bônus extra, mas faça a conta do seu caso antes de assinar. Valores e regras mudam com frequência <mark class="verificar">[VERIFICAR: valores atuais dos clubes]</mark>.',
+      html: 'Os clubes mensais entregam milhas todo mês por uma assinatura fixa e, mais importante, costumam dar acesso a <strong>bônus maiores nas transferências</strong> e a promoções exclusivas. Em 14 de setembro de 2026, os planos do <strong>Clube Smiles</strong> iam de R$ 43,70 a R$ 819,00 e os do <strong>Clube Azul</strong> de R$ 39,90 a R$ 118,90 por mês, conforme o volume de milhas creditado. Para quem acumula com estratégia, o clube muitas vezes se paga só pelo bônus extra, mas faça a conta do seu caso antes de assinar. Valores e regras mudam com frequência <mark class="verificar">[VERIFICAR: valores atuais dos clubes]</mark>.',
     },
     { t: 'h2', id: 'dia-a-dia', text: 'Acumulando nas compras do dia a dia' },
     {
@@ -146,8 +150,7 @@ export const acumular: Article = {
   ],
   checks: [
     'Exemplo numérico de pontuação com cotação do dólar na data de publicação',
-    'Valores e nomes atuais dos clubes de fidelidade citados',
-    'Faixas históricas de bônus de transferência (60–120%): confirmar com campanhas recentes',
+    'Clube Livelo: valores dos planos (só visíveis logado)',
   ],
 }
 
