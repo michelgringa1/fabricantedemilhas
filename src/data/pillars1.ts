@@ -382,7 +382,21 @@ export const vender: Article = {
     { t: 'h2', id: 'impostos', text: 'E o imposto de renda?' },
     {
       t: 'p',
-      html: 'Ganhos com venda de milhas são renda e, dependendo de valores e da sua situação, podem ser tributáveis e precisar constar na declaração. As regras têm nuances e mudam de interpretação <mark class="verificar">[VERIFICAR: orientação tributária atual com contador antes de publicar]</mark>. Na dúvida, consulte um contador. Não publique nem siga "dicas" de sonegação: o barato sai caro.',
+      html: 'A leitura que prevalece entre especialistas é que a venda de milhas configura <strong>ganho de capital</strong>: você aliena um direito e apura lucro sobre ele. Como as milhas normalmente vêm de gasto que você já faria, o custo de aquisição tende a zero, e o ganho acaba sendo praticamente todo o valor recebido.',
+    },
+    {
+      t: 'p',
+      html: 'Nesse enquadramento vale a isenção de <strong>bens de pequeno valor</strong>: a Instrução Normativa SRF nº 599/2005, no artigo 1º, isenta o ganho de capital quando as alienações do mês somam até <strong>R$ 35 mil</strong> (o limite é de R$ 20 mil apenas para ações em bolsa). Acima disso, a alíquota começa em 15% e sobe por faixas. O imposto é apurado no programa GCAP e pago até o último dia útil do mês seguinte à venda.',
+    },
+    {
+      t: 'callout',
+      tone: 'warn',
+      title: 'Duas ressalvas que mudam tudo',
+      html: 'Primeira: <strong>não localizamos uma Solução de Consulta da Receita Federal específica sobre venda de milhas</strong>. O tratamento como ganho de capital é interpretação predominante de especialistas e da imprensa, não doutrina oficial fechada. Segunda: quem vende <strong>com habitualidade</strong> pode ser reenquadrado, deixando de apurar ganho de capital e passando a ser tributado como atividade. As duas ressalvas apontam para o mesmo lugar: <strong>leve o seu caso a um contador</strong> antes de operar em volume.',
+    },
+    {
+      t: 'p',
+      html: 'O que não tem nuance: não siga "dicas" de sonegação. A movimentação bancária deixa rastro, e desde a decisão do STJ deste ano o próprio Judiciário trata milha como patrimônio. O barato sai caro. <mark class="verificar">[VERIFICAR: revisar enquadramento e limites com contador antes de publicar]</mark>',
     },
     { t: 'cta' },
   ],
@@ -409,7 +423,7 @@ export const vender: Article = {
     },
     {
       q: 'Preciso declarar a venda de milhas no imposto de renda?',
-      a: 'Dependendo dos valores movimentados, sim: ganhos são renda e a movimentação bancária deixa rastro. As regras têm nuances; a orientação séria é registrar as operações e confirmar o enquadramento com um contador. Desconfie de quem ensina a esconder.',
+      a: 'Na leitura que prevalece entre especialistas, a venda de milhas é ganho de capital, e há isenção quando as alienações do mês somam até R$ 35 mil (Instrução Normativa SRF 599/2005). Acima disso a alíquota parte de 15%. Duas ressalvas importam: não localizamos uma Solução de Consulta da Receita específica sobre milhas, e quem vende com habitualidade pode ser reenquadrado como atividade. Registre as operações e confirme o seu caso com um contador. Desconfie de quem ensina a esconder.',
     },
   ],
   related: [
