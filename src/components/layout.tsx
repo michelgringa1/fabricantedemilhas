@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NAV, FOOTER_COLS, CONTACT_EMAIL } from '@/data/site'
 
 export function PlaneMark({ className = 'w-5 h-5' }: { className?: string }) {
@@ -25,6 +25,19 @@ export function Logo({ light = true }: { light?: boolean }) {
 
 export function Header() {
   const [open, setOpen] = useState(false)
+
+  // Trava a rolagem do body enquanto o menu movel esta aberto. Sem isso o dedo
+  // rolava a pagina de fundo em vez da lista, e os ultimos itens do menu
+  // (Recursos, Institucional e o CTA "Destravar Milhas") ficavam inalcancaveis.
+  useEffect(() => {
+    if (!open) return
+    const anterior = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = anterior
+    }
+  }, [open])
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-[#071B49]/92 backdrop-blur-md border-b border-white/[0.09] text-white supports-[backdrop-filter]:bg-[#071B49]/85 bg-[#071B49]">
@@ -80,7 +93,7 @@ export function Header() {
           </div>
         </div>
         {open && (
-          <nav className="lg:hidden border-t border-white/10 bg-[#071B49] max-h-[70vh] overflow-y-auto" aria-label="Menu móvel">
+          <nav className="lg:hidden border-t border-white/10 bg-[#071B49] max-h-[calc(100dvh-68px)] overflow-y-auto overscroll-contain" aria-label="Menu móvel">
             {NAV.map((group) => (
               <div key={group.label} className="px-5 py-4 border-b border-white/[0.07]">
                 <div className="eyebrow text-sun-500 mb-2">{group.label}</div>
@@ -91,6 +104,23 @@ export function Header() {
                 ))}
               </div>
             ))}
+            {/* O CTA do header e hidden sm:inline-flex: abaixo de 640px ele nao
+                existe. Sem esta copia, o botao do evento — que responde por 90%
+                dos cliques do site — ficava inalcancavel no celular. */}
+            <div className="px-5 py-5">
+              <a
+                href="https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destravemenu"
+                target="_blank"
+                rel="sponsored nofollow noopener"
+                onClick={() => setOpen(false)}
+                className="sm:hidden flex items-center justify-center gap-2 bg-sun-500 text-slate-950 font-bold text-[15px] px-5 py-3.5 rounded-full"
+              >
+                Destravar Milhas
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </div>
           </nav>
         )}
       </header>

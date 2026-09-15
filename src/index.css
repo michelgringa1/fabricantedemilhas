@@ -247,7 +247,11 @@
 .article-body p {
   @apply mb-5;
 }
-.article-body a {
+/* Links de texto do corpo do artigo. O :not() protege o que esta dentro de
+   .not-prose (CTA de afiliado, banner do evento): sem ele esta regra vence as
+   utilities do Tailwind por especificidade e o botao laranja virava link azul
+   sublinhado em todas as paginas de artigo. */
+.article-body a:not(.not-prose *) {
   @apply text-brand-600 underline decoration-brand-200 underline-offset-4 font-medium hover:text-brand-700 hover:decoration-sun-500;
 }
 .article-body ul {

@@ -349,12 +349,15 @@ export function Calculadora() {
         title="Calculadora de milhas"
         meta="3 modos · valores editáveis · resultado na hora"
       >
-        <div className="pb-10" />
+        <div className="pb-4 md:pb-10" />
       </PageHero>
 
       <div className="bg-paper">
-        <div className="max-w-5xl mx-auto px-4 pb-8">
-          <div className="-mt-16 reveal reveal-2 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-brand-950/[0.08] px-6 py-5 md:px-8">
+        {/* No mobile a ferramenta vem antes da prosa: quem busca "calculadora
+            de milhas" precisa ver a calculadora na primeira tela, nao um texto
+            explicando que ela existe. No desktop a ordem original e mantida. */}
+        <div className="max-w-5xl mx-auto px-4 pb-8 flex flex-col">
+          <div className="order-3 mt-10 lg:order-1 lg:mt-0 lg:-mt-16 reveal reveal-2 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-brand-950/[0.08] px-6 py-5 md:px-8">
             <p className="text-[16.5px] leading-relaxed text-slate-800 font-medium">
               A calculadora da Fabricante de Milhas responde as três contas que todo milheiro faz: quanto vale o
               seu saldo hoje, se compensa usar ou vender numa emissão específica, e quantas milhas o seu cartão
@@ -363,38 +366,38 @@ export function Calculadora() {
           </div>
 
           {/* tabs */}
-          <div className="mt-8 grid sm:grid-cols-3 gap-3" role="tablist" aria-label="Modos da calculadora">
+          <div className="order-1 lg:order-2 mt-5 lg:mt-8 grid grid-cols-3 gap-2 sm:gap-3" role="tablist" aria-label="Modos da calculadora">
             {MODOS.map((m) => (
               <button
                 key={m.id}
                 role="tab"
                 aria-selected={modo === m.id}
                 onClick={() => setModo(m.id)}
-                className={`lift rounded-2xl px-5 py-4 text-left border transition-all ${
+                className={`lift rounded-2xl px-3 py-3 sm:px-5 sm:py-4 text-left border transition-all ${
                   modo === m.id
                     ? 'bg-night text-white border-transparent shadow-lg'
                     : 'bg-white text-slate-700 border-slate-200 hover:border-brand-400'
                 }`}
               >
-                <span className={`display block text-[15.5px] ${modo === m.id ? 'text-sun-400' : 'text-slate-900'}`}>{m.label}</span>
-                <span className={`block text-[12.5px] mt-0.5 ${modo === m.id ? 'text-brand-100/70' : 'text-slate-500'}`}>{m.desc}</span>
+                <span className={`display block text-[13px] sm:text-[15.5px] leading-tight ${modo === m.id ? 'text-sun-400' : 'text-slate-900'}`}>{m.label}</span>
+                <span className={`hidden sm:block text-[12.5px] mt-0.5 ${modo === m.id ? 'text-brand-100/70' : 'text-slate-500'}`}>{m.desc}</span>
               </button>
             ))}
           </div>
 
-          <div className="mt-6">
+          <div className="order-2 lg:order-3 mt-5 lg:mt-6">
             {modo === 'saldo' && <ModoSaldo />}
             {modo === 'usar-vender' && <ModoUsarVender />}
             {modo === 'cartao' && <ModoCartao />}
           </div>
 
           {/* banner do evento */}
-          <div className="mt-12 max-w-3xl">
+          <div className="order-4 mt-12 max-w-3xl">
             <EventoBanner src="calculadora" />
           </div>
 
           {/* conteúdo de apoio */}
-          <div className="article-body mt-14 max-w-3xl">
+          <div className="order-5 article-body mt-14 max-w-3xl">
             <h2 id="como-funciona">Como esta calculadora chega nos números</h2>
             <p>
               Tudo gira em torno do <a href="/glossario-de-milhas/#milheiro">milheiro</a> (bloco de mil milhas).
@@ -418,7 +421,7 @@ export function Calculadora() {
             </p>
           </div>
 
-          <div className="max-w-3xl">
+          <div className="order-6 max-w-3xl">
             <FaqSection faq={FAQ} />
 
             {/* menção leve ao Fábrica de Milhas */}

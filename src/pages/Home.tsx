@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Seo, breadcrumbLd } from '@/lib/seo'
 import { PlaneMark } from '@/components/layout'
 import { TABELA_DO_MES, cotacaoDe, mesCurto } from '@/data/cotacoes'
@@ -80,7 +80,13 @@ const DESTINOS = [
 ]
 
 function BoardingPass() {
-  const [destino] = useState(() => DESTINOS[Math.floor(Math.random() * DESTINOS.length)])
+  // O primeiro render precisa ser determinístico: o HTML vem pré-renderizado e
+  // um destino sorteado na montagem não bate com o que foi congelado no build.
+  // Sorteia depois da hidratação, quando divergir já não custa nada.
+  const [destino, setDestino] = useState(DESTINOS[0])
+  useEffect(() => {
+    setDestino(DESTINOS[Math.floor(Math.random() * DESTINOS.length)])
+  }, [])
   return (
     <a
       href="/calculadora-de-milhas/"
