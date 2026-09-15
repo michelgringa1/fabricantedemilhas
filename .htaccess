@@ -1,0 +1,51 @@
+# 404 com a cara do site, em vez da tela padrão do servidor.
+ErrorDocument 404 /404.html
+
+# URL canônica: sem www e com https.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# O servidor nao conhece estes tipos e entregava tudo como text/plain: o AVIF
+# so renderizava porque o navegador farejava o conteudo, e o CSV baixava como
+# texto solto. Tambem faz a regra ExpiresByType image/avif valer de verdade.
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+  AddType text/csv .csv
+</IfModule>
+
+# Cache: o HTML precisa ser sempre fresco (é onde vive o conteúdo e o schema);
+# os assets têm hash no nome, então podem ser cacheados por muito tempo.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+</IfModule>
+
+# O servidor entrega o bundle como application/x-javascript, tipo que nao casava
+# com nenhuma regra acima: o JS ficava com 7 dias de cache contra 1 ano do CSS.
+# O nome do arquivo tem hash, entao cachear por 1 ano e seguro.
+<IfModule mod_expires.c>
+  ExpiresByType application/x-javascript "access plus 1 year"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|webp|avif|png|jpe?g|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
