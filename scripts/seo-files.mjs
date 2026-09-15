@@ -148,6 +148,15 @@ ErrorDocument 404 /404.html
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
+# O servidor nao conhece estes tipos e entregava tudo como text/plain: o AVIF
+# so renderizava porque o navegador farejava o conteudo, e o CSV baixava como
+# texto solto. Tambem faz a regra ExpiresByType image/avif valer de verdade.
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+  AddType text/csv .csv
+</IfModule>
+
 # Cache: o HTML precisa ser sempre fresco (é onde vive o conteúdo e o schema);
 # os assets têm hash no nome, então podem ser cacheados por muito tempo.
 <IfModule mod_expires.c>
