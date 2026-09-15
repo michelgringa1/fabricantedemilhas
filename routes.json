@@ -8,30 +8,137 @@
     "lastmod: usar a data do campo 'updated' do artigo."
   ],
   "rotas": [
-    { "path": "/", "lastmod": "2026-07-16", "priority": "1.0", "changefreq": "weekly" },
-
-    { "path": "/como-acumular-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/como-ganhar-dinheiro-com-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/vender-milhas-aereas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/cartao-de-credito-para-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/programas-de-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/como-viajar-de-graca-com-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/milhas-aereas-como-renda-extra/", "lastmod": "2026-09-14", "priority": "0.7", "changefreq": "monthly" },
-
-    { "path": "/fabrica-de-milhas-vale-a-pena/", "lastmod": "2026-09-14", "priority": "1.0", "changefreq": "weekly" },
-    { "path": "/rodrigo-goes-e-confiavel/", "lastmod": "2026-07-16", "priority": "1.0", "changefreq": "weekly" },
-    { "path": "/destrave-suas-milhas/", "lastmod": "2026-09-08", "priority": "0.9", "changefreq": "weekly" },
-    { "path": "/cursos-de-milhas/", "lastmod": "2026-09-14", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/melhor-curso-de-milhas/", "lastmod": "2026-09-14", "priority": "0.8", "changefreq": "monthly" },
-
-    { "path": "/calculadora-de-milhas/", "lastmod": "2026-07-12", "priority": "0.8", "changefreq": "monthly" },
-    { "path": "/cotacao-do-milheiro/", "lastmod": "2026-08-30", "priority": "0.9", "changefreq": "monthly" },
-    { "path": "/glossario-de-milhas/", "lastmod": "2026-09-14", "priority": "0.7", "changefreq": "monthly" },
-    { "path": "/blog/", "lastmod": "2026-07-16", "priority": "0.6", "changefreq": "weekly" },
-
-    { "path": "/sobre/", "lastmod": "2026-07-11", "priority": "0.5", "changefreq": "yearly" },
-    { "path": "/metodologia/", "lastmod": "2026-07-11", "priority": "0.6", "changefreq": "yearly" },
-    { "path": "/divulgacao-de-afiliados/", "lastmod": "2026-07-11", "priority": "0.4", "changefreq": "yearly" },
-    { "path": "/contato/", "lastmod": "2026-07-11", "priority": "0.3", "changefreq": "yearly" }
+    {
+      "path": "/",
+      "lastmod": "2026-07-16",
+      "priority": "1.0",
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/como-acumular-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/como-ganhar-dinheiro-com-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/vender-milhas-aereas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/cartao-de-credito-para-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/programas-de-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/como-viajar-de-graca-com-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/milhas-aereas-como-renda-extra/",
+      "lastmod": "2026-09-14",
+      "priority": "0.7",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/fabrica-de-milhas-vale-a-pena/",
+      "lastmod": "2026-09-14",
+      "priority": "1.0",
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/rodrigo-goes-e-confiavel/",
+      "lastmod": "2026-07-16",
+      "priority": "1.0",
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/destrave-suas-milhas/",
+      "lastmod": "2026-09-08",
+      "priority": "0.9",
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/cursos-de-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/melhor-curso-de-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.8",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/calculadora-de-milhas/",
+      "lastmod": "2026-07-12",
+      "priority": "0.8",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/cotacao-do-milheiro/",
+      "lastmod": "2026-08-30",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/campanhas-de-bonus/",
+      "lastmod": "2026-09-15",
+      "priority": "0.8",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/glossario-de-milhas/",
+      "lastmod": "2026-09-14",
+      "priority": "0.7",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/blog/",
+      "lastmod": "2026-07-16",
+      "priority": "0.6",
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/sobre/",
+      "lastmod": "2026-07-11",
+      "priority": "0.5",
+      "changefreq": "yearly"
+    },
+    {
+      "path": "/metodologia/",
+      "lastmod": "2026-07-11",
+      "priority": "0.6",
+      "changefreq": "yearly"
+    },
+    {
+      "path": "/divulgacao-de-afiliados/",
+      "lastmod": "2026-07-11",
+      "priority": "0.4",
+      "changefreq": "yearly"
+    },
+    {
+      "path": "/contato/",
+      "lastmod": "2026-07-11",
+      "priority": "0.3",
+      "changefreq": "yearly"
+    }
   ]
 }

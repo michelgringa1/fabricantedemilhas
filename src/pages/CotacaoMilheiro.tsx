@@ -6,6 +6,8 @@ import {
   TABELA_DO_MES,
   PRAZOS,
   FONTES,
+  APURACAO_POR_FONTE,
+  FONTE_RECUSADA,
   premioDaEspera,
   mesCurto,
   mesDaApuracao,
@@ -56,6 +58,30 @@ export function CotacaoMilheiro() {
         spatialCoverage: { '@type': 'Place', name: 'Brasil' },
         measurementTechnique:
           'Coleta manual nas calculadoras e tabelas públicas dos canais de compra de milhas, na data da apuração.',
+        keywords: [
+          'cotação do milheiro',
+          'venda de milhas',
+          'milhas aéreas',
+          'Smiles',
+          'LATAM Pass',
+          'Azul Fidelidade',
+          'Brasil',
+        ],
+        // Arquivos gerados em scripts/static-assets.mjs a partir de cotacoes.ts.
+        // Sem distribution o Dataset não tem o que oferecer para download, que é
+        // o que permite citar uma edição depois que ela sai do ar na página.
+        distribution: [
+          {
+            '@type': 'DataDownload',
+            encodingFormat: 'text/csv',
+            contentUrl: BASE_URL + '/dados/cotacao-milheiro-2026-08.csv',
+          },
+          {
+            '@type': 'DataDownload',
+            encodingFormat: 'application/json',
+            contentUrl: BASE_URL + '/dados/cotacao-milheiro-2026-08.json',
+          },
+        ],
         variableMeasured: [
           {
             '@type': 'PropertyValue',
@@ -226,28 +252,83 @@ export function CotacaoMilheiro() {
             nosso. Então a coleta é manual, um canal de cada vez, na data que está no topo desta
             página.
           </p>
-          <ul className="mt-4 space-y-2 text-[15.5px] leading-relaxed text-slate-700">
-            <li>
-              <strong>MaxMilhas</strong> — preço médio de marketplace publicado na página de venda.
-              Você anuncia e espera alguém emitir com as suas milhas.
-            </li>
-            <li>
-              <strong>BankMilhas</strong> — valor à vista por PIX, tabelado por faixa de quantidade.
-            </li>
-            <li>
-              <strong>Compro Milhas</strong> — calculadora pública escalonada por prazo de
-              recebimento, que é de onde sai a tabela do custo da pressa.
-            </li>
-          </ul>
           <p className="mt-4 text-[15.5px] leading-relaxed text-slate-700">
-            Consultamos também a HotMilhas, mas a cotação dela só aparece depois de entregar e-mail
-            e WhatsApp num formulário de captação. Ficou de fora: não vale virar lead por um número
-            que as outras três já dão. Nossos critérios de apuração estão na{' '}
+            Abaixo está o que cada canal pagava na data da apuração, sem média nem arredondamento
+            nosso. É o lastro da faixa publicada no topo — e a distância entre as três fontes não é
+            ruído: <strong>é a medida de quanto custa receber rápido</strong>.
+          </p>
+
+          {APURACAO_POR_FONTE.map((f) => (
+            <div key={f.fonte} className="mt-7">
+              <h3 className="display text-[1.15rem] text-slate-900">
+                <a href={f.url} target="_blank" rel="nofollow noopener" className="u-link text-brand-700">
+                  {f.fonte}
+                </a>
+              </h3>
+              <p className="mt-1.5 text-[14.5px] leading-relaxed text-slate-600">{f.modelo}</p>
+              <div className="fm-table-wrap mt-3">
+                <table className="fm-table">
+                  <caption className="sr-only">
+                    Preço por milheiro pago pela {f.fonte} em {mesDaApuracao()}
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Programa</th>
+                      <th scope="col">Por milheiro</th>
+                      <th scope="col">Como apareceu na fonte</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {f.precos.map((pr) => (
+                      <tr key={pr.programa}>
+                        <th scope="row">{pr.programa}</th>
+                        <td>{pr.valor}</td>
+                        <td className="text-slate-600">{pr.obs || '—'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+
+          <p className="mt-6 text-[15.5px] leading-relaxed text-slate-700">
+            Consultamos também a <strong>{FONTE_RECUSADA.fonte}</strong>, e ela ficou de fora de
+            propósito: {FONTE_RECUSADA.motivo}. Não vale virar lead por um número que as outras três
+            publicam aberto. Nossos critérios de apuração estão na{' '}
             <a href="/metodologia/" className="u-link text-brand-700 font-medium">
               metodologia
             </a>
             .
           </p>
+
+          {/* ---------- dados abertos ---------- */}
+          <h2 id="dados-abertos" className="display text-[1.7rem] md:text-[2rem] mt-14 text-slate-900">
+            Dados abertos
+          </h2>
+          <p className="mt-3 text-[15.5px] leading-relaxed text-slate-700">
+            A tabela do mês é sobrescrita a cada apuração, então cada edição também vira arquivo com
+            endereço fixo. Serve para citar um mês específico depois que ele sair do ar aqui, e para
+            quem quiser conferir a conta. Uso livre com atribuição (CC BY 4.0).
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-3">
+            <li>
+              <a
+                href="/dados/cotacao-milheiro-2026-08.csv"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-[14px] font-medium text-slate-700 hover:border-brand-400 hover:text-brand-700 transition-colors"
+              >
+                CSV · agosto de 2026
+              </a>
+            </li>
+            <li>
+              <a
+                href="/dados/cotacao-milheiro-2026-08.json"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-[14px] font-medium text-slate-700 hover:border-brand-400 hover:text-brand-700 transition-colors"
+              >
+                JSON · agosto de 2026
+              </a>
+            </li>
+          </ul>
 
           <div className="mt-6 rounded-2xl bg-amber-50/80 border-l-[3px] border-sun-500 px-5 py-4">
             <p className="text-[15.5px] leading-relaxed text-slate-800">

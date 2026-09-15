@@ -9,7 +9,27 @@
       name="description"
       content="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas — sem promessa milagrosa."
     />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230743CE'/%3E%3Cpath d='M5 20 L27 9 L18 22 L14 18 Z' fill='%23FFB300'/%3E%3C/svg%3E" />
+    <!-- URL absoluta de proposito: com caminho relativo o Parcel tenta resolver
+         estes arquivos em tempo de build, mas eles so existem depois, gerados por
+         scripts/static-assets.mjs. -->
+    <link rel="icon" type="image/svg+xml" href="https://fabricantedemilhas.com.br/favicon.svg" />
+    <link rel="apple-touch-icon" href="https://fabricantedemilhas.com.br/img/logo.png" />
+    <!-- Prévia ao compartilhar. O <Seo> sobrescreve por página; estes são o padrão
+         e o que vale para qualquer URL que não passe pelo componente. -->
+    <meta property="og:site_name" content="Fabricante de Milhas" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fabricante de Milhas — Milhas aéreas explicadas com honestidade" />
+    <meta property="og:description" content="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas — sem promessa milagrosa." />
+    <meta property="og:url" content="https://fabricantedemilhas.com.br/" />
+    <meta property="og:image" content="https://fabricantedemilhas.com.br/img/og-default.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Fabricante de Milhas — milhas aéreas explicadas com honestidade" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fabricante de Milhas — Milhas aéreas explicadas com honestidade" />
+    <meta name="twitter:description" content="Guias completos, análises e comparativos de cursos de milhas aéreas." />
+    <meta name="twitter:image" content="https://fabricantedemilhas.com.br/img/og-default.png" />
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L9QNF0M6P"></script>
     <script>
@@ -33,6 +53,13 @@
           "foundingDate": "2026",
           "areaServed": { "@type": "Country", "name": "Brasil" },
           "publishingPrinciples": "https://fabricantedemilhas.com.br/metodologia/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fabricantedemilhas.com.br/img/logo.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://fabricantedemilhas.com.br/img/og-default.png",
           "sameAs": []
         },
         {
@@ -41,12 +68,7 @@
           "url": "https://fabricantedemilhas.com.br/",
           "name": "Fabricante de Milhas",
           "inLanguage": "pt-BR",
-          "publisher": { "@id": "https://fabricantedemilhas.com.br/#org" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": { "@type": "EntryPoint", "urlTemplate": "https://fabricantedemilhas.com.br/?s={search_term_string}" },
-            "query-input": "required name=search_term_string"
-          }
+          "publisher": { "@id": "https://fabricantedemilhas.com.br/#org" }
         }
       ]
     }

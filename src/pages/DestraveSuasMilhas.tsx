@@ -2,7 +2,15 @@ import { useMemo } from 'react'
 import { Seo, BASE_URL, ORG_ID, breadcrumbLd, faqLd } from '@/lib/seo'
 import { FaqSection, AuthorBlock, Breadcrumbs } from '@/components/blocks'
 import { PlaneMark } from '@/components/layout'
-import { logoEvento, iconCarrinho, iconCartao, seloGarantia, texturaMapa } from '@/assets/destrave'
+/* As artes continuam em src/assets/destrave.ts, mas nao sao importadas: o
+   scripts/static-assets.mjs le aquele arquivo e grava os .avif em /img/. Como
+   data-URI elas somavam 116 KB dentro deste HTML, na pagina que responde por
+   90% dos cliques do site, sem poder usar o cache de 1 ano do .htaccess. */
+const logoEvento = '/img/evento-logo.avif'
+const iconCarrinho = '/img/evento-carrinho.avif'
+const iconCartao = '/img/evento-cartao.avif'
+const seloGarantia = '/img/evento-garantia.avif'
+const texturaMapa = '/img/evento-mapa.avif'
 
 /** Link de inscrição do evento (afiliado) */
 const INSCRICAO = 'https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destrave'
@@ -89,6 +97,9 @@ export function DestraveSuasMilhas() {
         description:
           'Treinamento online de 5 dias ao vivo com Rodrigo Góes sobre como destravar o acúmulo de milhas aéreas a partir dos gastos do dia a dia, reduzir o custo de viagens e usar milhas como renda extra.',
         url: BASE_URL + '/destrave-suas-milhas/',
+        // Ate 15/09/2026 o site nao hospedava arquivo de imagem, entao este campo
+        // ficava de fora e o Google nao entregava o rich result de Event.
+        image: [BASE_URL + '/img/banner-destrave-desktop.webp'],
         startDate: '2026-10-05',
         endDate: '2026-10-09',
         eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
@@ -146,6 +157,7 @@ export function DestraveSuasMilhas() {
         description="Protocolo Destrave suas Milhas: 5 dias ao vivo com Rodrigo Góes para destravar seu acúmulo. Datas, preço, o que você aprende e como se inscrever."
         slug="/destrave-suas-milhas/"
         jsonLd={jsonLd}
+        image="/img/banner-destrave-desktop.webp"
       />
 
       {/* HERO */}

@@ -1,4 +1,5 @@
 import type { Article } from './types'
+import { CAMPANHAS, ultimaObservacao, bonusMaximoObservado } from './campanhas'
 
 export const acumular: Article = {
   slug: '/como-acumular-milhas/',
@@ -75,7 +76,10 @@ export const acumular: Article = {
     { t: 'h2', id: 'transferencia-bonificada', text: 'Transferências bonificadas: onde o saldo multiplica' },
     {
       t: 'p',
-      html: 'A transferência bonificada é a técnica que separa quem acumula pouco de quem acumula muito. Os programas de pontos (Livelo, Esfera) abrem campanhas periódicas de bônus para quem transfere pontos a um programa aéreo parceiro. Na apuração da Equipe Fabricante de Milhas em <strong>14 de setembro de 2026</strong>, a Livelo oferecia <strong>até 80% de bônus</strong> para transferências à Smiles. Transferir 100 mil pontos com 80% credita 180 mil milhas.',
+      // Texto montado a partir de campanhas.ts: registrar uma campanha nova
+      // atualiza esta frase sozinha. Antes o numero era transcrito a mao aqui e
+      // ficava desacoplado da fonte.
+      html: `A transferência bonificada é a técnica que separa quem acumula pouco de quem acumula muito. Os programas de pontos (Livelo, Esfera) abrem campanhas de bônus para quem transfere pontos a um programa aéreo parceiro, sem calendário público. Na observação mais recente da Equipe Fabricante de Milhas, em <strong>${ultimaObservacao()}</strong>, a ${CAMPANHAS[0].origem} oferecia <strong>até ${bonusMaximoObservado()}% de bônus</strong> para transferências à ${CAMPANHAS[0].destino}. Transferir 100 mil pontos com ${bonusMaximoObservado()}% credita ${(100 * (1 + bonusMaximoObservado() / 100)).toLocaleString('pt-BR')} mil milhas. Registramos cada campanha que vemos no <a href="/campanhas-de-bonus/">nosso acompanhamento de campanhas</a>.`,
     },
     {
       t: 'p',

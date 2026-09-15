@@ -89,6 +89,78 @@ export const FONTES = [
  * esconderia a única decisão que o vendedor realmente toma.
  */
 
+export interface PrecoFonte {
+  programa: string
+  /** Valor por milheiro, já normalizado, ou faixa. Texto porque cada fonte tem forma própria. */
+  valor: string
+  obs?: string
+}
+
+export interface ApuracaoFonte {
+  fonte: string
+  url: string
+  /** Como essa fonte forma preço. É o que explica a distância entre elas. */
+  modelo: string
+  precos: PrecoFonte[]
+}
+
+/**
+ * A apuração canal a canal, publicada.
+ *
+ * Isto viveu como comentário de código até 15/09/2026, ou seja, foi descartado
+ * no build: o Google nunca viu o número que sustenta a nossa faixa. É o dado
+ * mais citável do site e estava invisível. Agora é dado tipado e vai para a
+ * página.
+ */
+export const APURACAO_POR_FONTE: ApuracaoFonte[] = [
+  {
+    fonte: 'MaxMilhas',
+    url: 'https://www.maxmilhas.com.br/vender-milhas',
+    modelo:
+      'Marketplace: publica o preço médio para cada 10.000 milhas. Você anuncia e espera alguém emitir, então o valor é o mais alto dos três e o mais lento de receber.',
+    precos: [
+      { programa: 'Smiles', valor: 'R$ 17,15', obs: 'R$ 171,50 por 10.000 milhas' },
+      { programa: 'LATAM Pass', valor: 'R$ 28,24', obs: 'R$ 282,40 por 10.000 milhas' },
+      { programa: 'Azul (TudoAzul)', valor: 'R$ 16,69', obs: 'R$ 166,90 por 10.000 milhas' },
+    ],
+  },
+  {
+    fonte: 'BankMilhas',
+    url: 'https://www.bankmilhas.com.br/vender-milhas',
+    modelo:
+      'Compra à vista por PIX, com preço tabelado por faixa de quantidade. Paga menos porque assume o risco de carregar o estoque até revender.',
+    precos: [
+      { programa: 'Smiles', valor: 'R$ 11,00 a R$ 12,50', obs: '30k–40k: R$ 11,00 · 50k–60k: R$ 12,50' },
+      { programa: 'LATAM Pass', valor: 'R$ 10,00 a R$ 16,00', obs: '10k: R$ 10,00 · 15k–25k: R$ 16,00' },
+      { programa: 'Livelo', valor: 'R$ 15,00', obs: 'faixa de 50k a 75k' },
+      { programa: 'Azul e Esfera', valor: '—', obs: 'não compra' },
+    ],
+  },
+  {
+    fonte: 'Compro Milhas',
+    url: 'https://compromilhas.com',
+    modelo:
+      'Calculadora pública que escalona o preço pelo PRAZO até você receber. Mínimo de 40.000 milhas. É a fonte que escancara o mecanismo: mesmo saldo, preços diferentes só pela pressa.',
+    precos: [
+      { programa: 'Smiles', valor: 'R$ 15,00 a R$ 19,10', obs: '1 dia útil: R$ 15,00 · 30 dias úteis: R$ 19,10' },
+      { programa: 'LATAM Pass', valor: 'R$ 24,75 a R$ 29,50', obs: '1 dia útil: R$ 24,75 · 30 dias úteis: R$ 29,50' },
+      { programa: 'Azul', valor: 'R$ 13,50 a R$ 16,00', obs: '1 dia útil: R$ 13,50 · 30 dias úteis: R$ 16,00' },
+      { programa: 'Livelo e Esfera', valor: '—', obs: 'não cota' },
+    ],
+  },
+]
+
+/**
+ * Fonte consultada e deliberadamente NÃO apurada, registrada por transparência:
+ * a HotMilhas só mostra cotação depois de receber e-mail e WhatsApp num
+ * formulário de captação. Não vale virar lead por um número que as outras três
+ * fontes publicam aberto.
+ */
+export const FONTE_RECUSADA = {
+  fonte: 'HotMilhas',
+  motivo: 'exige e-mail e WhatsApp num formulário antes de mostrar qualquer valor',
+}
+
 /**
  * ⚠️ `validado: false` faz o site inteiro exibir o selo [VERIFICAR] sozinho.
  * Vire para `true` só quando os números forem apuração real da equipe. Assim

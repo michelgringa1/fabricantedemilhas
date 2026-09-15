@@ -159,6 +159,20 @@ ErrorDocument 404 /404.html
   ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+</IfModule>
+
+# O servidor entrega o bundle como application/x-javascript, tipo que nao casava
+# com nenhuma regra acima: o JS ficava com 7 dias de cache contra 1 ano do CSS.
+# O nome do arquivo tem hash, entao cachear por 1 ano e seguro.
+<IfModule mod_expires.c>
+  ExpiresByType application/x-javascript "access plus 1 year"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|webp|avif|png|jpe?g|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_deflate.c>

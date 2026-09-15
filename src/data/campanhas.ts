@@ -61,6 +61,22 @@ export function ultimaObservacao(): string {
   })
 }
 
+/** Maior percentual de bônus já observado na série. */
+export function bonusMaximoObservado(): number {
+  return Math.max(...CAMPANHAS.map((c) => c.bonusMax))
+}
+
+/**
+ * Janela média de adesão, em horas, entre as campanhas que anunciaram prazo.
+ * Diferente do intervalo, isto já diz algo com uma observação só: a duração de
+ * cada campanha é medida direta, não depende de comparar duas datas.
+ */
+export function janelaMediaHoras(): number | null {
+  const h = CAMPANHAS.map((c) => c.janelaHoras).filter((x): x is number => x !== null)
+  if (!h.length) return null
+  return Math.round(h.reduce((a, b) => a + b, 0) / h.length)
+}
+
 /**
  * Intervalo médio entre campanhas observadas, em dias. Devolve null enquanto
  * não houver pelo menos duas observações: com um ponto não existe intervalo,
