@@ -6,6 +6,7 @@ import {
   PageHero,
   AnswerFirst,
   Tldr,
+  Destaques,
   BlockRenderer,
   FaqSection,
   AuthorBlock,
@@ -46,19 +47,18 @@ export function ArticlePage({ article }: { article: Article }) {
       dateModified: article.updated,
       mainEntityOfPage: BASE_URL + article.slug,
     }
-    if (article.rating) {
+    if (article.review) {
       graph.push({
         '@type': 'Review',
         ...base,
         itemReviewed: {
           '@type': 'Course',
-          name: article.rating.itemName,
-          description: article.rating.itemDesc,
-          url: article.rating.itemUrl,
+          name: article.review.itemName,
+          description: article.review.itemDesc,
+          url: article.review.itemUrl,
           provider: { '@type': 'Organization', name: '4MULTIPLUS MIDIA DIGITAL LTDA' },
           offers: { '@type': 'Offer', category: 'Paid' },
         },
-        reviewRating: { '@type': 'Rating', ratingValue: article.rating.value, bestRating: 10, worstRating: 0 },
       })
     } else {
       graph.push({ '@type': 'Article', ...base })
@@ -87,14 +87,6 @@ export function ArticlePage({ article }: { article: Article }) {
             <span>
               Por <strong className="text-brand-100/90 font-semibold">Equipe Fabricante de Milhas</strong>
               <span className="mx-2 opacity-50">·</span>Atualizado em {updatedFmt}
-              {article.rating && (
-                <>
-                  <span className="mx-2 opacity-50">·</span>
-                  <span className="text-sun-400 font-bold">
-                    Nota {article.rating.value.toFixed(1).replace('.', ',')}/10
-                  </span>
-                </>
-              )}
             </span>
           }
         >
@@ -107,7 +99,7 @@ export function ArticlePage({ article }: { article: Article }) {
             <div className="-mt-16 reveal reveal-2">
               <AnswerFirst text={article.answerFirst} />
             </div>
-            {article.tldr && <Tldr items={article.tldr} />}
+            {article.destaques ? <Destaques items={article.destaques} /> : article.tldr && <Tldr items={article.tldr} />}
 
             <div className="mt-10">
               {PAGE_SRC[article.slug] ? (

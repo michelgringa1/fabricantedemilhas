@@ -83,19 +83,19 @@ export const acumular: Article = {
     },
     {
       t: 'p',
-      html: 'O detalhe que pega quem não está preparado é o <strong>prazo</strong>. Na campanha que apuramos em setembro de 2026, a janela de cadastro durou <strong>38 horas</strong>: abriu às 10h de uma segunda-feira e fechou às 23h59 do dia seguinte. O padrão se repete — bônus alto, prazo curtíssimo. Quem só descobre a promoção depois de transferir já perdeu.',
+      html: 'O detalhe que pega quem não está preparado é o <strong>prazo</strong>. Na campanha que apuramos em setembro de 2026, a janela de cadastro durou <strong>38 horas</strong>: abriu às 10h de uma segunda-feira e fechou às 23h59 do dia seguinte. O padrão se repete: bônus alto, prazo curtíssimo. Quem só descobre a promoção depois de transferir já perdeu.',
     },
     {
       t: 'callout',
       tone: 'warn',
       title: 'O bônus da Smiles expira em 6 meses',
-      html: 'Este é o detalhe que quase ninguém conta, e ele muda a estratégia. Na Smiles, as milhas que você transfere do banco valem <strong>3 anos</strong>, mas as <strong>milhas de bônus da promoção valem apenas 6 meses</strong> — conforme a própria tabela de validade da Smiles, apurada em 14/09/2026. Transferir 100 mil pontos com 80% credita 180 mil milhas, mas 80 mil delas somem em meio ano. No LATAM Pass a regra é outra: as milhas bônus valem os mesmos <strong>36 meses</strong> das demais. Se você transfere com bônus e não tem uso próximo, o destino muda a conta.',
+      html: 'Este é o detalhe que quase ninguém conta, e ele muda a estratégia. Na Smiles, as milhas que você transfere do banco valem <strong>3 anos</strong>, mas as <strong>milhas de bônus da promoção valem apenas 6 meses</strong>, conforme a própria tabela de validade da Smiles, apurada em 14/09/2026. Transferir 100 mil pontos com 80% credita 180 mil milhas, mas 80 mil delas somem em meio ano. No LATAM Pass a regra é outra: as milhas bônus valem os mesmos <strong>36 meses</strong> das demais. Se você transfere com bônus e não tem uso próximo, o destino muda a conta.',
     },
     {
       t: 'callout',
       tone: 'warn',
       title: 'Erro mais comum',
-      html: 'Transferir pontos <strong>sem bônus</strong>. Fora de campanha, a conversão costuma ser desvantajosa. E atenção: em boa parte das campanhas é preciso <strong>se cadastrar na promoção antes de transferir</strong> — transferir sem o cadastro prévio não credita o bônus.',
+      html: 'Transferir pontos <strong>sem bônus</strong>. Fora de campanha, a conversão costuma ser desvantajosa. E atenção: em boa parte das campanhas é preciso <strong>se cadastrar na promoção antes de transferir</strong>: transferir sem o cadastro prévio não credita o bônus.',
     },
     { t: 'h2', id: 'clubes', text: 'Clubes de fidelidade e assinaturas' },
     {
@@ -178,8 +178,8 @@ export const ganharDinheiro: Article = {
     'O lucro típico vem da diferença entre o custo de acumular o milheiro e o preço de venda.',
     'Os três caminhos: vender milhas, economizar nas próprias viagens e emitir dentro das regras.',
     'Exige capital de giro (gastos no cartão, assinaturas) e paciência com campanhas de bônus.',
-    'Riscos reais: bloqueio de conta por má prática, calote de plataforma e mudança de regra.',
-    'Desconfie de qualquer promessa de renda garantida: resultados variam caso a caso.',
+    'Cuidados: seguir as regras do programa, escolher bem a plataforma de venda e acompanhar as mudanças de regra.',
+    'Resultados variam caso a caso: nenhum ganho é garantido.',
   ],
   published: '2026-07-11',
   updated: '2026-09-14',
@@ -243,14 +243,14 @@ export const ganharDinheiro: Article = {
     { t: 'h2', id: 'quanto-exige', text: 'Quanto capital e tempo isso exige' },
     {
       t: 'p',
-      html: 'Perfil realista de quem opera bem: gastos mensais concentráveis no cartão (quanto maiores, mais matéria-prima), disciplina para acompanhar campanhas algumas vezes por semana e paciência de meses. O ciclo acumular → bonificar → vender não fecha rápido: ele fica preso ao calendário das campanhas de bônus, que não é público e cujas janelas são curtas. Quem entra esperando resultado na primeira semana se frustra; quem trata como projeto de médio prazo colhe consistência.',
+      html: 'Perfil realista de quem opera bem: gastos mensais concentráveis no cartão (quanto maiores, mais matéria-prima), disciplina para acompanhar campanhas algumas vezes por semana e paciência de meses. O ciclo acumular → bonificar → vender não fecha rápido: ele fica preso ao calendário das campanhas de bônus, que não é público e cujas janelas são curtas. Quem trata como projeto de médio prazo colhe consistência.',
     },
     { t: 'cta' },
   ],
   faq: [
     {
       q: 'Quanto dá para ganhar por mês com milhas?',
-      a: 'Não existe número honesto universal: depende do seu volume de gastos, do capital disponível, das campanhas de bônus do período e da cotação de venda. Desconfie de qualquer promessa de valor fixo mensal: resultados variam e não são garantidos.',
+      a: 'Não existe número honesto universal: depende do seu volume de gastos, do capital disponível, das campanhas de bônus do período e da cotação de venda. Resultados variam e não são garantidos.',
     },
     {
       q: 'Ganhar dinheiro com milhas é legal?',
@@ -262,7 +262,7 @@ export const ganharDinheiro: Article = {
     },
     {
       q: 'Qual o maior risco de quem vende milhas?',
-      a: 'Dois: bloqueio da conta pelo programa por violação de regulamento, com perda do saldo, e calote ou atraso de plataformas de venda, como na crise 123milhas/HotMilhas em 2023. Diversificar canais e conhecer as regras reduz, mas não elimina, esses riscos.',
+      a: 'Dois cuidados principais: seguir o regulamento do programa, para não ter a conta bloqueada, e escolher bem as plataformas de venda, já que a crise da 123milhas/HotMilhas em 2023 mostrou a importância de diversificar canais. Conhecer as regras reduz, mas não elimina, esses riscos.',
     },
     {
       q: 'Curso de milhas ajuda mesmo a ganhar dinheiro?',
@@ -273,7 +273,7 @@ export const ganharDinheiro: Article = {
     { slug: '/vender-milhas-aereas/', anchor: 'Guia completo para vender milhas aéreas com segurança' },
     { slug: '/milhas-aereas-como-renda-extra/', anchor: 'Milhas aéreas como renda extra: expectativa realista' },
     { slug: '/como-acumular-milhas/', anchor: 'Como acumular milhas do zero' },
-    { slug: '/cursos-de-milhas/', anchor: 'Comparador de cursos de milhas' },
+    { slug: '/cursos-de-milhas/', anchor: 'Curso de milhas: como escolher e qual recomendamos' },
   ],
   checks: [
   ],
@@ -296,7 +296,7 @@ export const vender: Article = {
     'Canais: plataformas especializadas e emissores/agências, cada um com prazo e risco próprios.',
     'Regulamentos dos programas proíbem comercialização: venda em escala pode gerar bloqueio.',
     'Caso 123milhas (2023) ensinou: plataforma é contraparte, não banco; não concentre saldo.',
-    'Prefira receber à vista ou em prazos curtos; desconfie de cotação muito acima do mercado.',
+    'Prefira receber à vista ou em prazos curtos e compare a cotação com a tabela de referência do mercado.',
   ],
   published: '2026-07-11',
   updated: '2026-09-14',
@@ -346,7 +346,7 @@ export const vender: Article = {
       items: [
         'Calcule seu custo por milheiro antes de vender, porque sem essa conta você não sabe se está lucrando.',
         'Compare a cotação em mais de um canal, no mesmo prazo de recebimento.',
-        'Pesquise a reputação do comprador/plataforma (Reclame Aqui, histórico, tempo de mercado).',
+        'Confira o histórico e o tempo de mercado do comprador ou da plataforma.',
         'Prefira à vista ou prazo curto na primeira operação com qualquer canal novo.',
         'Nunca venda todo o saldo de uma vez para um único comprador.',
         'Guarde comprovantes e registre as operações (inclusive para fins de declaração).',
@@ -355,7 +355,7 @@ export const vender: Article = {
     { t: 'h2', id: 'riscos', text: 'Riscos reais e a lição do caso 123milhas' },
     {
       t: 'p',
-      html: 'Em agosto de 2023, o grupo 123milhas/MaxMilhas/HotMilhas suspendeu passagens e entrou em recuperação judicial com dívida declarada de <strong>R$ 2,3 bilhões</strong>. Três anos depois, em setembro de 2026, o processo <strong>segue em curso</strong>: o plano foi protocolado em dezembro de 2024 e credores ainda movem cumprimentos de sentença para receber. A lição permanente: <strong>plataforma é contraparte privada, não banco</strong>: se ela quebra, seu crédito entra na fila. Por isso: prazos curtos, diversificação de canais e desconfiança saudável de cotações muito acima do mercado (spread alto demais costuma sinalizar risco alto demais).',
+      html: 'Em agosto de 2023, o grupo 123milhas/MaxMilhas/HotMilhas suspendeu passagens e entrou em recuperação judicial com dívida declarada de <strong>R$ 2,3 bilhões</strong>. Três anos depois, em setembro de 2026, o processo <strong>segue em curso</strong>: o plano foi protocolado em dezembro de 2024 e credores ainda movem cumprimentos de sentença para receber. A lição permanente: <strong>plataforma é contraparte privada, não banco</strong>: se ela quebra, seu crédito entra na fila. Por isso: prazos curtos, diversificação de canais e comparação da cotação com a tabela de referência do mercado (spread alto demais costuma sinalizar risco alto demais).',
     },
     {
       t: 'callout',
@@ -370,7 +370,7 @@ export const vender: Article = {
     },
     {
       t: 'p',
-      html: 'O ponto central da decisão: a <strong>cláusula de intransferibilidade</strong> que os programas colocam nos regulamentos <strong>não impede a penhora</strong>. O argumento aceito foi o de que, se a milha tem expressão econômica — e tem, já que existe um mercado que a compra e vende —, ela é patrimônio do titular e responde por dívidas como qualquer outro bem. A decisão reformou entendimento da Justiça de São Paulo, que vinha negando o bloqueio sob o argumento de que faltaria mecanismo seguro para converter os pontos em dinheiro.',
+      html: 'O ponto central da decisão: a <strong>cláusula de intransferibilidade</strong> que os programas colocam nos regulamentos <strong>não impede a penhora</strong>. O argumento aceito foi o de que, se a milha tem expressão econômica (e tem, já que existe um mercado que a compra e vende), ela é patrimônio do titular e responde por dívidas como qualquer outro bem. A decisão reformou entendimento da Justiça de São Paulo, que vinha negando o bloqueio sob o argumento de que faltaria mecanismo seguro para converter os pontos em dinheiro.',
     },
     {
       t: 'callout',
@@ -380,7 +380,7 @@ export const vender: Article = {
     },
     {
       t: 'p',
-      html: 'O que isso muda para você, de forma prática: se você acumula milhas em volume e tem dívidas em execução, esse saldo deixou de ser um lugar seguro. E se você vende milhas com frequência, a decisão reforça o que já era verdade no imposto de renda — o mercado e a Justiça enxergam milha como patrimônio, não como brinde.',
+      html: 'O que isso muda para você, de forma prática: se você acumula milhas em volume e tem dívidas em execução, esse saldo deixou de ser um lugar seguro. E se você vende milhas com frequência, a decisão reforça o que já era verdade no imposto de renda: o mercado e a Justiça enxergam milha como patrimônio, não como brinde.',
     },
     {
       t: 'p',
@@ -416,7 +416,7 @@ export const vender: Article = {
     },
     {
       q: 'Preciso declarar a venda de milhas no imposto de renda?',
-      a: 'Vender milhas tem implicação fiscal, mas não damos orientação tributária aqui: o enquadramento depende do seu volume e da sua situação, e conselho genérico de imposto na internet sai caro para quem segue. Registre todas as suas operações e leve o seu caso a um contador. O que vale alertar: a movimentação bancária deixa rastro, e desde a decisão do STJ de agosto de 2026 o próprio Judiciário trata milha como patrimônio. Desconfie de quem ensina a esconder.',
+      a: 'Vender milhas tem implicação fiscal, mas não damos orientação tributária aqui: o enquadramento depende do seu volume e da sua situação, e conselho genérico de imposto na internet sai caro para quem segue. Registre todas as suas operações e leve o seu caso a um contador. O que vale alertar: a movimentação bancária deixa rastro, e desde a decisão do STJ de agosto de 2026 o próprio Judiciário trata milha como patrimônio. Registrar tudo é o caminho mais seguro.',
     },
   ],
   related: [

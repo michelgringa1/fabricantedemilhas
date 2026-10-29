@@ -18,7 +18,7 @@ const INSCRICAO = 'https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destrave'
 const FAQ = [
   {
     q: 'O que é o Protocolo Destrave suas Milhas?',
-    a: 'É um treinamento online de 5 dias ao vivo criado por Rodrigo Góes, focado em destravar o acúmulo de milhas a partir dos gastos que você já tem. O participante aprende a montar uma rotina mensal de acúmulo e, segundo a página oficial, deve sair do evento com cerca de 5.000 milhas.',
+    a: 'É um treinamento online de 5 dias ao vivo criado por Rodrigo Góes, focado em destravar o acúmulo de milhas a partir dos gastos que você já tem. O participante aprende a montar uma rotina mensal de acúmulo e a meta anunciada na página oficial é sair do evento com cerca de 5.000 milhas.',
   },
   {
     q: 'Quando acontece e quanto custa?',
@@ -34,7 +34,7 @@ const FAQ = [
   },
   {
     q: 'As 5.000 milhas são garantidas mesmo?',
-    a: 'Na edição de outubro de 2026, a página oficial trata as 5.000 milhas como compromisso, não como estimativa: diz que a responsabilidade de cumprir é do evento e oferece devolução se não entregar. Some-se a isso a garantia legal de 7 dias. Ainda assim, o resultado passa por você participar e aplicar o que é ensinado nos 5 dias. A Fabricante de Milhas reporta os termos anunciados pelo produtor; confirme as condições na página oficial antes de se inscrever',
+    a: 'Na edição de outubro de 2026, a página oficial trata as 5.000 milhas como compromisso, não como estimativa: diz que a responsabilidade de cumprir é do evento e oferece devolução se não entregar. Some-se a isso a garantia legal de 7 dias. Ainda assim, o resultado passa por você participar e aplicar o que é ensinado nos 5 dias. As condições completas estão na página oficial do evento',
   },
   {
     q: 'O evento tem garantia se eu não gostar?',
@@ -364,7 +364,7 @@ export function DestraveSuasMilhas() {
                   {[
                     ['5 dias de conteúdo ao vivo', 'Prático e objetivo, cerca de uma hora por dia.'],
                     ['5.000 milhas', 'O evento anuncia como compromisso, com devolução caso não entregue. Depende de você participar e aplicar.'],
-                    ['Material de economia em viagem', 'Como reduzir entre 20% e 90% dos custos da próxima viagem, segundo a página oficial.'],
+                    ['Material de economia em viagem', 'Como reduzir os custos da próxima viagem.'],
                     ['Material de renda extra', 'Como usar milhas como fonte de renda adicional.'],
                     ['Material de compras com desconto', 'Como adquirir eletrônicos com até 40% de desconto usando milhas.'],
                     ['Grupo exclusivo no WhatsApp', 'Canal de acompanhamento durante os 5 dias do evento.'],
@@ -402,20 +402,20 @@ export function DestraveSuasMilhas() {
             </div>
           </section>
 
-          {/* PARA QUEM É / NÃO É */}
+          {/* PARA QUEM É */}
           <section className="mt-16">
-            <div className="eyebrow text-brand-600">Honestidade antes do clique</div>
+            <div className="eyebrow text-brand-600">Seu perfil</div>
             <h2 className="display text-[1.8rem] md:text-[2.1rem] text-slate-900 mt-3">
-              Para quem faz sentido, e para quem não faz
+              Para quem o Destrave suas Milhas é ideal
             </h2>
 
-            <div className="mt-8 grid md:grid-cols-2 gap-4">
+            <div className="mt-8 grid gap-4">
               <div className="rounded-2xl border border-emerald-500/30 bg-white p-6">
                 <div className="flex items-center gap-2.5 mb-4">
                   <span className="grid place-items-center w-6 h-6 rounded-full bg-emerald-600 text-white font-bold text-[15px] leading-none">
                     +
                   </span>
-                  <span className="display text-[1.1rem] text-slate-900">Faz sentido para você que</span>
+                  <span className="display text-[1.1rem] text-slate-900">É ideal para você que</span>
                 </div>
                 <ul className="space-y-3.5">
                   {[
@@ -435,30 +435,12 @@ export function DestraveSuasMilhas() {
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-rose-500/30 bg-white p-6">
-                <div className="flex items-center gap-2.5 mb-4">
-                  <span className="grid place-items-center w-6 h-6 rounded-full bg-rose-600 text-white font-bold text-[15px] leading-none">
-                    −
-                  </span>
-                  <span className="display text-[1.1rem] text-slate-900">Não perca seu dinheiro se você</span>
-                </div>
-                <ul className="space-y-3.5">
-                  {[
-                    'Procura ganho passivo ou dinheiro sem esforço, porque milhas não são isso.',
-                    'Não consegue reservar cerca de uma hora por dia durante os 5 dias.',
-                    'Espera resultado garantido no primeiro mês, sem aplicar nada.',
-                    'Quer só o básico para uma viagem pontual, porque nossos guias gratuitos já resolvem.',
-                  ].map((t, i) => (
-                    <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-slate-700">
-                      <span className="mono text-[11px] font-bold mt-1 shrink-0 text-rose-600">
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
-                      <span>{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
+            <p className="mt-5 text-[15px] text-slate-600">
+              Se prefere começar pelo básico antes de se inscrever, nossos guias gratuitos de{' '}
+              <a href="/como-acumular-milhas/" className="u-link text-brand-700 font-semibold">acúmulo de milhas</a>{' '}
+              são um bom ponto de partida.
+            </p>
           </section>
 
           {/* QUEM CONDUZ + GARANTIA */}
@@ -519,7 +501,7 @@ export function DestraveSuasMilhas() {
                 <p className="mt-4 text-[16px] text-white/85 leading-relaxed">
                   De 5 a 9 de outubro, cerca de uma hora por dia, R$ 47 e garantia de 7 dias. É uma
                   semana para destravar o acúmulo e sair com as primeiras milhas na conta, em torno de
-                  5.000 segundo a estimativa do evento.
+                  5.000, meta anunciada pelo evento.
                 </p>
                 <a
                   href={INSCRICAO}

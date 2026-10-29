@@ -57,7 +57,7 @@ export const cartao: Article = {
       head: ['Perfil de gasto mensal', 'O que buscar', 'O que evitar'],
       rows: [
         ['Até R$ 2.000', 'Cartão sem anuidade que pontue algo; foco em acumular por parceiros e portais', 'Anuidade alta que o gasto não paga'],
-        ['R$ 2.000 – R$ 8.000', 'Intermediário com boa pontuação e anuidade negociável', 'Pulverizar em vários cartões'],
+        ['R$ 2.000 a R$ 8.000', 'Intermediário com boa pontuação e anuidade negociável', 'Pulverizar em vários cartões'],
         ['Acima de R$ 8.000', 'Premium com 2+ pontos por dólar e benefícios de viagem', 'Pagar anuidade cheia sem negociar'],
       ],
       note: 'Faixas de perfil são referência editorial, não recomendação de produto. Os nomes e as pontuações de cada emissor estão na tabela acima, com a data da apuração.',
@@ -141,15 +141,15 @@ export const programas: Article = {
         ['Smiles', 'GOL', 'Malha doméstica ampla, promoções frequentes, mercado líquido para venda', 'Milha de bônus vale só 6 meses: o que vem de promoção precisa de uso rápido'],
         ['LATAM Pass', 'LATAM', 'Malha internacional forte, parcerias amplas, bônus válido por 36 meses', 'Cotação de emissão varia muito entre datas: compare antes de resgatar'],
         ['Azul Fidelidade', 'Azul', 'Cobertura de cidades médias no Brasil', 'Ex-TudoAzul; o clube agora se chama Clube Azul'],
-        ['Livelo', '— (pontos)', '14 programas parceiros de transferência (set/2026)', 'Ponto parado sem transferir rende pouco'],
-        ['Esfera', '— (pontos)', '11 programas parceiros (set/2026)', 'Menos parceiros que a Livelo, mas tem TAP e Turkish'],
+        ['Livelo', 'n/d (pontos)', '14 programas parceiros de transferência (set/2026)', 'Ponto parado sem transferir rende pouco'],
+        ['Esfera', 'n/d (pontos)', '11 programas parceiros (set/2026)', 'Menos parceiros que a Livelo, mas tem TAP e Turkish'],
       ],
-      note: 'Contagem de parceiros apurada pela Equipe Fabricante de Milhas em 14/09/2026, nas páginas oficiais de transferência de cada programa: 14 na Livelo, 11 na Esfera. A composição difere — a Esfera tem TAP Miles&Go, Turkish e IHG; a Livelo tem MileagePlus, British Airways, Etihad, Hilton, Dotz e Seedz. Regras, validades e clubes mudam com frequência: a tabela é revisada a cada atualização desta página.',
+      note: 'Contagem de parceiros apurada pela Equipe Fabricante de Milhas em 14/09/2026, nas páginas oficiais de transferência de cada programa: 14 na Livelo, 11 na Esfera. A composição difere: a Esfera tem TAP Miles&Go, Turkish e IHG; a Livelo tem MileagePlus, British Airways, Etihad, Hilton, Dotz e Seedz. Regras, validades e clubes mudam com frequência: a tabela é revisada a cada atualização desta página.',
     },
     { t: 'h2', id: 'validade', text: 'Validade: a regra que decide para onde transferir' },
     {
       t: 'p',
-      html: 'Validade não é detalhe de regulamento, é estratégia. O erro mais caro do acúmulo é deixar saldo expirar, e os três programas tratam o assunto de formas bem diferentes — especialmente no ponto que mais importa para quem transfere pontos do cartão: <strong>quanto tempo dura a milha de bônus</strong>.',
+      html: 'Validade não é detalhe de regulamento, é estratégia. O erro mais caro do acúmulo é deixar saldo expirar, e os três programas tratam o assunto de formas bem diferentes, especialmente no ponto que mais importa para quem transfere pontos do cartão: <strong>quanto tempo dura a milha de bônus</strong>.',
     },
     {
       t: 'table',
@@ -179,7 +179,7 @@ export const programas: Article = {
     },
     {
       t: 'p',
-      html: 'A leitura prática: se você acumula via cartão e transfere com bônus, <strong>o LATAM Pass protege melhor a parte bonificada</strong> — 36 meses contra 6 meses da Smiles. Isso não faz da Smiles um programa pior; faz dela um programa que exige uso rápido do que veio de promoção. Transferir para a Smiles com bônus e deixar o saldo parado é, na prática, jogar fora a metade que a promoção deu.',
+      html: 'A leitura prática: se você acumula via cartão e transfere com bônus, <strong>o LATAM Pass protege melhor a parte bonificada</strong>: 36 meses contra 6 meses da Smiles. Isso não faz da Smiles um programa pior; faz dela um programa que exige uso rápido do que veio de promoção. Transferir para a Smiles com bônus e deixar o saldo parado é, na prática, jogar fora a metade que a promoção deu.',
     },
     { t: 'h2', id: 'como-escolher', text: 'Como escolher o seu programa principal' },
     {
@@ -296,7 +296,7 @@ export const viajar: Article = {
     { t: 'h2', id: 'quando-emitir', text: 'Quando emitir: os dois momentos de ouro' },
     {
       t: 'p',
-      html: 'O dia da semana muda tudo, e dá para medir. Na busca que fizemos em 14/09/2026 para GRU–REC, o mesmo trecho variou de <strong>22.600 milhas na segunda-feira a 41.300 na quinta</strong> da mesma semana — <strong>83% de diferença</strong> sem mudar nada além da data. Mover a viagem em um ou dois dias costuma render mais que qualquer outra técnica de economia.',
+      html: 'O dia da semana muda tudo, e dá para medir. Na busca que fizemos em 14/09/2026 para GRU–REC, o mesmo trecho variou de <strong>22.600 milhas na segunda-feira a 41.300 na quinta</strong> da mesma semana, ou seja, <strong>83% de diferença</strong> sem mudar nada além da data. Mover a viagem em um ou dois dias costuma render mais que qualquer outra técnica de economia.',
     },
     {
       t: 'table',

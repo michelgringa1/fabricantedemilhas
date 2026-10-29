@@ -44,7 +44,7 @@ export function CotacaoMilheiro() {
     () => [
       {
         '@type': 'Dataset',
-        name: 'Cotação do milheiro por programa de fidelidade — Brasil',
+        name: 'Cotação do milheiro por programa de fidelidade no Brasil',
         description:
           'Apuração mensal da Fabricante de Milhas sobre quanto os canais de compra pagam por milheiro em cada programa de fidelidade brasileiro, incluindo a variação de preço por prazo de recebimento.',
         url: BASE_URL + '/cotacao-do-milheiro/',
@@ -197,7 +197,7 @@ export function CotacaoMilheiro() {
           <p className="mt-3 text-[15.5px] leading-relaxed text-slate-700">
             Este é o dado que quase ninguém publica. Mesma milha, mesmo dia, mesma plataforma: o que
             muda é só quantos dias você espera para receber o dinheiro. Quanto mais rápido você quer
-            o PIX, menos a plataforma paga — porque ela assume o risco de carregar o saldo até
+            o PIX, menos a plataforma paga, porque ela assume o risco de carregar o saldo até
             alguém emitir.
           </p>
 
@@ -254,7 +254,7 @@ export function CotacaoMilheiro() {
           </p>
           <p className="mt-4 text-[15.5px] leading-relaxed text-slate-700">
             Abaixo está o que cada canal pagava na data da apuração, sem média nem arredondamento
-            nosso. É o lastro da faixa publicada no topo — e a distância entre as três fontes não é
+            nosso. É o lastro da faixa publicada no topo, e a distância entre as três fontes não é
             ruído: <strong>é a medida de quanto custa receber rápido</strong>.
           </p>
 
@@ -283,7 +283,7 @@ export function CotacaoMilheiro() {
                       <tr key={pr.programa}>
                         <th scope="row">{pr.programa}</th>
                         <td>{pr.valor}</td>
-                        <td className="text-slate-600">{pr.obs || '—'}</td>
+                        <td className="text-slate-600">{pr.obs || 'n/d'}</td>
                       </tr>
                     ))}
                   </tbody>

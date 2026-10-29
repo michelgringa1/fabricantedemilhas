@@ -9,6 +9,7 @@
     "build:deploy": "parcel build index.html --dist-dir dist --no-source-maps && node scripts/static-assets.mjs && node scripts/prerender.mjs && node scripts/seo-files.mjs",
     "build:spa": "parcel build index.html --dist-dir dist --no-source-maps",
     "lint": "oxlint",
+    "gate": "node scripts/tom-gate.mjs dist",
     "preview": "vite preview"
   },
   "pnpm": {

@@ -142,22 +142,19 @@ const ANALISES = [
     slug: '/fabrica-de-milhas-vale-a-pena/',
     tag: 'REVIEW',
     title: 'Fábrica de Milhas vale a pena?',
-    desc: 'Preço, garantia dupla e 5 contras reais do curso do Rodrigo Góes.',
-    nota: 80,
+    desc: 'Preço, garantia dupla, os 8 níveis e para quem o curso do Rodrigo Góes é ideal.',
   },
   {
     slug: '/rodrigo-goes-e-confiavel/',
     tag: 'REVIEW',
     title: 'Rodrigo Góes é confiável?',
-    desc: 'CNPJ, números autodeclarados e reputação: o que os dados públicos mostram.',
-    nota: null,
+    desc: 'Empresa registrada, canal verificado com 890 mil inscritos, imprensa e livro: quem é o criador do curso.',
   },
   {
     slug: '/cursos-de-milhas/',
     tag: 'COMPARADOR',
     title: 'Cursos de milhas comparados',
-    desc: 'Os principais cursos lado a lado, pelos 6 critérios da metodologia.',
-    nota: null,
+    desc: 'Os cursos de milhas em um só lugar: conteúdo, preço e garantia.',
   },
 ]
 
@@ -165,8 +162,8 @@ export function Home() {
   return (
     <>
       <Seo
-        title="Fabricante de Milhas: milhas aéreas explicadas com honestidade"
-        description="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas, sem promessa milagrosa."
+        title="Fabricante de Milhas: guias e cursos de milhas aéreas do zero ao avançado"
+        description="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas, com o curso Fábrica de Milhas do Rodrigo Góes como recomendação."
         slug="/"
         jsonLd={[breadcrumbLd([])]}
       />
@@ -321,14 +318,14 @@ export function Home() {
         <div className="max-w-6xl mx-auto px-4 py-20">
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
-              <div className="eyebrow text-sun-500">Fundo de funil, sem fantasia</div>
+              <div className="eyebrow text-sun-500">Para quem já quer decidir</div>
               <h2 className="display text-[2rem] md:text-[2.5rem] mt-3">Análises de cursos</h2>
               <p className="mt-3 text-brand-100/75 max-w-lg">
-                Reviews completos com prós, contras e reputação verificada, inclusive do curso que recomendamos.
+                Opiniões, preço e garantia do curso Fábrica de Milhas e quem é o Rodrigo Góes, com fontes oficiais.
               </p>
             </div>
-            <a href="/metodologia/" className="text-sun-500 font-semibold text-[14.5px] u-link">
-              Como avaliamos →
+            <a href="/sobre/" className="text-sun-500 font-semibold text-[14.5px] u-link">
+              Quem somos →
             </a>
           </div>
           <div className="mt-10 grid md:grid-cols-3 gap-4">
@@ -342,12 +339,6 @@ export function Home() {
                   <span className="mono text-[10.5px] tracking-[0.18em] text-sun-500 border border-sun-500/40 rounded-full px-3 py-1">
                     {a.tag}
                   </span>
-                  {a.nota && (
-                    <span className="relative grid place-items-center w-12 h-12 shrink-0">
-                      <span className="ring-dial absolute inset-0 rounded-full" style={{ ['--val' as string]: a.nota }} />
-                      <span className="display text-[14px]">{(a.nota / 10).toFixed(1).replace('.', ',')}</span>
-                    </span>
-                  )}
                 </div>
                 <h3 className="display text-[1.3rem] leading-snug mt-5 group-hover:text-sun-400 transition-colors">{a.title}</h3>
                 <p className="mt-2.5 text-[14px] text-brand-100/70 leading-relaxed flex-1">{a.desc}</p>
@@ -372,7 +363,7 @@ export function Home() {
               Cotação do milheiro,<br />mês a mês
             </h2>
             <p className="mt-4 text-slate-600 leading-relaxed max-w-md">
-              Mantemos uma tabela de referência do custo e da cotação de venda do milheiro por programa —
+              Mantemos uma tabela de referência do custo e da cotação de venda do milheiro por programa,
               a bússola de quem acumula para vender. Citada nos nossos guias, aberta para consulta.
             </p>
             <a
@@ -432,17 +423,17 @@ export function Home() {
             {[
               {
                 n: '01',
-                title: 'Análise em terceira pessoa',
-                desc: 'Avaliamos cursos e produtores com fontes públicas e verificáveis: CNPJ, imprensa, histórico.',
+                title: 'Fontes oficiais e verificáveis',
+                desc: 'Preço, garantia e conteúdo vêm da página oficial de cada curso, com a data da leitura. Falamos sobre o Rodrigo Góes sempre em terceira pessoa.',
                 slug: '/sobre/',
                 link: 'Quem somos',
               },
               {
                 n: '02',
-                title: 'Metodologia pública',
-                desc: 'Seis critérios com pesos declarados definem cada nota. Os contras ficam no texto, inclusive dos cursos que recomendamos.',
+                title: 'Recomendação clara',
+                desc: 'Indicamos o Fábrica de Milhas como porta de entrada e mostramos preço, níveis, garantia e para quem o curso é ideal.',
                 slug: '/metodologia/',
-                link: 'Como avaliamos',
+                link: 'Nossa abordagem',
               },
               {
                 n: '03',

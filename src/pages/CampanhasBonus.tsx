@@ -37,7 +37,7 @@ export function CampanhasBonus() {
     () => [
       {
         '@type': 'Dataset',
-        name: 'Campanhas de bônus de transferência de pontos — Brasil',
+        name: 'Campanhas de bônus de transferência de pontos no Brasil',
         description:
           'Registro próprio da Fabricante de Milhas com cada campanha de bônus de transferência observada nas páginas oficiais dos programas de pontos brasileiros: data, par de programas, percentual máximo e duração da janela de adesão.',
         url: BASE_URL + '/campanhas-de-bonus/',
@@ -116,7 +116,7 @@ export function CampanhasBonus() {
             <div className="rounded-2xl bg-white border border-slate-200 px-5 py-4">
               <div className="eyebrow text-slate-400">Janela média de adesão</div>
               <div className="display text-[1.6rem] mt-1 text-slate-900">
-                {janelaMediaHoras() !== null ? `${janelaMediaHoras()} h` : '—'}
+                {janelaMediaHoras() !== null ? `${janelaMediaHoras()} h` : 'n/d'}
               </div>
             </div>
             <div className="rounded-2xl bg-white border border-slate-200 px-5 py-4">
@@ -133,7 +133,7 @@ export function CampanhasBonus() {
                 <strong>Por que &ldquo;sem série&rdquo; e não um número.</strong> Com{' '}
                 {totalCampanhas()} observação(ões) não existe intervalo para calcular: intervalo
                 exige pelo menos duas datas. Preferimos deixar o campo vazio a preencher com uma
-                estimativa — foi justamente um chute de &ldquo;30 a 60 dias&rdquo;, que este
+                estimativa: foi justamente um chute de &ldquo;30 a 60 dias&rdquo;, que este
                 registro veio substituir, que nos fez começar a anotar.
               </p>
             </div>
@@ -172,7 +172,7 @@ export function CampanhasBonus() {
                         <strong>{c.bonusMax}%</strong>
                       </td>
                       <td>{c.janelaHoras !== null ? `${c.janelaHoras} h` : 'não anunciada'}</td>
-                      <td className="text-slate-600">{c.nota || '—'}</td>
+                      <td className="text-slate-600">{c.nota || 'n/d'}</td>
                     </tr>
                   ))}
               </tbody>

@@ -14,7 +14,7 @@ export function Blog() {
     <>
       <Seo
         title="Blog: Todos os Guias e Análises | Fabricante de Milhas"
-        description="Todos os guias, análises e comparadores da Fabricante de Milhas, organizados por tema: acumular, vender, cartões, programas, viagens e cursos de milhas."
+        description="Todos os guias, análises da Fabricante de Milhas, organizados por tema: acumular, vender, cartões, programas, viagens e cursos de milhas."
         slug="/blog/"
         jsonLd={[
           {

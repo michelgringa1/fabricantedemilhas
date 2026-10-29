@@ -55,6 +55,25 @@ export function AnswerFirst({ text }: { text: string }) {
   )
 }
 
+export function Destaques({ items }: { items: string[] }) {
+  return (
+    <div className="mt-6 rounded-2xl border border-slate-200 bg-white overflow-hidden">
+      <div className="flex items-center gap-2.5 px-6 pt-5">
+        <span className="mono text-[11px] tracking-[0.2em] font-bold text-brand-700">OS DESTAQUES</span>
+        <span className="h-px flex-1 bg-gradient-to-r from-slate-200 to-transparent" aria-hidden="true" />
+      </div>
+      <ul className="px-6 py-5 space-y-3">
+        {items.map((it, i) => (
+          <li key={i} className="flex gap-3.5 text-[15.5px] leading-relaxed text-slate-700">
+            <span className="text-emerald-600 font-bold mt-0.5 shrink-0" aria-hidden="true">✔</span>
+            <span dangerouslySetInnerHTML={{ __html: limparVerificar(it) }} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 export function Tldr({ items }: { items: string[] }) {
   return (
     <div className="mt-6 rounded-2xl border border-slate-200 bg-white overflow-hidden">
@@ -97,8 +116,8 @@ export function CtaAffiliate({
         </div>
         {variant === 'review' ? (
           <p className="mt-4 display text-[1.5rem] md:text-[1.75rem] leading-snug">
-            O Fábrica de Milhas é o curso que recomendamos como porta de entrada —{' '}
-            <span className="text-brand-100/70 font-normal">com os prós e contras que você acabou de ler.</span>
+            O Fábrica de Milhas é o curso que recomendamos como porta de entrada.{' '}
+            <span className="text-brand-100/70 font-normal">Método em 8 níveis, comunidade diária de promoções e garantia dupla.</span>
           </p>
         ) : (
           <p className="mt-4 display text-[1.5rem] md:text-[1.75rem] leading-snug">
@@ -111,7 +130,7 @@ export function CtaAffiliate({
             <a href="/fabrica-de-milhas-vale-a-pena/" className="text-sun-400 font-semibold u-link">
               análise completa
             </a>{' '}
-            antes de decidir: nota, preço, garantia e para quem NÃO serve.
+            antes de decidir: preço, garantia e para quem é ideal.
           </p>
         )}
         <div className="mt-7 flex flex-wrap items-center gap-4">
@@ -128,7 +147,7 @@ export function CtaAffiliate({
           </a>
           {variant === 'review' && (
             <a href="/cursos-de-milhas/" className="text-brand-100/80 u-link text-[14.5px] font-medium">
-              Comparar com alternativas
+              Ver os cursos de milhas
             </a>
           )}
         </div>

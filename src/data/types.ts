@@ -26,9 +26,11 @@ export interface Article {
   metaDescription: string
   keyword: string
   answerFirst: string
-  /** true = página comercial: disclosure de afiliado no topo */
+  /** true = página comercial (recomendação do curso) */
   commercial?: boolean
   tldr?: string[]
+  /** "Os destaques": 5 a 6 pontos fortes reais, só ✔ (substitui o TL;DR nas páginas de produto) */
+  destaques?: string[]
   published: string
   updated: string
   blocks: Block[]
@@ -36,8 +38,8 @@ export interface Article {
   related: { slug: string; anchor: string }[]
   /** checagens humanas pendentes ([VERIFICAR]) */
   checks?: string[]
-  /** presença gera schema Review (nunca AggregateRating) */
-  rating?: { value: number; itemName: string; itemDesc: string; itemUrl?: string }
+  /** presença gera schema Review do produto, SEM reviewRating e nunca AggregateRating */
+  review?: { itemName: string; itemDesc: string; itemUrl?: string }
   /** nós JSON-LD extras da página (ex.: entidade Person), somados ao @graph */
   extraLd?: object[]
 }

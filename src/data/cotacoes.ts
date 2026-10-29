@@ -133,7 +133,7 @@ export const APURACAO_POR_FONTE: ApuracaoFonte[] = [
       { programa: 'Smiles', valor: 'R$ 11,00 a R$ 12,50', obs: '30k–40k: R$ 11,00 · 50k–60k: R$ 12,50' },
       { programa: 'LATAM Pass', valor: 'R$ 10,00 a R$ 16,00', obs: '10k: R$ 10,00 · 15k–25k: R$ 16,00' },
       { programa: 'Livelo', valor: 'R$ 15,00', obs: 'faixa de 50k a 75k' },
-      { programa: 'Azul e Esfera', valor: '—', obs: 'não compra' },
+      { programa: 'Azul e Esfera', valor: 'n/d', obs: 'não compra' },
     ],
   },
   {
@@ -145,7 +145,7 @@ export const APURACAO_POR_FONTE: ApuracaoFonte[] = [
       { programa: 'Smiles', valor: 'R$ 15,00 a R$ 19,10', obs: '1 dia útil: R$ 15,00 · 30 dias úteis: R$ 19,10' },
       { programa: 'LATAM Pass', valor: 'R$ 24,75 a R$ 29,50', obs: '1 dia útil: R$ 24,75 · 30 dias úteis: R$ 29,50' },
       { programa: 'Azul', valor: 'R$ 13,50 a R$ 16,00', obs: '1 dia útil: R$ 13,50 · 30 dias úteis: R$ 16,00' },
-      { programa: 'Livelo e Esfera', valor: '—', obs: 'não cota' },
+      { programa: 'Livelo e Esfera', valor: 'n/d', obs: 'não cota' },
     ],
   },
 ]
