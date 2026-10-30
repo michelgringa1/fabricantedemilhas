@@ -1,11 +1,11 @@
+import { eventoUrl } from '@/data/site'
+
 /* As artes vivem em src/assets/banner-destrave.ts, mas NAO sao importadas aqui:
    scripts/static-assets.mjs le aquele arquivo e grava os .webp em /img/. Como
    data-URI, este banner repetia 109 KB dentro de 14 HTMLs (~1,49 MB no total) e
    nao podia usar o cache de 1 ano do .htaccess, porque vivia dentro do HTML. */
 const BANNER_DESKTOP = '/img/banner-destrave-desktop.webp'
 const BANNER_MOBILE = '/img/banner-destrave-mobile.webp'
-
-const AFF = 'https://go.hotmart.com/Y102512256Q?ap=3f4d'
 
 /**
  * Banner do evento "Destrave suas Milhas". Imagem responsiva (arte própria
@@ -14,7 +14,7 @@ const AFF = 'https://go.hotmart.com/Y102512256Q?ap=3f4d'
 export function EventoBanner({ src }: { src: string }) {
   return (
     <a
-      href={`${AFF}&src=blg_${src}`}
+      href={eventoUrl(`blg_${src}`)}
       target="_blank"
       rel="sponsored nofollow noopener"
       aria-label="Protocolo Destrave suas Milhas com Rodrigo Góes: evento online de 5 dias, de 5 a 9 de outubro, por R$ 47. Quero participar."

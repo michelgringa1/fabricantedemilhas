@@ -315,3 +315,57 @@ mark.verificar {
 .fm-table tr:nth-child(even) td {
   background: rgba(46, 127, 246, 0.045);
 }
+
+/* aviso de cookies (Consent Mode v2): canto inferior direito, discreto */
+.cookie-box {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 60;
+  max-width: 340px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(5, 13, 38, 0.18);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.cookie-box p {
+  margin: 0;
+}
+.cookie-box a {
+  color: #0743ce;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cookie-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.cookie-actions button {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+}
+.cookie-actions .cookie-yes {
+  background: #0743ce;
+  border-color: #0743ce;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  .cookie-box {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: none;
+  }
+}

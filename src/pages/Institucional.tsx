@@ -186,3 +186,48 @@ export function Contato() {
     </>
   )
 }
+
+export function Cookies() {
+  return (
+    <>
+      <Seo
+        title="Política de Cookies | Fabricante de Milhas"
+        description="Quais cookies a Fabricante de Milhas usa, para que servem e como aceitar, recusar ou mudar a sua escolha a qualquer momento."
+        slug="/cookies/"
+        jsonLd={[breadcrumbLd([['Política de cookies', '/cookies/']])]}
+      />
+      <Shell title="Política de cookies" slug="/cookies/">
+        <p>
+          Esta página explica, de forma direta, quais cookies a <strong>Fabricante de Milhas</strong> usa e como
+          você controla cada um.
+        </p>
+        <h2 id="o-que-usamos">O que usamos</h2>
+        <p>
+          Usamos <strong>um cookie de análise do Google Analytics (GA4)</strong> para medir as visitas: quais
+          páginas são lidas, de onde vem o acesso e quais botões são clicados. O site não tem anúncios, por
+          isso o armazenamento de publicidade fica sempre desativado.
+        </p>
+        <h2 id="consentimento">Como funciona o consentimento</h2>
+        <ul>
+          <li>O cookie de análise começa <strong>desativado</strong>. Sem a sua aceitação, o Google Analytics só recebe medições sem cookie;</li>
+          <li>Se você aceitar no aviso que aparece no canto da tela, a medição completa passa a valer;</li>
+          <li>A sua escolha fica salva no seu navegador, e você pode mudá-la a qualquer momento em <strong>Preferências de cookies</strong>, no rodapé de qualquer página.</li>
+        </ul>
+        <h2 id="parceiros">Cookies de outros sites</h2>
+        <p>
+          Ao clicar em um botão de inscrição, você vai para o site do produtor (Hotmart ou Kiwify). Esses sites
+          definem os próprios cookies, inclusive o que registra a indicação de compra, e seguem as políticas
+          deles. Os links dos produtos ficam sinalizados no código como <code>rel="sponsored nofollow"</code>.
+        </p>
+        <h2 id="apagar">Como apagar cookies</h2>
+        <p>
+          Você pode apagar ou bloquear cookies nas configurações do seu navegador. Se apagar, o aviso volta a
+          aparecer na próxima visita.
+        </p>
+        <p>
+          Dúvidas sobre esta política: <a href={'mailto:' + CONTACT_EMAIL}>{CONTACT_EMAIL}</a>.
+        </p>
+      </Shell>
+    </>
+  )
+}

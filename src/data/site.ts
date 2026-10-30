@@ -26,6 +26,9 @@ export const PAGE_SRC: Record<string, string> = {
   '/cotacao-do-milheiro/': 'cotacao',
 }
 
+/** Hotlink base do Rodrigo Góes na Hotmart. TODO link de afiliado do site sai deste arquivo. */
+const HOTMART = 'https://go.hotmart.com/Y102512256Q'
+
 /**
  * Link de afiliado do curso Fábrica de Milhas (sempre rel="sponsored nofollow").
  *
@@ -34,8 +37,31 @@ export const PAGE_SRC: Record<string, string> = {
  * cai exatamente na mesma página de inscrição.
  */
 export function affUrl(pagina?: string) {
-  return `https://go.hotmart.com/Y102512256Q?src=curso_${pagina || 'geral'}`
+  return `${HOTMART}?src=curso_${pagina || 'geral'}`
 }
+
+/** Evento Protocolo Destrave suas Milhas (ap=3f4d). `src` é a posição do botão. */
+export function eventoUrl(src?: string) {
+  return `${HOTMART}?ap=3f4d${src ? `&src=${src}` : ''}`
+}
+
+/** Redirects de afiliado para as redes do Rodrigo (decisão do Michel): marcam o cookie e
+ *  entregam no perfil real. No schema `sameAs` entram as URLs reais, nunca estas. */
+export const INSTAGRAM_URL = `${HOTMART}?ap=4b86&src=blog`
+export const YOUTUBE_URL = `${HOTMART}?ap=11eb&src=blog`
+
+/** Qual oferta um link de afiliado representa (parâmetro `offer` do evento cta_click). */
+export function ofertaDoLink(url: URL): string {
+  if (url.host === 'kiwify.app') return 'papo-de-milhas'
+  const ap = url.searchParams.get('ap')
+  if (ap === '3f4d') return 'destrave-suas-milhas'
+  if (ap === '4b86') return 'rodrigo-goes-instagram'
+  if (ap === '11eb') return 'rodrigo-goes-youtube'
+  return 'fabrica-de-milhas'
+}
+
+/** Hosts cujos links são de afiliado (recebem cta_click; os demais externos, outbound_click). */
+export const HOSTS_AFILIADO = ['go.hotmart.com', 'kiwify.app']
 
 /**
  * Link de afiliado do Papo de Milhas (EBC), de João Paulo Aragão.
@@ -134,6 +160,7 @@ export const FOOTER_COLS = [
       { label: 'Sobre nós', slug: '/sobre/' },
       { label: 'Nossa metodologia', slug: '/metodologia/' },
       { label: 'Divulgação de afiliados', slug: '/divulgacao-de-afiliados/' },
+      { label: 'Política de cookies', slug: '/cookies/' },
       { label: 'Contato', slug: '/contato/' },
     ],
   },

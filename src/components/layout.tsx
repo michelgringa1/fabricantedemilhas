@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NAV, FOOTER_COLS, CONTACT_EMAIL } from '@/data/site'
+import { NAV, FOOTER_COLS, CONTACT_EMAIL, eventoUrl } from '@/data/site'
 
 export function PlaneMark({ className = 'w-5 h-5' }: { className?: string }) {
   return (
@@ -70,7 +70,7 @@ export function Header() {
           </nav>
           <div className="flex items-center gap-2">
             <a
-              href="https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destravemenu"
+              href={eventoUrl('blg_destravemenu')}
               target="_blank"
               rel="sponsored nofollow noopener"
               className="hidden sm:inline-flex items-center gap-2 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold text-[13.5px] px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-sun-500/25"
@@ -109,7 +109,7 @@ export function Header() {
                 dos cliques do site — ficava inalcancavel no celular. */}
             <div className="px-5 py-5">
               <a
-                href="https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destravemenu"
+                href={eventoUrl('blg_destravemenu')}
                 target="_blank"
                 rel="sponsored nofollow noopener"
                 onClick={() => setOpen(false)}
@@ -163,7 +163,10 @@ export function Footer() {
           </div>
           <p className="text-[11.5px] text-brand-100/40">
             Alguns links deste site são de afiliado. Podemos receber comissão, sem custo extra para você.{' '}
-            <a href="/divulgacao-de-afiliados/" className="u-link text-brand-100/60">Saiba mais</a>.
+            <a href="/divulgacao-de-afiliados/" className="u-link text-brand-100/60">Saiba mais</a>.{' '}
+            <button type="button" data-cookie-settings className="u-link text-brand-100/60">
+              Preferências de cookies
+            </button>
           </p>
         </div>
       </div>

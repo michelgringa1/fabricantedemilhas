@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0743CE" />
-    <title>Fabricante de Milhas — Milhas aéreas explicadas com honestidade</title>
+    <title>Fabricante de Milhas: guias e cursos de milhas aéreas do zero ao avançado</title>
     <meta
       name="description"
-      content="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas — sem promessa milagrosa."
+      content="Guias completos e cursos de milhas aéreas: acumule, venda e viaje com milhas. Aprenda a acumular, vender e viajar com milhas, com o curso Fábrica de Milhas como recomendação."
     />
     <!-- URL absoluta de proposito: com caminho relativo o Parcel tenta resolver
          estes arquivos em tempo de build, mas eles so existem depois, gerados por
@@ -19,24 +19,72 @@
     <meta property="og:site_name" content="Fabricante de Milhas" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fabricante de Milhas — Milhas aéreas explicadas com honestidade" />
-    <meta property="og:description" content="Guias completos, análises e comparativos de cursos de milhas aéreas. Aprenda a acumular, vender e viajar com milhas — sem promessa milagrosa." />
+    <meta property="og:title" content="Fabricante de Milhas: guias e cursos de milhas aéreas do zero ao avançado" />
+    <meta property="og:description" content="Guias completos e cursos de milhas aéreas: acumule, venda e viaje com milhas. Aprenda a acumular, vender e viajar com milhas, com o curso Fábrica de Milhas como recomendação." />
     <meta property="og:url" content="https://fabricantedemilhas.com.br/" />
     <meta property="og:image" content="https://fabricantedemilhas.com.br/img/og-default.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Fabricante de Milhas — milhas aéreas explicadas com honestidade" />
+    <meta property="og:image:alt" content="Fabricante de Milhas: guias e cursos de milhas aéreas do zero ao avançado" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Fabricante de Milhas — Milhas aéreas explicadas com honestidade" />
-    <meta name="twitter:description" content="Guias completos, análises e comparativos de cursos de milhas aéreas." />
+    <meta name="twitter:title" content="Fabricante de Milhas: guias e cursos de milhas aéreas do zero ao avançado" />
+    <meta name="twitter:description" content="Guias completos e cursos de milhas aéreas: acumule, venda e viaje com milhas." />
     <meta name="twitter:image" content="https://fabricantedemilhas.com.br/img/og-default.png" />
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L9QNF0M6P"></script>
+    <!-- Consent Mode v2: o consentimento nasce NEGADO e o page_view sai sem cookies. O aviso
+         (script abaixo) so promove analytics_storage para "granted" se o visitante aceitar.
+         Nao ha anuncios: ad_storage, ad_user_data e ad_personalization ficam sempre negados. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500
+      });
+      try { if (localStorage.getItem('fm_consent') === 'granted') gtag('consent', 'update', { analytics_storage: 'granted' }); } catch (e) {}
       gtag('js', new Date());
       gtag('config', 'G-3L9QNF0M6P');
+    </script>
+    <script>
+      (function () {
+        var KEY = 'fm_consent';
+        var box = null;
+        function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+        function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+        function apply(granted) {
+          if (typeof gtag !== 'function') return;
+          gtag('consent', 'update', { analytics_storage: granted ? 'granted' : 'denied' });
+        }
+        function close() { if (box && box.parentNode) box.parentNode.removeChild(box); box = null; }
+        function open() {
+          // o pre-render roda em Chrome headless: o aviso nao pode entrar no HTML salvo
+          if (box || /HeadlessChrome/.test(navigator.userAgent)) return;
+          box = document.createElement('div');
+          box.className = 'cookie-box';
+          box.setAttribute('role', 'dialog');
+          box.setAttribute('aria-label', 'Aviso de cookies');
+          box.innerHTML =
+            '<p>Usamos um cookie de an\u00e1lise (Google Analytics) para medir as visitas. Voc\u00ea pode aceitar ou recusar. <a href="/cookies/">Saiba mais</a></p>' +
+            '<div class="cookie-actions"><button type="button" class="cookie-no">Recusar</button><button type="button" class="cookie-yes">Aceitar</button></div>';
+          box.querySelector('.cookie-yes').addEventListener('click', function () { save('granted'); apply(true); close(); });
+          box.querySelector('.cookie-no').addEventListener('click', function () { save('denied'); apply(false); close(); });
+          document.body.appendChild(box);
+        }
+        function init() {
+          if (!read()) open();
+          // botao "Preferencias de cookies" do rodape (renderizado depois pelo React)
+          document.addEventListener('click', function (e) {
+            var t = e.target;
+            if (t && t.closest && t.closest('[data-cookie-settings]')) open();
+          });
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+        else init();
+      })();
     </script>
     <script type="application/ld+json">
     {
@@ -47,7 +95,7 @@
           "@id": "https://fabricantedemilhas.com.br/#org",
           "name": "Fabricante de Milhas",
           "url": "https://fabricantedemilhas.com.br/",
-          "description": "Publicação sobre milhas aéreas no Brasil: guias, análises de cursos e comparativos.",
+          "description": "Publicação sobre milhas aéreas no Brasil: guias, guias e a recomendação de curso de milhas.",
           "email": "contato@fabricantedemilhas.com.br",
           "knowsAbout": ["milhas aéreas", "programas de fidelidade", "cartões de crédito", "viagens"],
           "foundingDate": "2026",

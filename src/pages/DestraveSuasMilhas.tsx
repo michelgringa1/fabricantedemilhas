@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { Seo, BASE_URL, ORG_ID, breadcrumbLd, faqLd } from '@/lib/seo'
 import { FaqSection, AuthorBlock, Breadcrumbs } from '@/components/blocks'
 import { PlaneMark } from '@/components/layout'
+import { eventoUrl } from '@/data/site'
 /* As artes continuam em src/assets/destrave.ts, mas nao sao importadas: o
    scripts/static-assets.mjs le aquele arquivo e grava os .avif em /img/. Como
    data-URI elas somavam 116 KB dentro deste HTML, na pagina que responde por
@@ -13,7 +14,7 @@ const seloGarantia = '/img/evento-garantia.avif'
 const texturaMapa = '/img/evento-mapa.avif'
 
 /** Link de inscrição do evento (afiliado) */
-const INSCRICAO = 'https://go.hotmart.com/Y102512256Q?ap=3f4d&src=blg_destrave'
+const INSCRICAO = eventoUrl('blg_destrave')
 
 const FAQ = [
   {

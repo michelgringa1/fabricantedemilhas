@@ -1,13 +1,13 @@
 import { useEffect, useRef } from 'react'
 import { useRoute } from '@/lib/router'
-import { trackPageview } from '@/lib/analytics'
+import { trackPageview, initClickTracking } from '@/lib/analytics'
 import { bySlug } from '@/data/articles'
 import { Header, Footer } from '@/components/layout'
 import { Home } from '@/pages/Home'
 import { ArticlePage } from '@/pages/ArticlePage'
 import { Glossario } from '@/pages/Glossario'
 import { Blog, NotFound } from '@/pages/Blog'
-import { Sobre, Metodologia, Divulgacao, Contato } from '@/pages/Institucional'
+import { Sobre, Metodologia, Divulgacao, Contato, Cookies } from '@/pages/Institucional'
 import { Calculadora } from '@/pages/Calculadora'
 import { CotacaoMilheiro } from '@/pages/CotacaoMilheiro'
 import { CampanhasBonus } from '@/pages/CampanhasBonus'
@@ -25,6 +25,7 @@ function Page({ path }: { path: string }) {
   if (path === '/metodologia/') return <Metodologia />
   if (path === '/divulgacao-de-afiliados/') return <Divulgacao />
   if (path === '/contato/') return <Contato />
+  if (path === '/cookies/') return <Cookies />
   const article = bySlug.get(path)
   if (article) return <ArticlePage article={article} />
   return <NotFound />
@@ -35,6 +36,10 @@ export default function App() {
 
   // O snippet do <head> já registra o page_view inicial; aqui cobrimos
   // as navegações internas (troca de hash) pulando o primeiro render.
+  useEffect(() => {
+    initClickTracking()
+  }, [])
+
   const firstRender = useRef(true)
   useEffect(() => {
     if (firstRender.current) {

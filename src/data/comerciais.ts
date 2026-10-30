@@ -1,4 +1,5 @@
 import type { Article } from './types'
+import { papoUrl, INSTAGRAM_URL, YOUTUBE_URL } from './site'
 
 export const rodrigoGoes: Article = {
   slug: '/rodrigo-goes-e-confiavel/',
@@ -27,7 +28,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes?' },
     {
       t: 'p',
-      html: 'Rodrigo Góes é o criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86&src=blog" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reúne 1,6 milhão de seguidores (jul/2026). A página oficial do curso apresenta mais de 100 mil alunos formados, 90 milhões de milhas acumuladas em 10 anos e mais de 40 países visitados com o próprio método.',
+      html: 'Rodrigo Góes é o criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="' + INSTAGRAM_URL + '" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reúne 1,6 milhão de seguidores (jul/2026). A página oficial do curso apresenta mais de 100 mil alunos formados, 90 milhões de milhas acumuladas em 10 anos e mais de 40 países visitados com o próprio método.',
     },
     {
       t: 'p',
@@ -48,7 +49,7 @@ export const rodrigoGoes: Article = {
     { t: 'h2', id: 'youtube', text: 'Como é o canal do Rodrigo Góes no YouTube?' },
     {
       t: 'p',
-      html: 'O canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb&src=blog" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reúne <strong>890 mil inscritos e 425 vídeos publicados</strong> (29/10/2026). São centenas de aulas gratuitas sobre acúmulo, emissão e venda de milhas, um arquivo aberto construído ao longo de anos.',
+      html: 'O canal <a href="' + YOUTUBE_URL + '" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reúne <strong>890 mil inscritos e 425 vídeos publicados</strong> (29/10/2026). São centenas de aulas gratuitas sobre acúmulo, emissão e venda de milhas, um arquivo aberto construído ao longo de anos.',
     },
     {
       t: 'p',
@@ -254,7 +255,7 @@ export const cursosComparador: Article = {
     { t: 'h2', id: 'papo-de-milhas', text: 'E se eu quiser focar em emissão de passagens?' },
     {
       t: 'p',
-      html: 'Para esse objetivo, recomendamos o <a href="https://kiwify.app/LCTATKB?afid=imrX6P6K&src=papo_cursos" target="_blank" rel="sponsored nofollow noopener"><strong>Papo de Milhas (EBC)</strong></a>, de João Paulo Aragão, bacharel em Ciências Contábeis e investidor desde 2018, que compartilha conteúdo sobre milhas desde 2019. O treinamento tem mais de 14 módulos práticos sobre emissão de passagens com milhas, tabelas fixas e hospedagens, e o aluno recebe alertas de oportunidades e passagens no Telegram, grupo de balcão de milhas e cursos extras de bônus. O preço é de 12x R$ 41,06 ou R$ 397 à vista, com 7 dias de garantia incondicional.',
+      html: 'Para esse objetivo, recomendamos o <a href="' + papoUrl('cursos') + '" target="_blank" rel="sponsored nofollow noopener"><strong>Papo de Milhas (EBC)</strong></a>, de João Paulo Aragão, bacharel em Ciências Contábeis e investidor desde 2018, que compartilha conteúdo sobre milhas desde 2019. O treinamento tem mais de 14 módulos práticos sobre emissão de passagens com milhas, tabelas fixas e hospedagens, e o aluno recebe alertas de oportunidades e passagens no Telegram, grupo de balcão de milhas e cursos extras de bônus. O preço é de 12x R$ 41,06 ou R$ 397 à vista, com 7 dias de garantia incondicional.',
     },
     { t: 'cta', variant: 'review' },
     { t: 'h2', id: 'sem-curso', text: 'Dá para aprender milhas sem pagar curso?' },
@@ -360,7 +361,7 @@ export const melhorCurso: Article = {
     { t: 'h2', id: 'papo-de-milhas', text: 'E se eu quiser focar em emissão de passagens?' },
     {
       t: 'p',
-      html: 'Nesse caso, a nossa recomendação é o <a href="https://kiwify.app/LCTATKB?afid=imrX6P6K&src=papo_melhorcurso" target="_blank" rel="sponsored nofollow noopener"><strong>Papo de Milhas (EBC)</strong></a>, de João Paulo Aragão. O treinamento reúne mais de 14 módulos práticos de emissão de passagens com milhas, tabelas fixas e hospedagens, com alertas de oportunidades no Telegram, grupo de balcão de milhas e cursos extras de bônus. Custa 12x R$ 41,06 ou R$ 397 à vista, com 7 dias de garantia incondicional.',
+      html: 'Nesse caso, a nossa recomendação é o <a href="' + papoUrl('melhorcurso') + '" target="_blank" rel="sponsored nofollow noopener"><strong>Papo de Milhas (EBC)</strong></a>, de João Paulo Aragão. O treinamento reúne mais de 14 módulos práticos de emissão de passagens com milhas, tabelas fixas e hospedagens, com alertas de oportunidades no Telegram, grupo de balcão de milhas e cursos extras de bônus. Custa 12x R$ 41,06 ou R$ 397 à vista, com 7 dias de garantia incondicional.',
     },
     { t: 'h2', id: 'como-escolhemos', text: 'Como escolhemos os cursos que recomendamos?' },
     {

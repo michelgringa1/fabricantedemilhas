@@ -34,3 +34,6 @@ transcrição*
 *.njsproj
 *.sln
 *.sw?
+
+# IndexNow: chave publica do dominio (precisa estar na raiz do site)
+!public/8a8adff56ce82f3e4161c4da92837843.txt

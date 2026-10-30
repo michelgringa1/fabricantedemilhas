@@ -8,11 +8,12 @@
    Uso: node scripts/tom-gate.mjs [dist] */
 
 import { readFileSync, readdirSync, statSync } from 'node:fs'
-import { join, extname, relative } from 'node:path'
+import { join, extname, relative, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 const alvo = process.argv[2] || 'dist'
 // Páginas institucionais podem falar de método, divulgação e contato. 404 é gerada.
-const EXCLUIR = ['404.html', 'bundle.html', 'sobre', 'metodologia', 'divulgacao-de-afiliados', 'contato']
+const EXCLUIR = ['404.html', 'bundle.html', 'sobre', 'metodologia', 'divulgacao-de-afiliados', 'contato', 'cookies']
 
 const BLOQUEIA = [
   ['plataforma de reclamações/notas', /\b(reclame\s*aqui|reclameaqui|trustpilot|puntua|goodreads|sitejabber|scamadviser|better\s+business\s+bureau|consumidor\.gov)\b/i],
@@ -62,7 +63,26 @@ for (const arq of arquivos) {
   }
 }
 
-console.log(`Trava de tom: ${arquivos.length} arquivo(s) em ${alvo}`)
+// Link de afiliado só em src/data/site.ts (arquivo central de links do projeto)
+const SRC = join(dirname(fileURLToPath(import.meta.url)), '..', 'src')
+let fontes = 0
+;(function walkSrc(p) {
+  const st = statSync(p)
+  if (st.isDirectory()) {
+    for (const f of readdirSync(p)) if (f !== 'assets' && f !== 'node_modules') walkSrc(join(p, f))
+    return
+  }
+  if (!['.ts', '.tsx'].includes(extname(p))) return
+  fontes++
+  const rel = 'src/' + relative(SRC, p).replace(/\\/g, '/')
+  if (rel === 'src/data/site.ts') return
+  const texto = readFileSync(p, 'utf8')
+  for (const m of texto.matchAll(/go\.hotmart\.com|kiwify\.app/g)) {
+    bloqueios.push({ rel, rotulo: 'link de afiliado fora de src/data/site.ts', trecho: texto.slice(Math.max(0, m.index - 30), m.index + 50).replace(/\s+/g, ' ') })
+  }
+})(SRC)
+
+console.log(`Trava de tom: ${arquivos.length} arquivo(s) em ${alvo} e ${fontes} fonte(s) em src`)
 if (bloqueios.length) {
   console.log(`\nBLOQUEIO (${bloqueios.length}):`)
   for (const b of bloqueios) console.log(`  ${b.rel}: ${b.rotulo}: "...${b.trecho}..."`)

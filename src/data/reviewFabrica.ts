@@ -1,4 +1,5 @@
 import type { Article } from './types'
+import { INSTAGRAM_URL, YOUTUBE_URL } from './site'
 
 export const reviewFabrica: Article = {
   slug: '/fabrica-de-milhas-vale-a-pena/',
@@ -57,7 +58,7 @@ export const reviewFabrica: Article = {
     { t: 'h2', id: 'quem-e-rodrigo', text: 'Quem é Rodrigo Góes?' },
     {
       t: 'p',
-      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil. Engenheiro mecânico natural de Salvador, deixou a carreira embarcada numa empresa de petróleo em outubro de 2020 para viver de milhas, fundou a Fábrica de Milhas em 2019 e escreveu <em>O Mapa para Acumular 1 Milhão de Milhas</em>, livro que a imprensa registrou entre os mais vendidos da categoria. Seu Instagram <a href="https://go.hotmart.com/Y102512256Q?ap=4b86&src=blog" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reúne 1,6 milhão de seguidores (jul/2026).',
+      html: 'Rodrigo Góes construiu a marca "Mago das Milhas" e é hoje um dos maiores nomes do nicho no Brasil. Engenheiro mecânico natural de Salvador, deixou a carreira embarcada numa empresa de petróleo em outubro de 2020 para viver de milhas, fundou a Fábrica de Milhas em 2019 e escreveu <em>O Mapa para Acumular 1 Milhão de Milhas</em>, livro que a imprensa registrou entre os mais vendidos da categoria. Seu Instagram <a href="' + INSTAGRAM_URL + '" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reúne 1,6 milhão de seguidores (jul/2026).',
     },
     {
       t: 'p',
@@ -65,7 +66,7 @@ export const reviewFabrica: Article = {
     },
     {
       t: 'p',
-      html: 'O canal <a href="https://go.hotmart.com/Y102512256Q?ap=11eb&src=blog" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes no YouTube</a> é verificado e reúne <strong>890 mil inscritos e 425 vídeos</strong> (29/10/2026). Isso dá uma vantagem prática para você: dá para conhecer o jeito de ensinar dele de graça, em centenas de aulas abertas, antes de escolher o curso. Um dos destaques é a participação no <strong>Mais Você</strong>, com Ana Maria Braga, com mais de 322 mil visualizações (jul/2026). Quer saber mais sobre ele? Veja <a href="/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>.',
+      html: 'O canal <a href="' + YOUTUBE_URL + '" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes no YouTube</a> é verificado e reúne <strong>890 mil inscritos e 425 vídeos</strong> (29/10/2026). Isso dá uma vantagem prática para você: dá para conhecer o jeito de ensinar dele de graça, em centenas de aulas abertas, antes de escolher o curso. Um dos destaques é a participação no <strong>Mais Você</strong>, com Ana Maria Braga, com mais de 322 mil visualizações (jul/2026). Quer saber mais sobre ele? Veja <a href="/rodrigo-goes-e-confiavel/">Rodrigo Góes é confiável?</a>.',
     },
     { t: 'h2', id: 'o-que-tem-dentro', text: 'O que tem dentro do curso?' },
     {

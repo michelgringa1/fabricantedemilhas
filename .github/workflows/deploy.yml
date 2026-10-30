@@ -42,6 +42,12 @@ jobs:
         env:
           CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
 
+      # Trava de tom e de regras (CLAUDE.md): linguagem que gera duvida, travessao, nota
+      # propria, [VERIFICAR] visivel e link de afiliado fora de src/data/site.ts. Se falhar,
+      # o deploy nao acontece.
+      - name: Trava de tom e de regras
+        run: node scripts/tom-gate.mjs dist
+
       - name: Publicar dist/ na branch deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
