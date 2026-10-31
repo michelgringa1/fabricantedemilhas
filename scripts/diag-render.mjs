@@ -13,7 +13,7 @@ const server = createServer(async (req, res) => {
   pedidos.push(url)
   const file = path.join(DIST, url)
   if (path.extname(url) && existsSync(file)) {
-    res.writeHead(200, { 'Content-Type': 'application/octet-stream' }); return res.end(await readFile(file))
+    res.writeHead(200, { 'Content-Type': ({'.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.avif':'image/avif','.json':'application/json','.txt':'text/plain; charset=utf-8'})[path.extname(url)] || 'application/octet-stream' }); return res.end(await readFile(file))
   }
   res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(await readFile(path.join(DIST, 'index.html')))
 }).listen(PORT, () => {
