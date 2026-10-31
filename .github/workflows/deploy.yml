@@ -1,71 +1,42 @@
-name: Build e publica na branch deploy
-
+name: diag
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
-
 permissions:
-  contents: write
-
+  contents: read
 jobs:
-  build-deploy:
+  diag:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
         with:
           version: 10
-
-      - name: Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
-
-      - name: Instalar dependências
-        run: pnpm install --frozen-lockfile
-
-      # O pré-render abre cada rota num Chrome headless para salvar o HTML já
-      # renderizado. Sem Chrome no runner, o build falha.
-      - name: Chrome (para o pré-render)
-        uses: browser-actions/setup-chrome@v1
+      - run: pnpm install --frozen-lockfile
+      - uses: browser-actions/setup-chrome@v1
         id: chrome
         with:
           chrome-version: stable
-
-      - name: Build + pré-render das 20 rotas + sitemap/robots/llms
-        run: pnpm run build:deploy
+      - name: variantes
         env:
           CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
-
-      # Trava de tom e de regras (CLAUDE.md): linguagem que gera duvida, travessao, nota
-      # propria, [VERIFICAR] visivel e link de afiliado fora de src/data/site.ts. Se falhar,
-      # o deploy nao acontece.
-      - name: Trava de tom e de regras
-        run: node scripts/tom-gate.mjs dist
-
-      # Rastreio /go/ (D34, 30/10/2026): todo botão de afiliado passa por /go/<produto>/?s=<posicao>.
-      # Itens fixos: PHP do redirecionador e do resumo, regra do .htaccess e Disallow no robots.txt.
-      - name: Itens fixos do rastreio /go/
         run: |
-          test -f dist/api/go.php && test -f dist/api/go-stats.php
-          grep -q '^ *RewriteRule \^go/' dist/.htaccess
-          grep -q '^Disallow: /go/' dist/robots.txt
-
-      # Confere o dist/api/go.php contra o scripts/go-map.json (gerado por Gestor/go/gerar-go.mjs), o rel
-      # dos botões e que não sobrou link direto de afiliado. Se falhar, o deploy não acontece.
-      - name: Trava do rastreio /go/
-        run: node scripts/trava-go.mjs ./dist --map scripts/go-map.json
-
-      - name: Publicar dist/ na branch deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: deploy
-          publish_dir: ./dist
-          force_orphan: true
-          commit_message: 'deploy: build de ${{ github.sha }}'
+          variante() {
+            rm -rf dist .parcel-cache
+            pnpm exec parcel build index.html --dist-dir dist --no-source-maps > /dev/null 2>&1
+            node scripts/static-assets.mjs > /dev/null 2>&1
+            node scripts/diag-render.mjs / "$1"
+            node scripts/diag-render.mjs /vender-milhas-aereas/ "$1"
+          }
+          variante v0-novo-como-esta
+          git stash -u -q || true
+          git checkout -q 338201e -- src
+          variante v1-src-antigo
+          git checkout -q HEAD -- src
+          rm -rf public/api
+          variante v2-sem-public-api
