@@ -18,7 +18,7 @@
  *
  * Uso: node scripts/static-assets.mjs
  */
-import { readFile, writeFile, mkdir, copyFile, readdir, rm } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, cp, readdir, rm } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
@@ -105,7 +105,8 @@ let copiados = 0
 if (existsSync('public')) {
   for (const f of await readdir('public')) {
     if (NAO_PUBLICAR.has(f)) continue
-    await copyFile(path.join('public', f), path.join(DIST, f))
+    // pasta (public/api/ com o go.php do rastreio /go/) vai inteira; arquivo vai direto
+    await cp(path.join('public', f), path.join(DIST, f), { recursive: true })
     copiados++
   }
 }

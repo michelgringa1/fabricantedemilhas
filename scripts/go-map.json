@@ -1,0 +1,30 @@
+{
+  "_comentario": "Fonte unica dos destinos de afiliado (rastreio /go/, D34). api/go.php e gerado daqui por Gestor/go/gerar-go.mjs; src/data/site.ts le subPrefix e o host daqui. Cada ap= da Hotmart e um destino. subPrefix = prefixo fixo do src que a Hotmart ja recebia (curso_, blg_, papo_): o s do botao leva so o resto.",
+  "produtos": {
+    "fabrica-de-milhas": {
+      "url": "https://go.hotmart.com/Y102512256Q",
+      "subParam": "src",
+      "subPrefix": "curso_"
+    },
+    "destrave-suas-milhas": {
+      "url": "https://go.hotmart.com/Y102512256Q?ap=3f4d",
+      "subParam": "src",
+      "subPrefix": "blg_"
+    },
+    "rodrigo-goes-instagram": {
+      "url": "https://go.hotmart.com/Y102512256Q?ap=4b86",
+      "subParam": "src",
+      "subPrefix": ""
+    },
+    "rodrigo-goes-youtube": {
+      "url": "https://go.hotmart.com/Y102512256Q?ap=11eb",
+      "subParam": "src",
+      "subPrefix": ""
+    },
+    "papo-de-milhas": {
+      "url": "https://kiwify.app/LCTATKB?afid=imrX6P6K",
+      "subParam": "src",
+      "subPrefix": "papo_"
+    }
+  }
+}

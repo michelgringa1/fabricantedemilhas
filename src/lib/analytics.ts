@@ -1,4 +1,4 @@
-import { HOSTS_AFILIADO, ofertaDoLink } from '@/data/site'
+import { GO_PRODUTOS, HOSTS_AFILIADO, ofertaDoLink } from '@/data/site'
 
 export const GA_ID = 'G-3L9QNF0M6P'
 
@@ -51,17 +51,22 @@ export function initClickTracking() {
       } catch {
         return
       }
-      if (!/^https?:$/.test(url.protocol) || url.host === window.location.host) return
-      const afiliado = HOSTS_AFILIADO.includes(url.host)
+      // Botão de afiliado = /go/<produto>/?s=<posicao> no próprio domínio (rastreio /go/, D34).
+      // O evento sai como sempre saiu: link_domain = a rede, cta_source = o src que ela recebe
+      // (prefixo do produto + s) e offer = o produto.
+      const go = url.host === window.location.host ? /^\/go\/([a-z0-9-]{1,40})\/?$/.exec(url.pathname) : null
+      const produto = go ? GO_PRODUTOS[go[1]] : undefined
+      if (!/^https?:$/.test(url.protocol) || (url.host === window.location.host && !produto)) return
+      const afiliado = !!produto || HOSTS_AFILIADO.includes(url.host)
       const params: Record<string, string> = {
         page_path: window.location.pathname,
-        link_domain: url.host,
+        link_domain: produto ? produto.host : url.host,
         link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 100),
         transport_type: 'beacon',
       }
       if (afiliado) {
-        params.cta_source = url.searchParams.get('src') || ''
-        params.offer = ofertaDoLink(url)
+        params.cta_source = produto ? produto.prefixo + (url.searchParams.get('s') || '') : url.searchParams.get('src') || ''
+        params.offer = go && produto ? go[1] : ofertaDoLink(url)
       }
       window.gtag('event', afiliado ? 'cta_click' : 'outbound_click', params)
     },

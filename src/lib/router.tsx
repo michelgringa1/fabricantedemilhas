@@ -83,6 +83,8 @@ export function useRoute() {
       if (!raw || a.target === '_blank' || a.hasAttribute('download')) return
       // externos e mailto seguem o comportamento padrão
       if (/^(https?:|mailto:|tel:)/i.test(raw)) return
+      // /go/ é do servidor (302 para o afiliado), nunca uma rota do app
+      if (raw.startsWith('/go/')) return
 
       if (isHashMode()) {
         // no modo hash os href já saem como "#/slug/", nada a fazer

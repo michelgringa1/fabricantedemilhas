@@ -48,6 +48,19 @@ jobs:
       - name: Trava de tom e de regras
         run: node scripts/tom-gate.mjs dist
 
+      # Rastreio /go/ (D34, 30/10/2026): todo botão de afiliado passa por /go/<produto>/?s=<posicao>.
+      # Itens fixos: PHP do redirecionador e do resumo, regra do .htaccess e Disallow no robots.txt.
+      - name: Itens fixos do rastreio /go/
+        run: |
+          test -f dist/api/go.php && test -f dist/api/go-stats.php
+          grep -q '^ *RewriteRule \^go/' dist/.htaccess
+          grep -q '^Disallow: /go/' dist/robots.txt
+
+      # Confere o dist/api/go.php contra o scripts/go-map.json (gerado por Gestor/go/gerar-go.mjs), o rel
+      # dos botões e que não sobrou link direto de afiliado. Se falhar, o deploy não acontece.
+      - name: Trava do rastreio /go/
+        run: node scripts/trava-go.mjs ./dist --map scripts/go-map.json
+
       - name: Publicar dist/ na branch deploy
         uses: peaceiris/actions-gh-pages@v4
         with:

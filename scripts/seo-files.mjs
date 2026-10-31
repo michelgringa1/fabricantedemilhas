@@ -38,6 +38,7 @@ const robots = `# fabricantedemilhas.com.br
 
 User-agent: *
 Allow: /
+Disallow: /go/
 
 # Crawlers de IA liberados de propósito: queremos ser citados por eles.
 User-agent: GPTBot
@@ -146,6 +147,10 @@ ErrorDocument 404 /404.html
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Rastreio de cliques /go/<produto>/?s=<posicao> (D34): o PHP anota o clique e responde 302
+  # para o link de afiliado de scripts/go-map.json. Fica DEPOIS dos 301 de host.
+  RewriteRule ^go/([a-z0-9-]{1,40})/?$ /api/go.php?p=$1 [L,QSA]
 </IfModule>
 
 # O servidor nao conhece estes tipos e entregava tudo como text/plain: o AVIF
