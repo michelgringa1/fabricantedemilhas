@@ -2,7 +2,7 @@ name: Build e publica na branch deploy
 
 on:
   push:
-    branches: [main]
+    branches: [tmp-ab-prerender-nunca]
   workflow_dispatch:
 
 permissions:
@@ -48,11 +48,5 @@ jobs:
       - name: Trava de tom e de regras
         run: node scripts/tom-gate.mjs dist
 
-      - name: Publicar dist/ na branch deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: deploy
-          publish_dir: ./dist
-          force_orphan: true
-          commit_message: 'deploy: build de ${{ github.sha }}'
+      - name: (diagnostico) sem publicar
+        run: echo build ok sem publicar
