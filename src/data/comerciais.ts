@@ -1,5 +1,5 @@
 import type { Article } from './types'
-import { papoUrl, INSTAGRAM_URL, YOUTUBE_URL } from './site'
+import { affUrl, papoUrl, INSTAGRAM_URL, YOUTUBE_URL } from './site'
 
 export const rodrigoGoes: Article = {
   slug: '/rodrigo-goes-e-confiavel/',
@@ -23,8 +23,22 @@ export const rodrigoGoes: Article = {
     '1,6 milhão de seguidores no Instagram (@goesrodrigo, jul/2026) e 90 milhões de milhas acumuladas em 10 anos.',
   ],
   published: '2026-07-11',
-  updated: '2026-10-29',
+  updated: '2026-11-01',
   blocks: [
+    {
+      t: 'callout',
+      tone: 'warn',
+      title: 'Live Black Infinita: 4/11, às 20h',
+      html:
+        '<strong>Live especial do Rodrigo Góes, online e ao vivo, em 4/11 às 20h.</strong> Acesso vitalício a todos os cursos dele, atuais e futuros, e quem estiver ao vivo recebe os melhores bônus.' +
+        '<span class="not-prose mt-4 block"><a href="' +
+        affUrl('confiavel_live') +
+        '" target="_blank" rel="sponsored nofollow noopener" class="!no-underline inline-flex items-center gap-2.5 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-all">Conhecer o Fábrica de Milhas</a></span>',
+    },
+    {
+      t: 'p',
+      html: 'A Black Infinita é a live especial em que o Rodrigo Góes apresenta, em 4/11 às 20h, como funciona cada produto dele e a oferta de acesso vitalício a todos os cursos. A página oficial da live detalha a programação: como elevar o padrão de vida com milhas, os produtos e a oferta. Para chegar à live sabendo o que é o <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a>, a nossa análise traz preço, garantia e para quem é ideal.',
+    },
     { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes?' },
     {
       t: 'p',
