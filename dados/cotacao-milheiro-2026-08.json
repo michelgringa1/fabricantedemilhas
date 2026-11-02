@@ -1,0 +1,44 @@
+{
+  "fonte": "Fabricante de Milhas",
+  "url": "https://fabricantedemilhas.com.br/cotacao-do-milheiro/",
+  "licenca": "CC BY 4.0",
+  "unidade": "BRL por 1.000 milhas",
+  "apuradoEm": "2026-08-30",
+  "canais": [
+    "MaxMilhas",
+    "BankMilhas",
+    "Compro Milhas"
+  ],
+  "programas": [
+    {
+      "programa": "Smiles",
+      "vendaMin": 11,
+      "vendaMax": 19,
+      "referencia": 15
+    },
+    {
+      "programa": "LATAM Pass",
+      "vendaMin": 16,
+      "vendaMax": 30,
+      "referencia": 23
+    },
+    {
+      "programa": "Azul Fidelidade",
+      "vendaMin": 13,
+      "vendaMax": 17,
+      "referencia": 15
+    },
+    {
+      "programa": "Livelo",
+      "vendaMin": 15,
+      "vendaMax": 15,
+      "referencia": 15
+    },
+    {
+      "programa": "Esfera",
+      "vendaMin": 14,
+      "vendaMax": 19,
+      "referencia": 16
+    }
+  ]
+}
