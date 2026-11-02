@@ -6,21 +6,21 @@ export const rodrigoGoes: Article = {
   type: 'review',
   cluster: 'Cursos',
   kicker: 'Quem é',
-  h1: 'Rodrigo Góes é confiável? Quem é o criador do Fábrica de Milhas [2026]',
-  seoTitle: 'Rodrigo Góes É Confiável? Quem É o Mago das Milhas 2026',
+  h1: 'Rodrigo Góes é confiável? Quem é o Mago das Milhas e o que ele ensina [2026]',
+  seoTitle: 'Rodrigo Góes É Confiável? Quem É, Curso e Opiniões 2026',
   metaDescription:
-    'Rodrigo Góes, o "Mago das Milhas", é confiável? Veja a empresa, o canal verificado no YouTube, a imprensa, o livro e o curso Fábrica de Milhas.',
+    'Rodrigo Góes, o "Mago das Milhas", é confiável? Veja quem é, o que ensina, o canal verificado, a imprensa e quanto custa o curso Fábrica de Milhas.',
   keyword: 'Rodrigo Góes milhas é confiável',
   commercial: true,
   answerFirst:
-    'Sim. Para a Equipe Fabricante de Milhas, Rodrigo Góes é um produtor real e consolidado: empresa registrada com CNPJ, canal verificado no YouTube com 890 mil inscritos, mais de 100 mil alunos formados, livro entre os mais vendidos e presença na CNN Brasil, Extra, Terra e RedeTV!. Ele é o criador do curso Fábrica de Milhas.',
+    'Sim. Rodrigo Góes, o "Mago das Milhas", é confiável: engenheiro mecânico de Salvador e criador do curso Fábrica de Milhas desde 2019, com empresa registrada (CNPJ), canal verificado no YouTube com 890 mil inscritos, mais de 100 mil alunos formados, livro publicado e matérias na CNN Brasil, Extra, Terra e RedeTV!.',
   destaques: [
-    'Empresa registrada: 4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, Barueri-SP.',
-    'Canal verificado no YouTube com 890 mil inscritos e 425 vídeos (29/10/2026).',
-    'Mais de 100 mil alunos formados no Fábrica de Milhas (página oficial, 29/10/2026).',
-    'Imprensa: CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch já publicaram sobre ele.',
-    'Autor de "O Mapa para Acumular 1 Milhão de Milhas", registrado entre os mais vendidos da categoria.',
-    '1,6 milhão de seguidores no Instagram (@goesrodrigo, jul/2026) e 90 milhões de milhas acumuladas em 10 anos.',
+    'Empresa registrada: 4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, sediada em Barueri-SP (página oficial, 1/11/2026).',
+    'Canal verificado no YouTube com 890 mil inscritos e 425 vídeos gratuitos (1/11/2026).',
+    'Mais de 100 mil alunos formados no Fábrica de Milhas (página oficial, 1/11/2026).',
+    'Imprensa: CNN Brasil, Extra, Terra, RedeTV!, Correio, Catraca Livre e Revista Mensch já publicaram sobre ele.',
+    'Autor de "O Mapa para Acumular 1 Milhão de Milhas" (2020), registrado entre os mais vendidos da categoria.',
+    'Mais de 1,6 milhão de seguidores no Instagram (@goesrodrigo, 1/11/2026) e 90 milhões de milhas acumuladas (página oficial, 1/11/2026).',
   ],
   published: '2026-07-11',
   updated: '2026-11-01',
@@ -39,50 +39,134 @@ export const rodrigoGoes: Article = {
       t: 'p',
       html: 'A Black Infinita é a live especial em que o Rodrigo Góes apresenta, em 4/11 às 20h, como funciona cada produto dele e a oferta de acesso vitalício a todos os cursos. A página oficial da live detalha a programação: como elevar o padrão de vida com milhas, os produtos e a oferta. Para chegar à live sabendo o que é o <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a>, a nossa análise traz preço, garantia e para quem é ideal.',
     },
-    { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes?' },
+    { t: 'h2', id: 'em-dados', text: 'Rodrigo Góes em resumo: quais são os dados principais?' },
+    {
+      t: 'table',
+      caption: 'Rodrigo Góes, o Mago das Milhas, em dados (fontes oficiais e imprensa, lidas em 1/11/2026)',
+      head: ['Dado', 'Resumo'],
+      rows: [
+        ['Quem é', 'Rodrigo Góes, o "Mago das Milhas", engenheiro mecânico natural de Salvador (BA)'],
+        ['Atuação em milhas', 'Desde 2011; Fábrica de Milhas fundada em 2019'],
+        ['Empresa', '4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, Barueri-SP'],
+        ['Produto principal', 'Curso Fábrica de Milhas, em 8 níveis, com aulas gravadas e ao vivo'],
+        ['Outros produtos', 'Evento Protocolo Destrave suas Milhas e o livro "O Mapa para Acumular 1 Milhão de Milhas" (2020)'],
+        ['Canal no YouTube', 'Verificado, com 890 mil inscritos e 425 vídeos'],
+        ['Alunos', 'Mais de 100 mil formados'],
+        ['Preço do curso', '1 ano: 12x R$ 119,90 ou R$ 1.230,60 à vista. Vitalício: 12x R$ 291,99 ou R$ 2.997,00 à vista'],
+        ['Garantia', '7 dias de reembolso integral e garantia "risco zero"'],
+      ],
+      note: 'Turmas, preços e condições mudam: confirme na página oficial antes de decidir.',
+    },
+    { t: 'h2', id: 'quem-e', text: 'Quem é Rodrigo Góes, o Mago das Milhas?' },
     {
       t: 'p',
-      html: 'Rodrigo Góes é o criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a> e uma das maiores audiências do nicho de milhas no Brasil, sob a marca "Mago das Milhas". Seu Instagram <a href="' + INSTAGRAM_URL + '" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reúne 1,6 milhão de seguidores (jul/2026). A página oficial do curso apresenta mais de 100 mil alunos formados, 90 milhões de milhas acumuladas em 10 anos e mais de 40 países visitados com o próprio método.',
+      html: 'Rodrigo Góes é engenheiro mecânico natural de Salvador, educador em milhas aéreas e criador do curso <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a>. Conhecido como "Mago das Milhas", ele se dedica ao tema desde 2011 e transformou uma frustração pessoal, a de ter deixado milhas expirarem por falta de informação, em uma carreira de ensinar outras pessoas a viajar pagando menos. A página oficial dele também cita uma certificação em Negociação pela Universidade de Michigan.',
     },
     {
       t: 'p',
-      html: 'A trajetória tem datas conhecidas: engenheiro mecânico natural de Salvador, ele trabalhou embarcado numa empresa de petróleo até outubro de 2020, quando deixou a profissão para viver de milhas. Fundou a Fábrica de Milhas em 2019 e publicou o livro <em>O Mapa para Acumular 1 Milhão de Milhas</em>, que a imprensa registrou entre os mais vendidos da categoria.',
+      html: 'Seu Instagram <a href="' + INSTAGRAM_URL + '" target="_blank" rel="sponsored nofollow noopener">@goesrodrigo</a> reúne mais de 1,6 milhão de seguidores (1/11/2026). A página oficial do curso apresenta mais de 100 mil alunos formados, 90 milhões de milhas acumuladas e mais de 40 países visitados com o próprio método. Se você procura o Rodrigo Góes das milhas, é este perfil: o educador do Fábrica de Milhas, que também aparece nas buscas como Mago das Milhas.',
     },
-    { t: 'h2', id: 'imprensa', text: 'O que a imprensa já publicou sobre ele?' },
+    { t: 'h2', id: 'trajetoria', text: 'Qual é a trajetória do Rodrigo Góes?' },
+    {
+      t: 'p',
+      html: 'A história dele tem datas públicas, registradas pela imprensa e pelas páginas oficiais:',
+    },
     {
       t: 'ul',
       items: [
-        '<strong><a href="https://www.cnnbrasil.com.br/viagemegastronomia/viagem/o-que-fazer-com-as-milhas-enquanto-nao-podemos-viajar-experts-respondem/" target="_blank" rel="noopener">CNN Brasil</a></strong> (abril de 2021): é ouvido como especialista em milhas e autor do livro, respondendo dúvidas de leitores sobre o que fazer com o saldo durante a pandemia.',
+        '<strong>2011:</strong> começa a se dedicar a desvendar o mundo das milhas aéreas e dos programas de fidelidade.',
+        '<strong>2019:</strong> funda a Fábrica de Milhas, com cursos, conteúdos personalizados e mentorias, e abre o canal no YouTube.',
+        '<strong>Setembro de 2020:</strong> lança o livro <em>O Mapa para Acumular 1 Milhão de Milhas</em>, com dez capítulos sobre acúmulo, cartões, programas de fidelidade e venda de milhas.',
+        '<strong>Outubro de 2020:</strong> deixa a engenharia embarcada em uma empresa de petróleo para viver de milhas.',
+        '<strong>2022 a 2024:</strong> organiza viagens em grupo com alunos: Cancún (2022), Egito (2023) e África do Sul (2024).',
+        '<strong>Dezembro de 2024:</strong> a Revista Mensch registra mais de 100 mil alunos e 23 turmas lotadas em cinco anos de projeto.',
+        '<strong>2026:</strong> mantém o canal ativo, com guias para iniciantes e a aula inaugural do Fábrica de Milhas.',
+      ],
+    },
+    { t: 'h2', id: 'imprensa', text: 'O que a imprensa e os podcasts já publicaram sobre ele?' },
+    {
+      t: 'ul',
+      items: [
+        '<strong><a href="https://www.cnnbrasil.com.br/viagemegastronomia/viagem/o-que-fazer-com-as-milhas-enquanto-nao-podemos-viajar-experts-respondem/" target="_blank" rel="noopener">CNN Brasil</a></strong> (abril de 2021): é ouvido como especialista em milhas e autor do livro.',
         '<strong><a href="https://extra.globo.com/tv-e-lazer/livro-mapa-para-acumular-1-milhao-de-milhas-de-rodrigo-goes-esta-entre-os-mais-vendidos-25398340.html" target="_blank" rel="noopener">Extra</a></strong>, do Grupo Globo: registra o livro dele entre os mais vendidos.',
         '<strong><a href="https://www.terra.com.br/vida-e-estilo/como-rodrigo-goes-viajou-mais-de-40-paises-com-milhas,28ed2a40010a04c2b0587dd9b4df1ae509649tos.html" target="_blank" rel="noopener">Terra</a></strong>: conta como ele viajou a mais de 40 países usando milhas.',
+        '<strong><a href="https://www.correio24horas.com.br/bahia/baiano-que-viajou-para-40-paises-ensina-como-acumular-milhas-0820" target="_blank" rel="noopener">Correio</a></strong> (agosto de 2020): perfil do engenheiro de Salvador que viajou a mais de 40 países com milhas.',
+        '<strong><a href="https://catracalivre.com.br/viagem-livre/livro-ensina-como-acumular-milhas-e-viajar-mais/" target="_blank" rel="noopener">Catraca Livre</a></strong> (setembro de 2020): apresenta o livro dele.',
         '<strong><a href="https://revistamensch.com.br/carreira-rodrigo-goes-o-incrivel-mago-das-milhas/" target="_blank" rel="noopener">Revista Mensch</a></strong> (dezembro de 2024): perfil de carreira, com a saída da engenharia e os números da operação.',
         '<strong><a href="https://www.redetv.uol.com.br/tvfama/blog/celebridades/conquistas-atraves-das-milhas-como-o-engenheiro-baiano-rodrigo-goes-transfo" target="_blank" rel="noopener">RedeTV!</a></strong>, no TV Fama: a história do engenheiro baiano que mudou de vida com milhas.',
         '<strong><a href="https://globoplay.globo.com/v/13165946/" target="_blank" rel="noopener">Globoplay</a></strong>: participação em TV disponível na plataforma da Globo.',
       ],
     },
-    { t: 'h2', id: 'youtube', text: 'Como é o canal do Rodrigo Góes no YouTube?' },
     {
       t: 'p',
-      html: 'O canal <a href="' + YOUTUBE_URL + '" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reúne <strong>890 mil inscritos e 425 vídeos publicados</strong> (29/10/2026). São centenas de aulas gratuitas sobre acúmulo, emissão e venda de milhas, um arquivo aberto construído ao longo de anos.',
+      html: 'Além das matérias, ele aparece em entrevistas longas, como o Conexões, com Gloria Vanique, no Flow News, e o TalksbyLeo Podcast, ambos de outubro de 2024, e em episódios de podcast no Spotify que o apresentam como o maior especialista em milhas aéreas do Brasil. A página oficial do autor também lista Mais Você, Folha de S.Paulo, Estadão e InfoMoney.',
+    },
+    { t: 'h2', id: 'youtube', text: 'Como é o canal do Rodrigo Góes no YouTube e por onde começar?' },
+    {
+      t: 'p',
+      html: 'O canal <a href="' + YOUTUBE_URL + '" target="_blank" rel="sponsored nofollow noopener">Rodrigo Goes</a> (@RodrigoGoesfabricademilhas) é <strong>verificado pelo YouTube</strong> e reúne <strong>890 mil inscritos e 425 vídeos publicados</strong> (1/11/2026). Está no ar desde 2019 e é a melhor porta de entrada para conhecer o jeito de ensinar dele <strong>sem gastar nada</strong>. Um dos destaques é a participação no <strong>Mais Você</strong>, com Ana Maria Braga, com mais de 322 mil visualizações (jul/2026).',
     },
     {
       t: 'p',
-      html: 'O canal também é a melhor porta de entrada para conhecer o jeito de ensinar dele <strong>sem gastar nada</strong>. Quem assiste a alguns vídeos já sente se a didática combina com o seu estilo. Um dos destaques é a participação no <strong>Mais Você</strong>, com Ana Maria Braga, com mais de 322 mil visualizações (jul/2026).',
+      html: 'Para quem está começando, estes vídeos do canal formam um bom roteiro:',
     },
-    { t: 'h2', id: 'empresa', text: 'Quem está por trás do curso?' },
     {
-      t: 'p',
-      html: 'O curso é operado pela <strong>4MULTIPLUS MIDIA DIGITAL LTDA</strong>, CNPJ 42.650.222/0001-08, sediada em Barueri-SP. Empresa registrada, endereço informado e canais de contato (e-mail, WhatsApp, Instagram e grupo) são o primeiro filtro da nossa <a href="/metodologia/">metodologia</a>, e todos se confirmam na página oficial.',
-    },
-    { t: 'h2', id: 'confiavel', text: 'Rodrigo Góes é confiável?' },
-    {
-      t: 'p',
-      html: 'Sim. Ele tem empresa registrada, produto real com garantia dupla (7 dias de reembolso e a garantia risco zero), atendimento por vários canais, livro publicado, entrevistas na imprensa e um canal verificado com 890 mil inscritos. Rosto, nome e histórico públicos há anos são a base da confiança que o nicho de milhas deposita nele.',
+      t: 'ul',
+      items: [
+        '<strong>Guia de Milhas (Do Zero ao Primeiro Resgate)</strong>: um roteiro do primeiro ponto ao primeiro resgate.',
+        '<strong>Milhas para iniciantes 2026: o que mudou?</strong>: o panorama atualizado do ano para quem está chegando agora.',
+        '<strong>Live - Aula inaugural [Fábrica de Milhas]</strong>: a aula completa para conhecer o estilo do treinamento.',
+      ],
     },
     { t: 'h2', id: 'o-que-ensina', text: 'O que o Rodrigo Góes ensina?' },
     {
       t: 'p',
-      html: 'O trabalho dele se concentra em ensinar a acumular milhas em escala, usá-las em passagens, hotéis e classe executiva e, para quem quer, vendê-las. O produto principal é o <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a>, treinamento em 8 níveis com aulas ao vivo e comunidade de promoções. Ele também realiza eventos ao vivo, como o <a href="/destrave-suas-milhas/">Protocolo Destrave suas Milhas</a>.',
+      html: 'O trabalho dele se organiza em três frentes: <strong>acumular</strong> milhas em escala (cartões de crédito, transferências bonificadas, clubes e programas de fidelidade), <strong>usar</strong> as milhas em passagens, hotéis, classe executiva e salas VIP e, para quem quer, <strong>vender</strong> as milhas que sobram. O produto principal é o <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a>, treinamento em 8 níveis (Bronze, Prata, Ouro, Safira, Rubi, Platina, Diamante e Private), com mais de 30 horas de aulas gravadas, aulas ao vivo, monitorias com a equipe de suporte e o Clube do Mago, comunidade com promoções selecionadas. Ele também realiza eventos ao vivo, como o <a href="/destrave-suas-milhas/">Protocolo Destrave suas Milhas</a>, e é autor do livro <em>O Mapa para Acumular 1 Milhão de Milhas</em>.',
+    },
+    { t: 'h2', id: 'confiavel', text: 'Rodrigo Góes é confiável?' },
+    {
+      t: 'p',
+      html: 'Sim. O Rodrigo Góes é confiável por um conjunto de sinais públicos que se confirmam entre si: <strong>empresa registrada</strong> (4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08, sede em Barueri-SP), <strong>produto real</strong> com garantia dupla de 7 dias e "risco zero", <strong>atendimento por vários canais</strong> (e-mail, WhatsApp, Instagram e grupo), <strong>livro publicado</strong> em 2020, <strong>matérias e entrevistas</strong> na CNN Brasil, Extra, Terra, RedeTV! e Correio e um <strong>canal verificado</strong> com 890 mil inscritos. Rosto, nome e histórico públicos desde 2019 são a base da confiança que o nicho de milhas deposita nele, e mais de 100 mil alunos já passaram pelo Fábrica de Milhas.',
+    },
+    { t: 'h2', id: 'golpe', text: 'O curso do Rodrigo Góes é golpe?' },
+    {
+      t: 'p',
+      html: 'Não. O curso é operado por empresa registrada, com CNPJ e endereço públicos, a compra é feita pela Hotmart, plataforma de produtos digitais, com 7 dias de garantia, e o produtor dá a cara em entrevistas, no YouTube e nas redes. Como em qualquer curso de milhas, os resultados variam conforme dedicação, capital e mercado, e nenhum ganho é garantido. Uma dica útil: use sempre o link e os canais oficiais; segundo a página oficial, o Rodrigo não envia link de pagamento por mensagem.',
+    },
+    { t: 'h2', id: 'funciona', text: 'O Fábrica de Milhas funciona?' },
+    {
+      t: 'p',
+      html: 'Funciona para quem aplica o método com constância. O treinamento organiza o aprendizado em uma sequência lógica: primeiro os fundamentos, depois o acúmulo com cartões e programas, em seguida o uso das milhas em passagens e hotéis e, por fim, a venda. A equipe dá suporte com aulas ao vivo e monitorias, e o Clube do Mago entrega as promoções do dia. A prova social está nos números: mais de 100 mil alunos formados, 23 turmas lotadas em cinco anos (Revista Mensch) e viagens em grupo com alunos a Cancún, ao Egito e à África do Sul. O resultado de cada pessoa depende do gasto mensal, do tempo dedicado e das campanhas do período, e nenhum ganho é garantido.',
+    },
+    {
+      t: 'callout',
+      tone: 'info',
+      title: 'Conheça o curso do Rodrigo Góes',
+      html:
+        'Veja na página oficial os 8 níveis, os presentes da turma e a garantia dupla de 7 dias e risco zero.' +
+        '<span class="not-prose mt-4 block"><a href="' +
+        affUrl('confiavel_meio') +
+        '" target="_blank" rel="sponsored nofollow noopener" class="!no-underline inline-flex items-center gap-2.5 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-all">Conhecer o Fábrica de Milhas</a></span>',
+    },
+    { t: 'h2', id: 'curso-preco', text: 'Qual é o curso do Rodrigo Góes e quanto custa?' },
+    {
+      t: 'p',
+      html: 'O curso do Rodrigo Góes é o <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas</a>. Na página oficial de inscrição, lida em 1/11/2026, o acesso de 1 ano custa 12x de R$ 119,90 (R$ 1.230,60 à vista) e o acesso vitalício, que inclui todas as atualizações, custa 12x de R$ 291,99 (R$ 2.997,00 à vista). Quem entra na turma recebe dois presentes: o Mega Combo, com mais de 10 imersões de roteiros como Disney, Paris, Maldivas e Las Vegas, e o Clube do Mago, com avisos diários de promoções. A compra tem garantia dupla: 7 dias de reembolso integral e a garantia "risco zero", ligada ao nível Platina. Preços, turmas e presentes mudam de uma turma para outra, por isso vale conferir tudo na página oficial na hora da compra. Os detalhes de cada nível estão na nossa análise <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas vale a pena?</a>.',
+    },
+    { t: 'h2', id: 'vale-a-pena', text: 'Vale a pena fazer o curso do Rodrigo Góes?' },
+    {
+      t: 'p',
+      html: 'Vale a pena para quem quer aprender milhas com método, em vez de juntar o conhecimento aos pedaços. Com um único investimento, à vista ou em 12x, você recebe a trilha completa (acúmulo, emissão, classe executiva e venda), aulas ao vivo, comunidade e garantia de 7 dias. Quem prefere sentir o estilo antes de decidir pode começar pelo canal gratuito e pelos nossos guias de <a href="/como-acumular-milhas/">acúmulo de milhas</a> e de <a href="/cartao-de-credito-para-milhas/">cartão de crédito para milhas</a>. Quem já está decidido encontra no curso o caminho organizado, com a opção de acesso vitalício.',
+    },
+    {
+      t: 'callout',
+      tone: 'ok',
+      title: 'Decida com a página oficial na mão',
+      html:
+        'Confira turma, preço e presentes do momento no endereço oficial de inscrição do curso.' +
+        '<span class="not-prose mt-4 block"><a href="' +
+        affUrl('confiavel_preco') +
+        '" target="_blank" rel="sponsored nofollow noopener" class="!no-underline inline-flex items-center gap-2.5 bg-sun-500 hover:bg-sun-400 text-slate-950 font-bold px-7 py-3.5 rounded-full transition-all">Ver o Fábrica de Milhas</a></span>',
     },
     { t: 'h2', id: 'sinais', text: 'Prós e contras de seguir o Rodrigo Góes' },
     {
@@ -90,14 +174,14 @@ export const rodrigoGoes: Article = {
       pros: [
         'Empresa ativa e rastreável (CNPJ, sede, canais de contato).',
         'Canal verificado no YouTube com 890 mil inscritos e centenas de aulas gratuitas.',
-        'Identidade pública consolidada: 1,6 milhão de seguidores, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Revista Mensch.',
+        'Identidade pública consolidada: mais de 1,6 milhão de seguidores, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Correio.',
         'Atendimento por e-mail, WhatsApp, Instagram e grupo.',
         'Produto real, com garantia dupla de 7 dias e risco zero.',
       ],
       cons: [
         'Pede constância: o método rende mais para quem acompanha as promoções toda semana.',
         'Conteúdo muito amplo: vale começar pelos vídeos gratuitos e seguir a trilha em ordem.',
-        'O curso é um investimento, com parcelamento em 12x e desconto à vista.',
+        'O curso é um investimento de longo prazo, com parcelamento em 12x e desconto à vista.',
         'As turmas abrem em períodos: vale conferir as condições vigentes na página oficial.',
         'O resultado depende do seu volume de gastos e da sua dedicação.',
       ],
@@ -106,10 +190,26 @@ export const rodrigoGoes: Article = {
     {
       t: 'ul',
       items: [
+        'Você está começando do zero e quer um passo a passo claro, do primeiro cartão ao primeiro resgate;',
         'Você quer aprender milhas com um método estruturado e uma comunidade ativa;',
         'Você quer viajar gastando menos e conhecer o uso de milhas em classe executiva e salas VIP;',
         'Você gosta de aprender com conteúdo gratuito antes de decidir por um curso;',
         'Você tem interesse em transformar milhas em renda extra, com os cuidados que o mercado pede.',
+      ],
+    },
+    {
+      t: 'p',
+      html: 'Quer focar em emissão de passagens com um investimento menor? Conheça também o Papo de Milhas, que recomendamos na página <a href="/cursos-de-milhas/">Cursos de milhas</a>.',
+    },
+    { t: 'h2', id: 'como-comecar', text: 'Como começar com o Rodrigo Góes, passo a passo?' },
+    {
+      t: 'ol',
+      items: [
+        'Assista a dois ou três vídeos gratuitos do canal, como o Guia de Milhas (Do Zero ao Primeiro Resgate), para sentir a didática.',
+        'Leia os guias gratuitos deste site: <a href="/como-acumular-milhas/">como acumular milhas</a>, <a href="/cartao-de-credito-para-milhas/">cartão de crédito para milhas</a> e <a href="/programas-de-milhas/">programas de milhas</a>.',
+        'Veja a <a href="/cotacao-do-milheiro/">cotação do milheiro</a> e use a <a href="/calculadora-de-milhas/">calculadora de milhas</a> para conhecer o valor do seu saldo.',
+        'Leia a nossa análise <a href="/fabrica-de-milhas-vale-a-pena/">Fábrica de Milhas vale a pena?</a>, com preço, níveis e garantia.',
+        'Decida na página oficial de inscrição, conferindo a turma, o preço e os presentes do momento.',
       ],
     },
     { t: 'h2', id: 'veredito', text: 'Nossa conclusão' },
@@ -122,28 +222,30 @@ export const rodrigoGoes: Article = {
     {
       t: 'ul',
       items: [
-        'Página oficial do curso Fábrica de Milhas (alunos, milhas, países e empresa), lida em 29/10/2026.',
-        'Canal Rodrigo Goes no YouTube (inscritos e vídeos), lido em 29/10/2026.',
-        'CNN Brasil, Extra (Grupo Globo), Terra, Revista Mensch, RedeTV! e Globoplay, citados no texto.',
+        'Página oficial de inscrição do curso Fábrica de Milhas (preços, níveis, presentes, garantia, horas de aula e empresa), lida em 1/11/2026.',
+        'Página oficial da live Black Infinita (alunos, milhas e países), lida em 1/11/2026.',
+        'Página do autor no site oficial fabricademilha.com (formação, trajetória e imprensa), lida em 1/11/2026.',
+        'Canal Rodrigo Goes no YouTube (inscritos, vídeos e títulos recentes) e perfil @goesrodrigo no Instagram (seguidores), lidos em 1/11/2026.',
+        'CNN Brasil, Extra (Grupo Globo), Terra, RedeTV! e Globoplay, citados no texto; Correio, Catraca Livre e Revista Mensch, lidos em 1/11/2026.',
       ],
     },
   ],
   faq: [
     {
       q: 'Rodrigo Góes é confiável?',
-      a: 'Sim. Ele tem empresa registrada (4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08), canal verificado no YouTube com 890 mil inscritos, livro publicado e matérias em CNN Brasil, Extra, Terra e RedeTV!.',
+      a: 'Sim. Ele tem empresa registrada (4MULTIPLUS MIDIA DIGITAL LTDA, CNPJ 42.650.222/0001-08), canal verificado no YouTube com 890 mil inscritos, livro publicado e matérias em CNN Brasil, Extra, Terra, RedeTV! e Correio.',
     },
     {
-      q: 'Rodrigo Góes tem canal no YouTube?',
-      a: 'Sim. O canal Rodrigo Goes (@RodrigoGoesfabricademilhas) é verificado e reúne 890 mil inscritos e 425 vídeos (29/10/2026). É o melhor lugar para conhecer a didática dele de graça, e um dos destaques é a participação no Mais Você, com Ana Maria Braga.',
+      q: 'Quem é o Mago das Milhas?',
+      a: 'É o apelido do Rodrigo Góes, engenheiro mecânico natural de Salvador e criador do curso Fábrica de Milhas, fundado em 2019. O nome resume a ideia que ele ensina: milhas não são loteria, são método.',
+    },
+    {
+      q: 'O curso do Rodrigo Góes funciona?',
+      a: 'Funciona para quem aplica o método com constância. O Fábrica de Milhas segue uma trilha em 8 níveis, com aulas ao vivo, monitorias e o Clube do Mago. Os resultados variam conforme dedicação, capital e mercado, e nenhum ganho é garantido.',
     },
     {
       q: 'O curso do Rodrigo Góes é golpe?',
-      a: 'Não. O curso é operado por empresa registrada, com CNPJ, endereço e canais de suporte, garantia de 7 dias e um produtor que dá a cara em entrevistas para CNN Brasil, Extra e RedeTV!. Como em qualquer curso de milhas, os resultados variam conforme dedicação, capital e mercado, e nenhum ganho é garantido.',
-    },
-    {
-      q: 'Quantos alunos o Rodrigo Góes tem?',
-      a: 'A página oficial do curso Fábrica de Milhas apresenta mais de 100 mil alunos formados (lida em 29/10/2026).',
+      a: 'Não. O curso é operado por empresa registrada, com CNPJ, endereço e canais de suporte, tem garantia de 7 dias e um produtor que dá a cara em entrevistas para CNN Brasil, Extra e RedeTV!. Como em qualquer curso de milhas, os resultados variam, e nenhum ganho é garantido.',
     },
     {
       q: 'Qual é o curso do Rodrigo Góes?',
@@ -151,11 +253,19 @@ export const rodrigoGoes: Article = {
     },
     {
       q: 'Quanto custa o curso do Rodrigo Góes?',
-      a: 'Na página oficial, lida em 29/10/2026: acesso de 1 ano em 12x de R$ 119,90 (R$ 1.230,60 à vista) e acesso vitalício em 12x de R$ 291,99 (R$ 2.997,00 à vista). Os valores mudam entre turmas.',
+      a: 'Na página oficial, lida em 1/11/2026: acesso de 1 ano em 12x de R$ 119,90 (R$ 1.230,60 à vista) e acesso vitalício em 12x de R$ 291,99 (R$ 2.997,00 à vista). Os valores mudam entre turmas.',
     },
     {
-      q: 'Vale a pena comprar o curso dele?',
-      a: 'Para quem quer método completo, comunidade de promoções e aulas ao vivo, sim. A análise completa traz o preço, a garantia dupla e o perfil de quem mais aproveita o treinamento.',
+      q: 'Rodrigo Góes tem canal no YouTube?',
+      a: 'Sim. O canal Rodrigo Goes (@RodrigoGoesfabricademilhas) é verificado e reúne 890 mil inscritos e 425 vídeos (1/11/2026). É o melhor lugar para conhecer a didática dele de graça.',
+    },
+    {
+      q: 'Quantos alunos o Rodrigo Góes tem?',
+      a: 'A página oficial do curso Fábrica de Milhas apresenta mais de 100 mil alunos formados (lida em 1/11/2026), e a Revista Mensch registrou, em dezembro de 2024, mais de 100 mil alunos.',
+    },
+    {
+      q: 'Rodrigo Góes tem livro?',
+      a: 'Sim. "O Mapa para Acumular 1 Milhão de Milhas" foi lançado em setembro de 2020 na Amazon, com dez capítulos sobre acúmulo, cartões e venda de milhas, e a imprensa o registrou entre os mais vendidos da categoria.',
     },
   ],
   related: [
@@ -163,6 +273,11 @@ export const rodrigoGoes: Article = {
     { slug: '/cursos-de-milhas/', anchor: 'Cursos de milhas: todas as opções' },
     { slug: '/como-ganhar-dinheiro-com-milhas/', anchor: 'Como ganhar dinheiro com milhas (guia gratuito)' },
   ],
+  review: {
+    itemName: 'Fábrica de Milhas',
+    itemDesc:
+      'Treinamento online de milhas aéreas criado por Rodrigo Góes, com 8 níveis de conteúdo, aulas ao vivo e comunidade de promoções.',
+  },
   // Entidade Person: conecta a página à entidade "Rodrigo Góes" para o Google e as IAs.
   // sameAs aponta para os perfis canônicos reais, não para os redirects de afiliado.
   extraLd: [
@@ -186,6 +301,8 @@ export const rodrigoGoes: Article = {
         'https://www.cnnbrasil.com.br/viagemegastronomia/viagem/o-que-fazer-com-as-milhas-enquanto-nao-podemos-viajar-experts-respondem/',
         'https://extra.globo.com/tv-e-lazer/livro-mapa-para-acumular-1-milhao-de-milhas-de-rodrigo-goes-esta-entre-os-mais-vendidos-25398340.html',
         'https://www.terra.com.br/vida-e-estilo/como-rodrigo-goes-viajou-mais-de-40-paises-com-milhas,28ed2a40010a04c2b0587dd9b4df1ae509649tos.html',
+        'https://www.correio24horas.com.br/bahia/baiano-que-viajou-para-40-paises-ensina-como-acumular-milhas-0820',
+        'https://catracalivre.com.br/viagem-livre/livro-ensina-como-acumular-milhas-e-viajar-mais/',
         'https://revistamensch.com.br/carreira-rodrigo-goes-o-incrivel-mago-das-milhas/',
         'https://www.redetv.uol.com.br/tvfama/blog/celebridades/conquistas-atraves-das-milhas-como-o-engenheiro-baiano-rodrigo-goes-transfo',
       ],
@@ -195,6 +312,7 @@ export const rodrigoGoes: Article = {
       name: 'O Mapa para Acumular 1 Milhão de Milhas',
       author: { '@id': 'https://fabricantedemilhas.com.br/rodrigo-goes-e-confiavel/#rodrigo-goes' },
       inLanguage: 'pt-BR',
+      datePublished: '2020-09',
       about: ['milhas aéreas', 'programas de fidelidade', 'viagens'],
     },
   ],
