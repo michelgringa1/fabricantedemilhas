@@ -1,0 +1,3 @@
+# Scripts de shell precisam de fim de linha LF mesmo no Windows (core.autocrlf=true),
+# senao o bash do Actions e o Git Bash quebram no caractere de retorno de carro.
+*.sh text eol=lf

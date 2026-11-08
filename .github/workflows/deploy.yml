@@ -1,15 +1,27 @@
-name: Build e publica na branch deploy
+name: Construir e publicar
 
+# MODELO A (padrão dos sites do Michel, decisão de 29/10/2026):
+#   branch `fonte` = onde se trabalha e se dá push (código React, scripts, workflows).
+#   branch `main`  = SAÍDA (o site pronto, o conteúdo de dist/). A Hostinger puxa a `main` para o public_html.
+# Nunca edite a `main` à mão nem arquivos direto no servidor: o próximo push na `fonte` sobrescreve a `main`.
+#
+# Este site tem gerador (pnpm run build:deploy = Parcel + assets + pré-render por Chrome + sitemap/robots/llms/.htaccess),
+# então a trava do projeto (tom-gate, trava-go) continua e o gate do modelo A entra como 2ª camada.
+# Sem `workflow_dispatch` de propósito: o GitHub só aceita esse gatilho com o arquivo na branch padrão, e aqui
+# a branch padrão (`main`) é só saída. Para rodar de novo: "Re-run" na aba Actions, ou um push na `fonte`.
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches: [fonte]
+
+concurrency:
+  group: publicar-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  build-deploy:
+  publicar:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,7 +49,7 @@ jobs:
         with:
           chrome-version: stable
 
-      - name: Build + pré-render das 20 rotas + sitemap/robots/llms
+      - name: Build + pré-render das rotas + sitemap/robots/llms
         run: pnpm run build:deploy
         env:
           CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
@@ -61,11 +73,30 @@ jobs:
       - name: Trava do rastreio /go/
         run: node scripts/trava-go.mjs ./dist --map scripts/go-map.json
 
-      - name: Publicar dist/ na branch deploy
+      # Itens fixos do site (modelo A): o que o CLAUDE.md diz que "não pode sair" (301 www/https e 404 no .htaccess,
+      # chave do IndexNow, robots/sitemap/llms/404, GA4 em toda página, nenhum .txt solto, sem nota própria).
+      - name: Itens fixos do site
+        run: bash scripts/itens-fixos.sh dist
+
+      # 2ª camada (modelo A): HTML/JSON-LD legível, link e imagem interna com arquivo, sitemap e canônicas no domínio certo,
+      # travessão longo em qualquer parte do arquivo, credencial na saída e o scanner de tom (como ERRO).
+      # --ignorar-links /go/: o redirecionador é PHP e não tem arquivo na pasta. Travessão curto (30k–40k, GRU–REC) é aceito (CLAUDE.md, regra 8).
+      - name: Trava de publicação (modelo A)
+        run: >
+          node scripts/gate.mjs ./dist --sem-travessao --travessao-bruto --estrito
+          --dominio https://fabricantedemilhas.com.br --ignorar-links /go/
+
+      # Publica o conteúdo de dist/ na raiz da branch main.
+      # keep_files false: o que sumiu de dist/ some da main (e do servidor).
+      # Sem mudança nenhuma, o peaceiris NÃO cria commit (allow_empty_commit false). Atenção: o pré-render da home sorteia
+      # 1 de 8 destinos (Home.tsx, BoardingPass), então um novo build quase sempre muda o index.html e gera commit.
+      - name: Publicar na branch main
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: deploy
+          publish_branch: main
           publish_dir: ./dist
-          force_orphan: true
-          commit_message: 'deploy: build de ${{ github.sha }}'
+          keep_files: false
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: 'Build ${{ github.sha }}'
