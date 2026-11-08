@@ -23,6 +23,9 @@ permissions:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    # O build leva ~1 min. Em 30/10/2026 um run travou 10 min no passo de build + pré-render (Chrome) e teve de ser cancelado à mão;
+    # com a fila `concurrency` acima, um run preso bloquearia os seguintes por até 6 h. Sem este limite, ninguém publica.
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
