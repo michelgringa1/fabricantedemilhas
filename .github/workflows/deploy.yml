@@ -103,3 +103,17 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
           commit_message: 'Build ${{ github.sha }}'
+
+      # Espelho para REVERSAO (pedido do Michel em 08/11/2026): a Hostinger agora puxa a main; a branch deploy
+      # continua recebendo a mesma saida por 14 dias, para a troca de volta no hPanel valer com o conteudo atual.
+      # REMOVER este passo depois de 22/11/2026 (e apagar a deploy com o ok do Michel).
+      - name: Espelhar na branch deploy (reversao, ate 22/11/2026)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy
+          publish_dir: ./dist
+          force_orphan: true
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: 'Espelho da main para reversao: build ${{ github.sha }}'
